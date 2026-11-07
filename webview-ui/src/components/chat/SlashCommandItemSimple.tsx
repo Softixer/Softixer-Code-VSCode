@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 
 import type { Command } from "@roo-code/types"
 
@@ -26,3 +26,5 @@ export const SlashCommandItemSimple: React.FC<SlashCommandItemSimpleProps> = ({ 
 		</div>
 	)
 }
+
+

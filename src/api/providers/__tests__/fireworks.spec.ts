@@ -1,4 +1,4 @@
-// npx vitest run api/providers/__tests__/fireworks.spec.ts
+﻿// npx vitest run api/providers/__tests__/fireworks.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
@@ -592,3 +592,5 @@ describe("FireworksHandler", () => {
 		expect(chunks[2]).toMatchObject({ type: "usage", inputTokens: 5, outputTokens: 10 })
 	})
 })
+
+

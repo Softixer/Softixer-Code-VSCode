@@ -1,4 +1,4 @@
-import EventEmitter from "node:events"
+﻿import EventEmitter from "node:events"
 import * as crypto from "node:crypto"
 
 import ipc from "node-ipc"
@@ -145,3 +145,5 @@ export class IpcClient extends EventEmitter<IpcClientEvents> {
 		return this._isConnected && this._clientId !== undefined
 	}
 }
+
+

@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import { Stream as AnthropicStream } from "@anthropic-ai/sdk/streaming"
 import { CacheControlEphemeral } from "@anthropic-ai/sdk/resources"
 import OpenAI from "openai"
@@ -304,3 +304,5 @@ export class MiniMaxHandler extends BaseProvider implements SingleCompletionHand
 		return content?.type === "text" ? content.text : ""
 	}
 }
+
+

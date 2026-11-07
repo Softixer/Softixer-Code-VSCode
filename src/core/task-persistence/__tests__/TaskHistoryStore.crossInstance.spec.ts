@@ -1,4 +1,4 @@
-// pnpm --filter roo-cline test core/task-persistence/__tests__/TaskHistoryStore.crossInstance.spec.ts
+﻿// pnpm --filter roo-cline test core/task-persistence/__tests__/TaskHistoryStore.crossInstance.spec.ts
 
 import * as fs from "fs/promises"
 import * as path from "path"
@@ -163,3 +163,5 @@ describe("TaskHistoryStore cross-instance safety", () => {
 		expect(storeB.getAll().length).toBe(10)
 	})
 })
+
+

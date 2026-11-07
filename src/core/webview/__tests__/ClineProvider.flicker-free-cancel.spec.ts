@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest"
+﻿import { beforeEach, describe, expect, it, vi } from "vitest"
 import * as vscode from "vscode"
 
 import { ClineProvider } from "../ClineProvider"
@@ -295,3 +295,5 @@ describe("ClineProvider flicker-free cancel", () => {
 		expect((provider as any).clineStack[1]).toBe(mockTask2)
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react"
+﻿import { render, screen } from "@testing-library/react"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 import type { ProviderSettings, OrganizationAllowList } from "@roo-code/types"
@@ -296,3 +296,5 @@ describe("ApiOptions Provider Filtering", () => {
 		PROVIDERS.pop()
 	})
 })
+
+

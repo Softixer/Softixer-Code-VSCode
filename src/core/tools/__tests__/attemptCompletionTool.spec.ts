@@ -1,4 +1,4 @@
-import { RooCodeEventName, TodoItem } from "@roo-code/types"
+﻿import { SoftixerEventName, TodoItem } from "@roo-code/types"
 
 import { AttemptCompletionToolUse } from "../../../shared/tools"
 
@@ -23,7 +23,7 @@ vi.mock("vscode", () => ({
 // Mock Package module
 vi.mock("../../../shared/package", () => ({
 	Package: {
-		name: "roo-cline",
+		name: "softixer",
 	},
 }))
 
@@ -495,7 +495,7 @@ describe("attemptCompletionTool", () => {
 
 				expect(mockHandleError).not.toHaveBeenCalled()
 				expect(mockTask.emit).toHaveBeenCalledWith(
-					RooCodeEventName.TaskCompleted,
+					SoftixerEventName.TaskCompleted,
 					"task_1",
 					expect.anything(),
 					expect.anything(),
@@ -529,7 +529,7 @@ describe("attemptCompletionTool", () => {
 
 				expect(mockHandleError).not.toHaveBeenCalled()
 				expect(mockTask.emit).not.toHaveBeenCalledWith(
-					RooCodeEventName.TaskCompleted,
+					SoftixerEventName.TaskCompleted,
 					expect.anything(),
 					expect.anything(),
 					expect.anything(),
@@ -539,3 +539,6 @@ describe("attemptCompletionTool", () => {
 		})
 	})
 })
+
+
+

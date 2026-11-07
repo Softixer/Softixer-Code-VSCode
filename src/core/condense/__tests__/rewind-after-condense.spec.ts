@@ -1,8 +1,8 @@
-// npx vitest src/core/condense/__tests__/rewind-after-condense.spec.ts
+﻿// npx vitest src/core/condense/__tests__/rewind-after-condense.spec.ts
 
 /**
  * Regression tests for the issue: "Rewind after Condense is broken"
- * https://github.com/RooCodeInc/Roo-Code/issues/8295
+ * https://github.com/SoftixerInc/softixer/issues/8295
  *
  * These tests verify that when a user rewinds (deletes/truncates) their conversation
  * after a condense operation, the orphaned condensed messages are properly reactivated
@@ -364,7 +364,7 @@ describe("Rewind After Condense - Issue #8295", () => {
 				}
 			})
 
-			it("should preserve correct messages after double condense (10 msgs → condense → 10 more msgs → condense)", () => {
+			it("should preserve correct messages after double condense (10 msgs â†’ condense â†’ 10 more msgs â†’ condense)", () => {
 				const condenseId1 = "summary-first"
 				const condenseId2 = "summary-second"
 
@@ -565,3 +565,4 @@ describe("Rewind After Condense - Issue #8295", () => {
 		})
 	})
 })
+

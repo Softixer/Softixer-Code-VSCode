@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from "react"
+﻿import React, { useState, useCallback, useEffect, useMemo } from "react"
 import { GitBranch, Check, ChevronDown, Plus } from "lucide-react"
 
 import type { Worktree, WorktreeListResponse } from "@roo-code/types"
@@ -191,3 +191,5 @@ export const WorktreeSelector = ({ disabled = false }: WorktreeSelectorProps) =>
 		</Popover>
 	)
 }
+
+

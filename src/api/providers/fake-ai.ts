@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -79,3 +79,5 @@ export class FakeAIHandler implements ApiHandler, SingleCompletionHandler {
 		return this.ai.completePrompt(prompt)
 	}
 }
+
+

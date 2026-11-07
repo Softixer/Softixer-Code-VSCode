@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 import os from "os"
 
 import * as vscode from "vscode"
@@ -264,3 +264,5 @@ export async function getEnvironmentDetails(cline: Task, includeFileDetails: boo
 	const reminderSection = todoListEnabled ? formatReminderSection(cline.todoList) : ""
 	return `<environment_details>\n${details.trim()}\n${reminderSection}\n</environment_details>`
 }
+
+

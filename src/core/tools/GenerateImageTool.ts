@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 import fs from "fs/promises"
 import * as vscode from "vscode"
 import {
@@ -264,3 +264,5 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 }
 
 export const generateImageTool = new GenerateImageTool()
+
+

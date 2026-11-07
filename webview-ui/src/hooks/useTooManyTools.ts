@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+﻿import { useMemo } from "react"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { MAX_MCP_TOOLS_THRESHOLD, countEnabledMcpTools } from "@roo-code/types"
@@ -55,3 +55,5 @@ export function useTooManyTools(): TooManyToolsInfo {
 		message,
 	}
 }
+
+

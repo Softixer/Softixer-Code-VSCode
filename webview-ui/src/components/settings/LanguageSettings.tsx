@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react"
+﻿import { HTMLAttributes } from "react"
 import { useAppTranslation } from "@/i18n/TranslationContext"
 
 import type { Language } from "@roo-code/types"
@@ -52,3 +52,5 @@ export const LanguageSettings = ({ language, setCachedStateField, className, ...
 		</div>
 	)
 }
+
+

@@ -1,4 +1,4 @@
-// npx vitest run src/utils/__tests__/enhance-prompt.spec.ts
+﻿// npx vitest run src/utils/__tests__/enhance-prompt.spec.ts
 
 import type { ProviderSettings } from "@roo-code/types"
 
@@ -141,3 +141,5 @@ describe("enhancePrompt", () => {
 		await expect(singleCompletionHandler(mockApiConfig, "Test prompt")).rejects.toThrow("API Error")
 	})
 })
+
+

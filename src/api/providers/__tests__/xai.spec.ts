@@ -1,4 +1,4 @@
-// npx vitest api/providers/__tests__/xai.spec.ts
+﻿// npx vitest api/providers/__tests__/xai.spec.ts
 
 const mockResponsesCreate = vitest.fn()
 
@@ -285,3 +285,5 @@ describe("XAIHandler", () => {
 		await expect(stream.next()).rejects.toThrow(`xAI completion error: ${errorMessage}`)
 	})
 })
+
+

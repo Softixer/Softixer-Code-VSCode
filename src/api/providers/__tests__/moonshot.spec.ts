@@ -1,4 +1,4 @@
-// Use vi.hoisted to define mock functions that can be referenced in hoisted vi.mock() calls
+﻿// Use vi.hoisted to define mock functions that can be referenced in hoisted vi.mock() calls
 const { mockStreamText, mockGenerateText } = vi.hoisted(() => ({
 	mockStreamText: vi.fn(),
 	mockGenerateText: vi.fn(),
@@ -472,3 +472,5 @@ describe("MoonshotHandler", () => {
 		})
 	})
 })
+
+

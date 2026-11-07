@@ -1,4 +1,4 @@
-import type { CustomModePrompts } from "@roo-code/types"
+﻿import type { CustomModePrompts } from "@roo-code/types"
 
 import { getPromptComponent } from "../system"
 
@@ -86,3 +86,5 @@ describe("getPromptComponent", () => {
 		})
 	})
 })
+
+

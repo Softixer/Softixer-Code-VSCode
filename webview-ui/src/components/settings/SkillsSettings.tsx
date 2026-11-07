@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from "react"
+﻿import React, { useState, useEffect, useMemo, useCallback } from "react"
 import { Trans } from "react-i18next"
 import { Plus, Globe, Folder, Edit, Trash2, Settings } from "lucide-react"
 
@@ -361,3 +361,5 @@ export const SkillsSettings: React.FC = () => {
 		</div>
 	)
 }
+
+

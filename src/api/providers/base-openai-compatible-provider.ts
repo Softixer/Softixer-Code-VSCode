@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
 import type { ModelInfo } from "@roo-code/types"
@@ -258,3 +258,5 @@ export abstract class BaseOpenAiCompatibleProvider<ModelName extends string>
 		return { id, info: this.providerModels[id] }
 	}
 }
+
+

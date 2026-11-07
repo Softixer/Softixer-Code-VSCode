@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/anthropic-vertex.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/anthropic-vertex.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 import { AnthropicVertex } from "@anthropic-ai/vertex-sdk"
@@ -1448,3 +1448,5 @@ describe("VertexHandler", () => {
 		})
 	})
 })
+
+

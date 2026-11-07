@@ -1,4 +1,4 @@
-import { moonshotModels, moonshotDefaultModelId, type ModelInfo } from "@roo-code/types"
+﻿import { moonshotModels, moonshotDefaultModelId, type ModelInfo } from "@roo-code/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 
@@ -74,3 +74,5 @@ export class MoonshotHandler extends OpenAICompatibleHandler {
 		return this.options.modelMaxTokens || modelInfo.maxTokens || undefined
 	}
 }
+
+

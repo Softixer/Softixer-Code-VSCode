@@ -1,4 +1,4 @@
-// npx vitest core/prompts/__tests__/add-custom-instructions.spec.ts
+﻿// npx vitest core/prompts/__tests__/add-custom-instructions.spec.ts
 
 vi.mock("os", () => ({
 	default: {
@@ -376,3 +376,5 @@ describe("addCustomInstructions", () => {
 		)
 	})
 })
+
+

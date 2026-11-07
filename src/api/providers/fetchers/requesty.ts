@@ -1,4 +1,4 @@
-import axios from "axios"
+﻿import axios from "axios"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -53,3 +53,5 @@ export async function getRequestyModels(baseUrl?: string, apiKey?: string): Prom
 
 	return models
 }
+
+

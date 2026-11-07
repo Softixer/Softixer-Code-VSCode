@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { Fzf } from "fzf"
 import { Check, X } from "lucide-react"
 
@@ -338,3 +338,5 @@ export const ModeSelector = ({
 		</Popover>
 	)
 }
+
+

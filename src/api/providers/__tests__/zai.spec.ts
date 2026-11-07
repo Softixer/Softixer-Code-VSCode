@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/zai.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/zai.spec.ts
 
 import OpenAI from "openai"
 import { Anthropic } from "@anthropic-ai/sdk"
@@ -523,3 +523,5 @@ describe("ZAiHandler", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-// npx vitest run src/__tests__/index.test.ts
+﻿// npx vitest run src/__tests__/index.test.ts
 
 import { generatePackageJson } from "../index.js"
 
@@ -109,7 +109,7 @@ describe("generatePackageJson", () => {
 			},
 			overrideJson: {
 				name: "roo-code-nightly",
-				displayName: "Roo Code Nightly",
+				displayName: "Softixer Nightly",
 				publisher: "RooVeterinaryInc",
 				version: "0.0.1",
 				icon: "assets/icons/icon-nightly.png",
@@ -120,7 +120,7 @@ describe("generatePackageJson", () => {
 
 		expect(generatedPackageJson).toStrictEqual({
 			name: "roo-code-nightly",
-			displayName: "Roo Code Nightly",
+			displayName: "Softixer Nightly",
 			description: "%extension.description%",
 			publisher: "RooVeterinaryInc",
 			version: "0.0.1",
@@ -220,3 +220,4 @@ describe("generatePackageJson", () => {
 		})
 	})
 })
+

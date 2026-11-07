@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import * as vscode from "vscode"
 
 /**
@@ -23,7 +23,7 @@ function asObjectSafe(value: any): object {
 
 		return {}
 	} catch (error) {
-		console.warn("Roo Code <Language Model API>: Failed to parse object:", error)
+		console.warn("Softixer <Language Model API>: Failed to parse object:", error)
 		return {}
 	}
 }
@@ -184,7 +184,7 @@ export function extractTextCountFromMessage(message: vscode.LanguageModelChatMes
 					try {
 						text += JSON.stringify(item.input)
 					} catch (error) {
-						console.error("Roo Code <Language Model API>: Failed to stringify tool call input:", error)
+						console.error("Softixer <Language Model API>: Failed to stringify tool call input:", error)
 					}
 				}
 			}
@@ -194,3 +194,4 @@ export function extractTextCountFromMessage(message: vscode.LanguageModelChatMes
 	}
 	return text
 }
+

@@ -1,4 +1,4 @@
-import type { ModelInfo } from "@roo-code/types"
+﻿import type { ModelInfo } from "@roo-code/types"
 
 /**
  * Apply tool preferences for models accessed through dynamic routers (OpenRouter, Requesty).
@@ -28,3 +28,5 @@ export function applyRouterToolPreferences(modelId: string, info: ModelInfo): Mo
 
 	return result
 }
+
+

@@ -1,4 +1,4 @@
-import { Fzf } from "fzf"
+﻿import { Fzf } from "fzf"
 
 import type { ModeConfig, Command } from "@roo-code/types"
 
@@ -395,3 +395,5 @@ export function shouldShowContextMenu(text: string, position: number): boolean {
 	// Show menu in all other cases
 	return true
 }
+
+

@@ -1,4 +1,4 @@
-{
+﻿{
 	"extends": "@roo-code/config-typescript/base.json",
 	"compilerOptions": {
 		"types": ["vitest/globals"],
@@ -7,3 +7,5 @@
 	"include": ["src", "scripts", "*.config.ts"],
 	"exclude": ["node_modules"]
 }
+
+

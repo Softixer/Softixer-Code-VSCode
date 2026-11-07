@@ -1,4 +1,4 @@
-import { parametersSchema, defineCustomTool } from "@roo-code/types"
+﻿import { parametersSchema, defineCustomTool } from "@roo-code/types"
 
 // This is a valid tool.
 export const validTool = defineCustomTool({
@@ -14,3 +14,5 @@ export const validTool = defineCustomTool({
 export const someString = "not a tool"
 export const someNumber = 42
 export const someObject = { foo: "bar" }
+
+

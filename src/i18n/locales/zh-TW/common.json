@@ -1,125 +1,125 @@
-{
+﻿{
 	"extension": {
-		"name": "Roo Code",
-		"description": "您編輯器中的完整 AI 開發團隊。"
+		"name": "Softixer",
+		"description": "æ‚¨ç·¨è¼¯å™¨ä¸­çš„å®Œæ•´ AI é–‹ç™¼åœ˜éšŠã€‚"
 	},
 	"number_format": {
 		"thousand_suffix": "k",
 		"million_suffix": "m",
 		"billion_suffix": "b"
 	},
-	"welcome": "歡迎，{{name}}！您有 {{count}} 條通知。",
+	"welcome": "æ­¡è¿ï¼Œ{{name}}ï¼æ‚¨æœ‰ {{count}} æ¢é€šçŸ¥ã€‚",
 	"items": {
-		"zero": "沒有項目",
-		"one": "1 個項目",
-		"other": "{{count}}個項目"
+		"zero": "æ²’æœ‰é …ç›®",
+		"one": "1 å€‹é …ç›®",
+		"other": "{{count}}å€‹é …ç›®"
 	},
 	"confirmation": {
-		"reset_state": "您確定要重設擴充套件中的所有狀態和金鑰儲存嗎？此操作無法復原。",
-		"delete_config_profile": "您確定要刪除此設定檔案嗎？",
-		"delete_custom_mode_with_rules": "您確定要刪除此 {scope} 模式嗎？\n\n這也將刪除位於以下位置的關聯規則資料夾：\n{rulesFolderPath}"
+		"reset_state": "æ‚¨ç¢ºå®šè¦é‡è¨­æ“´å……å¥—ä»¶ä¸­çš„æ‰€æœ‰ç‹€æ…‹å’Œé‡‘é‘°å„²å­˜å—ï¼Ÿæ­¤æ“ä½œç„¡æ³•å¾©åŸã€‚",
+		"delete_config_profile": "æ‚¨ç¢ºå®šè¦åˆªé™¤æ­¤è¨­å®šæª”æ¡ˆå—ï¼Ÿ",
+		"delete_custom_mode_with_rules": "æ‚¨ç¢ºå®šè¦åˆªé™¤æ­¤ {scope} æ¨¡å¼å—ï¼Ÿ\n\né€™ä¹Ÿå°‡åˆªé™¤ä½æ–¼ä»¥ä¸‹ä½ç½®çš„é—œè¯è¦å‰‡è³‡æ–™å¤¾ï¼š\n{rulesFolderPath}"
 	},
 	"errors": {
-		"invalid_data_uri": "資料 URI 格式無效",
-		"error_copying_image": "複製圖片時發生錯誤：{{errorMessage}}",
-		"error_saving_image": "儲存圖片時發生錯誤：{{errorMessage}}",
-		"error_opening_image": "開啟圖片時發生錯誤：{{error}}",
-		"could_not_open_file": "無法開啟檔案：{{errorMessage}}",
-		"could_not_open_file_generic": "無法開啟檔案！",
-		"checkpoint_timeout": "嘗試恢復檢查點時超時。",
-		"checkpoint_failed": "恢復檢查點失敗。",
-		"git_not_installed": "存檔點功能需要 Git。請安裝 Git 以啟用存檔點。",
-		"checkpoint_no_first": "沒有第一個存檔點可供比較。",
-		"checkpoint_no_previous": "沒有上一個存檔點可供比較。",
-		"checkpoint_no_changes": "未發現任何變更。",
-		"checkpoint_diff_with_next": "與下一個存檔點比較的變更",
-		"checkpoint_diff_since_first": "自第一個存檔點以來的變更",
-		"checkpoint_diff_to_current": "對目前工作區的變更",
-		"nested_git_repos_warning": "存檔點已停用，因為在 {{path}} 偵測到巢狀的 git 儲存庫。要使用存檔點，請移除或重新配置此巢狀的 git 儲存庫。",
-		"no_workspace": "請先開啟專案資料夾",
-		"update_support_prompt": "更新支援訊息失敗",
-		"reset_support_prompt": "重設支援訊息失敗",
-		"enhance_prompt": "增強訊息失敗",
-		"get_system_prompt": "取得系統訊息失敗",
-		"search_commits": "搜尋提交失敗",
-		"save_api_config": "儲存 API 設定失敗",
-		"create_api_config": "建立 API 設定失敗",
-		"rename_api_config": "重新命名 API 設定失敗",
-		"load_api_config": "載入 API 設定失敗",
-		"delete_api_config": "刪除 API 設定失敗",
-		"list_api_config": "取得 API 設定列表失敗",
-		"update_server_timeout": "更新伺服器超時設定失敗",
-		"hmr_not_running": "本機開發伺服器沒有執行，HMR 將不起作用。請在啟動擴充套件前執行'npm run dev'以啟用 HMR。",
-		"retrieve_current_mode": "從狀態中檢索目前模式失敗。",
-		"failed_delete_repo": "刪除關聯的影子倉庫或分支失敗：{{error}}",
-		"failed_remove_directory": "刪除工作目錄失敗：{{error}}",
-		"custom_storage_path_unusable": "自訂儲存路徑 \"{{path}}\" 無法使用，將使用預設路徑",
-		"cannot_access_path": "無法存取路徑 {{path}}：{{error}}",
-		"settings_import_failed": "設定匯入失敗：{{error}}。",
-		"mistake_limit_guidance": "這可能表明模型思維過程失敗或無法正確使用工具，可透過使用者指導來緩解（例如「嘗試將工作分解為更小的步驟」）。",
-		"violated_organization_allowlist": "執行工作失敗：目前設定檔與您的組織設定不相容",
-		"condense_failed": "壓縮上下文失敗",
-		"condense_not_enough_messages": "沒有足夠的訊息來壓縮上下文",
-		"condensed_recently": "上下文最近已壓縮；跳過此次嘗試",
-		"condense_handler_invalid": "壓縮上下文的 API 處理程式無效",
-		"condense_api_failed": "壓縮 API 呼叫失敗：{{message}}",
-		"url_timeout": "網站載入超時。這可能是由於網路連線緩慢、網站負載過重或暫時無法使用。你可以稍後重試或檢查 URL 是否正確。",
-		"url_not_found": "找不到網站位址。請檢查 URL 是否正確並重試。",
-		"no_internet": "無網路連線。請檢查網路連線並重試。",
-		"url_forbidden": "存取此網站被禁止。該網站可能封鎖自動存取或需要身分驗證。",
-		"url_page_not_found": "找不到頁面。請檢查 URL 是否正確。",
-		"url_request_aborted": "取得 URL 的請求被中止。如果網站封鎖自動存取、需要身分驗證或存在網路問題，就可能發生這種情況。請重試或檢查 URL 是否可以在一般瀏覽器中存取。",
-		"url_fetch_failed": "取得 URL 內容失敗：{{error}}",
-		"url_fetch_error_with_url": "取得 {{url}} 內容時發生錯誤：{{error}}",
-		"command_timeout": "命令執行超時，{{seconds}} 秒後",
-		"share_task_failed": "分享工作失敗。請重試。",
-		"share_no_active_task": "沒有活躍的工作可分享",
-		"share_auth_required": "需要身份驗證。請登入以分享工作。",
-		"share_not_enabled": "此組織未啟用工作分享功能。",
-		"share_task_not_found": "未找到工作或存取被拒絕。",
-		"delete_rules_folder_failed": "刪除規則資料夾失敗: {{rulesFolderPath}}。錯誤: {{error}}",
-		"command_not_found": "找不到指令 '{{name}}'",
-		"open_command_file": "開啟指令檔案失敗",
-		"delete_command": "刪除指令失敗",
-		"no_workspace_for_project_command": "找不到專案指令的工作區資料夾",
-		"command_already_exists": "指令 \"{{commandName}}\" 已存在",
-		"create_command_failed": "建立指令失敗",
-		"command_template_content": "---\ndescription: \"此指令功能的簡要描述\"\n---\n\n這是一個新的斜線指令。編輯此檔案以自訂指令行為。",
+		"invalid_data_uri": "è³‡æ–™ URI æ ¼å¼ç„¡æ•ˆ",
+		"error_copying_image": "è¤‡è£½åœ–ç‰‡æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼š{{errorMessage}}",
+		"error_saving_image": "å„²å­˜åœ–ç‰‡æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼š{{errorMessage}}",
+		"error_opening_image": "é–‹å•Ÿåœ–ç‰‡æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼š{{error}}",
+		"could_not_open_file": "ç„¡æ³•é–‹å•Ÿæª”æ¡ˆï¼š{{errorMessage}}",
+		"could_not_open_file_generic": "ç„¡æ³•é–‹å•Ÿæª”æ¡ˆï¼",
+		"checkpoint_timeout": "å˜—è©¦æ¢å¾©æª¢æŸ¥é»æ™‚è¶…æ™‚ã€‚",
+		"checkpoint_failed": "æ¢å¾©æª¢æŸ¥é»å¤±æ•—ã€‚",
+		"git_not_installed": "å­˜æª”é»åŠŸèƒ½éœ€è¦ Gitã€‚è«‹å®‰è£ Git ä»¥å•Ÿç”¨å­˜æª”é»ã€‚",
+		"checkpoint_no_first": "æ²’æœ‰ç¬¬ä¸€å€‹å­˜æª”é»å¯ä¾›æ¯”è¼ƒã€‚",
+		"checkpoint_no_previous": "æ²’æœ‰ä¸Šä¸€å€‹å­˜æª”é»å¯ä¾›æ¯”è¼ƒã€‚",
+		"checkpoint_no_changes": "æœªç™¼ç¾ä»»ä½•è®Šæ›´ã€‚",
+		"checkpoint_diff_with_next": "èˆ‡ä¸‹ä¸€å€‹å­˜æª”é»æ¯”è¼ƒçš„è®Šæ›´",
+		"checkpoint_diff_since_first": "è‡ªç¬¬ä¸€å€‹å­˜æª”é»ä»¥ä¾†çš„è®Šæ›´",
+		"checkpoint_diff_to_current": "å°ç›®å‰å·¥ä½œå€çš„è®Šæ›´",
+		"nested_git_repos_warning": "å­˜æª”é»å·²åœç”¨ï¼Œå› ç‚ºåœ¨ {{path}} åµæ¸¬åˆ°å·¢ç‹€çš„ git å„²å­˜åº«ã€‚è¦ä½¿ç”¨å­˜æª”é»ï¼Œè«‹ç§»é™¤æˆ–é‡æ–°é…ç½®æ­¤å·¢ç‹€çš„ git å„²å­˜åº«ã€‚",
+		"no_workspace": "è«‹å…ˆé–‹å•Ÿå°ˆæ¡ˆè³‡æ–™å¤¾",
+		"update_support_prompt": "æ›´æ–°æ”¯æ´è¨Šæ¯å¤±æ•—",
+		"reset_support_prompt": "é‡è¨­æ”¯æ´è¨Šæ¯å¤±æ•—",
+		"enhance_prompt": "å¢å¼·è¨Šæ¯å¤±æ•—",
+		"get_system_prompt": "å–å¾—ç³»çµ±è¨Šæ¯å¤±æ•—",
+		"search_commits": "æœå°‹æäº¤å¤±æ•—",
+		"save_api_config": "å„²å­˜ API è¨­å®šå¤±æ•—",
+		"create_api_config": "å»ºç«‹ API è¨­å®šå¤±æ•—",
+		"rename_api_config": "é‡æ–°å‘½å API è¨­å®šå¤±æ•—",
+		"load_api_config": "è¼‰å…¥ API è¨­å®šå¤±æ•—",
+		"delete_api_config": "åˆªé™¤ API è¨­å®šå¤±æ•—",
+		"list_api_config": "å–å¾— API è¨­å®šåˆ—è¡¨å¤±æ•—",
+		"update_server_timeout": "æ›´æ–°ä¼ºæœå™¨è¶…æ™‚è¨­å®šå¤±æ•—",
+		"hmr_not_running": "æœ¬æ©Ÿé–‹ç™¼ä¼ºæœå™¨æ²’æœ‰åŸ·è¡Œï¼ŒHMR å°‡ä¸èµ·ä½œç”¨ã€‚è«‹åœ¨å•Ÿå‹•æ“´å……å¥—ä»¶å‰åŸ·è¡Œ'npm run dev'ä»¥å•Ÿç”¨ HMRã€‚",
+		"retrieve_current_mode": "å¾ç‹€æ…‹ä¸­æª¢ç´¢ç›®å‰æ¨¡å¼å¤±æ•—ã€‚",
+		"failed_delete_repo": "åˆªé™¤é—œè¯çš„å½±å­å€‰åº«æˆ–åˆ†æ”¯å¤±æ•—ï¼š{{error}}",
+		"failed_remove_directory": "åˆªé™¤å·¥ä½œç›®éŒ„å¤±æ•—ï¼š{{error}}",
+		"custom_storage_path_unusable": "è‡ªè¨‚å„²å­˜è·¯å¾‘ \"{{path}}\" ç„¡æ³•ä½¿ç”¨ï¼Œå°‡ä½¿ç”¨é è¨­è·¯å¾‘",
+		"cannot_access_path": "ç„¡æ³•å­˜å–è·¯å¾‘ {{path}}ï¼š{{error}}",
+		"settings_import_failed": "è¨­å®šåŒ¯å…¥å¤±æ•—ï¼š{{error}}ã€‚",
+		"mistake_limit_guidance": "é€™å¯èƒ½è¡¨æ˜æ¨¡å‹æ€ç¶­éç¨‹å¤±æ•—æˆ–ç„¡æ³•æ­£ç¢ºä½¿ç”¨å·¥å…·ï¼Œå¯é€éä½¿ç”¨è€…æŒ‡å°ä¾†ç·©è§£ï¼ˆä¾‹å¦‚ã€Œå˜—è©¦å°‡å·¥ä½œåˆ†è§£ç‚ºæ›´å°çš„æ­¥é©Ÿã€ï¼‰ã€‚",
+		"violated_organization_allowlist": "åŸ·è¡Œå·¥ä½œå¤±æ•—ï¼šç›®å‰è¨­å®šæª”èˆ‡æ‚¨çš„çµ„ç¹”è¨­å®šä¸ç›¸å®¹",
+		"condense_failed": "å£“ç¸®ä¸Šä¸‹æ–‡å¤±æ•—",
+		"condense_not_enough_messages": "æ²’æœ‰è¶³å¤ çš„è¨Šæ¯ä¾†å£“ç¸®ä¸Šä¸‹æ–‡",
+		"condensed_recently": "ä¸Šä¸‹æ–‡æœ€è¿‘å·²å£“ç¸®ï¼›è·³éæ­¤æ¬¡å˜—è©¦",
+		"condense_handler_invalid": "å£“ç¸®ä¸Šä¸‹æ–‡çš„ API è™•ç†ç¨‹å¼ç„¡æ•ˆ",
+		"condense_api_failed": "å£“ç¸® API å‘¼å«å¤±æ•—ï¼š{{message}}",
+		"url_timeout": "ç¶²ç«™è¼‰å…¥è¶…æ™‚ã€‚é€™å¯èƒ½æ˜¯ç”±æ–¼ç¶²è·¯é€£ç·šç·©æ…¢ã€ç¶²ç«™è² è¼‰éé‡æˆ–æš«æ™‚ç„¡æ³•ä½¿ç”¨ã€‚ä½ å¯ä»¥ç¨å¾Œé‡è©¦æˆ–æª¢æŸ¥ URL æ˜¯å¦æ­£ç¢ºã€‚",
+		"url_not_found": "æ‰¾ä¸åˆ°ç¶²ç«™ä½å€ã€‚è«‹æª¢æŸ¥ URL æ˜¯å¦æ­£ç¢ºä¸¦é‡è©¦ã€‚",
+		"no_internet": "ç„¡ç¶²è·¯é€£ç·šã€‚è«‹æª¢æŸ¥ç¶²è·¯é€£ç·šä¸¦é‡è©¦ã€‚",
+		"url_forbidden": "å­˜å–æ­¤ç¶²ç«™è¢«ç¦æ­¢ã€‚è©²ç¶²ç«™å¯èƒ½å°é–è‡ªå‹•å­˜å–æˆ–éœ€è¦èº«åˆ†é©—è­‰ã€‚",
+		"url_page_not_found": "æ‰¾ä¸åˆ°é é¢ã€‚è«‹æª¢æŸ¥ URL æ˜¯å¦æ­£ç¢ºã€‚",
+		"url_request_aborted": "å–å¾— URL çš„è«‹æ±‚è¢«ä¸­æ­¢ã€‚å¦‚æœç¶²ç«™å°é–è‡ªå‹•å­˜å–ã€éœ€è¦èº«åˆ†é©—è­‰æˆ–å­˜åœ¨ç¶²è·¯å•é¡Œï¼Œå°±å¯èƒ½ç™¼ç”Ÿé€™ç¨®æƒ…æ³ã€‚è«‹é‡è©¦æˆ–æª¢æŸ¥ URL æ˜¯å¦å¯ä»¥åœ¨ä¸€èˆ¬ç€è¦½å™¨ä¸­å­˜å–ã€‚",
+		"url_fetch_failed": "å–å¾— URL å…§å®¹å¤±æ•—ï¼š{{error}}",
+		"url_fetch_error_with_url": "å–å¾— {{url}} å…§å®¹æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼š{{error}}",
+		"command_timeout": "å‘½ä»¤åŸ·è¡Œè¶…æ™‚ï¼Œ{{seconds}} ç§’å¾Œ",
+		"share_task_failed": "åˆ†äº«å·¥ä½œå¤±æ•—ã€‚è«‹é‡è©¦ã€‚",
+		"share_no_active_task": "æ²’æœ‰æ´»èºçš„å·¥ä½œå¯åˆ†äº«",
+		"share_auth_required": "éœ€è¦èº«ä»½é©—è­‰ã€‚è«‹ç™»å…¥ä»¥åˆ†äº«å·¥ä½œã€‚",
+		"share_not_enabled": "æ­¤çµ„ç¹”æœªå•Ÿç”¨å·¥ä½œåˆ†äº«åŠŸèƒ½ã€‚",
+		"share_task_not_found": "æœªæ‰¾åˆ°å·¥ä½œæˆ–å­˜å–è¢«æ‹’çµ•ã€‚",
+		"delete_rules_folder_failed": "åˆªé™¤è¦å‰‡è³‡æ–™å¤¾å¤±æ•—: {{rulesFolderPath}}ã€‚éŒ¯èª¤: {{error}}",
+		"command_not_found": "æ‰¾ä¸åˆ°æŒ‡ä»¤ '{{name}}'",
+		"open_command_file": "é–‹å•ŸæŒ‡ä»¤æª”æ¡ˆå¤±æ•—",
+		"delete_command": "åˆªé™¤æŒ‡ä»¤å¤±æ•—",
+		"no_workspace_for_project_command": "æ‰¾ä¸åˆ°å°ˆæ¡ˆæŒ‡ä»¤çš„å·¥ä½œå€è³‡æ–™å¤¾",
+		"command_already_exists": "æŒ‡ä»¤ \"{{commandName}}\" å·²å­˜åœ¨",
+		"create_command_failed": "å»ºç«‹æŒ‡ä»¤å¤±æ•—",
+		"command_template_content": "---\ndescription: \"æ­¤æŒ‡ä»¤åŠŸèƒ½çš„ç°¡è¦æè¿°\"\n---\n\né€™æ˜¯ä¸€å€‹æ–°çš„æ–œç·šæŒ‡ä»¤ã€‚ç·¨è¼¯æ­¤æª”æ¡ˆä»¥è‡ªè¨‚æŒ‡ä»¤è¡Œç‚ºã€‚",
 		"claudeCode": {
-			"processExited": "Claude Code 程序退出，退出碼：{{exitCode}}。",
-			"errorOutput": "錯誤輸出：{{output}}",
-			"processExitedWithError": "Claude Code 程序退出，退出碼：{{exitCode}}。錯誤輸出：{{output}}",
-			"stoppedWithReason": "Claude Code 停止，原因：{{reason}}",
-			"apiKeyModelPlanMismatch": "API 金鑰和訂閱方案允許不同的模型。請確保所選模型包含在您的方案中。"
+			"processExited": "Claude Code ç¨‹åºé€€å‡ºï¼Œé€€å‡ºç¢¼ï¼š{{exitCode}}ã€‚",
+			"errorOutput": "éŒ¯èª¤è¼¸å‡ºï¼š{{output}}",
+			"processExitedWithError": "Claude Code ç¨‹åºé€€å‡ºï¼Œé€€å‡ºç¢¼ï¼š{{exitCode}}ã€‚éŒ¯èª¤è¼¸å‡ºï¼š{{output}}",
+			"stoppedWithReason": "Claude Code åœæ­¢ï¼ŒåŸå› ï¼š{{reason}}",
+			"apiKeyModelPlanMismatch": "API é‡‘é‘°å’Œè¨‚é–±æ–¹æ¡ˆå…è¨±ä¸åŒçš„æ¨¡å‹ã€‚è«‹ç¢ºä¿æ‰€é¸æ¨¡å‹åŒ…å«åœ¨æ‚¨çš„æ–¹æ¡ˆä¸­ã€‚"
 		},
 		"message": {
-			"no_active_task_to_delete": "沒有可刪除訊息的活躍工作",
-			"invalid_timestamp_for_deletion": "刪除操作的訊息時間戳無效",
-			"cannot_delete_missing_timestamp": "無法刪除訊息：缺少時間戳",
-			"cannot_delete_invalid_timestamp": "無法刪除訊息：時間戳無效",
-			"message_not_found": "未找到時間戳為 {{messageTs}} 的訊息",
-			"error_deleting_message": "刪除訊息時出錯：{{error}}",
-			"error_editing_message": "編輯訊息時出錯：{{error}}"
+			"no_active_task_to_delete": "æ²’æœ‰å¯åˆªé™¤è¨Šæ¯çš„æ´»èºå·¥ä½œ",
+			"invalid_timestamp_for_deletion": "åˆªé™¤æ“ä½œçš„è¨Šæ¯æ™‚é–“æˆ³ç„¡æ•ˆ",
+			"cannot_delete_missing_timestamp": "ç„¡æ³•åˆªé™¤è¨Šæ¯ï¼šç¼ºå°‘æ™‚é–“æˆ³",
+			"cannot_delete_invalid_timestamp": "ç„¡æ³•åˆªé™¤è¨Šæ¯ï¼šæ™‚é–“æˆ³ç„¡æ•ˆ",
+			"message_not_found": "æœªæ‰¾åˆ°æ™‚é–“æˆ³ç‚º {{messageTs}} çš„è¨Šæ¯",
+			"error_deleting_message": "åˆªé™¤è¨Šæ¯æ™‚å‡ºéŒ¯ï¼š{{error}}",
+			"error_editing_message": "ç·¨è¼¯è¨Šæ¯æ™‚å‡ºéŒ¯ï¼š{{error}}"
 		},
 		"gemini": {
-			"generate_stream": "Gemini 產生內容串流錯誤：{{error}}",
-			"generate_complete_prompt": "Gemini 完成錯誤：{{error}}",
-			"sources": "來源：",
-			"thinking_complete_no_output": "（思考完成，但未產生輸出。）",
-			"thinking_complete_truncated": "（思考完成，但由於 Token 限制輸出被截斷。）",
-			"thinking_complete_safety": "（思考完成，但由於安全設定輸出被阻止。）",
-			"thinking_complete_recitation": "（思考完成，但由於引用檢查輸出被阻止。）"
+			"generate_stream": "Gemini ç”¢ç”Ÿå…§å®¹ä¸²æµéŒ¯èª¤ï¼š{{error}}",
+			"generate_complete_prompt": "Gemini å®ŒæˆéŒ¯èª¤ï¼š{{error}}",
+			"sources": "ä¾†æºï¼š",
+			"thinking_complete_no_output": "ï¼ˆæ€è€ƒå®Œæˆï¼Œä½†æœªç”¢ç”Ÿè¼¸å‡ºã€‚ï¼‰",
+			"thinking_complete_truncated": "ï¼ˆæ€è€ƒå®Œæˆï¼Œä½†ç”±æ–¼ Token é™åˆ¶è¼¸å‡ºè¢«æˆªæ–·ã€‚ï¼‰",
+			"thinking_complete_safety": "ï¼ˆæ€è€ƒå®Œæˆï¼Œä½†ç”±æ–¼å®‰å…¨è¨­å®šè¼¸å‡ºè¢«é˜»æ­¢ã€‚ï¼‰",
+			"thinking_complete_recitation": "ï¼ˆæ€è€ƒå®Œæˆï¼Œä½†ç”±æ–¼å¼•ç”¨æª¢æŸ¥è¼¸å‡ºè¢«é˜»æ­¢ã€‚ï¼‰"
 		},
 		"api": {
-			"invalidKeyInvalidChars": "API 金鑰包含無效字元。",
-			"apiRequestFailed": "API 請求失敗 ({{status}})"
+			"invalidKeyInvalidChars": "API é‡‘é‘°åŒ…å«ç„¡æ•ˆå­—å…ƒã€‚",
+			"apiRequestFailed": "API è«‹æ±‚å¤±æ•— ({{status}})"
 		},
-		"manual_url_empty": "請輸入有效的回呼 URL",
-		"manual_url_no_query": "無效的回呼 URL：缺少查詢參數",
-		"manual_url_missing_params": "無效的回呼 URL：缺少必要參數（code 和 state）",
-		"manual_url_auth_failed": "手動 URL 身份驗證失敗",
-		"manual_url_auth_error": "身份驗證失敗",
-		"mode_import_failed": "匯入模式失敗：{{error}}",
+		"manual_url_empty": "è«‹è¼¸å…¥æœ‰æ•ˆçš„å›å‘¼ URL",
+		"manual_url_no_query": "ç„¡æ•ˆçš„å›å‘¼ URLï¼šç¼ºå°‘æŸ¥è©¢åƒæ•¸",
+		"manual_url_missing_params": "ç„¡æ•ˆçš„å›å‘¼ URLï¼šç¼ºå°‘å¿…è¦åƒæ•¸ï¼ˆcode å’Œ stateï¼‰",
+		"manual_url_auth_failed": "æ‰‹å‹• URL èº«ä»½é©—è­‰å¤±æ•—",
+		"manual_url_auth_error": "èº«ä»½é©—è­‰å¤±æ•—",
+		"mode_import_failed": "åŒ¯å…¥æ¨¡å¼å¤±æ•—ï¼š{{error}}",
 		"openAiCodex": {
 			"notAuthenticated": "Not authenticated with OpenAI Codex. Please sign in using the OpenAI Codex OAuth flow.",
 			"invalidRequest": "Invalid request to Codex API. Please check your input parameters.",
@@ -140,93 +140,94 @@
 		}
 	},
 	"warnings": {
-		"no_terminal_content": "沒有選擇終端機內容",
-		"missing_task_files": "此工作的檔案遺失。您想從工作列表中刪除它嗎？",
-		"auto_import_failed": "自動匯入 RooCode 設定失敗：{{error}}"
+		"no_terminal_content": "æ²’æœ‰é¸æ“‡çµ‚ç«¯æ©Ÿå…§å®¹",
+		"missing_task_files": "æ­¤å·¥ä½œçš„æª”æ¡ˆéºå¤±ã€‚æ‚¨æƒ³å¾å·¥ä½œåˆ—è¡¨ä¸­åˆªé™¤å®ƒå—ï¼Ÿ",
+		"auto_import_failed": "è‡ªå‹•åŒ¯å…¥ Softixer è¨­å®šå¤±æ•—ï¼š{{error}}"
 	},
 	"info": {
-		"no_changes": "沒有找到更改。",
-		"clipboard_copy": "系統訊息已成功複製到剪貼簿",
-		"history_cleanup": "已從歷史記錄中清理{{count}}個缺少檔案的工作。",
-		"custom_storage_path_set": "自訂儲存路徑已設定：{{path}}",
-		"default_storage_path": "已恢復使用預設儲存路徑",
-		"settings_imported": "設定已成功匯入。",
-		"auto_import_success": "已自動匯入 RooCode 設定：{{filename}}",
-		"share_link_copied": "分享連結已複製到剪貼簿",
-		"image_copied_to_clipboard": "圖片資料 URI 已複製到剪貼簿",
-		"image_saved": "圖片已儲存至 {{path}}",
-		"organization_share_link_copied": "組織分享連結已複製到剪貼簿！",
-		"public_share_link_copied": "公開分享連結已複製到剪貼簿！",
-		"mode_exported": "模式 '{{mode}}' 已成功匯出",
-		"mode_imported": "模式已成功匯入"
+		"no_changes": "æ²’æœ‰æ‰¾åˆ°æ›´æ”¹ã€‚",
+		"clipboard_copy": "ç³»çµ±è¨Šæ¯å·²æˆåŠŸè¤‡è£½åˆ°å‰ªè²¼ç°¿",
+		"history_cleanup": "å·²å¾æ­·å²è¨˜éŒ„ä¸­æ¸…ç†{{count}}å€‹ç¼ºå°‘æª”æ¡ˆçš„å·¥ä½œã€‚",
+		"custom_storage_path_set": "è‡ªè¨‚å„²å­˜è·¯å¾‘å·²è¨­å®šï¼š{{path}}",
+		"default_storage_path": "å·²æ¢å¾©ä½¿ç”¨é è¨­å„²å­˜è·¯å¾‘",
+		"settings_imported": "è¨­å®šå·²æˆåŠŸåŒ¯å…¥ã€‚",
+		"auto_import_success": "å·²è‡ªå‹•åŒ¯å…¥ Softixer è¨­å®šï¼š{{filename}}",
+		"share_link_copied": "åˆ†äº«é€£çµå·²è¤‡è£½åˆ°å‰ªè²¼ç°¿",
+		"image_copied_to_clipboard": "åœ–ç‰‡è³‡æ–™ URI å·²è¤‡è£½åˆ°å‰ªè²¼ç°¿",
+		"image_saved": "åœ–ç‰‡å·²å„²å­˜è‡³ {{path}}",
+		"organization_share_link_copied": "çµ„ç¹”åˆ†äº«é€£çµå·²è¤‡è£½åˆ°å‰ªè²¼ç°¿ï¼",
+		"public_share_link_copied": "å…¬é–‹åˆ†äº«é€£çµå·²è¤‡è£½åˆ°å‰ªè²¼ç°¿ï¼",
+		"mode_exported": "æ¨¡å¼ '{{mode}}' å·²æˆåŠŸåŒ¯å‡º",
+		"mode_imported": "æ¨¡å¼å·²æˆåŠŸåŒ¯å…¥"
 	},
 	"answers": {
-		"yes": "是",
-		"no": "否",
-		"remove": "刪除",
-		"keep": "保留"
+		"yes": "æ˜¯",
+		"no": "å¦",
+		"remove": "åˆªé™¤",
+		"keep": "ä¿ç•™"
 	},
 	"buttons": {
-		"save": "儲存",
-		"edit": "編輯",
-		"learn_more": "了解更多"
+		"save": "å„²å­˜",
+		"edit": "ç·¨è¼¯",
+		"learn_more": "äº†è§£æ›´å¤š"
 	},
 	"tasks": {
-		"canceled": "工作錯誤：它已被使用者停止並取消。",
-		"deleted": "工作失敗：它已被使用者停止並刪除。",
-		"incomplete": "工作 #{{taskNumber}} (未完成)",
-		"no_messages": "工作 #{{taskNumber}} (無訊息)"
+		"canceled": "å·¥ä½œéŒ¯èª¤ï¼šå®ƒå·²è¢«ä½¿ç”¨è€…åœæ­¢ä¸¦å–æ¶ˆã€‚",
+		"deleted": "å·¥ä½œå¤±æ•—ï¼šå®ƒå·²è¢«ä½¿ç”¨è€…åœæ­¢ä¸¦åˆªé™¤ã€‚",
+		"incomplete": "å·¥ä½œ #{{taskNumber}} (æœªå®Œæˆ)",
+		"no_messages": "å·¥ä½œ #{{taskNumber}} (ç„¡è¨Šæ¯)"
 	},
 	"interruption": {
-		"responseInterruptedByUser": "回應被使用者中斷",
-		"responseInterruptedByApiError": "回應被 API 錯誤中斷",
-		"streamTerminatedByProvider": "提供方終止了請求"
+		"responseInterruptedByUser": "å›æ‡‰è¢«ä½¿ç”¨è€…ä¸­æ–·",
+		"responseInterruptedByApiError": "å›æ‡‰è¢« API éŒ¯èª¤ä¸­æ–·",
+		"streamTerminatedByProvider": "æä¾›æ–¹çµ‚æ­¢äº†è«‹æ±‚"
 	},
 	"storage": {
-		"prompt_custom_path": "輸入自訂會話歷史儲存路徑，留空以使用預設位置",
-		"path_placeholder": "D:\\RooCodeStorage",
-		"enter_absolute_path": "請輸入絕對路徑（例如 D:\\RooCodeStorage 或 /home/user/storage）",
-		"enter_valid_path": "請輸入有效的路徑"
+		"prompt_custom_path": "è¼¸å…¥è‡ªè¨‚æœƒè©±æ­·å²å„²å­˜è·¯å¾‘ï¼Œç•™ç©ºä»¥ä½¿ç”¨é è¨­ä½ç½®",
+		"path_placeholder": "D:\\SoftixerStorage",
+		"enter_absolute_path": "è«‹è¼¸å…¥çµ•å°è·¯å¾‘ï¼ˆä¾‹å¦‚ D:\\SoftixerStorage æˆ– /home/user/storageï¼‰",
+		"enter_valid_path": "è«‹è¼¸å…¥æœ‰æ•ˆçš„è·¯å¾‘"
 	},
 	"input": {
-		"task_prompt": "讓 Roo 做什麼？",
-		"task_placeholder": "在這裡輸入工作"
+		"task_prompt": "è®“ Roo åšä»€éº¼ï¼Ÿ",
+		"task_placeholder": "åœ¨é€™è£¡è¼¸å…¥å·¥ä½œ"
 	},
 	"settings": {
 		"providers": {}
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": ".roomodes 檔案第 {{line}} 行 YAML 格式無效。請檢查：\n• 正確的縮排（使用空格，不要使用定位字元）\n• 匹配的引號和括號\n• 有效的 YAML 語法",
-			"schemaValidationError": ".roomodes 中自訂模式格式無效：\n{{issues}}",
-			"invalidFormat": "自訂模式格式無效。請確保你的設定遵循正確的 YAML 格式。",
-			"updateFailed": "更新自訂模式失敗：{{error}}",
-			"deleteFailed": "刪除自訂模式失敗：{{error}}",
-			"resetFailed": "重設自訂模式失敗：{{error}}",
-			"modeNotFound": "寫入錯誤：未找到模式",
-			"noWorkspaceForProject": "未找到專案特定模式的工作區資料夾",
-			"rulesCleanupFailed": "模式已成功刪除，但無法刪除位於 {{rulesFolderPath}} 的規則資料夾。您可能需要手動刪除。"
+			"yamlParseError": ".roomodes æª”æ¡ˆç¬¬ {{line}} è¡Œ YAML æ ¼å¼ç„¡æ•ˆã€‚è«‹æª¢æŸ¥ï¼š\nâ€¢ æ­£ç¢ºçš„ç¸®æ’ï¼ˆä½¿ç”¨ç©ºæ ¼ï¼Œä¸è¦ä½¿ç”¨å®šä½å­—å…ƒï¼‰\nâ€¢ åŒ¹é…çš„å¼•è™Ÿå’Œæ‹¬è™Ÿ\nâ€¢ æœ‰æ•ˆçš„ YAML èªæ³•",
+			"schemaValidationError": ".roomodes ä¸­è‡ªè¨‚æ¨¡å¼æ ¼å¼ç„¡æ•ˆï¼š\n{{issues}}",
+			"invalidFormat": "è‡ªè¨‚æ¨¡å¼æ ¼å¼ç„¡æ•ˆã€‚è«‹ç¢ºä¿ä½ çš„è¨­å®šéµå¾ªæ­£ç¢ºçš„ YAML æ ¼å¼ã€‚",
+			"updateFailed": "æ›´æ–°è‡ªè¨‚æ¨¡å¼å¤±æ•—ï¼š{{error}}",
+			"deleteFailed": "åˆªé™¤è‡ªè¨‚æ¨¡å¼å¤±æ•—ï¼š{{error}}",
+			"resetFailed": "é‡è¨­è‡ªè¨‚æ¨¡å¼å¤±æ•—ï¼š{{error}}",
+			"modeNotFound": "å¯«å…¥éŒ¯èª¤ï¼šæœªæ‰¾åˆ°æ¨¡å¼",
+			"noWorkspaceForProject": "æœªæ‰¾åˆ°å°ˆæ¡ˆç‰¹å®šæ¨¡å¼çš„å·¥ä½œå€è³‡æ–™å¤¾",
+			"rulesCleanupFailed": "æ¨¡å¼å·²æˆåŠŸåˆªé™¤ï¼Œä½†ç„¡æ³•åˆªé™¤ä½æ–¼ {{rulesFolderPath}} çš„è¦å‰‡è³‡æ–™å¤¾ã€‚æ‚¨å¯èƒ½éœ€è¦æ‰‹å‹•åˆªé™¤ã€‚"
 		},
 		"scope": {
-			"project": "專案",
-			"global": "全域"
+			"project": "å°ˆæ¡ˆ",
+			"global": "å…¨åŸŸ"
 		}
 	},
 	"prompts": {
 		"deleteMode": {
-			"title": "刪除自訂模式",
-			"description": "您確定要刪除此 {{scope}} 模式嗎？這也將刪除位於 {{rulesFolderPath}} 的關聯規則資料夾",
-			"descriptionNoRules": "您確定要刪除此自訂模式嗎？",
-			"confirm": "刪除"
+			"title": "åˆªé™¤è‡ªè¨‚æ¨¡å¼",
+			"description": "æ‚¨ç¢ºå®šè¦åˆªé™¤æ­¤ {{scope}} æ¨¡å¼å—ï¼Ÿé€™ä¹Ÿå°‡åˆªé™¤ä½æ–¼ {{rulesFolderPath}} çš„é—œè¯è¦å‰‡è³‡æ–™å¤¾",
+			"descriptionNoRules": "æ‚¨ç¢ºå®šè¦åˆªé™¤æ­¤è‡ªè¨‚æ¨¡å¼å—ï¼Ÿ",
+			"confirm": "åˆªé™¤"
 		}
 	},
 	"commands": {
 		"preventCompletionWithOpenTodos": {
-			"description": "當待辦事項清單中有未完成的待辦事項時阻止工作完成"
+			"description": "ç•¶å¾…è¾¦äº‹é …æ¸…å–®ä¸­æœ‰æœªå®Œæˆçš„å¾…è¾¦äº‹é …æ™‚é˜»æ­¢å·¥ä½œå®Œæˆ"
 		}
 	},
 	"docsLink": {
 		"label": "Docs",
-		"url": "https://github.com/RooCodeInc/Roo-Code"
+		"url": "https://github.com/SoftixerInc/softixer"
 	}
 }
+

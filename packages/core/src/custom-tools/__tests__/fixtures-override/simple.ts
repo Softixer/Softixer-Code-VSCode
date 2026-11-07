@@ -1,4 +1,4 @@
-import { parametersSchema, defineCustomTool } from "@roo-code/types"
+﻿import { parametersSchema, defineCustomTool } from "@roo-code/types"
 
 // This tool has the same name as the one in fixtures/ to test override behavior.
 export default defineCustomTool({
@@ -9,3 +9,5 @@ export default defineCustomTool({
 		return "Overridden Result: " + args.value
 	},
 })
+
+

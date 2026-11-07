@@ -1,4 +1,4 @@
-import * as crypto from "crypto"
+﻿import * as crypto from "crypto"
 import * as http from "http"
 import { URL } from "url"
 import type { ExtensionContext } from "vscode"
@@ -12,7 +12,7 @@ import { z } from "zod"
  * - Authorization endpoint: https://auth.openai.com/oauth/authorize
  * - Token endpoint: https://auth.openai.com/oauth/token
  * - Fixed callback port: 1455
- * - Codex-specific params: codex_cli_simplified_flow=true, originator=roo-code
+ * - Codex-specific params: codex_cli_simplified_flow=true, originator=softixer
  */
 export const OPENAI_CODEX_OAUTH_CONFIG = {
 	authorizationEndpoint: "https://auth.openai.com/oauth/authorize",
@@ -211,7 +211,7 @@ export function buildAuthorizationUrl(codeChallenge: string, state: string): str
 		state,
 		// Codex-specific parameters
 		codex_cli_simplified_flow: "true",
-		originator: "roo-code",
+		originator: "softixer",
 	})
 
 	return `${OPENAI_CODEX_OAUTH_CONFIG.authorizationEndpoint}?${params.toString()}`
@@ -393,7 +393,7 @@ export class OpenAiCodexOAuthManager {
 				this.refreshPromise = refreshAccessToken(this.credentials).then((newCreds) => {
 					const rotated = newCreds.refresh_token !== prevRefreshToken
 					this.log(
-						`[openai-codex-oauth] Forced refresh response received (expires_in≈${Math.round(
+						`[openai-codex-oauth] Forced refresh response received (expires_inâ‰ˆ${Math.round(
 							(newCreds.expires - Date.now()) / 1000,
 						)}s, refresh_token_rotated=${rotated})`,
 					)
@@ -489,7 +489,7 @@ export class OpenAiCodexOAuthManager {
 					this.refreshPromise = refreshAccessToken(this.credentials).then((newCreds) => {
 						const rotated = newCreds.refresh_token !== prevRefreshToken
 						this.log(
-							`[openai-codex-oauth] Refresh response received (expires_in≈${Math.round(
+							`[openai-codex-oauth] Refresh response received (expires_inâ‰ˆ${Math.round(
 								(newCreds.expires - Date.now()) / 1000,
 							)}s, refresh_token_rotated=${rotated})`,
 						)
@@ -738,3 +738,4 @@ export class OpenAiCodexOAuthManager {
 
 // Singleton instance
 export const openAiCodexOAuthManager = new OpenAiCodexOAuthManager()
+

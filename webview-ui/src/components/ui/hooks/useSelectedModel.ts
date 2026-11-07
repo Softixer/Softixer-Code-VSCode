@@ -1,10 +1,11 @@
-import {
+﻿import {
 	type ProviderName,
 	type ProviderSettings,
 	type ModelInfo,
 	type ModelRecord,
 	type RouterModels,
 	anthropicModels,
+	softixerModels,
 	bedrockModels,
 	deepSeekModels,
 	moonshotModels,
@@ -51,7 +52,7 @@ function getValidatedModelId(
 }
 
 export const useSelectedModel = (apiConfiguration?: ProviderSettings) => {
-	const provider = apiConfiguration?.apiProvider || "openrouter"
+	const provider = apiConfiguration?.apiProvider || "softixer"
 	const activeProvider: ProviderName | undefined = isRetiredProvider(provider) ? undefined : provider
 	const dynamicProvider = activeProvider && isDynamicProvider(activeProvider) ? activeProvider : undefined
 	const openRouterModelId = activeProvider === "openrouter" ? apiConfiguration?.openRouterModelId : undefined
@@ -336,6 +337,11 @@ function getSelectedModel({
 			const info = routerModels["vercel-ai-gateway"]?.[id]
 			return { id, info }
 		}
+		case "softixer": {
+			const id = (apiConfiguration as any).softixerModelId ?? defaultModelId
+			const info = softixerModels[id as keyof typeof softixerModels]
+			return { id, info }
+		}
 		// case "anthropic":
 		// case "fake-ai":
 		default: {
@@ -382,3 +388,5 @@ function getSelectedModel({
 		}
 	}
 }
+
+

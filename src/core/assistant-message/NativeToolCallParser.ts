@@ -1,4 +1,4 @@
-import { parseJSON } from "partial-json"
+﻿import { parseJSON } from "partial-json"
 
 import { type ToolName, toolNames, type FileEntry } from "@roo-code/types"
 import { customToolRegistry } from "@roo-code/core"
@@ -1075,3 +1075,5 @@ export class NativeToolCallParser {
 		}
 	}
 }
+
+

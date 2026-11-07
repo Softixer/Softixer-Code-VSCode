@@ -1,4 +1,4 @@
-// npx vitest src/components/welcome/__tests__/WelcomeViewProvider.spec.tsx
+﻿// npx vitest src/components/welcome/__tests__/WelcomeViewProvider.spec.tsx
 
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { openRouterDefaultModelId } from "@roo-code/types"
@@ -163,3 +163,5 @@ describe("WelcomeViewProvider", () => {
 		expect(vscode.postMessage).toHaveBeenCalledWith({ type: "importSettings" })
 	})
 })
+
+

@@ -1,4 +1,4 @@
-// npx vitest core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts
+﻿// npx vitest core/config/__tests__/CustomModesManager.yamlEdgeCases.spec.ts
 
 import type { Mock } from "vitest"
 
@@ -319,8 +319,8 @@ describe("CustomModesManager - YAML Edge Cases", () => {
 				customModes: [
 					{
 						slug: "emoji-mode",
-						name: "📝 Writing Mode",
-						roleDefinition: "A mode for writing with emojis 🚀",
+						name: "ğŸ“ Writing Mode",
+						roleDefinition: "A mode for writing with emojis ğŸš€",
 						groups: ["read", "edit"],
 					},
 				],
@@ -334,8 +334,8 @@ describe("CustomModesManager - YAML Edge Cases", () => {
 			const modes = await manager.getCustomModes()
 
 			expect(modes).toHaveLength(1)
-			expect(modes[0].name).toBe("📝 Writing Mode")
-			expect(modes[0].roleDefinition).toBe("A mode for writing with emojis 🚀")
+			expect(modes[0].name).toBe("ğŸ“ Writing Mode")
+			expect(modes[0].roleDefinition).toBe("A mode for writing with emojis ğŸš€")
 		})
 
 		it("should handle various international characters", async () => {
@@ -343,8 +343,8 @@ describe("CustomModesManager - YAML Edge Cases", () => {
 				customModes: [
 					{
 						slug: "intl-mode",
-						name: "Mode Français",
-						roleDefinition: "Mode für Deutsch, 日本語モード, Режим русский",
+						name: "Mode FranÃ§ais",
+						roleDefinition: "Mode fÃ¼r Deutsch, æ—¥æœ¬èªãƒ¢ãƒ¼ãƒ‰, Ğ ĞµĞ¶Ğ¸Ğ¼ Ñ€ÑƒÑÑĞºĞ¸Ğ¹",
 						groups: ["read"],
 					},
 				],
@@ -358,9 +358,9 @@ describe("CustomModesManager - YAML Edge Cases", () => {
 			const modes = await manager.getCustomModes()
 
 			expect(modes).toHaveLength(1)
-			expect(modes[0].roleDefinition).toContain("für Deutsch")
-			expect(modes[0].roleDefinition).toContain("日本語モード")
-			expect(modes[0].roleDefinition).toContain("Режим русский")
+			expect(modes[0].roleDefinition).toContain("fÃ¼r Deutsch")
+			expect(modes[0].roleDefinition).toContain("æ—¥æœ¬èªãƒ¢ãƒ¼ãƒ‰")
+			expect(modes[0].roleDefinition).toContain("Ğ ĞµĞ¶Ğ¸Ğ¼ Ñ€ÑƒÑÑĞºĞ¸Ğ¹")
 		})
 	})
 
@@ -453,3 +453,5 @@ describe("CustomModesManager - YAML Edge Cases", () => {
 		})
 	})
 })
+
+

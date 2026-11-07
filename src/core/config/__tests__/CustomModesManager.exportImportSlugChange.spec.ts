@@ -1,4 +1,4 @@
-// npx vitest core/config/__tests__/CustomModesManager.exportImportSlugChange.spec.ts
+﻿// npx vitest core/config/__tests__/CustomModesManager.exportImportSlugChange.spec.ts
 
 import type { Mock } from "vitest"
 
@@ -435,3 +435,5 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 		})
 	})
 })
+
+

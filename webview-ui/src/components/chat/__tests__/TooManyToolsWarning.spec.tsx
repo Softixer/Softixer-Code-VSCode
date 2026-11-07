@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@/utils/test-utils"
+﻿import { render, screen, fireEvent } from "@/utils/test-utils"
 import { MAX_MCP_TOOLS_THRESHOLD } from "@roo-code/types"
 
 import { TooManyToolsWarning } from "../TooManyToolsWarning"
@@ -294,3 +294,5 @@ describe("TooManyToolsWarning", () => {
 		mockWindowPostMessage.mockRestore()
 	})
 })
+
+

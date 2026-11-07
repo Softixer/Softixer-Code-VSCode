@@ -1,4 +1,4 @@
-// npx vitest run api/transform/__tests__/model-params.spec.ts
+﻿// npx vitest run api/transform/__tests__/model-params.spec.ts
 
 import { type ModelInfo, ANTHROPIC_DEFAULT_MAX_TOKENS } from "@roo-code/types"
 
@@ -995,3 +995,5 @@ describe("getModelParams", () => {
 		})
 	})
 })
+
+

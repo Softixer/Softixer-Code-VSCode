@@ -1,8 +1,8 @@
-import { useCallback, useState } from "react"
+﻿import { useCallback, useState } from "react"
 import { Trans } from "react-i18next"
-import { ArrowLeft, Brain } from "lucide-react"
+import { ArrowLeft, ArrowRight, Brain } from "lucide-react"
 
-import { openRouterDefaultModelId, type ProviderSettings } from "@roo-code/types"
+import { softixerDefaultModelId, type ProviderSettings } from "@roo-code/types"
 
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { validateApiConfiguration } from "@src/utils/validate"
@@ -16,12 +16,17 @@ import { Tab, TabContent } from "../common/Tab"
 import RooHero from "./RooHero"
 
 const DEFAULT_WELCOME_API_CONFIGURATION: ProviderSettings = {
-	apiProvider: "openrouter",
-	openRouterModelId: openRouterDefaultModelId,
-}
+	apiProvider: "softixer",
+	softixerModelId: softixerDefaultModelId,
+} as ProviderSettings
 
 const getWelcomeApiConfiguration = (apiConfiguration?: ProviderSettings): ProviderSettings => {
 	if (!apiConfiguration?.apiProvider) {
+		return DEFAULT_WELCOME_API_CONFIGURATION
+	}
+
+	// If the stored default is openrouter with no key, treat as fresh — use Softixer
+	if (apiConfiguration.apiProvider === "openrouter" && !(apiConfiguration as any).openRouterApiKey) {
 		return DEFAULT_WELCOME_API_CONFIGURATION
 	}
 
@@ -135,8 +140,9 @@ const WelcomeViewProvider = () => {
 						{t("welcome:providerSignup.goBack")}
 					</Button>
 					<Button onClick={handleGetStarted} variant="primary">
-						{t("welcome:providerSignup.finish")} →
-					</Button>
+							{t("welcome:providerSignup.finish")}
+							<ArrowRight className="size-4" />
+						</Button>
 				</div>
 			</TabContent>
 		</Tab>
@@ -144,3 +150,5 @@ const WelcomeViewProvider = () => {
 }
 
 export default WelcomeViewProvider
+
+

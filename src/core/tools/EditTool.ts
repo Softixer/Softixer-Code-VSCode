@@ -1,4 +1,4 @@
-import fs from "fs/promises"
+﻿import fs from "fs/promises"
 import path from "path"
 
 import { type ClineSayTool, DEFAULT_WRITE_DELAY_MS } from "@roo-code/types"
@@ -277,3 +277,5 @@ function escapeRegExp(input: string): string {
 
 export const editTool = new EditTool()
 export const searchAndReplaceTool = editTool // alias for backward compat
+
+

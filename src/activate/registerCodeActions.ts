@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { CodeActionId, CodeActionName } from "@roo-code/types"
 
@@ -51,3 +51,5 @@ const registerCodeAction = (context: vscode.ExtensionContext, command: CodeActio
 		}),
 	)
 }
+
+

@@ -1,4 +1,4 @@
-import fs from "fs/promises"
+﻿import fs from "fs/promises"
 import * as path from "path"
 import * as vscode from "vscode"
 
@@ -375,7 +375,7 @@ export async function executeCommandInTerminal(
 	// Dual-timeout logic:
 	// - Agent timeout: transitions the command to background (continues running)
 	// - User timeout: aborts the command (kills it)
-	// Both timers run independently — the user timeout remains active as a safety net
+	// Both timers run independently â€” the user timeout remains active as a safety net
 	// even after the agent timeout moves the command to the background.
 	let agentTimeoutId: NodeJS.Timeout | undefined
 	let userTimeoutId: NodeJS.Timeout | undefined
@@ -581,3 +581,5 @@ function formatBytes(bytes: number): string {
 }
 
 export const executeCommandTool = new ExecuteCommandTool()
+
+

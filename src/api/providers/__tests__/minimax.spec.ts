@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/minimax.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/minimax.spec.ts
 
 vitest.mock("vscode", () => ({
 	workspace: {
@@ -479,3 +479,5 @@ describe("MiniMaxHandler", () => {
 		})
 	})
 })
+
+

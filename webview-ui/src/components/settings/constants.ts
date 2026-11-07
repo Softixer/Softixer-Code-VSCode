@@ -1,7 +1,8 @@
-import {
+﻿import {
 	type ProviderName,
 	type ModelInfo,
 	anthropicModels,
+	softixerModels,
 	bedrockModels,
 	deepSeekModels,
 	moonshotModels,
@@ -39,6 +40,7 @@ export const MODELS_BY_PROVIDER: Partial<Record<ProviderName, Record<string, Mod
 }
 
 export const PROVIDERS = [
+	{ value: "softixer", label: "Softixer", proxy: false },
 	{ value: "openrouter", label: "OpenRouter", proxy: false },
 	{ value: "anthropic", label: "Anthropic", proxy: false },
 	{ value: "gemini", label: "Google Gemini", proxy: false },
@@ -65,4 +67,4 @@ export const PROVIDERS = [
 	{ value: "baseten", label: "Baseten", proxy: false },
 	{ value: "unbound", label: "Unbound", proxy: false },
 	{ value: "poe", label: "Poe", proxy: false },
-].sort((a, b) => a.label.localeCompare(b.label))
+]

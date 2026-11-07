@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/gemini.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/gemini.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 
@@ -246,3 +246,5 @@ describe("GeminiHandler", () => {
 		})
 	})
 })
+
+

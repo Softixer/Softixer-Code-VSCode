@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Worktree Handlers
  *
  * VSCode-specific handlers that bridge webview messages to the core worktree services.
@@ -189,7 +189,7 @@ export async function handleSwitchWorktree(
 		const worktreeUri = vscode.Uri.file(worktreePath)
 
 		if (newWindow) {
-			// Set the auto-open path so the new window opens Roo Code sidebar.
+			// Set the auto-open path so the new window opens Softixer sidebar.
 			await provider.contextProxy.setValue("worktreeAutoOpenPath", worktreePath)
 
 			// Open in new window.
@@ -277,3 +277,5 @@ export async function handleCheckoutBranch(provider: ClineProvider, branch: stri
 	const cwd = provider.cwd
 	return worktreeService.checkoutBranch(cwd, branch)
 }
+
+

@@ -1,4 +1,4 @@
-import type { Mock } from "vitest"
+﻿import type { Mock } from "vitest"
 import * as vscode from "vscode"
 
 import { EditorUtils } from "../../integrations/editor/EditorUtils"
@@ -110,7 +110,7 @@ describe("CodeActionProvider", () => {
 			const actions = provider.provideCodeActions(mockDocument, mockRange, mockContext)
 
 			expect(actions).toEqual([])
-			expect(vscode.workspace.getConfiguration).toHaveBeenCalledWith("roo-cline")
+			expect(vscode.workspace.getConfiguration).toHaveBeenCalledWith("softixer")
 			expect(mockGet).toHaveBeenCalledWith("enableCodeActions", true)
 		})
 
@@ -136,3 +136,4 @@ describe("CodeActionProvider", () => {
 		})
 	})
 })
+

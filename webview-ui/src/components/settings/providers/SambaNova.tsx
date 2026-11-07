@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+﻿import { useCallback } from "react"
 import { VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
 import type { ProviderSettings } from "@roo-code/types"
@@ -42,7 +42,7 @@ export const SambaNova = ({ apiConfiguration, setApiConfigurationField }: SambaN
 			</div>
 			{!apiConfiguration?.sambaNovaApiKey && (
 				<VSCodeButtonLink
-					href="https://cloud.sambanova.ai/?utm_source=roocode&utm_medium=external&utm_campaign=cloud_signup"
+					href="https://cloud.sambanova.ai/?utm_source=Softixer&utm_medium=external&utm_campaign=cloud_signup"
 					appearance="secondary">
 					{t("settings:providers.getSambaNovaApiKey")}
 				</VSCodeButtonLink>
@@ -50,3 +50,5 @@ export const SambaNova = ({ apiConfiguration, setApiConfigurationField }: SambaN
 		</>
 	)
 }
+
+

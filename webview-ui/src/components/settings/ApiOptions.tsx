@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo, useState } from "react"
+﻿import React, { memo, useCallback, useEffect, useMemo, useState } from "react"
 import { convertHeadersToObject } from "./utils/headers"
 import { useDebounce } from "react-use"
 import { VSCodeLink, VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
@@ -16,6 +16,7 @@ import {
 	openAiNativeDefaultModelId,
 	openAiCodexDefaultModelId,
 	anthropicDefaultModelId,
+	softixerDefaultModelId,
 	qwenCodeDefaultModelId,
 	geminiDefaultModelId,
 	deepSeekDefaultModelId,
@@ -67,6 +68,7 @@ import {
 
 import {
 	Anthropic,
+	Softixer,
 	Baseten,
 	Bedrock,
 	DeepSeek,
@@ -309,7 +311,7 @@ const ApiOptions = ({
 					return
 				}
 
-				// Bedrock has a special “custom-arn” pseudo-model that isn't part of MODELS_BY_PROVIDER.
+				// Bedrock has a special â€œcustom-arnâ€ pseudo-model that isn't part of MODELS_BY_PROVIDER.
 				if (provider === "bedrock" && modelId === "custom-arn") {
 					return
 				}
@@ -331,6 +333,7 @@ const ApiOptions = ({
 					}
 				>
 			> = {
+				softixer: { field: "softixerModelId" as keyof ProviderSettings, default: softixerDefaultModelId },
 				openrouter: { field: "openRouterModelId", default: openRouterDefaultModelId },
 				requesty: { field: "requestyModelId", default: requestyDefaultModelId },
 				unbound: { field: "unboundModelId", default: unboundDefaultModelId },
@@ -430,16 +433,41 @@ const ApiOptions = ({
 			return true
 		})
 
+		const softixerIcon = (
+			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="url(#sfxg)" strokeWidth="2.2" strokeLinecap="round" style={{ flexShrink: 0 }}>
+				<defs>
+					<linearGradient id="sfxg" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+						<stop stopColor="#c4b5fd" />
+						<stop offset="1" stopColor="#7c3aed" />
+					</linearGradient>
+				</defs>
+				<path d="M12 3.5v17" transform="rotate(0 12 12)" />
+				<path d="M12 3.5v17" transform="rotate(30 12 12)" />
+				<path d="M12 3.5v17" transform="rotate(60 12 12)" />
+				<path d="M12 3.5v17" transform="rotate(90 12 12)" />
+				<path d="M12 3.5v17" transform="rotate(120 12 12)" />
+				<path d="M12 3.5v17" transform="rotate(150 12 12)" />
+			</svg>
+		)
+
 		const options = providersWithModels.map(({ value, label }) => ({
 			value,
 			label,
+			icon: value === "softixer" ? softixerIcon : undefined,
 		}))
 
+		// Softixer is always first
+		const softixerIndex = options.findIndex((opt) => opt.value === "softixer")
+		if (softixerIndex > 0) {
+			const [softixerOption] = options.splice(softixerIndex, 1)
+			options.unshift(softixerOption)
+		}
+
 		if (fromWelcomeView) {
-			const openRouterIndex = options.findIndex((opt) => opt.value === "openrouter")
-			if (openRouterIndex > 0) {
-				const [openRouterOption] = options.splice(openRouterIndex, 1)
-				options.unshift(openRouterOption)
+			const softixerWelcomeIndex = options.findIndex((opt) => opt.value === "softixer")
+			if (softixerWelcomeIndex !== 0) {
+				const [sfxOpt] = options.splice(softixerWelcomeIndex, 1)
+				options.unshift(sfxOpt)
 			}
 		}
 
@@ -522,13 +550,20 @@ const ApiOptions = ({
 						/>
 					)}
 
-					{selectedProvider === "anthropic" && (
-						<Anthropic
-							apiConfiguration={apiConfiguration}
-							setApiConfigurationField={setApiConfigurationField}
-							simplifySettings={fromWelcomeView}
-						/>
-					)}
+					{selectedProvider === "softixer" && (
+							<Softixer
+								apiConfiguration={apiConfiguration}
+								setApiConfigurationField={setApiConfigurationField}
+							/>
+						)}
+	
+						{selectedProvider === "anthropic" && (
+							<Anthropic
+								apiConfiguration={apiConfiguration}
+								setApiConfigurationField={setApiConfigurationField}
+								simplifySettings={fromWelcomeView}
+							/>
+						)}
 
 					{selectedProvider === "openai-codex" && (
 						<OpenAICodex
@@ -852,3 +887,5 @@ const ApiOptions = ({
 }
 
 export default memo(ApiOptions)
+
+

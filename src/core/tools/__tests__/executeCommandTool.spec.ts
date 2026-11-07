@@ -1,4 +1,4 @@
-// npx vitest run src/core/tools/__tests__/executeCommandTool.spec.ts
+﻿// npx vitest run src/core/tools/__tests__/executeCommandTool.spec.ts
 
 import type { ToolUsage } from "@roo-code/types"
 import * as vscode from "vscode"
@@ -302,3 +302,5 @@ describe("executeCommandTool", () => {
 		})
 	})
 })
+
+

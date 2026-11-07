@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { OpenAICompatible } from "../OpenAICompatible"
 import { ProviderSettings } from "@roo-code/types"
@@ -313,3 +313,5 @@ describe("OpenAICompatible Component - includeMaxTokens checkbox", () => {
 		})
 	})
 })
+
+

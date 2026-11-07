@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+﻿import { useMemo } from "react"
 import { VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
 import type { ProviderSettings } from "@roo-code/types"
@@ -51,3 +51,5 @@ export const BedrockCustomArn = ({ apiConfiguration, setApiConfigurationField }:
 		</>
 	)
 }
+
+

@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { CodeActionName, CodeActionId } from "@roo-code/types"
 import { Package } from "../shared/package"
@@ -7,11 +7,11 @@ import { getCodeActionCommand } from "../utils/commands"
 import { EditorUtils } from "../integrations/editor/EditorUtils"
 
 export const TITLES: Record<CodeActionName, string> = {
-	EXPLAIN: "Explain with Roo Code",
-	FIX: "Fix with Roo Code",
-	IMPROVE: "Improve with Roo Code",
-	ADD_TO_CONTEXT: "Add to Roo Code",
-	NEW_TASK: "New Roo Code Task",
+	EXPLAIN: "Explain with Softixer",
+	FIX: "Fix with Softixer",
+	IMPROVE: "Improve with Softixer",
+	ADD_TO_CONTEXT: "Add to Softixer",
+	NEW_TASK: "New Softixer Task",
 } as const
 
 export class CodeActionProvider implements vscode.CodeActionProvider {
@@ -102,3 +102,5 @@ export class CodeActionProvider implements vscode.CodeActionProvider {
 		}
 	}
 }
+
+

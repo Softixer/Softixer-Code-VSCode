@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useContext, useEffect, useState } from "react"
+﻿import React, { createContext, useCallback, useContext, useEffect, useState } from "react"
 
 import {
 	type ProviderSettings,
@@ -559,3 +559,5 @@ export const useExtensionState = () => {
 
 	return context
 }
+
+

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from "react"
+﻿import { useState, useEffect, useCallback, useMemo } from "react"
 import prettyBytes from "pretty-bytes"
 
 import type { WorktreeDefaultsResponse, BranchInfo, WorktreeIncludeStatus } from "@roo-code/types"
@@ -159,7 +159,7 @@ export const CreateWorktreeModal = ({
 							<Info />
 							<span className="text-vscode-foreground">
 								<span className="font-medium">{t("worktrees:noIncludeFileWarning")}</span>
-								{" — "}
+								{" â€” "}
 								<span className="text-vscode-descriptionForeground">
 									{t("worktrees:noIncludeFileHint")}
 								</span>
@@ -261,3 +261,5 @@ export const CreateWorktreeModal = ({
 		</Dialog>
 	)
 }
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Generates the JSON Schema for .roomodes configuration files from the Zod
  * schemas defined in packages/types/src/mode.ts.
  *
@@ -23,3 +23,5 @@ fs.mkdirSync(path.dirname(outPath), { recursive: true })
 fs.writeFileSync(outPath, JSON.stringify(jsonSchema, null, "\t") + "\n", "utf-8")
 
 console.log(`Generated ${path.relative(repoRoot, outPath)}`)
+
+

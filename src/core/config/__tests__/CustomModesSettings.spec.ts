@@ -1,4 +1,4 @@
-// npx vitest core/config/__tests__/CustomModesSettings.spec.ts
+﻿// npx vitest core/config/__tests__/CustomModesSettings.spec.ts
 
 import { ZodError } from "zod"
 
@@ -206,3 +206,5 @@ describe("CustomModesSettings", () => {
 		})
 	})
 })
+
+

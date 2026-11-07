@@ -1,4 +1,4 @@
-import { type FireworksModelId, fireworksDefaultModelId, fireworksModels } from "@roo-code/types"
+﻿import { type FireworksModelId, fireworksDefaultModelId, fireworksModels } from "@roo-code/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 
@@ -17,3 +17,5 @@ export class FireworksHandler extends BaseOpenAiCompatibleProvider<FireworksMode
 		})
 	}
 }
+
+

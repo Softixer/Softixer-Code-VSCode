@@ -1,4 +1,4 @@
-import { useCallback, useState, memo, useMemo } from "react"
+﻿import { useCallback, useState, memo, useMemo } from "react"
 import { useEvent } from "react-use"
 import { t } from "i18next"
 import { ChevronDown, OctagonX } from "lucide-react"
@@ -248,3 +248,5 @@ const parseCommandAndOutput = (text: string | undefined) => {
 		output: text.slice(index + COMMAND_OUTPUT_STRING.length),
 	}
 }
+
+

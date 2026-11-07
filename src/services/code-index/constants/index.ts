@@ -1,4 +1,4 @@
-import { CODEBASE_INDEX_DEFAULTS } from "@roo-code/types"
+﻿import { CODEBASE_INDEX_DEFAULTS } from "@roo-code/types"
 
 /**Parser */
 export const MAX_BLOCK_CHARS = 1000
@@ -29,3 +29,5 @@ export const BATCH_PROCESSING_CONCURRENCY = 10
 
 /**Gemini Embedder */
 export const GEMINI_MAX_ITEM_TOKENS = 2048
+
+

@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/sambanova.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/sambanova.spec.ts
 
 import OpenAI from "openai"
 import { Anthropic } from "@anthropic-ai/sdk"
@@ -150,3 +150,5 @@ describe("SambaNovaHandler", () => {
 		)
 	})
 })
+
+

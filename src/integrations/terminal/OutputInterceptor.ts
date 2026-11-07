@@ -1,4 +1,4 @@
-import * as fs from "fs"
+﻿import * as fs from "fs"
 import * as path from "path"
 
 import { TerminalOutputPreviewSize, TERMINAL_PREVIEW_BYTES, PersistedCommandOutput } from "@roo-code/types"
@@ -428,3 +428,5 @@ export class OutputInterceptor {
 		}
 	}
 }
+
+

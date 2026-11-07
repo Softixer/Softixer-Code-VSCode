@@ -1,4 +1,4 @@
-import OpenAI from "openai"
+﻿import OpenAI from "openai"
 
 import { type ModelInfo, type ModelRecord } from "@roo-code/types"
 
@@ -85,3 +85,5 @@ export abstract class RouterProvider extends BaseProvider {
 		return !modelId.startsWith("openai/o3-mini")
 	}
 }
+
+

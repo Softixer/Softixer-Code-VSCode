@@ -1,4 +1,4 @@
-// npx vitest core/config/__tests__/CustomModesManager.spec.ts
+﻿// npx vitest core/config/__tests__/CustomModesManager.spec.ts
 
 import type { Mock } from "vitest"
 
@@ -1758,3 +1758,5 @@ describe("CustomModesManager", () => {
 		})
 	})
 })
+
+

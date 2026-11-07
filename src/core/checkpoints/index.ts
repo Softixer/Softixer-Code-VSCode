@@ -1,4 +1,4 @@
-import pWaitFor from "p-wait-for"
+﻿import pWaitFor from "p-wait-for"
 import * as vscode from "vscode"
 
 import type { ClineApiReqInfo } from "@roo-code/types"
@@ -384,3 +384,5 @@ export async function checkpointDiff(task: Task, { ts, previousCommitHash, commi
 		task.enableCheckpoints = false
 	}
 }
+
+

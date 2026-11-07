@@ -1,4 +1,4 @@
-import type { ToolName, ModeConfig, ExperimentId, GroupOptions, GroupEntry } from "@roo-code/types"
+﻿import type { ToolName, ModeConfig, ExperimentId, GroupOptions, GroupEntry } from "@roo-code/types"
 import { toolNames as validToolNames } from "@roo-code/types"
 import { customToolRegistry } from "@roo-code/core"
 
@@ -126,11 +126,11 @@ export function isToolAllowedForMode(
 	experiments?: Record<string, boolean>,
 	includedTools?: string[], // Opt-in tools explicitly included (e.g., from modelInfo)
 ): boolean {
-	// Resolve alias to canonical name (e.g., "search_and_replace" → "edit")
+	// Resolve alias to canonical name (e.g., "search_and_replace" â†’ "edit")
 	const resolvedTool = TOOL_ALIASES[tool] ?? tool
 	const resolvedIncludedTools = includedTools?.map((t) => TOOL_ALIASES[t] ?? t)
 
-	// Check tool requirements first — explicit disabling takes priority over everything,
+	// Check tool requirements first â€” explicit disabling takes priority over everything,
 	// including ALWAYS_AVAILABLE_TOOLS. This ensures disabledTools works consistently
 	// at both the filtering layer and the execution-time validation layer.
 	if (toolRequirements && typeof toolRequirements === "object") {
@@ -237,3 +237,5 @@ export function isToolAllowedForMode(
 
 	return false
 }
+
+

@@ -1,4 +1,4 @@
-// npx vitest src/components/chat/__tests__/TaskHeader.spec.tsx
+﻿// npx vitest src/components/chat/__tests__/TaskHeader.spec.tsx
 
 import React from "react"
 import { render, screen, fireEvent } from "@/utils/test-utils"
@@ -269,3 +269,5 @@ describe("TaskHeader", () => {
 		})
 	})
 })
+
+

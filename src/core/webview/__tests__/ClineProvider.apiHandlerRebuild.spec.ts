@@ -1,4 +1,4 @@
-// npx vitest core/webview/__tests__/ClineProvider.apiHandlerRebuild.spec.ts
+﻿// npx vitest core/webview/__tests__/ClineProvider.apiHandlerRebuild.spec.ts
 
 import * as vscode from "vscode"
 
@@ -563,3 +563,5 @@ describe("ClineProvider - API Handler Rebuild Guard", () => {
 		})
 	})
 })
+
+

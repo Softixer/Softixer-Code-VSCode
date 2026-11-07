@@ -1,4 +1,4 @@
-// npx vitest run src/core/tools/__tests__/validateToolUse.spec.ts
+﻿// npx vitest run src/core/tools/__tests__/validateToolUse.spec.ts
 
 import type { ModeConfig } from "@roo-code/types"
 
@@ -252,3 +252,5 @@ describe("mode-validator", () => {
 		})
 	})
 })
+
+

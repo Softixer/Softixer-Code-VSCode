@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react"
+﻿import { useState, useEffect, useCallback } from "react"
 
 import type { Worktree } from "@roo-code/types"
 
@@ -86,8 +86,8 @@ export const DeleteWorktreeModal = ({ open, onClose, worktree, onSuccess }: Dele
 						<div className="flex flex-col min-w-0 gap-2">
 							<p className="m-0 text-vscode-foreground">{t("worktrees:deleteWarning")}</p>
 							<ul className="m-0 pl-0 list-none space-y-1 text-vscode-descriptionForeground">
-								<li>• {t("worktrees:deleteWarningBranch")}</li>
-								<li>• {t("worktrees:deleteWarningFiles")}</li>
+								<li>â€¢ {t("worktrees:deleteWarningBranch")}</li>
+								<li>â€¢ {t("worktrees:deleteWarningFiles")}</li>
 							</ul>
 							<p className="m-0 text-vscode-descriptionForeground">{t("worktrees:deleteNoticeLarge")}</p>
 						</div>
@@ -138,3 +138,5 @@ export const DeleteWorktreeModal = ({ open, onClose, worktree, onSuccess }: Dele
 		</Dialog>
 	)
 }
+
+

@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/vercel-ai-gateway.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/vercel-ai-gateway.spec.ts
 
 // Mock vscode first to avoid import errors
 vitest.mock("vscode", () => ({}))
@@ -97,8 +97,8 @@ describe("VercelAiGatewayHandler", () => {
 			apiKey: mockOptions.vercelAiGatewayApiKey,
 			defaultHeaders: expect.objectContaining({
 				"HTTP-Referer": "https://github.com/RooVetGit/Roo-Cline",
-				"X-Title": "Roo Code",
-				"User-Agent": expect.stringContaining("RooCode/"),
+				"X-Title": "Softixer",
+				"User-Agent": expect.stringContaining("Softixer/"),
 			}),
 		})
 	})
@@ -585,3 +585,5 @@ describe("VercelAiGatewayHandler", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react"
+﻿import React, { useState, useEffect, useMemo } from "react"
 import { Database } from "lucide-react"
 
 import type { IndexingStatus, IndexingStatusUpdateMessage } from "@roo-code/types"
@@ -113,3 +113,5 @@ export const IndexingStatusBadge: React.FC<IndexingStatusBadgeProps> = ({ classN
 		</CodeIndexPopover>
 	)
 }
+
+

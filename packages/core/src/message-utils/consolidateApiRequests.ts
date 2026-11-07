@@ -1,4 +1,4 @@
-import type { ClineMessage } from "@roo-code/types"
+﻿import type { ClineMessage } from "@roo-code/types"
 
 /**
  * Consolidates API request start and finish messages in an array of ClineMessages.
@@ -88,3 +88,5 @@ export function consolidateApiRequests(messages: ClineMessage[]): ClineMessage[]
 
 	return result
 }
+
+

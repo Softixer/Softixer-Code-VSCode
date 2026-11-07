@@ -1,4 +1,4 @@
-import { parseMarkdown, formatMarkdownCaptures } from "../markdownParser"
+﻿import { parseMarkdown, formatMarkdownCaptures } from "../markdownParser"
 
 describe("markdownParser", () => {
 	it("should parse ATX headers (# style) and return captures", () => {
@@ -175,7 +175,7 @@ Content line
 ## Header with [link](https://example.com) and \`code\`
 More content
 
-### Header with emoji 🚀 and special chars: & < >
+### Header with emoji ğŸš€ and special chars: & < >
 Final content`
 
 		const captures = parseMarkdown(content)
@@ -185,7 +185,7 @@ Final content`
 		// Check header text is preserved with formatting
 		expect(captures[0].node.text).toBe("Header with *italic* and **bold**")
 		expect(captures[2].node.text).toBe("Header with [link](https://example.com) and `code`")
-		expect(captures[4].node.text).toBe("Header with emoji 🚀 and special chars: & < >")
+		expect(captures[4].node.text).toBe("Header with emoji ğŸš€ and special chars: & < >")
 	})
 
 	it("should handle edge cases like headers at the end of document", () => {
@@ -469,11 +469,11 @@ Some content here.
 
 ## License
 
-[Apache 2.0 © 2025 Roo Code, Inc.](./LICENSE)
+[Apache 2.0 Â© 2025 Softixer, Inc.](./LICENSE)
 
 ---
 
-**Enjoy Roo Code!** Whether you keep it on a short leash or let it roam autonomously, we can't wait to see what you build.`
+**Enjoy Softixer!** Whether you keep it on a short leash or let it roam autonomously, we can't wait to see what you build.`
 
 		const captures = parseMarkdown(content)
 		expect(captures).toBeDefined()
@@ -540,3 +540,4 @@ function processCaptures(captures: any[], lines: string[], minComponentLines: nu
 
 	return formattedOutput.length > 0 ? formattedOutput : null
 }
+

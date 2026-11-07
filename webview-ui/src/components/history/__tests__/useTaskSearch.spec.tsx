@@ -1,4 +1,4 @@
-import { renderHook, act } from "@/utils/test-utils"
+﻿import { renderHook, act } from "@/utils/test-utils"
 
 import type { HistoryItem } from "@roo-code/types"
 
@@ -285,3 +285,5 @@ describe("useTaskSearch", () => {
 		expect(result.current.sortOption).toBe("mostRelevant")
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react"
+﻿import { HTMLAttributes } from "react"
 
 import type { Experiments, ImageGenerationProvider } from "@roo-code/types"
 
@@ -124,3 +124,5 @@ export const ExperimentalSettings = ({
 		</div>
 	)
 }
+
+

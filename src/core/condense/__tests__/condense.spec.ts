@@ -1,4 +1,4 @@
-// npx vitest src/core/condense/__tests__/condense.spec.ts
+﻿// npx vitest src/core/condense/__tests__/condense.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 import type { ModelInfo } from "@roo-code/types"
@@ -452,3 +452,5 @@ Line 2
 		})
 	})
 })
+
+

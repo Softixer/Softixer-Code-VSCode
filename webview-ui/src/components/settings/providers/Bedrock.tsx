@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react"
+﻿import { useCallback, useState, useEffect } from "react"
 import { Checkbox } from "vscrui"
 import { VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
@@ -249,11 +249,13 @@ export const Bedrock = ({ apiConfiguration, setApiConfigurationField, selectedMo
 					/>
 					<div className="text-sm text-vscode-descriptionForeground ml-6 mt-1 mb-3">
 						{t("settings:providers.awsBedrockVpc.examples")}
-						<div className="ml-2">• https://vpce-xxx.bedrock.region.vpce.amazonaws.com/</div>
-						<div className="ml-2">• https://gateway.my-company.com/route/app/bedrock</div>
+						<div className="ml-2">â€¢ https://vpce-xxx.bedrock.region.vpce.amazonaws.com/</div>
+						<div className="ml-2">â€¢ https://gateway.my-company.com/route/app/bedrock</div>
 					</div>
 				</>
 			)}
 		</>
 	)
 }
+
+

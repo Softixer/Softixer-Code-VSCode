@@ -1,4 +1,4 @@
-import { type SambaNovaModelId, sambaNovaDefaultModelId, sambaNovaModels } from "@roo-code/types"
+﻿import { type SambaNovaModelId, sambaNovaDefaultModelId, sambaNovaModels } from "@roo-code/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 
@@ -17,3 +17,5 @@ export class SambaNovaHandler extends BaseOpenAiCompatibleProvider<SambaNovaMode
 		})
 	}
 }
+
+

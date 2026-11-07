@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react"
+﻿import { useState, useEffect, useCallback } from "react"
 
 import type { Worktree, WorktreeListResponse, WorktreeIncludeStatus } from "@roo-code/types"
 
@@ -336,3 +336,5 @@ export const WorktreesView = () => {
 		</div>
 	)
 }
+
+

@@ -1,7 +1,7 @@
-// npx vitest run __tests__/provider-delegation.spec.ts
+﻿// npx vitest run __tests__/provider-delegation.spec.ts
 
 import { describe, it, expect, vi } from "vitest"
-import { RooCodeEventName } from "@roo-code/types"
+import { SoftixerEventName } from "@roo-code/types"
 import { ClineProvider } from "../core/webview/ClineProvider"
 
 describe("ClineProvider.delegateParentAndOpenChild()", () => {
@@ -89,7 +89,7 @@ describe("ClineProvider.delegateParentAndOpenChild()", () => {
 		expect(childStart).toHaveBeenCalledTimes(1)
 
 		// Event emission (provider-level)
-		expect(providerEmit).toHaveBeenCalledWith(RooCodeEventName.TaskDelegated, "parent-1", "child-1")
+		expect(providerEmit).toHaveBeenCalledWith(SoftixerEventName.TaskDelegated, "parent-1", "child-1")
 
 		// Mode switch
 		expect(handleModeSwitch).toHaveBeenCalledWith("code")
@@ -139,7 +139,9 @@ describe("ClineProvider.delegateParentAndOpenChild()", () => {
 			mode: "code",
 		})
 
-		// Verify ordering: createTask → updateTaskHistory → child.start
+		// Verify ordering: createTask â†’ updateTaskHistory â†’ child.start
 		expect(callOrder).toEqual(["createTask", "updateTaskHistory", "child.start"])
 	})
 })
+
+

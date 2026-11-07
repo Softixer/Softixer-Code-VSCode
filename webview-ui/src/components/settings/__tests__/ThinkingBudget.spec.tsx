@@ -1,4 +1,4 @@
-// npx vitest src/components/settings/__tests__/ThinkingBudget.spec.tsx
+﻿// npx vitest src/components/settings/__tests__/ThinkingBudget.spec.tsx
 
 import { render, screen, fireEvent } from "@/utils/test-utils"
 
@@ -306,3 +306,5 @@ describe("ThinkingBudget", () => {
 		})
 	})
 })
+
+

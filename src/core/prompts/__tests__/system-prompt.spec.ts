@@ -1,4 +1,4 @@
-// npx vitest core/prompts/__tests__/system-prompt.spec.ts
+﻿// npx vitest core/prompts/__tests__/system-prompt.spec.ts
 
 vi.mock("os", () => ({
 	default: {
@@ -579,3 +579,5 @@ describe("SYSTEM_PROMPT", () => {
 		vi.restoreAllMocks()
 	})
 })
+
+

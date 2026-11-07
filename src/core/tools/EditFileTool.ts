@@ -1,4 +1,4 @@
-import fs from "fs/promises"
+﻿import fs from "fs/promises"
 import path from "path"
 
 import { type ClineSayTool, DEFAULT_WRITE_DELAY_MS } from "@roo-code/types"
@@ -526,3 +526,5 @@ export class EditFileTool extends BaseTool<"edit_file"> {
 }
 
 export const editFileTool = new EditFileTool()
+
+

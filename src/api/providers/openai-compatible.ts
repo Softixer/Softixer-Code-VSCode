@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OpenAI-compatible provider base class using Vercel AI SDK.
  * This provides a parallel implementation to OpenAiHandler using @ai-sdk/openai-compatible.
  */
@@ -210,3 +210,5 @@ export abstract class OpenAICompatibleHandler extends BaseProvider implements Si
 		return text
 	}
 }
+
+

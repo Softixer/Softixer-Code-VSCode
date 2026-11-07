@@ -1,4 +1,4 @@
-/**
+﻿/**
  * File-based debug logging utility
  *
  * This writes logs to ~/.roo/cli-debug.log, avoiding stdout/stderr
@@ -103,3 +103,5 @@ export class DebugLogger {
  * Pre-configured logger for provider/mode debugging
  */
 export const providerDebugLog = new DebugLogger("ProviderSettings")
+
+

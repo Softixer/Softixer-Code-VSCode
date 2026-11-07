@@ -1,4 +1,4 @@
-import os from "os"
+﻿import os from "os"
 import * as path from "path"
 import fs from "fs/promises"
 import EventEmitter from "events"
@@ -15,7 +15,7 @@ import {
 	type GlobalState,
 	type ProviderName,
 	type ProviderSettings,
-	type RooCodeSettings,
+	type SoftixerSettings,
 	type ProviderSettingsEntry,
 	type CodeActionId,
 	type CodeActionName,
@@ -27,7 +27,7 @@ import {
 	type ToolUsage,
 	type ExtensionMessage,
 	type ExtensionState,
-	RooCodeEventName,
+	SoftixerEventName,
 	requestyDefaultModelId,
 	openRouterDefaultModelId,
 	DEFAULT_WRITE_DELAY_MS,
@@ -149,7 +149,7 @@ export class ClineProvider
 
 	public isViewLaunched = false
 	public settingsImportedAt?: number
-	public readonly latestAnnouncementId = "may-2026-final-roo-code-release" // Final Roo Code release announcement.
+	public readonly latestAnnouncementId = "may-2026-final-softixer-release" // Final Softixer release announcement.
 	public readonly providerSettingsManager: ProviderSettingsManager
 	public readonly customModesManager: CustomModesManager
 
@@ -205,14 +205,14 @@ export class ClineProvider
 		// Forward <most> task events to the provider.
 		// We do something fairly similar for the IPC-based API.
 		this.taskCreationCallback = (instance: Task) => {
-			this.emit(RooCodeEventName.TaskCreated, instance)
+			this.emit(SoftixerEventName.TaskCreated, instance)
 
 			// Create named listener functions so we can remove them later.
-			const onTaskStarted = () => this.emit(RooCodeEventName.TaskStarted, instance.taskId)
+			const onTaskStarted = () => this.emit(SoftixerEventName.TaskStarted, instance.taskId)
 			const onTaskCompleted = (taskId: string, tokenUsage: TokenUsage, toolUsage: ToolUsage) =>
-				this.emit(RooCodeEventName.TaskCompleted, taskId, tokenUsage, toolUsage)
+				this.emit(SoftixerEventName.TaskCompleted, taskId, tokenUsage, toolUsage)
 			const onTaskAborted = async () => {
-				this.emit(RooCodeEventName.TaskAborted, instance.taskId)
+				this.emit(SoftixerEventName.TaskAborted, instance.taskId)
 
 				try {
 					// Only rehydrate on genuine streaming failures.
@@ -240,51 +240,51 @@ export class ClineProvider
 					)
 				}
 			}
-			const onTaskFocused = () => this.emit(RooCodeEventName.TaskFocused, instance.taskId)
-			const onTaskUnfocused = () => this.emit(RooCodeEventName.TaskUnfocused, instance.taskId)
-			const onTaskActive = (taskId: string) => this.emit(RooCodeEventName.TaskActive, taskId)
-			const onTaskInteractive = (taskId: string) => this.emit(RooCodeEventName.TaskInteractive, taskId)
-			const onTaskResumable = (taskId: string) => this.emit(RooCodeEventName.TaskResumable, taskId)
-			const onTaskIdle = (taskId: string) => this.emit(RooCodeEventName.TaskIdle, taskId)
-			const onTaskPaused = (taskId: string) => this.emit(RooCodeEventName.TaskPaused, taskId)
-			const onTaskUnpaused = (taskId: string) => this.emit(RooCodeEventName.TaskUnpaused, taskId)
-			const onTaskSpawned = (taskId: string) => this.emit(RooCodeEventName.TaskSpawned, taskId)
-			const onTaskUserMessage = (taskId: string) => this.emit(RooCodeEventName.TaskUserMessage, taskId)
+			const onTaskFocused = () => this.emit(SoftixerEventName.TaskFocused, instance.taskId)
+			const onTaskUnfocused = () => this.emit(SoftixerEventName.TaskUnfocused, instance.taskId)
+			const onTaskActive = (taskId: string) => this.emit(SoftixerEventName.TaskActive, taskId)
+			const onTaskInteractive = (taskId: string) => this.emit(SoftixerEventName.TaskInteractive, taskId)
+			const onTaskResumable = (taskId: string) => this.emit(SoftixerEventName.TaskResumable, taskId)
+			const onTaskIdle = (taskId: string) => this.emit(SoftixerEventName.TaskIdle, taskId)
+			const onTaskPaused = (taskId: string) => this.emit(SoftixerEventName.TaskPaused, taskId)
+			const onTaskUnpaused = (taskId: string) => this.emit(SoftixerEventName.TaskUnpaused, taskId)
+			const onTaskSpawned = (taskId: string) => this.emit(SoftixerEventName.TaskSpawned, taskId)
+			const onTaskUserMessage = (taskId: string) => this.emit(SoftixerEventName.TaskUserMessage, taskId)
 			const onTaskTokenUsageUpdated = (taskId: string, tokenUsage: TokenUsage, toolUsage: ToolUsage) =>
-				this.emit(RooCodeEventName.TaskTokenUsageUpdated, taskId, tokenUsage, toolUsage)
+				this.emit(SoftixerEventName.TaskTokenUsageUpdated, taskId, tokenUsage, toolUsage)
 
 			// Attach the listeners.
-			instance.on(RooCodeEventName.TaskStarted, onTaskStarted)
-			instance.on(RooCodeEventName.TaskCompleted, onTaskCompleted)
-			instance.on(RooCodeEventName.TaskAborted, onTaskAborted)
-			instance.on(RooCodeEventName.TaskFocused, onTaskFocused)
-			instance.on(RooCodeEventName.TaskUnfocused, onTaskUnfocused)
-			instance.on(RooCodeEventName.TaskActive, onTaskActive)
-			instance.on(RooCodeEventName.TaskInteractive, onTaskInteractive)
-			instance.on(RooCodeEventName.TaskResumable, onTaskResumable)
-			instance.on(RooCodeEventName.TaskIdle, onTaskIdle)
-			instance.on(RooCodeEventName.TaskPaused, onTaskPaused)
-			instance.on(RooCodeEventName.TaskUnpaused, onTaskUnpaused)
-			instance.on(RooCodeEventName.TaskSpawned, onTaskSpawned)
-			instance.on(RooCodeEventName.TaskUserMessage, onTaskUserMessage)
-			instance.on(RooCodeEventName.TaskTokenUsageUpdated, onTaskTokenUsageUpdated)
+			instance.on(SoftixerEventName.TaskStarted, onTaskStarted)
+			instance.on(SoftixerEventName.TaskCompleted, onTaskCompleted)
+			instance.on(SoftixerEventName.TaskAborted, onTaskAborted)
+			instance.on(SoftixerEventName.TaskFocused, onTaskFocused)
+			instance.on(SoftixerEventName.TaskUnfocused, onTaskUnfocused)
+			instance.on(SoftixerEventName.TaskActive, onTaskActive)
+			instance.on(SoftixerEventName.TaskInteractive, onTaskInteractive)
+			instance.on(SoftixerEventName.TaskResumable, onTaskResumable)
+			instance.on(SoftixerEventName.TaskIdle, onTaskIdle)
+			instance.on(SoftixerEventName.TaskPaused, onTaskPaused)
+			instance.on(SoftixerEventName.TaskUnpaused, onTaskUnpaused)
+			instance.on(SoftixerEventName.TaskSpawned, onTaskSpawned)
+			instance.on(SoftixerEventName.TaskUserMessage, onTaskUserMessage)
+			instance.on(SoftixerEventName.TaskTokenUsageUpdated, onTaskTokenUsageUpdated)
 
 			// Store the cleanup functions for later removal.
 			this.taskEventListeners.set(instance, [
-				() => instance.off(RooCodeEventName.TaskStarted, onTaskStarted),
-				() => instance.off(RooCodeEventName.TaskCompleted, onTaskCompleted),
-				() => instance.off(RooCodeEventName.TaskAborted, onTaskAborted),
-				() => instance.off(RooCodeEventName.TaskFocused, onTaskFocused),
-				() => instance.off(RooCodeEventName.TaskUnfocused, onTaskUnfocused),
-				() => instance.off(RooCodeEventName.TaskActive, onTaskActive),
-				() => instance.off(RooCodeEventName.TaskInteractive, onTaskInteractive),
-				() => instance.off(RooCodeEventName.TaskResumable, onTaskResumable),
-				() => instance.off(RooCodeEventName.TaskIdle, onTaskIdle),
-				() => instance.off(RooCodeEventName.TaskUserMessage, onTaskUserMessage),
-				() => instance.off(RooCodeEventName.TaskPaused, onTaskPaused),
-				() => instance.off(RooCodeEventName.TaskUnpaused, onTaskUnpaused),
-				() => instance.off(RooCodeEventName.TaskSpawned, onTaskSpawned),
-				() => instance.off(RooCodeEventName.TaskTokenUsageUpdated, onTaskTokenUsageUpdated),
+				() => instance.off(SoftixerEventName.TaskStarted, onTaskStarted),
+				() => instance.off(SoftixerEventName.TaskCompleted, onTaskCompleted),
+				() => instance.off(SoftixerEventName.TaskAborted, onTaskAborted),
+				() => instance.off(SoftixerEventName.TaskFocused, onTaskFocused),
+				() => instance.off(SoftixerEventName.TaskUnfocused, onTaskUnfocused),
+				() => instance.off(SoftixerEventName.TaskActive, onTaskActive),
+				() => instance.off(SoftixerEventName.TaskInteractive, onTaskInteractive),
+				() => instance.off(SoftixerEventName.TaskResumable, onTaskResumable),
+				() => instance.off(SoftixerEventName.TaskIdle, onTaskIdle),
+				() => instance.off(SoftixerEventName.TaskUserMessage, onTaskUserMessage),
+				() => instance.off(SoftixerEventName.TaskPaused, onTaskPaused),
+				() => instance.off(SoftixerEventName.TaskUnpaused, onTaskUnpaused),
+				() => instance.off(SoftixerEventName.TaskSpawned, onTaskSpawned),
+				() => instance.off(SoftixerEventName.TaskTokenUsageUpdated, onTaskTokenUsageUpdated),
 			])
 		}
 	}
@@ -346,7 +346,7 @@ export class ClineProvider
 		// Add this cline instance into the stack that represents the order of
 		// all the called tasks.
 		this.clineStack.push(task)
-		task.emit(RooCodeEventName.TaskFocused)
+		task.emit(SoftixerEventName.TaskFocused)
 
 		// Perform special setup provider specific tasks.
 		await this.performPreparationTasks(task)
@@ -393,7 +393,7 @@ export class ClineProvider
 			const childTaskId = task.taskId
 			const parentTaskId = task.parentTaskId
 
-			task.emit(RooCodeEventName.TaskUnfocused)
+			task.emit(SoftixerEventName.TaskUnfocused)
 
 			try {
 				// Abort the running task and set isAbandoned to true so
@@ -422,7 +422,7 @@ export class ClineProvider
 			// so it transitions from "delegated" back to "active" and becomes resumable
 			// from the task history list.
 			// Skip when called from delegateParentAndOpenChild() during nested delegation
-			// transitions (A→B→C), where the caller intentionally replaces the active
+			// transitions (Aâ†’Bâ†’C), where the caller intentionally replaces the active
 			// child and will update the parent to point at the new child.
 			if (parentTaskId && childTaskId && !options?.skipDelegationRepair) {
 				try {
@@ -435,7 +435,7 @@ export class ClineProvider
 							awaitingChildId: undefined,
 						})
 						this.log(
-							`[ClineProvider#removeClineFromStack] Repaired parent ${parentTaskId} metadata: delegated → active (child ${childTaskId} removed)`,
+							`[ClineProvider#removeClineFromStack] Repaired parent ${parentTaskId} metadata: delegated â†’ active (child ${childTaskId} removed)`,
 						)
 					}
 				} catch (err) {
@@ -980,7 +980,7 @@ export class ClineProvider
 
 			// Replace the task in the stack
 			this.clineStack[stackIndex] = task
-			task.emit(RooCodeEventName.TaskFocused)
+			task.emit(SoftixerEventName.TaskFocused)
 
 			// Perform preparation tasks and set up event listeners
 			await this.performPreparationTasks(task)
@@ -1145,7 +1145,7 @@ export class ClineProvider
 						window.AUDIO_BASE_URI = "${audioUri}"
 						window.MATERIAL_ICONS_BASE_URI = "${materialIconsUri}"
 					</script>
-					<title>Roo Code</title>
+					<title>Softixer</title>
 				</head>
 				<body>
 					<div id="root"></div>
@@ -1224,7 +1224,7 @@ export class ClineProvider
 				window.AUDIO_BASE_URI = "${audioUri}"
 				window.MATERIAL_ICONS_BASE_URI = "${materialIconsUri}"
 			</script>
-            <title>Roo Code</title>
+            <title>Softixer</title>
           </head>
           <body>
             <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -1256,7 +1256,7 @@ export class ClineProvider
 		const task = this.getCurrentTask()
 
 		if (task) {
-			task.emit(RooCodeEventName.TaskModeSwitched, task.taskId, newMode)
+			task.emit(SoftixerEventName.TaskModeSwitched, task.taskId, newMode)
 
 			try {
 				// Update the task history with the new mode first.
@@ -1283,9 +1283,9 @@ export class ClineProvider
 
 		await this.updateGlobalState("mode", newMode)
 
-		this.emit(RooCodeEventName.ModeChanged, newMode)
+		this.emit(SoftixerEventName.ModeChanged, newMode)
 
-		// If workspace lock is on, keep the current API config — don't load mode-specific config
+		// If workspace lock is on, keep the current API config â€” don't load mode-specific config
 		const lockApiConfigAcrossModes = this.context.workspaceState.get("lockApiConfigAcrossModes", false)
 		if (lockApiConfigAcrossModes) {
 			await this.postStateToWebview()
@@ -1529,7 +1529,7 @@ export class ClineProvider
 		await this.postStateToWebview()
 
 		if (providerSettings.apiProvider) {
-			this.emit(RooCodeEventName.ProviderProfileChanged, { name, provider: providerSettings.apiProvider })
+			this.emit(SoftixerEventName.ProviderProfileChanged, { name, provider: providerSettings.apiProvider })
 		}
 	}
 
@@ -1545,21 +1545,21 @@ export class ClineProvider
 		// Get platform-specific application data directory
 		let mcpServersDir: string
 		if (process.platform === "win32") {
-			// Windows: %APPDATA%\Roo-Code\MCP
-			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "Roo-Code", "MCP")
+			// Windows: %APPDATA%\softixer\MCP
+			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "softixer", "MCP")
 		} else if (process.platform === "darwin") {
 			// macOS: ~/Documents/Cline/MCP
 			mcpServersDir = path.join(os.homedir(), "Documents", "Cline", "MCP")
 		} else {
 			// Linux: ~/.local/share/Cline/MCP
-			mcpServersDir = path.join(os.homedir(), ".local", "share", "Roo-Code", "MCP")
+			mcpServersDir = path.join(os.homedir(), ".local", "share", "softixer", "MCP")
 		}
 
 		try {
 			await fs.mkdir(mcpServersDir, { recursive: true })
 		} catch (error) {
 			// Fallback to a relative path if directory creation fails
-			return path.join(os.homedir(), ".roo-code", "mcp")
+			return path.join(os.homedir(), ".softixer", "mcp")
 		}
 		return mcpServersDir
 	}
@@ -2349,11 +2349,11 @@ export class ClineProvider
 		return this.contextProxy.getValue(key)
 	}
 
-	public async setValue<K extends keyof RooCodeSettings>(key: K, value: RooCodeSettings[K]) {
+	public async setValue<K extends keyof SoftixerSettings>(key: K, value: SoftixerSettings[K]) {
 		await this.contextProxy.setValue(key, value)
 	}
 
-	public getValue<K extends keyof RooCodeSettings>(key: K) {
+	public getValue<K extends keyof SoftixerSettings>(key: K) {
 		return this.contextProxy.getValue(key)
 	}
 
@@ -2361,7 +2361,7 @@ export class ClineProvider
 		return this.contextProxy.getValues()
 	}
 
-	public async setValues(values: RooCodeSettings) {
+	public async setValues(values: SoftixerSettings) {
 		await this.contextProxy.setValues(values)
 	}
 
@@ -2538,7 +2538,7 @@ export class ClineProvider
 		images?: string[],
 		parentTask?: Task,
 		options: CreateTaskOptions = {},
-		configuration: RooCodeSettings = {},
+		configuration: SoftixerSettings = {},
 	): Promise<Task> {
 		if (configuration) {
 			await this.setValues(configuration)
@@ -2868,10 +2868,10 @@ export class ClineProvider
 		// call attempt_completion before status is persisted separately.
 		//
 		// Pass startTask: false to prevent the child from beginning its task loop
-		// (and writing to globalState via saveClineMessages → updateTaskHistory)
+		// (and writing to globalState via saveClineMessages â†’ updateTaskHistory)
 		// before we persist the parent's delegation metadata in step 5.
 		// Without this, the child's fire-and-forget startTask() races with step 5,
-		// and the last writer to globalState overwrites the other's changes—
+		// and the last writer to globalState overwrites the other's changesâ€”
 		// causing the parent's delegation fields to be lost.
 		const child = await this.createTask(message, undefined, parent as any, {
 			initialTodos,
@@ -2904,7 +2904,7 @@ export class ClineProvider
 
 		// 7) Emit TaskDelegated (provider-level)
 		try {
-			this.emit(RooCodeEventName.TaskDelegated, parentTaskId, child.taskId)
+			this.emit(SoftixerEventName.TaskDelegated, parentTaskId, child.taskId)
 		} catch {
 			// non-fatal
 		}
@@ -2979,7 +2979,7 @@ export class ClineProvider
 
 		// Preferred: if the parent history contains the native tool_use for new_task,
 		// inject a matching tool_result for the Anthropic message contract:
-		// user → assistant (tool_use) → user (tool_result)
+		// user â†’ assistant (tool_use) â†’ user (tool_result)
 		if (toolUseId) {
 			// Check if the last message is already a user message with a tool_result for this tool_use_id
 			// (in case this is a retry or the history was already updated)
@@ -3038,7 +3038,7 @@ export class ClineProvider
 
 		// 3) Close child instance if still open (single-open-task invariant).
 		//    This MUST happen BEFORE updating the child's status to "completed" because
-		//    removeClineFromStack() → abortTask(true) → saveClineMessages() writes
+		//    removeClineFromStack() â†’ abortTask(true) â†’ saveClineMessages() writes
 		//    the historyItem with initialStatus (typically "active"), which would
 		//    overwrite a "completed" status set earlier.
 		const current = this.getCurrentTask()
@@ -3077,7 +3077,7 @@ export class ClineProvider
 
 		// 6) Emit TaskDelegationCompleted (provider-level)
 		try {
-			this.emit(RooCodeEventName.TaskDelegationCompleted, parentTaskId, childTaskId, completionResultSummary)
+			this.emit(SoftixerEventName.TaskDelegationCompleted, parentTaskId, childTaskId, completionResultSummary)
 		} catch {
 			// non-fatal
 		}
@@ -3105,7 +3105,7 @@ export class ClineProvider
 
 		// 9) Emit TaskDelegationResumed (provider-level)
 		try {
-			this.emit(RooCodeEventName.TaskDelegationResumed, parentTaskId, childTaskId)
+			this.emit(SoftixerEventName.TaskDelegationResumed, parentTaskId, childTaskId)
 		} catch {
 			// non-fatal
 		}
@@ -3147,3 +3147,5 @@ export class ClineProvider
 		}
 	}
 }
+
+

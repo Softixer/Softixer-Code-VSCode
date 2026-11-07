@@ -1,4 +1,4 @@
-import { VSCodeCheckbox } from "@vscode/webview-ui-toolkit/react"
+﻿import { VSCodeCheckbox } from "@vscode/webview-ui-toolkit/react"
 
 import type { McpTool } from "@roo-code/types"
 
@@ -141,3 +141,5 @@ const McpToolRow = ({ tool, serverName, serverSource, alwaysAllowMcp, isInChatCo
 }
 
 export default McpToolRow
+
+

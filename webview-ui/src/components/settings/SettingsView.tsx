@@ -1,4 +1,4 @@
-import React, {
+﻿import React, {
 	forwardRef,
 	memo,
 	useCallback,
@@ -937,3 +937,5 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone, t
 })
 
 export default memo(SettingsView)
+
+

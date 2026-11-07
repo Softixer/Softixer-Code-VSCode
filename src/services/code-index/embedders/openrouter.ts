@@ -1,4 +1,4 @@
-import { OpenAI } from "openai"
+﻿import { OpenAI } from "openai"
 import { IEmbedder, EmbeddingResponse, EmbedderInfo } from "../interfaces/embedder"
 import {
 	MAX_BATCH_TOKENS,
@@ -74,8 +74,8 @@ export class OpenRouterEmbedder implements IEmbedder {
 				baseURL: this.baseUrl,
 				apiKey: apiKey,
 				defaultHeaders: {
-					"HTTP-Referer": "https://github.com/RooCodeInc/Roo-Code",
-					"X-Title": "Roo Code",
+					"HTTP-Referer": "https://github.com/SoftixerInc/softixer",
+					"X-Title": "Softixer",
 				},
 			})
 		} catch (error) {
@@ -410,3 +410,4 @@ export class OpenRouterEmbedder implements IEmbedder {
 		}
 	}
 }
+

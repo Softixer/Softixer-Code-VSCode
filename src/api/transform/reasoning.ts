@@ -1,4 +1,4 @@
-import { BetaThinkingConfigParam } from "@anthropic-ai/sdk/resources/beta"
+﻿import { BetaThinkingConfigParam } from "@anthropic-ai/sdk/resources/beta"
 import OpenAI from "openai"
 import type { GenerateContentConfig } from "@google/genai"
 
@@ -93,7 +93,7 @@ export const getRooReasoning = ({
 		return undefined
 	}
 
-	// For Roo, "minimal" is treated as "none" for effort-based reasoning – we omit
+	// For Roo, "minimal" is treated as "none" for effort-based reasoning â€“ we omit
 	// the reasoning field entirely instead of sending an explicit effort.
 	if (reasoningEffort === "minimal") {
 		return undefined
@@ -151,7 +151,7 @@ export const getGeminiReasoning = ({
 	}
 
 	// Validate that the selected effort is supported by this specific model.
-	// e.g. gemini-3-pro-preview only supports ["low", "high"] — sending
+	// e.g. gemini-3-pro-preview only supports ["low", "high"] â€” sending
 	// "medium" (carried over from a different model's settings) causes errors.
 	const effortToUse =
 		Array.isArray(model.supportsReasoningEffort) &&
@@ -167,3 +167,5 @@ export const getGeminiReasoning = ({
 
 	return { thinkingLevel: effortToUse, includeThoughts: true }
 }
+
+

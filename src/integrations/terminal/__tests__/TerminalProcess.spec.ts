@@ -1,4 +1,4 @@
-// npx vitest run src/integrations/terminal/__tests__/TerminalProcess.spec.ts
+﻿// npx vitest run src/integrations/terminal/__tests__/TerminalProcess.spec.ts
 
 import * as vscode from "vscode"
 
@@ -35,7 +35,7 @@ describe("TerminalProcess", () => {
 			shellIntegration: {
 				executeCommand: vi.fn(),
 			},
-			name: "Roo Code",
+			name: "Softixer",
 			processId: Promise.resolve(123),
 			creationOptions: {},
 			exitStatus: undefined,
@@ -305,3 +305,4 @@ describe("TerminalProcess", () => {
 		})
 	})
 })
+

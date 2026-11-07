@@ -1,4 +1,4 @@
-import i18next from "i18next"
+﻿import i18next from "i18next"
 
 import {
 	type ProviderSettings,
@@ -38,6 +38,11 @@ export function validateApiConfiguration(
 
 function validateModelsAndKeysProvided(apiConfiguration: ProviderSettings): string | undefined {
 	switch (apiConfiguration.apiProvider) {
+		case "softixer":
+			if (!(apiConfiguration as any).softixerApiKey) {
+				return i18next.t("settings:validation.apiKey")
+			}
+			break
 		case "openrouter":
 			if (!apiConfiguration.openRouterApiKey) {
 				return i18next.t("settings:validation.apiKey")
@@ -302,3 +307,5 @@ export function validateApiConfigurationExcludingModelErrors(
 	// Skip model validation errors as they'll be shown in the model selector.
 	return undefined
 }
+
+

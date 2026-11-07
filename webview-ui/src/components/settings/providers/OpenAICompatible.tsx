@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react"
+﻿import { useState, useCallback, useEffect } from "react"
 import { useEvent } from "react-use"
 import { Checkbox } from "vscrui"
 import { VSCodeButton, VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
@@ -598,3 +598,5 @@ export const OpenAICompatible = ({
 		</>
 	)
 }
+
+

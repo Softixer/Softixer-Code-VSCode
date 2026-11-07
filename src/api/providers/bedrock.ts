@@ -1,4 +1,4 @@
-import {
+﻿import {
 	BedrockRuntimeClient,
 	ConverseStreamCommand,
 	ConverseCommand,
@@ -250,7 +250,7 @@ export class AwsBedrockHandler extends BaseProvider implements SingleCompletionH
 		this.costModelConfig = this.getModel()
 
 		const clientConfig: BedrockRuntimeClientConfig = {
-			userAgentAppId: `RooCode#${Package.version}`,
+			userAgentAppId: `Softixer#${Package.version}`,
 			region: this.options.awsRegion,
 			// Add the endpoint configuration when specified and enabled
 			...(this.options.awsBedrockEndpoint &&
@@ -1407,7 +1407,7 @@ Please try:
 			logLevel: "error",
 		},
 		ON_DEMAND_NOT_SUPPORTED: {
-			patterns: ["with on-demand throughput isn’t supported."],
+			patterns: ["with on-demand throughput isnâ€™t supported."],
 			messageTemplate: `
 1. Try enabling cross-region inference in settings.
 2. Or, create an inference profile and then leverage the "Use custom ARN..." option of the model selector in settings.`,
@@ -1576,3 +1576,5 @@ Please check:
 		}
 	}
 }
+
+

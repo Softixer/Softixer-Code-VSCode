@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import type { SkillMetadata, WebviewMessage } from "@roo-code/types"
 
@@ -206,3 +206,5 @@ export async function handleOpenSkillFile(provider: ClineProvider, message: Webv
 		vscode.window.showErrorMessage(`Failed to open skill file: ${errorMessage}`)
 	}
 }
+
+

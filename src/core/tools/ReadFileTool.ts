@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ReadFileTool - Codex-inspired file reading with indentation mode support.
  *
  * Supports two modes:
@@ -35,7 +35,7 @@ import {
 } from "./helpers/imageHelpers"
 import { BaseTool, ToolCallbacks } from "./BaseTool"
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /**
  * Internal entry structure for tracking file read parameters.
@@ -66,7 +66,7 @@ interface FileResult {
 	entry?: InternalFileEntry
 }
 
-// ─── Tool Implementation ──────────────────────────────────────────────────────
+// â”€â”€â”€ Tool Implementation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export class ReadFileTool extends BaseTool<"read_file"> {
 	readonly name = "read_file" as const
@@ -811,3 +811,5 @@ export class ReadFileTool extends BaseTool<"read_file"> {
 }
 
 export const readFileTool = new ReadFileTool()
+
+

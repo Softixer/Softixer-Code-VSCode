@@ -1,4 +1,4 @@
-// npx vitest run api/providers/__tests__/openai-native.spec.ts
+﻿// npx vitest run api/providers/__tests__/openai-native.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
@@ -1606,3 +1606,5 @@ describe("GPT-5 streaming event coverage (additional)", () => {
 		})
 	})
 })
+
+

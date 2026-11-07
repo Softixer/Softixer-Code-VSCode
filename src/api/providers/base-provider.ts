@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -120,3 +120,5 @@ export abstract class BaseProvider implements ApiHandler {
 		return countTokens(content, { useWorker: true })
 	}
 }
+
+

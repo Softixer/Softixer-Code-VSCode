@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 import delay from "delay"
 import fs from "fs/promises"
 
@@ -258,3 +258,5 @@ export class WriteToFileTool extends BaseTool<"write_to_file"> {
 }
 
 export const writeToFileTool = new WriteToFileTool()
+
+

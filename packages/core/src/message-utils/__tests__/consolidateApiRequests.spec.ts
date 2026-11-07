@@ -1,4 +1,4 @@
-// npx vitest run packages/core/src/message-utils/__tests__/consolidateApiRequests.spec.ts
+﻿// npx vitest run packages/core/src/message-utils/__tests__/consolidateApiRequests.spec.ts
 
 import type { ClineMessage } from "@roo-code/types"
 
@@ -120,3 +120,5 @@ describe("consolidateApiRequests", () => {
 		expect(result.length).toBe(1)
 	})
 })
+
+

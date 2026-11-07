@@ -1,4 +1,4 @@
-// npx vitest src/core/assistant-message/__tests__/presentAssistantMessage-custom-tool.spec.ts
+﻿// npx vitest src/core/assistant-message/__tests__/presentAssistantMessage-custom-tool.spec.ts
 
 import { describe, it, expect, beforeEach, vi } from "vitest"
 import { presentAssistantMessage } from "../presentAssistantMessage"
@@ -345,3 +345,5 @@ describe("presentAssistantMessage - Custom Tool Recording", () => {
 		})
 	})
 })
+
+

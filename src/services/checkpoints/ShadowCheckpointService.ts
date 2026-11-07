@@ -1,4 +1,4 @@
-import fs from "fs/promises"
+﻿import fs from "fs/promises"
 import os from "os"
 import * as path from "path"
 import crypto from "crypto"
@@ -176,7 +176,7 @@ export abstract class ShadowCheckpointService extends EventEmitter {
 			await git.init({ "--template": "" })
 			await git.addConfig("core.worktree", this.workspaceDir) // Sets the working tree to the current workspace.
 			await git.addConfig("commit.gpgSign", "false") // Disable commit signing for shadow repo.
-			await git.addConfig("user.name", "Roo Code")
+			await git.addConfig("user.name", "Softixer")
 			await git.addConfig("user.email", "noreply@example.com")
 			await this.writeExcludeFile()
 			await this.stageAll(git)
@@ -515,3 +515,4 @@ export abstract class ShadowCheckpointService extends EventEmitter {
 		}
 	}
 }
+

@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react"
+﻿import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react"
 import { useDeepCompareEffect, useEvent } from "react-use"
 import { Virtuoso, type VirtuosoHandle } from "react-virtuoso"
 import removeMd from "remove-markdown"
@@ -66,7 +66,7 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 	})
 
 	const { t } = useAppTranslation()
-	const modeShortcutText = `${isMac ? "⌘" : "Ctrl"} + . ${t("chat:forNextMode")}, ${isMac ? "⌘" : "Ctrl"} + Shift + . ${t("chat:forPreviousMode")}`
+	const modeShortcutText = `${isMac ? "âŒ˜" : "Ctrl"} + . ${t("chat:forNextMode")}, ${isMac ? "âŒ˜" : "Ctrl"} + Shift + . ${t("chat:forPreviousMode")}`
 
 	const {
 		clineMessages: messages,
@@ -582,7 +582,7 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 			text = text.trim()
 
 			if (text || images.length > 0) {
-				// Intercept when the active provider is retired — show a
+				// Intercept when the active provider is retired â€” show a
 				// WarningRow instead of sending anything to the backend.
 				if (apiConfiguration?.apiProvider && isRetiredProvider(apiConfiguration.apiProvider)) {
 					setShowRetiredProviderWarning(true)
@@ -1800,3 +1800,5 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 const ChatView = forwardRef(ChatViewComponent)
 
 export default ChatView
+
+

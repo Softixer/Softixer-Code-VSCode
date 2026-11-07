@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react"
+﻿import React, { useCallback, useEffect, useRef, useState } from "react"
 import { useEvent } from "react-use"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
@@ -264,3 +264,5 @@ const AppWithProviders = () => (
 )
 
 export default AppWithProviders
+
+

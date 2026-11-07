@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback, useRef } from "react"
+﻿import React, { useState, useEffect, useMemo, useCallback, useRef } from "react"
 import { Trans } from "react-i18next"
 import { z } from "zod"
 import {
@@ -185,7 +185,7 @@ export const CodeIndexPopover: React.FC<CodeIndexPopoverProps> = ({
 	children,
 	indexingStatus: externalIndexingStatus,
 }) => {
-	const SECRET_PLACEHOLDER = "••••••••••••••••"
+	const SECRET_PLACEHOLDER = "â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
 	const { t } = useAppTranslation()
 	const { codebaseIndexConfig, codebaseIndexModels, cwd, apiConfiguration } = useExtensionState()
 	const [open, setOpen] = useState(false)
@@ -1747,3 +1747,5 @@ export const CodeIndexPopover: React.FC<CodeIndexPopoverProps> = ({
 		</>
 	)
 }
+
+

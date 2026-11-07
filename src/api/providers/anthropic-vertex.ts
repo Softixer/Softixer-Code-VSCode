@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import { AnthropicVertex } from "@anthropic-ai/vertex-sdk"
 import { GoogleAuth, JWTInput } from "google-auth-library"
 
@@ -302,3 +302,5 @@ export class AnthropicVertexHandler extends BaseProvider implements SingleComple
 		}
 	}
 }
+
+

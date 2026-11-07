@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { fireEvent, render, screen } from "@/utils/test-utils"
 import type { ClineMessage } from "@roo-code/types"
 import { TranslationProvider } from "@/i18n/__mocks__/TranslationContext"
@@ -197,3 +197,5 @@ describe("FileChangesPanel", () => {
 		expect(screen.getByTestId("total-removed")).toHaveTextContent("-6")
 	})
 })
+
+

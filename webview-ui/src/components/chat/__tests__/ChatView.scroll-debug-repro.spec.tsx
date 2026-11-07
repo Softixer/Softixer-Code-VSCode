@@ -1,4 +1,4 @@
-import React, { useEffect, useImperativeHandle, useRef } from "react"
+﻿import React, { useEffect, useImperativeHandle, useRef } from "react"
 import { act, fireEvent, render, waitFor } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
@@ -590,3 +590,5 @@ describe("ChatView scroll behavior regression coverage", () => {
 		expect(harness.scrollToIndexArgs.at(-1)).toMatchObject({ index: 0, align: "center", behavior: "smooth" })
 	})
 })
+
+

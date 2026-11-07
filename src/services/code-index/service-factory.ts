@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import { Ignore } from "ignore"
 
 import type { EmbedderProvider } from "@roo-code/types"
@@ -261,3 +261,5 @@ export class CodeIndexServiceFactory {
 		}
 	}
 }
+
+

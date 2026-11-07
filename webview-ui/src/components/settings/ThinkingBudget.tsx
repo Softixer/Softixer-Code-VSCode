@@ -1,10 +1,10 @@
-/*
+﻿/*
 Semantics for Reasoning Effort (ThinkingBudget)
 
 Capability surface:
 - modelInfo.supportsReasoningEffort: boolean | Array&lt;"disable" | "none" | "minimal" | "low" | "medium" | "high"&gt;
-  - true  → UI shows ["low","medium","high"]
-  - array → UI shows exactly the provided values
+  - true  â†’ UI shows ["low","medium","high"]
+  - array â†’ UI shows exactly the provided values
 
 Selection behavior:
 - "disable":
@@ -269,3 +269,5 @@ export const ThinkingBudget = ({ apiConfiguration, setApiConfigurationField, mod
 		</div>
 	) : null
 }
+
+

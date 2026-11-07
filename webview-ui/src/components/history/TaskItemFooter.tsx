@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import type { HistoryItem } from "@roo-code/types"
 import { formatTimeAgo } from "@/utils/format"
 import { CopyButton } from "./CopyButton"
@@ -33,7 +33,7 @@ const TaskItemFooter: React.FC<TaskItemFooterProps> = ({
 					<>
 						<Split className="size-3" />
 						<span>{t("history:subtaskTag")}</span>
-						<span>·</span>
+						<span>Â·</span>
 					</>
 				)}
 				{/* Datetime with time-ago format */}
@@ -44,7 +44,7 @@ const TaskItemFooter: React.FC<TaskItemFooterProps> = ({
 				{/* Cost */}
 				{!!item.totalCost && (
 					<>
-						<span>·</span>
+						<span>Â·</span>
 						<span className="flex items-center" data-testid="cost-footer-compact">
 							{"$" + item.totalCost.toFixed(2)}
 						</span>
@@ -65,3 +65,5 @@ const TaskItemFooter: React.FC<TaskItemFooterProps> = ({
 }
 
 export default TaskItemFooter
+
+

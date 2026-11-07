@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest"
+﻿import { describe, it, expect, vi, beforeEach } from "vitest"
 import { aggregateTaskCostsRecursive } from "../aggregateTaskCosts.js"
 import type { HistoryItem } from "@roo-code/types"
 
@@ -324,3 +324,5 @@ describe("aggregateTaskCostsRecursive", () => {
 		expect(result.totalCost).toBe(2.0)
 	})
 })
+
+

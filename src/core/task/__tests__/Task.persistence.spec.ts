@@ -1,4 +1,4 @@
-// cd src && npx vitest run core/task/__tests__/Task.persistence.spec.ts
+﻿// cd src && npx vitest run core/task/__tests__/Task.persistence.spec.ts
 
 import * as os from "os"
 import * as path from "path"
@@ -10,7 +10,7 @@ import { Task } from "../Task"
 import { ClineProvider } from "../../webview/ClineProvider"
 import { ContextProxy } from "../../config/ContextProxy"
 
-// ─── Hoisted mocks ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Hoisted mocks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const {
 	mockSaveApiMessages,
@@ -38,7 +38,7 @@ const {
 	mockPWaitFor: vi.fn().mockResolvedValue(undefined),
 }))
 
-// ─── Module mocks ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Module mocks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 vi.mock("delay", () => ({
 	__esModule: true,
@@ -191,7 +191,7 @@ vi.mock("../../../utils/fs", () => ({
 	fileExistsAtPath: vi.fn().mockReturnValue(false),
 }))
 
-// ─── Test suite ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Test suite â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe("Task persistence", () => {
 	let mockProvider: ClineProvider & Record<string, any>
@@ -253,7 +253,7 @@ describe("Task persistence", () => {
 		mockProvider.updateTaskHistory = vi.fn().mockResolvedValue(undefined)
 	})
 
-	// ── saveApiConversationHistory (via retrySaveApiConversationHistory) ──
+	// â”€â”€ saveApiConversationHistory (via retrySaveApiConversationHistory) â”€â”€
 
 	describe("saveApiConversationHistory", () => {
 		it("returns true on success", async () => {
@@ -351,7 +351,7 @@ describe("Task persistence", () => {
 		})
 	})
 
-	// ── saveClineMessages ────────────────────────────────────────────────
+	// â”€â”€ saveClineMessages â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	describe("saveClineMessages", () => {
 		it("returns true on success", async () => {
@@ -411,7 +411,7 @@ describe("Task persistence", () => {
 		})
 	})
 
-	// ── flushPendingToolResultsToHistory — save failure/success ───────────
+	// â”€â”€ flushPendingToolResultsToHistory â€” save failure/success â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	describe("flushPendingToolResultsToHistory persistence", () => {
 		it("retains userMessageContent on save failure", async () => {
@@ -475,3 +475,5 @@ describe("Task persistence", () => {
 		})
 	})
 })
+
+

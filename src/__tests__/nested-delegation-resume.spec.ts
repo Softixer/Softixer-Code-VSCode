@@ -1,7 +1,7 @@
-// npx vitest run __tests__/nested-delegation-resume.spec.ts
+﻿// npx vitest run __tests__/nested-delegation-resume.spec.ts
 
 import { describe, it, expect, vi, beforeEach } from "vitest"
-import { RooCodeEventName } from "@roo-code/types"
+import { SoftixerEventName } from "@roo-code/types"
 
 // Mock safe-stable-stringify to avoid runtime error
 
@@ -43,12 +43,12 @@ import type { Task } from "../core/task/Task"
 import { readTaskMessages } from "../core/task-persistence/taskMessages"
 import { readApiMessages, saveApiMessages, saveTaskMessages } from "../core/task-persistence"
 
-describe("Nested delegation resume (A → B → C)", () => {
+describe("Nested delegation resume (A â†’ B â†’ C)", () => {
 	beforeEach(() => {
 		vi.restoreAllMocks()
 	})
 
-	it("C completes → reopens B; then B completes → reopens A; emits correct events; no resume_task asks", async () => {
+	it("C completes â†’ reopens B; then B completes â†’ reopens A; emits correct events; no resume_task asks", async () => {
 		// Track which task is "current" to satisfy provider.reopenParentFromDelegation() child-close logic
 		let currentActiveId: string | undefined = "C"
 
@@ -198,8 +198,8 @@ describe("Nested delegation resume (A → B → C)", () => {
 
 		// Events emitted: C -> B hop
 		const eventNamesAfterC = emitSpy.mock.calls.map((c: any[]) => c[0])
-		expect(eventNamesAfterC).toContain(RooCodeEventName.TaskDelegationCompleted)
-		expect(eventNamesAfterC).toContain(RooCodeEventName.TaskDelegationResumed)
+		expect(eventNamesAfterC).toContain(SoftixerEventName.TaskDelegationCompleted)
+		expect(eventNamesAfterC).toContain(SoftixerEventName.TaskDelegationResumed)
 
 		// Step 2: B completes -> should reopen A automatically (parent reference missing, must use parentTaskId path)
 		const clineB = {
@@ -244,9 +244,9 @@ describe("Nested delegation resume (A → B → C)", () => {
 
 		// Provider emitted TaskDelegationCompleted/Resumed twice across both hops
 		const completedEvents = emitSpy.mock.calls.filter(
-			(c: any[]) => c[0] === RooCodeEventName.TaskDelegationCompleted,
+			(c: any[]) => c[0] === SoftixerEventName.TaskDelegationCompleted,
 		)
-		const resumedEvents = emitSpy.mock.calls.filter((c: any[]) => c[0] === RooCodeEventName.TaskDelegationResumed)
+		const resumedEvents = emitSpy.mock.calls.filter((c: any[]) => c[0] === SoftixerEventName.TaskDelegationResumed)
 		expect(completedEvents.length).toBeGreaterThanOrEqual(2)
 		expect(resumedEvents.length).toBeGreaterThanOrEqual(2)
 
@@ -256,3 +256,5 @@ describe("Nested delegation resume (A → B → C)", () => {
 		expect(hasAfromB).toBe(true)
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { render, screen } from "@/utils/test-utils"
+﻿import { render, screen } from "@/utils/test-utils"
 
 import type { HistoryItem } from "@roo-code/types"
 
@@ -333,3 +333,5 @@ describe("HistoryPreview", () => {
 		expect(mockToggleExpand).toHaveBeenCalledWith("task-1")
 	})
 })
+
+

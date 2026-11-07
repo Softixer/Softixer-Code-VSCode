@@ -1,4 +1,4 @@
-// npx vitest src/core/webview/__tests__/diagnosticsHandler.spec.ts
+﻿// npx vitest src/core/webview/__tests__/diagnosticsHandler.spec.ts
 
 import * as path from "path"
 
@@ -87,7 +87,7 @@ describe("generateErrorDiagnostics", () => {
 		expect(String(writtenContent)).toContain(
 			"// Please attach this file to a GitHub issue if it helps diagnose the problem faster",
 		)
-		expect(String(writtenContent)).not.toContain("support@roocode.com")
+		expect(String(writtenContent)).not.toContain("support@Softixer.com")
 		expect(String(writtenContent)).toContain('"error":')
 		expect(String(writtenContent)).toContain('"history":')
 		expect(String(writtenContent)).toContain('"version": "1.2.3"')
@@ -187,3 +187,4 @@ describe("generateErrorDiagnostics", () => {
 		expect(vscode.window.showErrorMessage).toHaveBeenCalledWith("Failed to generate diagnostics: Write failed")
 	})
 })
+

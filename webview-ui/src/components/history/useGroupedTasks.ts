@@ -1,13 +1,13 @@
-import { useState, useMemo, useCallback } from "react"
+﻿import { useState, useMemo, useCallback } from "react"
 import type { HistoryItem } from "@roo-code/types"
 import type { DisplayHistoryItem, SubtaskTreeNode, TaskGroup, GroupedTasksResult } from "./types"
 
 /**
  * Recursively builds a subtask tree node for the given task.
- * Pure function — exported for independent testing.
+ * Pure function â€” exported for independent testing.
  *
  * @param task - The task to build a tree node for
- * @param childrenMap - Map of parentId → direct children
+ * @param childrenMap - Map of parentId â†’ direct children
  * @param expandedIds - Set of task IDs whose children are currently expanded
  * @returns A SubtaskTreeNode with recursively built children sorted by ts (newest first)
  */
@@ -119,3 +119,5 @@ export function useGroupedTasks(tasks: HistoryItem[], searchQuery: string): Grou
 		isSearchMode,
 	}
 }
+
+

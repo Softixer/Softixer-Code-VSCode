@@ -1,4 +1,4 @@
-import { safeWriteJson } from "../../utils/safeWriteJson"
+﻿import { safeWriteJson } from "../../utils/safeWriteJson"
 import * as path from "path"
 import * as fs from "fs/promises"
 
@@ -54,3 +54,5 @@ export async function saveTaskMessages({ messages, taskId, globalStoragePath }: 
 	const filePath = path.join(taskDir, GlobalFileNames.uiMessages)
 	await safeWriteJson(filePath, messages)
 }
+
+

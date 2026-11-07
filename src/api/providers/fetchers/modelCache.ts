@@ -1,4 +1,4 @@
-import * as path from "path"
+﻿import * as path from "path"
 import fs from "fs/promises"
 import * as fsSync from "fs"
 
@@ -317,3 +317,5 @@ function getCacheDirectoryPathSync(): string | undefined {
 		return undefined
 	}
 }
+
+

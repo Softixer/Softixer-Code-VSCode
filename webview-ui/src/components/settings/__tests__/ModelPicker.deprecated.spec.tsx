@@ -1,4 +1,4 @@
-// npx vitest src/components/settings/__tests__/ModelPicker.deprecated.spec.tsx
+﻿// npx vitest src/components/settings/__tests__/ModelPicker.deprecated.spec.tsx
 
 import { render, screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
@@ -193,3 +193,5 @@ describe("ModelPicker - Deprecated Models", () => {
 		expect(screen.queryByText("This is a deprecated model")).not.toBeInTheDocument()
 	})
 })
+
+

@@ -1,4 +1,4 @@
-// pnpm --filter @roo-code/vscode-webview test src/components/chat/__tests__/ChatView.spec.tsx
+﻿// pnpm --filter @roo-code/vscode-webview test src/components/chat/__tests__/ChatView.spec.tsx
 
 import React from "react"
 import { render, waitFor, act, fireEvent } from "@/utils/test-utils"
@@ -1182,3 +1182,5 @@ describe("ChatView - Context Condensing Indicator Tests", () => {
 		)
 	})
 })
+
+

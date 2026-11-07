@@ -1,4 +1,4 @@
-import { ProviderSettings } from "@roo-code/types"
+﻿import { ProviderSettings } from "@roo-code/types"
 
 import { Task } from "../Task"
 import { ClineProvider } from "../../webview/ClineProvider"
@@ -186,3 +186,5 @@ describe("Task dispose method", () => {
 		expect(task.eventNames().length).toBe(0)
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { TodoItem } from "@roo-code/types"
 
@@ -143,3 +143,5 @@ export class NewTaskTool extends BaseTool<"new_task"> {
 }
 
 export const newTaskTool = new NewTaskTool()
+
+

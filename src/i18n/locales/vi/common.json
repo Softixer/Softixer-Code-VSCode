@@ -1,125 +1,125 @@
-{
+﻿{
 	"extension": {
-		"name": "Roo Code",
-		"description": "Toàn bộ đội ngũ phát triển AI trong trình soạn thảo của bạn."
+		"name": "Softixer",
+		"description": "ToÃ n bá»™ Ä‘á»™i ngÅ© phÃ¡t triá»ƒn AI trong trÃ¬nh soáº¡n tháº£o cá»§a báº¡n."
 	},
 	"number_format": {
 		"thousand_suffix": "k",
 		"million_suffix": "m",
 		"billion_suffix": "b"
 	},
-	"welcome": "Chào mừng, {{name}}! Bạn có {{count}} thông báo.",
+	"welcome": "ChÃ o má»«ng, {{name}}! Báº¡n cÃ³ {{count}} thÃ´ng bÃ¡o.",
 	"items": {
-		"zero": "Không có mục nào",
-		"one": "Một mục",
-		"other": "{{count}} mục"
+		"zero": "KhÃ´ng cÃ³ má»¥c nÃ o",
+		"one": "Má»™t má»¥c",
+		"other": "{{count}} má»¥c"
 	},
 	"confirmation": {
-		"reset_state": "Bạn có chắc chắn muốn đặt lại tất cả trạng thái và lưu trữ bí mật trong tiện ích mở rộng không? Hành động này không thể hoàn tác.",
-		"delete_config_profile": "Bạn có chắc chắn muốn xóa hồ sơ cấu hình này không?",
-		"delete_custom_mode_with_rules": "Bạn có chắc chắn muốn xóa chế độ {scope} này không?\n\nThao tác này cũng sẽ xóa thư mục quy tắc liên quan tại:\n{rulesFolderPath}"
+		"reset_state": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n Ä‘áº·t láº¡i táº¥t cáº£ tráº¡ng thÃ¡i vÃ  lÆ°u trá»¯ bÃ­ máº­t trong tiá»‡n Ã­ch má»Ÿ rá»™ng khÃ´ng? HÃ nh Ä‘á»™ng nÃ y khÃ´ng thá»ƒ hoÃ n tÃ¡c.",
+		"delete_config_profile": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a há»“ sÆ¡ cáº¥u hÃ¬nh nÃ y khÃ´ng?",
+		"delete_custom_mode_with_rules": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a cháº¿ Ä‘á»™ {scope} nÃ y khÃ´ng?\n\nThao tÃ¡c nÃ y cÅ©ng sáº½ xÃ³a thÆ° má»¥c quy táº¯c liÃªn quan táº¡i:\n{rulesFolderPath}"
 	},
 	"errors": {
-		"invalid_data_uri": "Định dạng URI dữ liệu không hợp lệ",
-		"error_copying_image": "Lỗi khi sao chép hình ảnh: {{errorMessage}}",
-		"error_saving_image": "Lỗi khi lưu hình ảnh: {{errorMessage}}",
-		"error_opening_image": "Lỗi khi mở hình ảnh: {{error}}",
-		"could_not_open_file": "Không thể mở tệp: {{errorMessage}}",
-		"could_not_open_file_generic": "Không thể mở tệp!",
-		"checkpoint_timeout": "Đã hết thời gian khi cố gắng khôi phục điểm kiểm tra.",
-		"checkpoint_failed": "Không thể khôi phục điểm kiểm tra.",
-		"git_not_installed": "Yêu cầu Git cho tính năng điểm kiểm tra. Vui lòng cài đặt Git để bật điểm kiểm tra.",
-		"checkpoint_no_first": "Không có điểm kiểm tra đầu tiên để so sánh.",
-		"checkpoint_no_previous": "Không có điểm kiểm tra trước đó để so sánh.",
-		"checkpoint_no_changes": "Không tìm thấy thay đổi.",
-		"checkpoint_diff_with_next": "Các thay đổi được so sánh với điểm kiểm tra tiếp theo",
-		"checkpoint_diff_since_first": "Các thay đổi kể từ điểm kiểm tra đầu tiên",
-		"checkpoint_diff_to_current": "Các thay đổi đối với không gian làm việc hiện tại",
-		"nested_git_repos_warning": "Điểm kiểm tra bị vô hiệu hóa vì phát hiện kho git lồng nhau tại: {{path}}. Để sử dụng điểm kiểm tra, vui lòng xóa hoặc di chuyển kho git lồng nhau này.",
-		"no_workspace": "Vui lòng mở thư mục dự án trước",
-		"update_support_prompt": "Không thể cập nhật lời nhắc hỗ trợ",
-		"reset_support_prompt": "Không thể đặt lại lời nhắc hỗ trợ",
-		"enhance_prompt": "Không thể nâng cao lời nhắc",
-		"get_system_prompt": "Không thể lấy lời nhắc hệ thống",
-		"search_commits": "Không thể tìm kiếm các commit",
-		"save_api_config": "Không thể lưu cấu hình API",
-		"create_api_config": "Không thể tạo cấu hình API",
-		"rename_api_config": "Không thể đổi tên cấu hình API",
-		"load_api_config": "Không thể tải cấu hình API",
-		"delete_api_config": "Không thể xóa cấu hình API",
-		"list_api_config": "Không thể lấy danh sách cấu hình API",
-		"update_server_timeout": "Không thể cập nhật thời gian chờ máy chủ",
-		"hmr_not_running": "Máy chủ phát triển cục bộ không chạy, HMR sẽ không hoạt động. Vui lòng chạy 'npm run dev' trước khi khởi chạy tiện ích mở rộng để bật HMR.",
-		"retrieve_current_mode": "Lỗi không thể truy xuất chế độ hiện tại từ trạng thái.",
-		"failed_delete_repo": "Không thể xóa kho lưu trữ hoặc nhánh liên quan: {{error}}",
-		"failed_remove_directory": "Không thể xóa thư mục nhiệm vụ: {{error}}",
-		"custom_storage_path_unusable": "Đường dẫn lưu trữ tùy chỉnh \"{{path}}\" không thể sử dụng được, sẽ sử dụng đường dẫn mặc định",
-		"cannot_access_path": "Không thể truy cập đường dẫn {{path}}: {{error}}",
-		"settings_import_failed": "Nhập cài đặt thất bại: {{error}}.",
-		"mistake_limit_guidance": "Điều này có thể cho thấy sự thất bại trong quá trình suy nghĩ của mô hình hoặc không thể sử dụng công cụ đúng cách, có thể được giảm thiểu bằng hướng dẫn của người dùng (ví dụ: \"Hãy thử chia nhỏ nhiệm vụ thành các bước nhỏ hơn\").",
-		"violated_organization_allowlist": "Không thể chạy tác vụ: hồ sơ hiện tại không tương thích với cài đặt của tổ chức của bạn",
-		"condense_failed": "Không thể nén ngữ cảnh",
-		"condense_not_enough_messages": "Không đủ tin nhắn để nén ngữ cảnh",
-		"condensed_recently": "Ngữ cảnh đã được nén gần đây; bỏ qua lần thử này",
-		"condense_handler_invalid": "Trình xử lý API để nén ngữ cảnh không hợp lệ",
-		"condense_api_failed": "Cuộc gọi API nén thất bại: {{message}}",
-		"url_timeout": "Trang web mất quá nhiều thời gian để tải (timeout). Điều này có thể do kết nối chậm, trang web nặng hoặc tạm thời không khả dụng. Bạn có thể thử lại sau hoặc kiểm tra xem URL có đúng không.",
-		"url_not_found": "Không thể tìm thấy địa chỉ trang web. Vui lòng kiểm tra URL có đúng không và thử lại.",
-		"no_internet": "Không có kết nối internet. Vui lòng kiểm tra kết nối mạng và thử lại.",
-		"url_forbidden": "Truy cập vào trang web này bị cấm. Trang có thể chặn truy cập tự động hoặc yêu cầu xác thực.",
-		"url_page_not_found": "Không tìm thấy trang. Vui lòng kiểm tra URL có đúng không.",
-		"url_request_aborted": "Yêu cầu lấy URL đã bị hủy. Điều này có thể xảy ra nếu trang web chặn truy cập tự động, yêu cầu xác thực hoặc có vấn đề về mạng. Vui lòng thử lại hoặc kiểm tra xem URL có thể truy cập được trong trình duyệt thông thường không.",
-		"url_fetch_failed": "Lỗi lấy nội dung URL: {{error}}",
-		"url_fetch_error_with_url": "Lỗi lấy nội dung cho {{url}}: {{error}}",
-		"command_timeout": "Thực thi lệnh đã hết thời gian chờ sau {{seconds}} giây",
-		"share_task_failed": "Không thể chia sẻ nhiệm vụ",
-		"share_no_active_task": "Không có nhiệm vụ hoạt động để chia sẻ",
-		"share_auth_required": "Cần xác thực. Vui lòng đăng nhập để chia sẻ nhiệm vụ.",
-		"share_not_enabled": "Chia sẻ nhiệm vụ không được bật cho tổ chức này.",
-		"share_task_not_found": "Không tìm thấy nhiệm vụ hoặc truy cập bị từ chối.",
-		"mode_import_failed": "Nhập chế độ thất bại: {{error}}",
-		"delete_rules_folder_failed": "Không thể xóa thư mục quy tắc: {{rulesFolderPath}}. Lỗi: {{error}}",
-		"command_not_found": "Không tìm thấy lệnh '{{name}}'",
-		"open_command_file": "Không thể mở tệp lệnh",
-		"delete_command": "Không thể xóa lệnh",
-		"no_workspace_for_project_command": "Không tìm thấy thư mục workspace cho lệnh dự án",
-		"command_already_exists": "Lệnh \"{{commandName}}\" đã tồn tại",
-		"create_command_failed": "Không thể tạo lệnh",
-		"command_template_content": "---\ndescription: \"Mô tả ngắn gọn về chức năng của lệnh này\"\n---\n\nĐây là một lệnh slash mới. Chỉnh sửa tệp này để tùy chỉnh hành vi của lệnh.",
+		"invalid_data_uri": "Äá»‹nh dáº¡ng URI dá»¯ liá»‡u khÃ´ng há»£p lá»‡",
+		"error_copying_image": "Lá»—i khi sao chÃ©p hÃ¬nh áº£nh: {{errorMessage}}",
+		"error_saving_image": "Lá»—i khi lÆ°u hÃ¬nh áº£nh: {{errorMessage}}",
+		"error_opening_image": "Lá»—i khi má»Ÿ hÃ¬nh áº£nh: {{error}}",
+		"could_not_open_file": "KhÃ´ng thá»ƒ má»Ÿ tá»‡p: {{errorMessage}}",
+		"could_not_open_file_generic": "KhÃ´ng thá»ƒ má»Ÿ tá»‡p!",
+		"checkpoint_timeout": "ÄÃ£ háº¿t thá»i gian khi cá»‘ gáº¯ng khÃ´i phá»¥c Ä‘iá»ƒm kiá»ƒm tra.",
+		"checkpoint_failed": "KhÃ´ng thá»ƒ khÃ´i phá»¥c Ä‘iá»ƒm kiá»ƒm tra.",
+		"git_not_installed": "YÃªu cáº§u Git cho tÃ­nh nÄƒng Ä‘iá»ƒm kiá»ƒm tra. Vui lÃ²ng cÃ i Ä‘áº·t Git Ä‘á»ƒ báº­t Ä‘iá»ƒm kiá»ƒm tra.",
+		"checkpoint_no_first": "KhÃ´ng cÃ³ Ä‘iá»ƒm kiá»ƒm tra Ä‘áº§u tiÃªn Ä‘á»ƒ so sÃ¡nh.",
+		"checkpoint_no_previous": "KhÃ´ng cÃ³ Ä‘iá»ƒm kiá»ƒm tra trÆ°á»›c Ä‘Ã³ Ä‘á»ƒ so sÃ¡nh.",
+		"checkpoint_no_changes": "KhÃ´ng tÃ¬m tháº¥y thay Ä‘á»•i.",
+		"checkpoint_diff_with_next": "CÃ¡c thay Ä‘á»•i Ä‘Æ°á»£c so sÃ¡nh vá»›i Ä‘iá»ƒm kiá»ƒm tra tiáº¿p theo",
+		"checkpoint_diff_since_first": "CÃ¡c thay Ä‘á»•i ká»ƒ tá»« Ä‘iá»ƒm kiá»ƒm tra Ä‘áº§u tiÃªn",
+		"checkpoint_diff_to_current": "CÃ¡c thay Ä‘á»•i Ä‘á»‘i vá»›i khÃ´ng gian lÃ m viá»‡c hiá»‡n táº¡i",
+		"nested_git_repos_warning": "Äiá»ƒm kiá»ƒm tra bá»‹ vÃ´ hiá»‡u hÃ³a vÃ¬ phÃ¡t hiá»‡n kho git lá»“ng nhau táº¡i: {{path}}. Äá»ƒ sá»­ dá»¥ng Ä‘iá»ƒm kiá»ƒm tra, vui lÃ²ng xÃ³a hoáº·c di chuyá»ƒn kho git lá»“ng nhau nÃ y.",
+		"no_workspace": "Vui lÃ²ng má»Ÿ thÆ° má»¥c dá»± Ã¡n trÆ°á»›c",
+		"update_support_prompt": "KhÃ´ng thá»ƒ cáº­p nháº­t lá»i nháº¯c há»— trá»£",
+		"reset_support_prompt": "KhÃ´ng thá»ƒ Ä‘áº·t láº¡i lá»i nháº¯c há»— trá»£",
+		"enhance_prompt": "KhÃ´ng thá»ƒ nÃ¢ng cao lá»i nháº¯c",
+		"get_system_prompt": "KhÃ´ng thá»ƒ láº¥y lá»i nháº¯c há»‡ thá»‘ng",
+		"search_commits": "KhÃ´ng thá»ƒ tÃ¬m kiáº¿m cÃ¡c commit",
+		"save_api_config": "KhÃ´ng thá»ƒ lÆ°u cáº¥u hÃ¬nh API",
+		"create_api_config": "KhÃ´ng thá»ƒ táº¡o cáº¥u hÃ¬nh API",
+		"rename_api_config": "KhÃ´ng thá»ƒ Ä‘á»•i tÃªn cáº¥u hÃ¬nh API",
+		"load_api_config": "KhÃ´ng thá»ƒ táº£i cáº¥u hÃ¬nh API",
+		"delete_api_config": "KhÃ´ng thá»ƒ xÃ³a cáº¥u hÃ¬nh API",
+		"list_api_config": "KhÃ´ng thá»ƒ láº¥y danh sÃ¡ch cáº¥u hÃ¬nh API",
+		"update_server_timeout": "KhÃ´ng thá»ƒ cáº­p nháº­t thá»i gian chá» mÃ¡y chá»§",
+		"hmr_not_running": "MÃ¡y chá»§ phÃ¡t triá»ƒn cá»¥c bá»™ khÃ´ng cháº¡y, HMR sáº½ khÃ´ng hoáº¡t Ä‘á»™ng. Vui lÃ²ng cháº¡y 'npm run dev' trÆ°á»›c khi khá»Ÿi cháº¡y tiá»‡n Ã­ch má»Ÿ rá»™ng Ä‘á»ƒ báº­t HMR.",
+		"retrieve_current_mode": "Lá»—i khÃ´ng thá»ƒ truy xuáº¥t cháº¿ Ä‘á»™ hiá»‡n táº¡i tá»« tráº¡ng thÃ¡i.",
+		"failed_delete_repo": "KhÃ´ng thá»ƒ xÃ³a kho lÆ°u trá»¯ hoáº·c nhÃ¡nh liÃªn quan: {{error}}",
+		"failed_remove_directory": "KhÃ´ng thá»ƒ xÃ³a thÆ° má»¥c nhiá»‡m vá»¥: {{error}}",
+		"custom_storage_path_unusable": "ÄÆ°á»ng dáº«n lÆ°u trá»¯ tÃ¹y chá»‰nh \"{{path}}\" khÃ´ng thá»ƒ sá»­ dá»¥ng Ä‘Æ°á»£c, sáº½ sá»­ dá»¥ng Ä‘Æ°á»ng dáº«n máº·c Ä‘á»‹nh",
+		"cannot_access_path": "KhÃ´ng thá»ƒ truy cáº­p Ä‘Æ°á»ng dáº«n {{path}}: {{error}}",
+		"settings_import_failed": "Nháº­p cÃ i Ä‘áº·t tháº¥t báº¡i: {{error}}.",
+		"mistake_limit_guidance": "Äiá»u nÃ y cÃ³ thá»ƒ cho tháº¥y sá»± tháº¥t báº¡i trong quÃ¡ trÃ¬nh suy nghÄ© cá»§a mÃ´ hÃ¬nh hoáº·c khÃ´ng thá»ƒ sá»­ dá»¥ng cÃ´ng cá»¥ Ä‘Ãºng cÃ¡ch, cÃ³ thá»ƒ Ä‘Æ°á»£c giáº£m thiá»ƒu báº±ng hÆ°á»›ng dáº«n cá»§a ngÆ°á»i dÃ¹ng (vÃ­ dá»¥: \"HÃ£y thá»­ chia nhá» nhiá»‡m vá»¥ thÃ nh cÃ¡c bÆ°á»›c nhá» hÆ¡n\").",
+		"violated_organization_allowlist": "KhÃ´ng thá»ƒ cháº¡y tÃ¡c vá»¥: há»“ sÆ¡ hiá»‡n táº¡i khÃ´ng tÆ°Æ¡ng thÃ­ch vá»›i cÃ i Ä‘áº·t cá»§a tá»• chá»©c cá»§a báº¡n",
+		"condense_failed": "KhÃ´ng thá»ƒ nÃ©n ngá»¯ cáº£nh",
+		"condense_not_enough_messages": "KhÃ´ng Ä‘á»§ tin nháº¯n Ä‘á»ƒ nÃ©n ngá»¯ cáº£nh",
+		"condensed_recently": "Ngá»¯ cáº£nh Ä‘Ã£ Ä‘Æ°á»£c nÃ©n gáº§n Ä‘Ã¢y; bá» qua láº§n thá»­ nÃ y",
+		"condense_handler_invalid": "TrÃ¬nh xá»­ lÃ½ API Ä‘á»ƒ nÃ©n ngá»¯ cáº£nh khÃ´ng há»£p lá»‡",
+		"condense_api_failed": "Cuá»™c gá»i API nÃ©n tháº¥t báº¡i: {{message}}",
+		"url_timeout": "Trang web máº¥t quÃ¡ nhiá»u thá»i gian Ä‘á»ƒ táº£i (timeout). Äiá»u nÃ y cÃ³ thá»ƒ do káº¿t ná»‘i cháº­m, trang web náº·ng hoáº·c táº¡m thá»i khÃ´ng kháº£ dá»¥ng. Báº¡n cÃ³ thá»ƒ thá»­ láº¡i sau hoáº·c kiá»ƒm tra xem URL cÃ³ Ä‘Ãºng khÃ´ng.",
+		"url_not_found": "KhÃ´ng thá»ƒ tÃ¬m tháº¥y Ä‘á»‹a chá»‰ trang web. Vui lÃ²ng kiá»ƒm tra URL cÃ³ Ä‘Ãºng khÃ´ng vÃ  thá»­ láº¡i.",
+		"no_internet": "KhÃ´ng cÃ³ káº¿t ná»‘i internet. Vui lÃ²ng kiá»ƒm tra káº¿t ná»‘i máº¡ng vÃ  thá»­ láº¡i.",
+		"url_forbidden": "Truy cáº­p vÃ o trang web nÃ y bá»‹ cáº¥m. Trang cÃ³ thá»ƒ cháº·n truy cáº­p tá»± Ä‘á»™ng hoáº·c yÃªu cáº§u xÃ¡c thá»±c.",
+		"url_page_not_found": "KhÃ´ng tÃ¬m tháº¥y trang. Vui lÃ²ng kiá»ƒm tra URL cÃ³ Ä‘Ãºng khÃ´ng.",
+		"url_request_aborted": "YÃªu cáº§u láº¥y URL Ä‘Ã£ bá»‹ há»§y. Äiá»u nÃ y cÃ³ thá»ƒ xáº£y ra náº¿u trang web cháº·n truy cáº­p tá»± Ä‘á»™ng, yÃªu cáº§u xÃ¡c thá»±c hoáº·c cÃ³ váº¥n Ä‘á» vá» máº¡ng. Vui lÃ²ng thá»­ láº¡i hoáº·c kiá»ƒm tra xem URL cÃ³ thá»ƒ truy cáº­p Ä‘Æ°á»£c trong trÃ¬nh duyá»‡t thÃ´ng thÆ°á»ng khÃ´ng.",
+		"url_fetch_failed": "Lá»—i láº¥y ná»™i dung URL: {{error}}",
+		"url_fetch_error_with_url": "Lá»—i láº¥y ná»™i dung cho {{url}}: {{error}}",
+		"command_timeout": "Thá»±c thi lá»‡nh Ä‘Ã£ háº¿t thá»i gian chá» sau {{seconds}} giÃ¢y",
+		"share_task_failed": "KhÃ´ng thá»ƒ chia sáº» nhiá»‡m vá»¥",
+		"share_no_active_task": "KhÃ´ng cÃ³ nhiá»‡m vá»¥ hoáº¡t Ä‘á»™ng Ä‘á»ƒ chia sáº»",
+		"share_auth_required": "Cáº§n xÃ¡c thá»±c. Vui lÃ²ng Ä‘Äƒng nháº­p Ä‘á»ƒ chia sáº» nhiá»‡m vá»¥.",
+		"share_not_enabled": "Chia sáº» nhiá»‡m vá»¥ khÃ´ng Ä‘Æ°á»£c báº­t cho tá»• chá»©c nÃ y.",
+		"share_task_not_found": "KhÃ´ng tÃ¬m tháº¥y nhiá»‡m vá»¥ hoáº·c truy cáº­p bá»‹ tá»« chá»‘i.",
+		"mode_import_failed": "Nháº­p cháº¿ Ä‘á»™ tháº¥t báº¡i: {{error}}",
+		"delete_rules_folder_failed": "KhÃ´ng thá»ƒ xÃ³a thÆ° má»¥c quy táº¯c: {{rulesFolderPath}}. Lá»—i: {{error}}",
+		"command_not_found": "KhÃ´ng tÃ¬m tháº¥y lá»‡nh '{{name}}'",
+		"open_command_file": "KhÃ´ng thá»ƒ má»Ÿ tá»‡p lá»‡nh",
+		"delete_command": "KhÃ´ng thá»ƒ xÃ³a lá»‡nh",
+		"no_workspace_for_project_command": "KhÃ´ng tÃ¬m tháº¥y thÆ° má»¥c workspace cho lá»‡nh dá»± Ã¡n",
+		"command_already_exists": "Lá»‡nh \"{{commandName}}\" Ä‘Ã£ tá»“n táº¡i",
+		"create_command_failed": "KhÃ´ng thá»ƒ táº¡o lá»‡nh",
+		"command_template_content": "---\ndescription: \"MÃ´ táº£ ngáº¯n gá»n vá» chá»©c nÄƒng cá»§a lá»‡nh nÃ y\"\n---\n\nÄÃ¢y lÃ  má»™t lá»‡nh slash má»›i. Chá»‰nh sá»­a tá»‡p nÃ y Ä‘á»ƒ tÃ¹y chá»‰nh hÃ nh vi cá»§a lá»‡nh.",
 		"claudeCode": {
-			"processExited": "Tiến trình Claude Code thoát với mã {{exitCode}}.",
-			"errorOutput": "Đầu ra lỗi: {{output}}",
-			"processExitedWithError": "Tiến trình Claude Code thoát với mã {{exitCode}}. Đầu ra lỗi: {{output}}",
-			"stoppedWithReason": "Claude Code dừng lại vì lý do: {{reason}}",
+			"processExited": "Tiáº¿n trÃ¬nh Claude Code thoÃ¡t vá»›i mÃ£ {{exitCode}}.",
+			"errorOutput": "Äáº§u ra lá»—i: {{output}}",
+			"processExitedWithError": "Tiáº¿n trÃ¬nh Claude Code thoÃ¡t vá»›i mÃ£ {{exitCode}}. Äáº§u ra lá»—i: {{output}}",
+			"stoppedWithReason": "Claude Code dá»«ng láº¡i vÃ¬ lÃ½ do: {{reason}}",
 			"apiKeyModelPlanMismatch": "API keys and subscription plans allow different models. Make sure the selected model is included in your plan."
 		},
 		"message": {
-			"no_active_task_to_delete": "Không có nhiệm vụ hoạt động để xóa tin nhắn",
-			"invalid_timestamp_for_deletion": "Dấu thời gian tin nhắn không hợp lệ để xóa",
-			"cannot_delete_missing_timestamp": "Không thể xóa tin nhắn: thiếu dấu thời gian",
-			"cannot_delete_invalid_timestamp": "Không thể xóa tin nhắn: dấu thời gian không hợp lệ",
-			"message_not_found": "Không tìm thấy tin nhắn có dấu thời gian {{messageTs}}",
-			"error_deleting_message": "Lỗi xóa tin nhắn: {{error}}",
-			"error_editing_message": "Lỗi chỉnh sửa tin nhắn: {{error}}"
+			"no_active_task_to_delete": "KhÃ´ng cÃ³ nhiá»‡m vá»¥ hoáº¡t Ä‘á»™ng Ä‘á»ƒ xÃ³a tin nháº¯n",
+			"invalid_timestamp_for_deletion": "Dáº¥u thá»i gian tin nháº¯n khÃ´ng há»£p lá»‡ Ä‘á»ƒ xÃ³a",
+			"cannot_delete_missing_timestamp": "KhÃ´ng thá»ƒ xÃ³a tin nháº¯n: thiáº¿u dáº¥u thá»i gian",
+			"cannot_delete_invalid_timestamp": "KhÃ´ng thá»ƒ xÃ³a tin nháº¯n: dáº¥u thá»i gian khÃ´ng há»£p lá»‡",
+			"message_not_found": "KhÃ´ng tÃ¬m tháº¥y tin nháº¯n cÃ³ dáº¥u thá»i gian {{messageTs}}",
+			"error_deleting_message": "Lá»—i xÃ³a tin nháº¯n: {{error}}",
+			"error_editing_message": "Lá»—i chá»‰nh sá»­a tin nháº¯n: {{error}}"
 		},
 		"gemini": {
-			"generate_stream": "Lỗi luồng ngữ cảnh tạo Gemini: {{error}}",
-			"generate_complete_prompt": "Lỗi hoàn thành Gemini: {{error}}",
-			"sources": "Nguồn:",
-			"thinking_complete_no_output": "(Đã suy nghĩ xong nhưng không có kết quả đầu ra.)",
-			"thinking_complete_truncated": "(Đã suy nghĩ xong nhưng kết quả bị cắt ngắn do giới hạn token.)",
-			"thinking_complete_safety": "(Đã suy nghĩ xong nhưng kết quả bị chặn do cài đặt an toàn.)",
-			"thinking_complete_recitation": "(Đã suy nghĩ xong nhưng kết quả bị chặn do kiểm tra trích dẫn.)"
+			"generate_stream": "Lá»—i luá»“ng ngá»¯ cáº£nh táº¡o Gemini: {{error}}",
+			"generate_complete_prompt": "Lá»—i hoÃ n thÃ nh Gemini: {{error}}",
+			"sources": "Nguá»“n:",
+			"thinking_complete_no_output": "(ÄÃ£ suy nghÄ© xong nhÆ°ng khÃ´ng cÃ³ káº¿t quáº£ Ä‘áº§u ra.)",
+			"thinking_complete_truncated": "(ÄÃ£ suy nghÄ© xong nhÆ°ng káº¿t quáº£ bá»‹ cáº¯t ngáº¯n do giá»›i háº¡n token.)",
+			"thinking_complete_safety": "(ÄÃ£ suy nghÄ© xong nhÆ°ng káº¿t quáº£ bá»‹ cháº·n do cÃ i Ä‘áº·t an toÃ n.)",
+			"thinking_complete_recitation": "(ÄÃ£ suy nghÄ© xong nhÆ°ng káº¿t quáº£ bá»‹ cháº·n do kiá»ƒm tra trÃ­ch dáº«n.)"
 		},
 		"api": {
-			"invalidKeyInvalidChars": "Khóa API chứa ký tự không hợp lệ.",
-			"apiRequestFailed": "Yêu cầu API thất bại ({{status}})"
+			"invalidKeyInvalidChars": "KhÃ³a API chá»©a kÃ½ tá»± khÃ´ng há»£p lá»‡.",
+			"apiRequestFailed": "YÃªu cáº§u API tháº¥t báº¡i ({{status}})"
 		},
-		"manual_url_empty": "Vui lòng nhập URL callback hợp lệ",
-		"manual_url_no_query": "URL callback không hợp lệ: thiếu tham số truy vấn",
-		"manual_url_missing_params": "URL callback không hợp lệ: thiếu tham số bắt buộc (code và state)",
-		"manual_url_auth_failed": "Xác thực URL thủ công thất bại",
-		"manual_url_auth_error": "Xác thực thất bại",
+		"manual_url_empty": "Vui lÃ²ng nháº­p URL callback há»£p lá»‡",
+		"manual_url_no_query": "URL callback khÃ´ng há»£p lá»‡: thiáº¿u tham sá»‘ truy váº¥n",
+		"manual_url_missing_params": "URL callback khÃ´ng há»£p lá»‡: thiáº¿u tham sá»‘ báº¯t buá»™c (code vÃ  state)",
+		"manual_url_auth_failed": "XÃ¡c thá»±c URL thá»§ cÃ´ng tháº¥t báº¡i",
+		"manual_url_auth_error": "XÃ¡c thá»±c tháº¥t báº¡i",
 		"openAiCodex": {
 			"notAuthenticated": "Not authenticated with OpenAI Codex. Please sign in using the OpenAI Codex OAuth flow.",
 			"invalidRequest": "Invalid request to Codex API. Please check your input parameters.",
@@ -140,100 +140,101 @@
 		}
 	},
 	"warnings": {
-		"no_terminal_content": "Không có nội dung terminal được chọn",
-		"missing_task_files": "Các tệp của nhiệm vụ này bị thiếu. Bạn có muốn xóa nó khỏi danh sách nhiệm vụ không?",
-		"auto_import_failed": "Không thể tự động nhập cài đặt RooCode: {{error}}"
+		"no_terminal_content": "KhÃ´ng cÃ³ ná»™i dung terminal Ä‘Æ°á»£c chá»n",
+		"missing_task_files": "CÃ¡c tá»‡p cá»§a nhiá»‡m vá»¥ nÃ y bá»‹ thiáº¿u. Báº¡n cÃ³ muá»‘n xÃ³a nÃ³ khá»i danh sÃ¡ch nhiá»‡m vá»¥ khÃ´ng?",
+		"auto_import_failed": "KhÃ´ng thá»ƒ tá»± Ä‘á»™ng nháº­p cÃ i Ä‘áº·t Softixer: {{error}}"
 	},
 	"info": {
-		"no_changes": "Không tìm thấy thay đổi nào.",
-		"clipboard_copy": "Lời nhắc hệ thống đã được sao chép thành công vào clipboard",
-		"history_cleanup": "Đã dọn dẹp {{count}} nhiệm vụ có tệp bị thiếu khỏi lịch sử.",
-		"custom_storage_path_set": "Đã thiết lập đường dẫn lưu trữ tùy chỉnh: {{path}}",
-		"default_storage_path": "Đã quay lại sử dụng đường dẫn lưu trữ mặc định",
-		"settings_imported": "Cài đặt đã được nhập thành công.",
-		"auto_import_success": "Cài đặt RooCode đã được tự động nhập từ {{filename}}",
-		"share_link_copied": "Liên kết chia sẻ đã được sao chép vào clipboard",
-		"image_copied_to_clipboard": "URI dữ liệu hình ảnh đã được sao chép vào clipboard",
-		"image_saved": "Hình ảnh đã được lưu vào {{path}}",
-		"organization_share_link_copied": "Liên kết chia sẻ tổ chức đã được sao chép vào clipboard!",
-		"public_share_link_copied": "Liên kết chia sẻ công khai đã được sao chép vào clipboard!",
-		"mode_exported": "Chế độ '{{mode}}' đã được xuất thành công",
-		"mode_imported": "Chế độ đã được nhập thành công"
+		"no_changes": "KhÃ´ng tÃ¬m tháº¥y thay Ä‘á»•i nÃ o.",
+		"clipboard_copy": "Lá»i nháº¯c há»‡ thá»‘ng Ä‘Ã£ Ä‘Æ°á»£c sao chÃ©p thÃ nh cÃ´ng vÃ o clipboard",
+		"history_cleanup": "ÄÃ£ dá»n dáº¹p {{count}} nhiá»‡m vá»¥ cÃ³ tá»‡p bá»‹ thiáº¿u khá»i lá»‹ch sá»­.",
+		"custom_storage_path_set": "ÄÃ£ thiáº¿t láº­p Ä‘Æ°á»ng dáº«n lÆ°u trá»¯ tÃ¹y chá»‰nh: {{path}}",
+		"default_storage_path": "ÄÃ£ quay láº¡i sá»­ dá»¥ng Ä‘Æ°á»ng dáº«n lÆ°u trá»¯ máº·c Ä‘á»‹nh",
+		"settings_imported": "CÃ i Ä‘áº·t Ä‘Ã£ Ä‘Æ°á»£c nháº­p thÃ nh cÃ´ng.",
+		"auto_import_success": "CÃ i Ä‘áº·t Softixer Ä‘Ã£ Ä‘Æ°á»£c tá»± Ä‘á»™ng nháº­p tá»« {{filename}}",
+		"share_link_copied": "LiÃªn káº¿t chia sáº» Ä‘Ã£ Ä‘Æ°á»£c sao chÃ©p vÃ o clipboard",
+		"image_copied_to_clipboard": "URI dá»¯ liá»‡u hÃ¬nh áº£nh Ä‘Ã£ Ä‘Æ°á»£c sao chÃ©p vÃ o clipboard",
+		"image_saved": "HÃ¬nh áº£nh Ä‘Ã£ Ä‘Æ°á»£c lÆ°u vÃ o {{path}}",
+		"organization_share_link_copied": "LiÃªn káº¿t chia sáº» tá»• chá»©c Ä‘Ã£ Ä‘Æ°á»£c sao chÃ©p vÃ o clipboard!",
+		"public_share_link_copied": "LiÃªn káº¿t chia sáº» cÃ´ng khai Ä‘Ã£ Ä‘Æ°á»£c sao chÃ©p vÃ o clipboard!",
+		"mode_exported": "Cháº¿ Ä‘á»™ '{{mode}}' Ä‘Ã£ Ä‘Æ°á»£c xuáº¥t thÃ nh cÃ´ng",
+		"mode_imported": "Cháº¿ Ä‘á»™ Ä‘Ã£ Ä‘Æ°á»£c nháº­p thÃ nh cÃ´ng"
 	},
 	"answers": {
-		"yes": "Có",
-		"no": "Không",
-		"remove": "Xóa",
-		"keep": "Giữ"
+		"yes": "CÃ³",
+		"no": "KhÃ´ng",
+		"remove": "XÃ³a",
+		"keep": "Giá»¯"
 	},
 	"buttons": {
-		"save": "Lưu",
-		"edit": "Chỉnh sửa",
-		"learn_more": "Tìm hiểu thêm"
+		"save": "LÆ°u",
+		"edit": "Chá»‰nh sá»­a",
+		"learn_more": "TÃ¬m hiá»ƒu thÃªm"
 	},
 	"tasks": {
-		"canceled": "Lỗi nhiệm vụ: Nó đã bị dừng và hủy bởi người dùng.",
-		"deleted": "Nhiệm vụ thất bại: Nó đã bị dừng và xóa bởi người dùng.",
-		"incomplete": "Nhiệm vụ #{{taskNumber}} (Chưa hoàn thành)",
-		"no_messages": "Nhiệm vụ #{{taskNumber}} (Không có tin nhắn)"
+		"canceled": "Lá»—i nhiá»‡m vá»¥: NÃ³ Ä‘Ã£ bá»‹ dá»«ng vÃ  há»§y bá»Ÿi ngÆ°á»i dÃ¹ng.",
+		"deleted": "Nhiá»‡m vá»¥ tháº¥t báº¡i: NÃ³ Ä‘Ã£ bá»‹ dá»«ng vÃ  xÃ³a bá»Ÿi ngÆ°á»i dÃ¹ng.",
+		"incomplete": "Nhiá»‡m vá»¥ #{{taskNumber}} (ChÆ°a hoÃ n thÃ nh)",
+		"no_messages": "Nhiá»‡m vá»¥ #{{taskNumber}} (KhÃ´ng cÃ³ tin nháº¯n)"
 	},
 	"interruption": {
-		"responseInterruptedByUser": "Phản hồi bị gián đoạn bởi người dùng",
-		"responseInterruptedByApiError": "Phản hồi bị gián đoạn bởi lỗi API",
-		"streamTerminatedByProvider": "Nhà cung cấp đã kết thúc yêu cầu"
+		"responseInterruptedByUser": "Pháº£n há»“i bá»‹ giÃ¡n Ä‘oáº¡n bá»Ÿi ngÆ°á»i dÃ¹ng",
+		"responseInterruptedByApiError": "Pháº£n há»“i bá»‹ giÃ¡n Ä‘oáº¡n bá»Ÿi lá»—i API",
+		"streamTerminatedByProvider": "NhÃ  cung cáº¥p Ä‘Ã£ káº¿t thÃºc yÃªu cáº§u"
 	},
 	"storage": {
-		"prompt_custom_path": "Nhập đường dẫn lưu trữ tùy chỉnh cho lịch sử hội thoại, để trống để sử dụng vị trí mặc định",
-		"path_placeholder": "D:\\RooCodeStorage",
-		"enter_absolute_path": "Vui lòng nhập đường dẫn tuyệt đối (ví dụ: D:\\RooCodeStorage hoặc /home/user/storage)",
-		"enter_valid_path": "Vui lòng nhập đường dẫn hợp lệ"
+		"prompt_custom_path": "Nháº­p Ä‘Æ°á»ng dáº«n lÆ°u trá»¯ tÃ¹y chá»‰nh cho lá»‹ch sá»­ há»™i thoáº¡i, Ä‘á»ƒ trá»‘ng Ä‘á»ƒ sá»­ dá»¥ng vá»‹ trÃ­ máº·c Ä‘á»‹nh",
+		"path_placeholder": "D:\\SoftixerStorage",
+		"enter_absolute_path": "Vui lÃ²ng nháº­p Ä‘Æ°á»ng dáº«n tuyá»‡t Ä‘á»‘i (vÃ­ dá»¥: D:\\SoftixerStorage hoáº·c /home/user/storage)",
+		"enter_valid_path": "Vui lÃ²ng nháº­p Ä‘Æ°á»ng dáº«n há»£p lá»‡"
 	},
 	"input": {
-		"task_prompt": "Bạn muốn Roo làm gì?",
-		"task_placeholder": "Nhập nhiệm vụ của bạn ở đây"
+		"task_prompt": "Báº¡n muá»‘n Roo lÃ m gÃ¬?",
+		"task_placeholder": "Nháº­p nhiá»‡m vá»¥ cá»§a báº¡n á»Ÿ Ä‘Ã¢y"
 	},
 	"settings": {
 		"providers": {}
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": "YAML không hợp lệ trong tệp .roomodes tại dòng {{line}}. Vui lòng kiểm tra:\n• Thụt lề đúng (dùng dấu cách, không dùng tab)\n• Dấu ngoặc kép và ngoặc đơn khớp nhau\n• Cú pháp YAML hợp lệ",
-			"schemaValidationError": "Định dạng chế độ tùy chỉnh không hợp lệ trong .roomodes:\n{{issues}}",
-			"invalidFormat": "Định dạng chế độ tùy chỉnh không hợp lệ. Vui lòng đảm bảo cài đặt của bạn tuân theo định dạng YAML đúng.",
-			"updateFailed": "Cập nhật chế độ tùy chỉnh thất bại: {{error}}",
-			"deleteFailed": "Xóa chế độ tùy chỉnh thất bại: {{error}}",
-			"resetFailed": "Đặt lại chế độ tùy chỉnh thất bại: {{error}}",
-			"modeNotFound": "Lỗi ghi: Không tìm thấy chế độ",
-			"noWorkspaceForProject": "Không tìm thấy thư mục workspace cho chế độ dành riêng cho dự án",
-			"rulesCleanupFailed": "Đã xóa chế độ thành công, nhưng không thể xóa thư mục quy tắc tại {{rulesFolderPath}}. Bạn có thể cần xóa thủ công."
+			"yamlParseError": "YAML khÃ´ng há»£p lá»‡ trong tá»‡p .roomodes táº¡i dÃ²ng {{line}}. Vui lÃ²ng kiá»ƒm tra:\nâ€¢ Thá»¥t lá» Ä‘Ãºng (dÃ¹ng dáº¥u cÃ¡ch, khÃ´ng dÃ¹ng tab)\nâ€¢ Dáº¥u ngoáº·c kÃ©p vÃ  ngoáº·c Ä‘Æ¡n khá»›p nhau\nâ€¢ CÃº phÃ¡p YAML há»£p lá»‡",
+			"schemaValidationError": "Äá»‹nh dáº¡ng cháº¿ Ä‘á»™ tÃ¹y chá»‰nh khÃ´ng há»£p lá»‡ trong .roomodes:\n{{issues}}",
+			"invalidFormat": "Äá»‹nh dáº¡ng cháº¿ Ä‘á»™ tÃ¹y chá»‰nh khÃ´ng há»£p lá»‡. Vui lÃ²ng Ä‘áº£m báº£o cÃ i Ä‘áº·t cá»§a báº¡n tuÃ¢n theo Ä‘á»‹nh dáº¡ng YAML Ä‘Ãºng.",
+			"updateFailed": "Cáº­p nháº­t cháº¿ Ä‘á»™ tÃ¹y chá»‰nh tháº¥t báº¡i: {{error}}",
+			"deleteFailed": "XÃ³a cháº¿ Ä‘á»™ tÃ¹y chá»‰nh tháº¥t báº¡i: {{error}}",
+			"resetFailed": "Äáº·t láº¡i cháº¿ Ä‘á»™ tÃ¹y chá»‰nh tháº¥t báº¡i: {{error}}",
+			"modeNotFound": "Lá»—i ghi: KhÃ´ng tÃ¬m tháº¥y cháº¿ Ä‘á»™",
+			"noWorkspaceForProject": "KhÃ´ng tÃ¬m tháº¥y thÆ° má»¥c workspace cho cháº¿ Ä‘á»™ dÃ nh riÃªng cho dá»± Ã¡n",
+			"rulesCleanupFailed": "ÄÃ£ xÃ³a cháº¿ Ä‘á»™ thÃ nh cÃ´ng, nhÆ°ng khÃ´ng thá»ƒ xÃ³a thÆ° má»¥c quy táº¯c táº¡i {{rulesFolderPath}}. Báº¡n cÃ³ thá»ƒ cáº§n xÃ³a thá»§ cÃ´ng."
 		},
 		"scope": {
-			"project": "dự án",
-			"global": "toàn cầu"
+			"project": "dá»± Ã¡n",
+			"global": "toÃ n cáº§u"
 		}
 	},
 	"prompts": {
 		"deleteMode": {
-			"title": "Xóa chế độ tùy chỉnh",
-			"description": "Bạn có chắc chắn muốn xóa chế độ {{scope}} này không? Thao tác này cũng θα xóa thư mục quy tắc liên quan tại {{rulesFolderPath}}",
+			"title": "XÃ³a cháº¿ Ä‘á»™ tÃ¹y chá»‰nh",
+			"description": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a cháº¿ Ä‘á»™ {{scope}} nÃ y khÃ´ng? Thao tÃ¡c nÃ y cÅ©ng Î¸Î± xÃ³a thÆ° má»¥c quy táº¯c liÃªn quan táº¡i {{rulesFolderPath}}",
 			"translations": {
-				"title": "Xóa chế độ",
-				"description": "Bạn có chắc chắn muốn xóa chế độ này không?",
-				"deleteMessage": "Chỉ chế độ này",
-				"rulesFolderMessage": "Thư mục quy tắc cũng sẽ bị xóa nếu tồn tại.",
-				"deleteConfirmation": "Chắc chắn xóa chế độ này?"
+				"title": "XÃ³a cháº¿ Ä‘á»™",
+				"description": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a cháº¿ Ä‘á»™ nÃ y khÃ´ng?",
+				"deleteMessage": "Chá»‰ cháº¿ Ä‘á»™ nÃ y",
+				"rulesFolderMessage": "ThÆ° má»¥c quy táº¯c cÅ©ng sáº½ bá»‹ xÃ³a náº¿u tá»“n táº¡i.",
+				"deleteConfirmation": "Cháº¯c cháº¯n xÃ³a cháº¿ Ä‘á»™ nÃ y?"
 			},
-			"descriptionNoRules": "Bạn có chắc chắn muốn xóa chế độ tùy chỉnh này không?",
-			"confirm": "Xóa"
+			"descriptionNoRules": "Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a cháº¿ Ä‘á»™ tÃ¹y chá»‰nh nÃ y khÃ´ng?",
+			"confirm": "XÃ³a"
 		}
 	},
 	"commands": {
 		"preventCompletionWithOpenTodos": {
-			"description": "Ngăn chặn hoàn thành nhiệm vụ khi có các todo chưa hoàn thành trong danh sách todo"
+			"description": "NgÄƒn cháº·n hoÃ n thÃ nh nhiá»‡m vá»¥ khi cÃ³ cÃ¡c todo chÆ°a hoÃ n thÃ nh trong danh sÃ¡ch todo"
 		}
 	},
 	"docsLink": {
 		"label": "Docs",
-		"url": "https://github.com/RooCodeInc/Roo-Code"
+		"url": "https://github.com/SoftixerInc/softixer"
 	}
 }
+

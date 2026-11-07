@@ -1,4 +1,4 @@
-import * as fs from "fs/promises"
+﻿import * as fs from "fs/promises"
 import * as fsSync from "fs"
 import * as path from "path"
 
@@ -72,7 +72,7 @@ export class TaskHistoryStore {
 		})
 	}
 
-	// ────────────────────────────── Lifecycle ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Lifecycle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Load index, reconcile if needed, start watchers.
@@ -126,7 +126,7 @@ export class TaskHistoryStore {
 		})
 	}
 
-	// ────────────────────────────── Reads ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Reads â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Get a single history item by task ID.
@@ -149,7 +149,7 @@ export class TaskHistoryStore {
 		return this.getAll().filter((item) => item.workspace === workspace)
 	}
 
-	// ────────────────────────────── Mutations ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Mutations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Insert or update a history item.
@@ -233,7 +233,7 @@ export class TaskHistoryStore {
 		})
 	}
 
-	// ────────────────────────────── Reconciliation ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Reconciliation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Scan task directories vs index and fix any drift.
@@ -289,7 +289,7 @@ export class TaskHistoryStore {
 		})
 	}
 
-	// ────────────────────────────── Cache invalidation ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Cache invalidation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Invalidate a single task's cache entry (re-read from disk on next access).
@@ -314,7 +314,7 @@ export class TaskHistoryStore {
 		this.cache.clear()
 	}
 
-	// ────────────────────────────── Migration ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Migration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Migrate from globalState taskHistory array to per-task files.
@@ -359,7 +359,7 @@ export class TaskHistoryStore {
 		await this.writeIndex()
 	}
 
-	// ────────────────────────────── Private: Index management ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Private: Index management â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Load the `_index.json` file into the in-memory cache.
@@ -432,7 +432,7 @@ export class TaskHistoryStore {
 		await this.writeIndex()
 	}
 
-	// ────────────────────────────── Private: Per-task file I/O ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Private: Per-task file I/O â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Write a HistoryItem to its per-task `history_item.json` file.
@@ -457,7 +457,7 @@ export class TaskHistoryStore {
 		}
 	}
 
-	// ────────────────────────────── Private: fs.watch ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Private: fs.watch â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Watch the tasks directory for changes from other instances.
@@ -529,7 +529,7 @@ export class TaskHistoryStore {
 		}, TaskHistoryStore.RECONCILE_INTERVAL_MS)
 	}
 
-	// ────────────────────────────── Private: Write lock ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Private: Write lock â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Serializes all read-modify-write operations within a single extension
@@ -544,7 +544,7 @@ export class TaskHistoryStore {
 		return result
 	}
 
-	// ────────────────────────────── Private: Path helpers ──────────────────────────────
+	// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Private: Path helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 	/**
 	 * Get the tasks base directory path, resolving custom storage paths.
@@ -570,3 +570,5 @@ export class TaskHistoryStore {
 		return path.join(tasksDir, GlobalFileNames.historyIndex)
 	}
 }
+
+

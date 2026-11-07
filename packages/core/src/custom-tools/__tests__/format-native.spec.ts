@@ -1,4 +1,4 @@
-// pnpm --filter @roo-code/core test src/custom-tools/__tests__/format-native.spec.ts
+﻿// pnpm --filter @roo-code/core test src/custom-tools/__tests__/format-native.spec.ts
 
 import { type SerializedCustomToolDefinition, parametersSchema as z, defineCustomTool } from "@roo-code/types"
 
@@ -249,3 +249,5 @@ describe("Native Protocol snapshots", () => {
 		expect(result).toMatchSnapshot()
 	})
 })
+
+

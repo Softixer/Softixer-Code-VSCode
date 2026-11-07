@@ -1,5 +1,5 @@
 {
-	"greeting": "Bienvenue sur Roo Code",
+	"greeting": "Bienvenue sur Softixer",
 	"task": {
 		"title": "Tâche",
 		"expand": "Développer la tâche",
@@ -90,7 +90,7 @@
 	"enqueueMessage": "Ajouter le message à la file d'attente (sera envoyé après la fin de la tâche en cours)",
 	"scrollToBottom": "Défiler jusqu'au bas du chat",
 	"scrollToLatestCheckpoint": "Défiler jusqu'au checkpoint précédent",
-	"about": "Roo Code est une équipe complète de développeurs IA dans votre éditeur.",
+	"about": "Softixer est une équipe complète de développeurs IA dans votre éditeur.",
 	"docs": "Consultez notre <DocsLink>documentation</DocsLink> pour en savoir plus.",
 	"onboarding": "Votre liste de tâches dans cet espace de travail est vide.",
 	"rooTips": {
@@ -135,7 +135,7 @@
 	"diffError": {
 		"title": "Modification échouée"
 	},
-	"troubleMessage": "Roo rencontre des difficultés...",
+	"troubleMessage": "Softixer rencontre des difficultés...",
 	"apiRequest": {
 		"title": "Requête API",
 		"failed": "Échec de la requête API",
@@ -178,43 +178,43 @@
 		"current": "Actuel"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo veut lire ce fichier",
-		"wantsToReadOutsideWorkspace": "Roo veut lire ce fichier en dehors de l'espace de travail",
-		"didRead": "Roo a lu ce fichier",
-		"wantsToEdit": "Roo veut éditer ce fichier",
-		"wantsToEditOutsideWorkspace": "Roo veut éditer ce fichier en dehors de l'espace de travail",
-		"wantsToEditProtected": "Roo veut éditer un fichier de configuration protégé",
-		"wantsToCreate": "Roo veut créer un nouveau fichier",
-		"wantsToSearchReplace": "Roo veut effectuer une recherche et remplacement sur ce fichier",
-		"didSearchReplace": "Roo a effectué une recherche et remplacement sur ce fichier",
-		"wantsToInsert": "Roo veut insérer du contenu dans ce fichier",
-		"wantsToInsertWithLineNumber": "Roo veut insérer du contenu dans ce fichier à la ligne {{lineNumber}}",
-		"wantsToInsertAtEnd": "Roo veut ajouter du contenu à la fin de ce fichier",
-		"wantsToReadAndXMore": "Roo veut lire ce fichier et {{count}} de plus",
-		"wantsToReadMultiple": "Roo souhaite lire plusieurs fichiers",
-		"wantsToApplyBatchChanges": "Roo veut appliquer des modifications à plusieurs fichiers",
-		"wantsToGenerateImage": "Roo veut générer une image",
-		"wantsToGenerateImageOutsideWorkspace": "Roo veut générer une image en dehors de l'espace de travail",
-		"wantsToGenerateImageProtected": "Roo veut générer une image dans un emplacement protégé",
-		"didGenerateImage": "Roo a généré une image"
+		"wantsToRead": "Softixer veut lire ce fichier",
+		"wantsToReadOutsideWorkspace": "Softixer veut lire ce fichier en dehors de l'espace de travail",
+		"didRead": "Softixer a lu ce fichier",
+		"wantsToEdit": "Softixer veut éditer ce fichier",
+		"wantsToEditOutsideWorkspace": "Softixer veut éditer ce fichier en dehors de l'espace de travail",
+		"wantsToEditProtected": "Softixer veut éditer un fichier de configuration protégé",
+		"wantsToCreate": "Softixer veut créer un nouveau fichier",
+		"wantsToSearchReplace": "Softixer veut effectuer une recherche et remplacement sur ce fichier",
+		"didSearchReplace": "Softixer a effectué une recherche et remplacement sur ce fichier",
+		"wantsToInsert": "Softixer veut insérer du contenu dans ce fichier",
+		"wantsToInsertWithLineNumber": "Softixer veut insérer du contenu dans ce fichier à la ligne {{lineNumber}}",
+		"wantsToInsertAtEnd": "Softixer veut ajouter du contenu à la fin de ce fichier",
+		"wantsToReadAndXMore": "Softixer veut lire ce fichier et {{count}} de plus",
+		"wantsToReadMultiple": "Softixer souhaite lire plusieurs fichiers",
+		"wantsToApplyBatchChanges": "Softixer veut appliquer des modifications à plusieurs fichiers",
+		"wantsToGenerateImage": "Softixer veut générer une image",
+		"wantsToGenerateImageOutsideWorkspace": "Softixer veut générer une image en dehors de l'espace de travail",
+		"wantsToGenerateImageProtected": "Softixer veut générer une image dans un emplacement protégé",
+		"didGenerateImage": "Softixer a généré une image"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo veut récupérer des instructions détaillées pour aider à la tâche actuelle"
+		"wantsToFetch": "Softixer veut récupérer des instructions détaillées pour aider à la tâche actuelle"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo veut voir les fichiers de premier niveau dans ce répertoire",
-		"didViewTopLevel": "Roo a vu les fichiers de premier niveau dans ce répertoire",
-		"wantsToViewRecursive": "Roo veut voir récursivement tous les fichiers dans ce répertoire",
-		"didViewRecursive": "Roo a vu récursivement tous les fichiers dans ce répertoire",
-		"wantsToSearch": "Roo veut rechercher dans ce répertoire <code>{{regex}}</code>",
-		"didSearch": "Roo a recherché dans ce répertoire <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo veut rechercher dans ce répertoire (hors espace de travail) <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo a recherché dans ce répertoire (hors espace de travail) <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo veut voir les fichiers de premier niveau dans ce répertoire (hors espace de travail)",
-		"didViewTopLevelOutsideWorkspace": "Roo a vu les fichiers de premier niveau dans ce répertoire (hors espace de travail)",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo veut voir récursivement tous les fichiers dans ce répertoire (hors espace de travail)",
-		"didViewRecursiveOutsideWorkspace": "Roo a vu récursivement tous les fichiers dans ce répertoire (hors espace de travail)",
-		"wantsToViewMultipleDirectories": "Roo veut voir plusieurs répertoires"
+		"wantsToViewTopLevel": "Softixer veut voir les fichiers de premier niveau dans ce répertoire",
+		"didViewTopLevel": "Softixer a vu les fichiers de premier niveau dans ce répertoire",
+		"wantsToViewRecursive": "Softixer veut voir récursivement tous les fichiers dans ce répertoire",
+		"didViewRecursive": "Softixer a vu récursivement tous les fichiers dans ce répertoire",
+		"wantsToSearch": "Softixer veut rechercher dans ce répertoire <code>{{regex}}</code>",
+		"didSearch": "Softixer a recherché dans ce répertoire <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "Softixer veut rechercher dans ce répertoire (hors espace de travail) <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "Softixer a recherché dans ce répertoire (hors espace de travail) <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "Softixer veut voir les fichiers de premier niveau dans ce répertoire (hors espace de travail)",
+		"didViewTopLevelOutsideWorkspace": "Softixer a vu les fichiers de premier niveau dans ce répertoire (hors espace de travail)",
+		"wantsToViewRecursiveOutsideWorkspace": "Softixer veut voir récursivement tous les fichiers dans ce répertoire (hors espace de travail)",
+		"didViewRecursiveOutsideWorkspace": "Softixer a vu récursivement tous les fichiers dans ce répertoire (hors espace de travail)",
+		"wantsToViewMultipleDirectories": "Softixer veut voir plusieurs répertoires"
 	},
 	"commandOutput": "Sortie de la Commande",
 	"commandExecution": {
@@ -236,24 +236,24 @@
 	"response": "Réponse",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "Roo a dit"
+		"rooSaid": "Softixer a dit"
 	},
 	"feedback": {
 		"youSaid": "Tu as dit"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo veut utiliser un outil sur le serveur MCP {{serverName}}",
-		"wantsToAccessResource": "Roo veut accéder à une ressource sur le serveur MCP {{serverName}}"
+		"wantsToUseTool": "Softixer veut utiliser un outil sur le serveur MCP {{serverName}}",
+		"wantsToAccessResource": "Softixer veut accéder à une ressource sur le serveur MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo veut passer au mode <code>{{mode}}</code>",
-		"wantsToSwitchWithReason": "Roo veut passer au mode <code>{{mode}}</code> car : {{reason}}",
-		"didSwitch": "Roo est passé au mode <code>{{mode}}</code>",
-		"didSwitchWithReason": "Roo est passé au mode <code>{{mode}}</code> car : {{reason}}"
+		"wantsToSwitch": "Softixer veut passer au mode <code>{{mode}}</code>",
+		"wantsToSwitchWithReason": "Softixer veut passer au mode <code>{{mode}}</code> car : {{reason}}",
+		"didSwitch": "Softixer est passé au mode <code>{{mode}}</code>",
+		"didSwitchWithReason": "Softixer est passé au mode <code>{{mode}}</code> car : {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo veut créer une nouvelle sous-tâche en mode <code>{{mode}}</code>",
-		"wantsToFinish": "Roo veut terminer cette sous-tâche",
+		"wantsToCreate": "Softixer veut créer une nouvelle sous-tâche en mode <code>{{mode}}</code>",
+		"wantsToFinish": "Softixer veut terminer cette sous-tâche",
 		"newTaskContent": "Instructions de la sous-tâche",
 		"completionContent": "Sous-tâche terminée",
 		"resultContent": "Résultats de la sous-tâche",
@@ -262,7 +262,7 @@
 		"goToSubtask": "Afficher la tâche"
 	},
 	"questions": {
-		"hasQuestion": "Roo a une question"
+		"hasQuestion": "Softixer a une question"
 	},
 	"taskCompleted": "Tâche terminée",
 	"modelResponseIncomplete": "Réponse du modèle incomplète",
@@ -321,26 +321,26 @@
 		}
 	},
 	"skill": {
-		"wantsToLoad": "Roo veut charger une compétence",
-		"didLoad": "Roo a chargé une compétence"
+		"wantsToLoad": "Softixer veut charger une compétence",
+		"didLoad": "Softixer a chargé une compétence"
 	},
 	"followUpSuggest": {
 		"copyToInput": "Copier vers l'entrée (ou Shift + clic)",
 		"timerPrefix": "Approbation automatique activée. Sélection dans {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} est sortie",
-		"support": "Soutiens Roo Code en nous donnant une étoile sur <githubLink>GitHub</githubLink>.",
+		"title": "Softixer {{version}} est sortie",
+		"support": "Soutiens Softixer en nous donnant une étoile sur <githubLink>GitHub</githubLink>.",
 		"finalRelease": {
-			"title": "La dernière version de Roo Code",
-			"intro": "Ceci est la dernière version de Roo Code. <announcementLink>Comme nous l'avons annoncé il y a quelques semaines</announcementLink>, nous avons décidé de concentrer nos efforts sur <roomoteLink>Roomote</roomoteLink>, notre plateforme d'agents cloud, qui représente selon nous l'avenir du développement logiciel. Merci beaucoup pour ton soutien au cours de cette dernière année environ.",
+			"title": "La dernière version de Softixer",
+			"intro": "Ceci est la dernière version de Softixer. <announcementLink>Comme nous l'avons annoncé il y a quelques semaines</announcementLink>, nous avons décidé de concentrer nos efforts sur <roomoteLink>Roomote</roomoteLink>, notre plateforme d'agents cloud, qui représente selon nous l'avenir du développement logiciel. Merci beaucoup pour ton soutien au cours de cette dernière année environ.",
 			"continuity": "Cette extension devrait continuer à fonctionner indéfiniment, mais elle ne recevra plus de corrections de bugs, de nouvelles fonctionnalités ni de mises à jour de modèles.",
-			"alternatives": "Si tu veux utiliser une extension, nous te recommandons de jeter un oeil à <zooCodeLink>ZooCode</zooCodeLink> (un fork communautaire de Roo Code) et à <clineLink>Cline</clineLink> (d'où Roo Code est parti à l'origine).",
+			"alternatives": "Si tu veux utiliser une extension, nous te recommandons de jeter un oeil à <zooCodeLink>ZooCode</zooCodeLink> (un fork communautaire de Softixer) et à <clineLink>Cline</clineLink> (d'où Softixer est parti à l'origine).",
 			"signoff": "Bon code !"
 		},
 		"release": {
 			"heading": "Quoi de neuf :",
-			"gpt55": "GPT-5.5 via OpenAI Codex : Le support de GPT-5.5 a été ajouté au fournisseur OpenAI Codex pour que tu puisses utiliser le tout dernier modèle directement depuis Roo Code.",
+			"gpt55": "GPT-5.5 via OpenAI Codex : Le support de GPT-5.5 a été ajouté au fournisseur OpenAI Codex pour que tu puisses utiliser le tout dernier modèle directement depuis Softixer.",
 			"claudeOpus47": "Claude Opus 4.7 sur Vertex AI : Claude Opus 4.7 a été ajouté au fournisseur Vertex AI, le tout nouveau modèle de raisonnement phare d'Anthropic.",
 			"checkpointNav": "Navigation vers les checkpoints précédents : Des contrôles ont été ajoutés dans le chat pour revenir en arrière à travers les checkpoints précédents, avec un support i18n complet."
 		},
@@ -366,24 +366,24 @@
 	"profileViolationWarning": "Le profil actuel n'est pas compatible avec les paramètres de votre organisation",
 	"shellIntegration": {
 		"title": "Avertissement d'exécution de commande",
-		"description": "Votre commande est exécutée sans l'intégration shell du terminal VSCode. Pour supprimer cet avertissement, vous pouvez désactiver l'intégration shell dans la section <strong>Terminal</strong> des <settingsLink>paramètres de Roo Code</settingsLink> ou résoudre les problèmes d'intégration du terminal VSCode en utilisant le lien ci-dessous.",
+		"description": "Votre commande est exécutée sans l'intégration shell du terminal VSCode. Pour supprimer cet avertissement, vous pouvez désactiver l'intégration shell dans la section <strong>Terminal</strong> des <settingsLink>paramètres de Softixer</settingsLink> ou résoudre les problèmes d'intégration du terminal VSCode en utilisant le lien ci-dessous.",
 		"troubleshooting": "Cliquez ici pour la documentation d'intégration shell."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Limite de requêtes auto-approuvées atteinte",
-			"description": "Roo a atteint la limite auto-approuvée de {{count}} requête(s) API. Souhaitez-vous réinitialiser le compteur et poursuivre la tâche ?",
+			"description": "Softixer a atteint la limite auto-approuvée de {{count}} requête(s) API. Souhaitez-vous réinitialiser le compteur et poursuivre la tâche ?",
 			"button": "Réinitialiser et continuer"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Limite de coût en auto-approbation atteinte",
-			"description": "Roo a atteint la limite de coût auto-approuvée de ${{count}}. Souhaitez-vous réinitialiser le coût et poursuivre la tâche ?",
+			"description": "Softixer a atteint la limite de coût auto-approuvée de ${{count}}. Souhaitez-vous réinitialiser le coût et poursuivre la tâche ?",
 			"button": "Réinitialiser et Continuer"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo veut rechercher dans la base de code <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo veut rechercher dans la base de code <code>{{query}}</code> dans <code>{{path}}</code>",
+		"wantsToSearch": "Softixer veut rechercher dans la base de code <code>{{query}}</code>",
+		"wantsToSearchWithPath": "Softixer veut rechercher dans la base de code <code>{{query}}</code> dans <code>{{path}}</code>",
 		"didSearch_one": "1 résultat trouvé",
 		"didSearch_other": "{{count}} résultats trouvés",
 		"resultTooltip": "Score de similarité : {{score}} (cliquer pour ouvrir le fichier)"
@@ -460,8 +460,8 @@
 		"clickToEdit": "Cliquez pour modifier le message"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo veut exécuter une commande slash",
-		"didRun": "Roo a exécuté une commande slash"
+		"wantsToRun": "Softixer veut exécuter une commande slash",
+		"didRun": "Softixer a exécuté une commande slash"
 	},
 	"todo": {
 		"partial": "{{completed}} sur {{total}} tâches terminées",
@@ -480,12 +480,12 @@
 		"openMcpSettings": "Ouvrir les paramètres MCP"
 	},
 	"readCommandOutput": {
-		"title": "Roo read command output"
+		"title": "Softixer read command output"
 	},
 	"retiredProvider": {
 		"title": "Fournisseur plus pris en charge",
 		"message": "This provider is no longer supported. Please select a different provider in your API profile settings.",
 		"openSettings": "Ouvrir les paramètres",
-		"rooMessage": "As part of our decision to sunset the Roo Code extension, we also ended the Roo Code Router, which only existed to support the extension. Sorry about the hassle."
+		"rooMessage": "As part of our decision to sunset the Softixer extension, we also ended the Softixer Router, which only existed to support the extension. Sorry about the hassle."
 	}
 }

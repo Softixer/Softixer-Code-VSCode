@@ -1,4 +1,4 @@
-import type { Anthropic } from "@anthropic-ai/sdk"
+﻿import type { Anthropic } from "@anthropic-ai/sdk"
 import {
 	GoogleGenAI,
 	type GenerateContentResponseUsageMetadata,
@@ -516,3 +516,5 @@ export class GeminiHandler extends BaseProvider implements SingleCompletionHandl
 		return totalCost
 	}
 }
+
+

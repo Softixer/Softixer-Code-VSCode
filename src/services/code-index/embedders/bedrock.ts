@@ -1,4 +1,4 @@
-import { BedrockRuntimeClient, InvokeModelCommand, InvokeModelCommandInput } from "@aws-sdk/client-bedrock-runtime"
+﻿import { BedrockRuntimeClient, InvokeModelCommand, InvokeModelCommandInput } from "@aws-sdk/client-bedrock-runtime"
 import { fromIni, fromNodeProviderChain } from "@aws-sdk/credential-providers"
 import { IEmbedder, EmbeddingResponse, EmbedderInfo } from "../interfaces"
 import {
@@ -39,7 +39,7 @@ export class BedrockEmbedder implements IEmbedder {
 		const credentials = this.profile ? fromIni({ profile: this.profile }) : fromNodeProviderChain()
 
 		this.bedrockClient = new BedrockRuntimeClient({
-			userAgentAppId: `RooCode#${Package.version}`,
+			userAgentAppId: `Softixer#${Package.version}`,
 			region: this.region,
 			credentials,
 		})
@@ -317,3 +317,4 @@ export class BedrockEmbedder implements IEmbedder {
 		}
 	}
 }
+

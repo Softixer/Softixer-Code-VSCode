@@ -1,4 +1,4 @@
-// npx vitest run src/api/transform/__tests__/reasoning.spec.ts
+﻿// npx vitest run src/api/transform/__tests__/reasoning.spec.ts
 
 import type { ModelInfo, ProviderSettings, ReasoningEffortWithMinimal } from "@roo-code/types"
 
@@ -765,7 +765,7 @@ describe("reasoning.ts", () => {
 			}
 
 			const result = getGeminiReasoning(options)
-			// "none" is not a valid GeminiThinkingLevel, so no fallback — returns undefined
+			// "none" is not a valid GeminiThinkingLevel, so no fallback â€” returns undefined
 			expect(result).toBeUndefined()
 		})
 
@@ -886,7 +886,7 @@ describe("reasoning.ts", () => {
 			}
 
 			const result = getGeminiReasoning(options)
-			// "medium" is not in ["low", "high"], fallback is undefined → returns undefined
+			// "medium" is not in ["low", "high"], fallback is undefined â†’ returns undefined
 			expect(result).toBeUndefined()
 		})
 
@@ -1269,3 +1269,5 @@ describe("reasoning.ts", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 
 import type OpenAI from "openai"
 
@@ -167,3 +167,5 @@ export async function buildNativeToolsArrayWithRestrictions(options: BuildToolsO
 		tools: filteredTools,
 	}
 }
+
+

@@ -1,4 +1,4 @@
-import * as path from "path"
+﻿import * as path from "path"
 import { Task } from "../task/Task"
 import { ClineMessage } from "@roo-code/types"
 import { ApiMessage } from "../task-persistence/apiMessages"
@@ -93,8 +93,8 @@ export class MessageManager {
 	 * that will be removed during the rewind.
 	 *
 	 * This is critical for maintaining the linkage between:
-	 * - condense_context (clineMessage) ↔ Summary (apiMessage)
-	 * - sliding_window_truncation (clineMessage) ↔ Truncation marker (apiMessage)
+	 * - condense_context (clineMessage) â†” Summary (apiMessage)
+	 * - sliding_window_truncation (clineMessage) â†” Truncation marker (apiMessage)
 	 */
 	private collectRemovedContextEventIds(fromIndex: number): ContextEventIds {
 		const condenseIds = new Set<string>()
@@ -269,3 +269,5 @@ export class MessageManager {
 		}
 	}
 }
+
+

@@ -1,4 +1,4 @@
-// npx vitest run core/webview/__tests__/ClineProvider.sticky-profile.spec.ts
+﻿// npx vitest run core/webview/__tests__/ClineProvider.sticky-profile.spec.ts
 
 import * as vscode from "vscode"
 import { ClineProvider } from "../ClineProvider"
@@ -933,3 +933,5 @@ describe("ClineProvider - Sticky Provider Profile", () => {
 		})
 	})
 })
+
+

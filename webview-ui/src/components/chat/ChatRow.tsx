@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
+﻿import React, { memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { useSize } from "react-use"
 import { useTranslation, Trans } from "react-i18next"
 import deepEqual from "fast-deep-equal"
@@ -1117,7 +1117,7 @@ export const ChatRowContent = ({
 							} else {
 								// Non-HTTP-status-code error message - store full text as errorDetails
 								body = t("chat:apiRequest.errorMessage.unknown")
-								docsURL = "https://github.com/RooCodeInc/Roo-Code/issues/new?template=bug_report.yml"
+								docsURL = "https://github.com/SoftixerInc/softixer/issues/new?template=bug_report.yml"
 							}
 						}
 
@@ -1494,7 +1494,7 @@ export const ChatRowContent = ({
 											? "1 match"
 											: `${sayTool.matchCount} matches`
 										: ""
-								infoText = `search: "${sayTool.searchPattern}"${matchText ? ` • ${matchText}` : ""}`
+								infoText = `search: "${sayTool.searchPattern}"${matchText ? ` â€¢ ${matchText}` : ""}`
 							} else if (
 								sayTool.readStart !== undefined &&
 								sayTool.readEnd !== undefined &&
@@ -1698,3 +1698,5 @@ export const ChatRowContent = ({
 			}
 	}
 }
+
+

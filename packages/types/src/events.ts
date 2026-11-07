@@ -272,3 +272,8 @@ export const taskEventSchema = z.discriminatedUnion("eventName", [
 ])
 
 export type TaskEvent = z.infer<typeof taskEventSchema>
+
+/**
+ * SoftixerEventName — alias for RooCodeEventName for Softixer branding.
+ */
+export { RooCodeEventName as SoftixerEventName }

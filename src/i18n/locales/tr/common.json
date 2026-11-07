@@ -1,125 +1,125 @@
-{
+﻿{
 	"extension": {
-		"name": "Roo Code",
-		"description": "Düzenleyicinizde tam bir AI geliştirici ekibi."
+		"name": "Softixer",
+		"description": "DÃ¼zenleyicinizde tam bir AI geliÅŸtirici ekibi."
 	},
 	"number_format": {
 		"thousand_suffix": "k",
 		"million_suffix": "m",
 		"billion_suffix": "b"
 	},
-	"welcome": "Hoş geldiniz, {{name}}! {{count}} bildiriminiz var.",
+	"welcome": "HoÅŸ geldiniz, {{name}}! {{count}} bildiriminiz var.",
 	"items": {
-		"zero": "Öğe yok",
-		"one": "Bir öğe",
-		"other": "{{count}} öğe"
+		"zero": "Ã–ÄŸe yok",
+		"one": "Bir Ã¶ÄŸe",
+		"other": "{{count}} Ã¶ÄŸe"
 	},
 	"confirmation": {
-		"reset_state": "Uzantıdaki tüm durumları ve gizli depolamayı sıfırlamak istediğinizden emin misiniz? Bu işlem geri alınamaz.",
-		"delete_config_profile": "Bu yapılandırma profilini silmek istediğinizden emin misiniz?",
-		"delete_custom_mode_with_rules": "Bu {scope} modunu silmek istediğinizden emin misiniz?\n\nBu işlem, ilişkili kurallar klasörünü de şu konumdan silecektir:\n{rulesFolderPath}"
+		"reset_state": "UzantÄ±daki tÃ¼m durumlarÄ± ve gizli depolamayÄ± sÄ±fÄ±rlamak istediÄŸinizden emin misiniz? Bu iÅŸlem geri alÄ±namaz.",
+		"delete_config_profile": "Bu yapÄ±landÄ±rma profilini silmek istediÄŸinizden emin misiniz?",
+		"delete_custom_mode_with_rules": "Bu {scope} modunu silmek istediÄŸinizden emin misiniz?\n\nBu iÅŸlem, iliÅŸkili kurallar klasÃ¶rÃ¼nÃ¼ de ÅŸu konumdan silecektir:\n{rulesFolderPath}"
 	},
 	"errors": {
-		"invalid_data_uri": "Geçersiz veri URI formatı",
-		"error_copying_image": "Resim kopyalanırken hata oluştu: {{errorMessage}}",
-		"error_saving_image": "Resim kaydedilirken hata oluştu: {{errorMessage}}",
-		"error_opening_image": "Resim açılırken hata oluştu: {{error}}",
-		"could_not_open_file": "Dosya açılamadı: {{errorMessage}}",
-		"could_not_open_file_generic": "Dosya açılamadı!",
-		"checkpoint_timeout": "Kontrol noktasını geri yüklemeye çalışırken zaman aşımına uğradı.",
-		"checkpoint_failed": "Kontrol noktası geri yüklenemedi.",
-		"git_not_installed": "Kontrol noktaları özelliği için Git gereklidir. Kontrol noktalarını etkinleştirmek için lütfen Git'i yükleyin.",
-		"checkpoint_no_first": "Karşılaştırılacak ilk kontrol noktası yok.",
-		"checkpoint_no_previous": "Karşılaştırılacak önceki kontrol noktası yok.",
-		"checkpoint_no_changes": "Değişiklik bulunamadı.",
-		"checkpoint_diff_with_next": "Sonraki kontrol noktasıyla karşılaştırılan değişiklikler",
-		"checkpoint_diff_since_first": "İlk kontrol noktasından bu yana yapılan değişiklikler",
-		"checkpoint_diff_to_current": "Mevcut çalışma alanındaki değişiklikler",
-		"nested_git_repos_warning": "{{path}} konumunda iç içe git deposu tespit edildiği için kontrol noktaları devre dışı bırakıldı. Kontrol noktalarını kullanmak için lütfen bu iç içe git deposunu kaldırın veya taşıyın.",
-		"no_workspace": "Lütfen önce bir proje klasörü açın",
-		"update_support_prompt": "Destek istemi güncellenemedi",
-		"reset_support_prompt": "Destek istemi sıfırlanamadı",
-		"enhance_prompt": "İstem geliştirilemedi",
-		"get_system_prompt": "Sistem istemi alınamadı",
-		"search_commits": "Taahhütler aranamadı",
-		"save_api_config": "API yapılandırması kaydedilemedi",
-		"create_api_config": "API yapılandırması oluşturulamadı",
-		"rename_api_config": "API yapılandırmasının adı değiştirilemedi",
-		"load_api_config": "API yapılandırması yüklenemedi",
-		"delete_api_config": "API yapılandırması silinemedi",
-		"list_api_config": "API yapılandırma listesi alınamadı",
-		"update_server_timeout": "Sunucu zaman aşımı güncellenemedi",
-		"hmr_not_running": "Yerel geliştirme sunucusu çalışmıyor, HMR çalışmayacak. HMR'yi etkinleştirmek için uzantıyı başlatmadan önce lütfen 'npm run dev' komutunu çalıştırın.",
-		"retrieve_current_mode": "Mevcut mod durumdan alınırken hata oluştu.",
-		"failed_delete_repo": "İlişkili gölge depo veya dal silinemedi: {{error}}",
-		"failed_remove_directory": "Görev dizini kaldırılamadı: {{error}}",
-		"custom_storage_path_unusable": "Özel depolama yolu \"{{path}}\" kullanılamıyor, varsayılan yol kullanılacak",
-		"cannot_access_path": "{{path}} yoluna erişilemiyor: {{error}}",
-		"settings_import_failed": "Ayarlar içe aktarılamadı: {{error}}.",
-		"mistake_limit_guidance": "Bu, modelin düşünce sürecindeki bir başarısızlığı veya bir aracı düzgün kullanamama durumunu gösterebilir, bu da kullanıcı rehberliği ile hafifletilebilir (örn. \"Görevi daha küçük adımlara bölmeyi deneyin\").",
-		"violated_organization_allowlist": "Görev yürütülemedi: Geçerli profil kuruluşunuzun ayarlarıyla uyumlu değil",
-		"condense_failed": "Bağlam sıkıştırılamadı",
-		"condense_not_enough_messages": "Bağlamı sıkıştırmak için yeterli mesaj yok",
-		"condensed_recently": "Bağlam yakın zamanda sıkıştırıldı; bu deneme atlanıyor",
-		"condense_handler_invalid": "Bağlamı sıkıştırmak için API işleyicisi geçersiz",
-		"condense_api_failed": "Sıkıştırma API çağrısı başarısız oldu: {{message}}",
-		"url_timeout": "Web sitesi yüklenmesi çok uzun sürdü (zaman aşımı). Bu yavaş bağlantı, ağır web sitesi veya geçici olarak kullanılamama nedeniyle olabilir. Daha sonra tekrar deneyebilir veya URL'nin doğru olup olmadığını kontrol edebilirsin.",
-		"url_not_found": "Web sitesi adresi bulunamadı. URL'nin doğru olup olmadığını kontrol et ve tekrar dene.",
-		"no_internet": "İnternet bağlantısı yok. Ağ bağlantını kontrol et ve tekrar dene.",
-		"url_forbidden": "Bu web sitesine erişim yasak. Site otomatik erişimi engelliyor veya kimlik doğrulama gerektiriyor olabilir.",
-		"url_page_not_found": "Sayfa bulunamadı. URL'nin doğru olup olmadığını kontrol et.",
-		"url_request_aborted": "URL'yi getirme isteği iptal edildi. Bu, sitenin otomatik erişimi engellemesi, kimlik doğrulama gerektirmesi veya bir ağ sorunu olması durumunda gerçekleşebilir. Tekrar dene veya URL'nin normal bir tarayıcıda erişilebilir olup olmadığını kontrol et.",
-		"url_fetch_failed": "URL içeriği getirme hatası: {{error}}",
-		"url_fetch_error_with_url": "{{url}} için içerik getirme hatası: {{error}}",
-		"command_timeout": "Komut çalıştırma {{seconds}} saniye sonra zaman aşımına uğradı",
-		"share_task_failed": "Görev paylaşılamadı",
-		"share_no_active_task": "Paylaşılacak aktif görev yok",
-		"share_auth_required": "Kimlik doğrulama gerekli. Görevleri paylaşmak için lütfen giriş yapın.",
-		"share_not_enabled": "Bu kuruluş için görev paylaşımı etkinleştirilmemiş.",
-		"share_task_not_found": "Görev bulunamadı veya erişim reddedildi.",
-		"mode_import_failed": "Mod içe aktarılamadı: {{error}}",
-		"delete_rules_folder_failed": "Kurallar klasörü silinemedi: {{rulesFolderPath}}. Hata: {{error}}",
-		"command_not_found": "'{{name}}' komutu bulunamadı",
-		"open_command_file": "Komut dosyası açılamadı",
+		"invalid_data_uri": "GeÃ§ersiz veri URI formatÄ±",
+		"error_copying_image": "Resim kopyalanÄ±rken hata oluÅŸtu: {{errorMessage}}",
+		"error_saving_image": "Resim kaydedilirken hata oluÅŸtu: {{errorMessage}}",
+		"error_opening_image": "Resim aÃ§Ä±lÄ±rken hata oluÅŸtu: {{error}}",
+		"could_not_open_file": "Dosya aÃ§Ä±lamadÄ±: {{errorMessage}}",
+		"could_not_open_file_generic": "Dosya aÃ§Ä±lamadÄ±!",
+		"checkpoint_timeout": "Kontrol noktasÄ±nÄ± geri yÃ¼klemeye Ã§alÄ±ÅŸÄ±rken zaman aÅŸÄ±mÄ±na uÄŸradÄ±.",
+		"checkpoint_failed": "Kontrol noktasÄ± geri yÃ¼klenemedi.",
+		"git_not_installed": "Kontrol noktalarÄ± Ã¶zelliÄŸi iÃ§in Git gereklidir. Kontrol noktalarÄ±nÄ± etkinleÅŸtirmek iÃ§in lÃ¼tfen Git'i yÃ¼kleyin.",
+		"checkpoint_no_first": "KarÅŸÄ±laÅŸtÄ±rÄ±lacak ilk kontrol noktasÄ± yok.",
+		"checkpoint_no_previous": "KarÅŸÄ±laÅŸtÄ±rÄ±lacak Ã¶nceki kontrol noktasÄ± yok.",
+		"checkpoint_no_changes": "DeÄŸiÅŸiklik bulunamadÄ±.",
+		"checkpoint_diff_with_next": "Sonraki kontrol noktasÄ±yla karÅŸÄ±laÅŸtÄ±rÄ±lan deÄŸiÅŸiklikler",
+		"checkpoint_diff_since_first": "Ä°lk kontrol noktasÄ±ndan bu yana yapÄ±lan deÄŸiÅŸiklikler",
+		"checkpoint_diff_to_current": "Mevcut Ã§alÄ±ÅŸma alanÄ±ndaki deÄŸiÅŸiklikler",
+		"nested_git_repos_warning": "{{path}} konumunda iÃ§ iÃ§e git deposu tespit edildiÄŸi iÃ§in kontrol noktalarÄ± devre dÄ±ÅŸÄ± bÄ±rakÄ±ldÄ±. Kontrol noktalarÄ±nÄ± kullanmak iÃ§in lÃ¼tfen bu iÃ§ iÃ§e git deposunu kaldÄ±rÄ±n veya taÅŸÄ±yÄ±n.",
+		"no_workspace": "LÃ¼tfen Ã¶nce bir proje klasÃ¶rÃ¼ aÃ§Ä±n",
+		"update_support_prompt": "Destek istemi gÃ¼ncellenemedi",
+		"reset_support_prompt": "Destek istemi sÄ±fÄ±rlanamadÄ±",
+		"enhance_prompt": "Ä°stem geliÅŸtirilemedi",
+		"get_system_prompt": "Sistem istemi alÄ±namadÄ±",
+		"search_commits": "TaahhÃ¼tler aranamadÄ±",
+		"save_api_config": "API yapÄ±landÄ±rmasÄ± kaydedilemedi",
+		"create_api_config": "API yapÄ±landÄ±rmasÄ± oluÅŸturulamadÄ±",
+		"rename_api_config": "API yapÄ±landÄ±rmasÄ±nÄ±n adÄ± deÄŸiÅŸtirilemedi",
+		"load_api_config": "API yapÄ±landÄ±rmasÄ± yÃ¼klenemedi",
+		"delete_api_config": "API yapÄ±landÄ±rmasÄ± silinemedi",
+		"list_api_config": "API yapÄ±landÄ±rma listesi alÄ±namadÄ±",
+		"update_server_timeout": "Sunucu zaman aÅŸÄ±mÄ± gÃ¼ncellenemedi",
+		"hmr_not_running": "Yerel geliÅŸtirme sunucusu Ã§alÄ±ÅŸmÄ±yor, HMR Ã§alÄ±ÅŸmayacak. HMR'yi etkinleÅŸtirmek iÃ§in uzantÄ±yÄ± baÅŸlatmadan Ã¶nce lÃ¼tfen 'npm run dev' komutunu Ã§alÄ±ÅŸtÄ±rÄ±n.",
+		"retrieve_current_mode": "Mevcut mod durumdan alÄ±nÄ±rken hata oluÅŸtu.",
+		"failed_delete_repo": "Ä°liÅŸkili gÃ¶lge depo veya dal silinemedi: {{error}}",
+		"failed_remove_directory": "GÃ¶rev dizini kaldÄ±rÄ±lamadÄ±: {{error}}",
+		"custom_storage_path_unusable": "Ã–zel depolama yolu \"{{path}}\" kullanÄ±lamÄ±yor, varsayÄ±lan yol kullanÄ±lacak",
+		"cannot_access_path": "{{path}} yoluna eriÅŸilemiyor: {{error}}",
+		"settings_import_failed": "Ayarlar iÃ§e aktarÄ±lamadÄ±: {{error}}.",
+		"mistake_limit_guidance": "Bu, modelin dÃ¼ÅŸÃ¼nce sÃ¼recindeki bir baÅŸarÄ±sÄ±zlÄ±ÄŸÄ± veya bir aracÄ± dÃ¼zgÃ¼n kullanamama durumunu gÃ¶sterebilir, bu da kullanÄ±cÄ± rehberliÄŸi ile hafifletilebilir (Ã¶rn. \"GÃ¶revi daha kÃ¼Ã§Ã¼k adÄ±mlara bÃ¶lmeyi deneyin\").",
+		"violated_organization_allowlist": "GÃ¶rev yÃ¼rÃ¼tÃ¼lemedi: GeÃ§erli profil kuruluÅŸunuzun ayarlarÄ±yla uyumlu deÄŸil",
+		"condense_failed": "BaÄŸlam sÄ±kÄ±ÅŸtÄ±rÄ±lamadÄ±",
+		"condense_not_enough_messages": "BaÄŸlamÄ± sÄ±kÄ±ÅŸtÄ±rmak iÃ§in yeterli mesaj yok",
+		"condensed_recently": "BaÄŸlam yakÄ±n zamanda sÄ±kÄ±ÅŸtÄ±rÄ±ldÄ±; bu deneme atlanÄ±yor",
+		"condense_handler_invalid": "BaÄŸlamÄ± sÄ±kÄ±ÅŸtÄ±rmak iÃ§in API iÅŸleyicisi geÃ§ersiz",
+		"condense_api_failed": "SÄ±kÄ±ÅŸtÄ±rma API Ã§aÄŸrÄ±sÄ± baÅŸarÄ±sÄ±z oldu: {{message}}",
+		"url_timeout": "Web sitesi yÃ¼klenmesi Ã§ok uzun sÃ¼rdÃ¼ (zaman aÅŸÄ±mÄ±). Bu yavaÅŸ baÄŸlantÄ±, aÄŸÄ±r web sitesi veya geÃ§ici olarak kullanÄ±lamama nedeniyle olabilir. Daha sonra tekrar deneyebilir veya URL'nin doÄŸru olup olmadÄ±ÄŸÄ±nÄ± kontrol edebilirsin.",
+		"url_not_found": "Web sitesi adresi bulunamadÄ±. URL'nin doÄŸru olup olmadÄ±ÄŸÄ±nÄ± kontrol et ve tekrar dene.",
+		"no_internet": "Ä°nternet baÄŸlantÄ±sÄ± yok. AÄŸ baÄŸlantÄ±nÄ± kontrol et ve tekrar dene.",
+		"url_forbidden": "Bu web sitesine eriÅŸim yasak. Site otomatik eriÅŸimi engelliyor veya kimlik doÄŸrulama gerektiriyor olabilir.",
+		"url_page_not_found": "Sayfa bulunamadÄ±. URL'nin doÄŸru olup olmadÄ±ÄŸÄ±nÄ± kontrol et.",
+		"url_request_aborted": "URL'yi getirme isteÄŸi iptal edildi. Bu, sitenin otomatik eriÅŸimi engellemesi, kimlik doÄŸrulama gerektirmesi veya bir aÄŸ sorunu olmasÄ± durumunda gerÃ§ekleÅŸebilir. Tekrar dene veya URL'nin normal bir tarayÄ±cÄ±da eriÅŸilebilir olup olmadÄ±ÄŸÄ±nÄ± kontrol et.",
+		"url_fetch_failed": "URL iÃ§eriÄŸi getirme hatasÄ±: {{error}}",
+		"url_fetch_error_with_url": "{{url}} iÃ§in iÃ§erik getirme hatasÄ±: {{error}}",
+		"command_timeout": "Komut Ã§alÄ±ÅŸtÄ±rma {{seconds}} saniye sonra zaman aÅŸÄ±mÄ±na uÄŸradÄ±",
+		"share_task_failed": "GÃ¶rev paylaÅŸÄ±lamadÄ±",
+		"share_no_active_task": "PaylaÅŸÄ±lacak aktif gÃ¶rev yok",
+		"share_auth_required": "Kimlik doÄŸrulama gerekli. GÃ¶revleri paylaÅŸmak iÃ§in lÃ¼tfen giriÅŸ yapÄ±n.",
+		"share_not_enabled": "Bu kuruluÅŸ iÃ§in gÃ¶rev paylaÅŸÄ±mÄ± etkinleÅŸtirilmemiÅŸ.",
+		"share_task_not_found": "GÃ¶rev bulunamadÄ± veya eriÅŸim reddedildi.",
+		"mode_import_failed": "Mod iÃ§e aktarÄ±lamadÄ±: {{error}}",
+		"delete_rules_folder_failed": "Kurallar klasÃ¶rÃ¼ silinemedi: {{rulesFolderPath}}. Hata: {{error}}",
+		"command_not_found": "'{{name}}' komutu bulunamadÄ±",
+		"open_command_file": "Komut dosyasÄ± aÃ§Ä±lamadÄ±",
 		"delete_command": "Komut silinemedi",
-		"no_workspace_for_project_command": "Proje komutu için çalışma alanı klasörü bulunamadı",
+		"no_workspace_for_project_command": "Proje komutu iÃ§in Ã§alÄ±ÅŸma alanÄ± klasÃ¶rÃ¼ bulunamadÄ±",
 		"command_already_exists": "\"{{commandName}}\" komutu zaten mevcut",
-		"create_command_failed": "Komut oluşturulamadı",
-		"command_template_content": "---\ndescription: \"Bu komutun ne yaptığının kısa açıklaması\"\n---\n\nBu yeni bir slash komutudur. Komut davranışını özelleştirmek için bu dosyayı düzenleyin.",
+		"create_command_failed": "Komut oluÅŸturulamadÄ±",
+		"command_template_content": "---\ndescription: \"Bu komutun ne yaptÄ±ÄŸÄ±nÄ±n kÄ±sa aÃ§Ä±klamasÄ±\"\n---\n\nBu yeni bir slash komutudur. Komut davranÄ±ÅŸÄ±nÄ± Ã¶zelleÅŸtirmek iÃ§in bu dosyayÄ± dÃ¼zenleyin.",
 		"claudeCode": {
-			"processExited": "Claude Code işlemi {{exitCode}} koduyla çıktı.",
-			"errorOutput": "Hata çıktısı: {{output}}",
-			"processExitedWithError": "Claude Code işlemi {{exitCode}} koduyla çıktı. Hata çıktısı: {{output}}",
-			"stoppedWithReason": "Claude Code şu nedenle durdu: {{reason}}",
+			"processExited": "Claude Code iÅŸlemi {{exitCode}} koduyla Ã§Ä±ktÄ±.",
+			"errorOutput": "Hata Ã§Ä±ktÄ±sÄ±: {{output}}",
+			"processExitedWithError": "Claude Code iÅŸlemi {{exitCode}} koduyla Ã§Ä±ktÄ±. Hata Ã§Ä±ktÄ±sÄ±: {{output}}",
+			"stoppedWithReason": "Claude Code ÅŸu nedenle durdu: {{reason}}",
 			"apiKeyModelPlanMismatch": "API keys and subscription plans allow different models. Make sure the selected model is included in your plan."
 		},
 		"message": {
-			"no_active_task_to_delete": "Mesaj silinecek aktif görev yok",
-			"invalid_timestamp_for_deletion": "Silme için geçersiz mesaj zaman damgası",
-			"cannot_delete_missing_timestamp": "Mesaj silinemiyor: zaman damgası eksik",
-			"cannot_delete_invalid_timestamp": "Mesaj silinemiyor: geçersiz zaman damgası",
-			"message_not_found": "{{messageTs}} zaman damgalı mesaj bulunamadı",
-			"error_deleting_message": "Mesaj silme hatası: {{error}}",
-			"error_editing_message": "Mesaj düzenleme hatası: {{error}}"
+			"no_active_task_to_delete": "Mesaj silinecek aktif gÃ¶rev yok",
+			"invalid_timestamp_for_deletion": "Silme iÃ§in geÃ§ersiz mesaj zaman damgasÄ±",
+			"cannot_delete_missing_timestamp": "Mesaj silinemiyor: zaman damgasÄ± eksik",
+			"cannot_delete_invalid_timestamp": "Mesaj silinemiyor: geÃ§ersiz zaman damgasÄ±",
+			"message_not_found": "{{messageTs}} zaman damgalÄ± mesaj bulunamadÄ±",
+			"error_deleting_message": "Mesaj silme hatasÄ±: {{error}}",
+			"error_editing_message": "Mesaj dÃ¼zenleme hatasÄ±: {{error}}"
 		},
 		"gemini": {
-			"generate_stream": "Gemini oluşturma bağlam akışı hatası: {{error}}",
-			"generate_complete_prompt": "Gemini tamamlama hatası: {{error}}",
+			"generate_stream": "Gemini oluÅŸturma baÄŸlam akÄ±ÅŸÄ± hatasÄ±: {{error}}",
+			"generate_complete_prompt": "Gemini tamamlama hatasÄ±: {{error}}",
 			"sources": "Kaynaklar:",
-			"thinking_complete_no_output": "(Düşünme tamamlandı, ancak çıktı oluşturulmadı.)",
-			"thinking_complete_truncated": "(Düşünme tamamlandı, ancak çıktı jeton sınırı nedeniyle kesildi.)",
-			"thinking_complete_safety": "(Düşünme tamamlandı, ancak çıktı güvenlik ayarları nedeniyle engellendi.)",
-			"thinking_complete_recitation": "(Düşünme tamamlandı, ancak çıktı okuma kontrolü nedeniyle engellendi.)"
+			"thinking_complete_no_output": "(DÃ¼ÅŸÃ¼nme tamamlandÄ±, ancak Ã§Ä±ktÄ± oluÅŸturulmadÄ±.)",
+			"thinking_complete_truncated": "(DÃ¼ÅŸÃ¼nme tamamlandÄ±, ancak Ã§Ä±ktÄ± jeton sÄ±nÄ±rÄ± nedeniyle kesildi.)",
+			"thinking_complete_safety": "(DÃ¼ÅŸÃ¼nme tamamlandÄ±, ancak Ã§Ä±ktÄ± gÃ¼venlik ayarlarÄ± nedeniyle engellendi.)",
+			"thinking_complete_recitation": "(DÃ¼ÅŸÃ¼nme tamamlandÄ±, ancak Ã§Ä±ktÄ± okuma kontrolÃ¼ nedeniyle engellendi.)"
 		},
 		"api": {
-			"invalidKeyInvalidChars": "API anahtarı geçersiz karakterler içeriyor.",
-			"apiRequestFailed": "API isteği başarısız oldu ({{status}})"
+			"invalidKeyInvalidChars": "API anahtarÄ± geÃ§ersiz karakterler iÃ§eriyor.",
+			"apiRequestFailed": "API isteÄŸi baÅŸarÄ±sÄ±z oldu ({{status}})"
 		},
-		"manual_url_empty": "Lütfen geçerli bir callback URL'si girin",
-		"manual_url_no_query": "Geçersiz callback URL'si: sorgu parametreleri eksik",
-		"manual_url_missing_params": "Geçersiz callback URL'si: gerekli parametreler eksik (code ve state)",
-		"manual_url_auth_failed": "Manuel URL kimlik doğrulama başarısız",
-		"manual_url_auth_error": "Kimlik doğrulama başarısız",
+		"manual_url_empty": "LÃ¼tfen geÃ§erli bir callback URL'si girin",
+		"manual_url_no_query": "GeÃ§ersiz callback URL'si: sorgu parametreleri eksik",
+		"manual_url_missing_params": "GeÃ§ersiz callback URL'si: gerekli parametreler eksik (code ve state)",
+		"manual_url_auth_failed": "Manuel URL kimlik doÄŸrulama baÅŸarÄ±sÄ±z",
+		"manual_url_auth_error": "Kimlik doÄŸrulama baÅŸarÄ±sÄ±z",
 		"openAiCodex": {
 			"notAuthenticated": "Not authenticated with OpenAI Codex. Please sign in using the OpenAI Codex OAuth flow.",
 			"invalidRequest": "Invalid request to Codex API. Please check your input parameters.",
@@ -140,93 +140,94 @@
 		}
 	},
 	"warnings": {
-		"no_terminal_content": "Seçili terminal içeriği yok",
-		"missing_task_files": "Bu görevin dosyaları eksik. Görev listesinden kaldırmak istiyor musunuz?",
-		"auto_import_failed": "RooCode ayarları otomatik olarak içe aktarılamadı: {{error}}"
+		"no_terminal_content": "SeÃ§ili terminal iÃ§eriÄŸi yok",
+		"missing_task_files": "Bu gÃ¶revin dosyalarÄ± eksik. GÃ¶rev listesinden kaldÄ±rmak istiyor musunuz?",
+		"auto_import_failed": "Softixer ayarlarÄ± otomatik olarak iÃ§e aktarÄ±lamadÄ±: {{error}}"
 	},
 	"info": {
-		"no_changes": "Değişiklik bulunamadı.",
-		"clipboard_copy": "Sistem istemi panoya başarıyla kopyalandı",
-		"history_cleanup": "Geçmişten eksik dosyaları olan {{count}} görev temizlendi.",
-		"custom_storage_path_set": "Özel depolama yolu ayarlandı: {{path}}",
-		"default_storage_path": "Varsayılan depolama yoluna geri dönüldü",
-		"settings_imported": "Ayarlar başarıyla içe aktarıldı.",
-		"auto_import_success": "RooCode ayarları {{filename}} dosyasından otomatik olarak içe aktarıldı",
-		"share_link_copied": "Paylaşım bağlantısı panoya kopyalandı",
-		"image_copied_to_clipboard": "Resim veri URI'si panoya kopyalandı",
+		"no_changes": "DeÄŸiÅŸiklik bulunamadÄ±.",
+		"clipboard_copy": "Sistem istemi panoya baÅŸarÄ±yla kopyalandÄ±",
+		"history_cleanup": "GeÃ§miÅŸten eksik dosyalarÄ± olan {{count}} gÃ¶rev temizlendi.",
+		"custom_storage_path_set": "Ã–zel depolama yolu ayarlandÄ±: {{path}}",
+		"default_storage_path": "VarsayÄ±lan depolama yoluna geri dÃ¶nÃ¼ldÃ¼",
+		"settings_imported": "Ayarlar baÅŸarÄ±yla iÃ§e aktarÄ±ldÄ±.",
+		"auto_import_success": "Softixer ayarlarÄ± {{filename}} dosyasÄ±ndan otomatik olarak iÃ§e aktarÄ±ldÄ±",
+		"share_link_copied": "PaylaÅŸÄ±m baÄŸlantÄ±sÄ± panoya kopyalandÄ±",
+		"image_copied_to_clipboard": "Resim veri URI'si panoya kopyalandÄ±",
 		"image_saved": "Resim {{path}} konumuna kaydedildi",
-		"organization_share_link_copied": "Kuruluş paylaşım bağlantısı panoya kopyalandı!",
-		"public_share_link_copied": "Herkese açık paylaşım bağlantısı panoya kopyalandı!",
-		"mode_exported": "'{{mode}}' modu başarıyla dışa aktarıldı",
-		"mode_imported": "Mod başarıyla içe aktarıldı"
+		"organization_share_link_copied": "KuruluÅŸ paylaÅŸÄ±m baÄŸlantÄ±sÄ± panoya kopyalandÄ±!",
+		"public_share_link_copied": "Herkese aÃ§Ä±k paylaÅŸÄ±m baÄŸlantÄ±sÄ± panoya kopyalandÄ±!",
+		"mode_exported": "'{{mode}}' modu baÅŸarÄ±yla dÄ±ÅŸa aktarÄ±ldÄ±",
+		"mode_imported": "Mod baÅŸarÄ±yla iÃ§e aktarÄ±ldÄ±"
 	},
 	"answers": {
 		"yes": "Evet",
-		"no": "Hayır",
-		"remove": "Kaldır",
+		"no": "HayÄ±r",
+		"remove": "KaldÄ±r",
 		"keep": "Koru"
 	},
 	"buttons": {
 		"save": "Kaydet",
-		"edit": "Düzenle",
+		"edit": "DÃ¼zenle",
 		"learn_more": "Daha Fazla Bilgi"
 	},
 	"tasks": {
-		"canceled": "Görev hatası: Kullanıcı tarafından durduruldu ve iptal edildi.",
-		"deleted": "Görev başarısız: Kullanıcı tarafından durduruldu ve silindi.",
-		"incomplete": "Görev #{{taskNumber}} (Tamamlanmamış)",
-		"no_messages": "Görev #{{taskNumber}} (Mesaj yok)"
+		"canceled": "GÃ¶rev hatasÄ±: KullanÄ±cÄ± tarafÄ±ndan durduruldu ve iptal edildi.",
+		"deleted": "GÃ¶rev baÅŸarÄ±sÄ±z: KullanÄ±cÄ± tarafÄ±ndan durduruldu ve silindi.",
+		"incomplete": "GÃ¶rev #{{taskNumber}} (TamamlanmamÄ±ÅŸ)",
+		"no_messages": "GÃ¶rev #{{taskNumber}} (Mesaj yok)"
 	},
 	"interruption": {
-		"responseInterruptedByUser": "Yanıt kullanıcı tarafından kesildi",
-		"responseInterruptedByApiError": "Yanıt API hatası nedeniyle kesildi",
-		"streamTerminatedByProvider": "Sağlayıcı isteği sonlandırdı"
+		"responseInterruptedByUser": "YanÄ±t kullanÄ±cÄ± tarafÄ±ndan kesildi",
+		"responseInterruptedByApiError": "YanÄ±t API hatasÄ± nedeniyle kesildi",
+		"streamTerminatedByProvider": "SaÄŸlayÄ±cÄ± isteÄŸi sonlandÄ±rdÄ±"
 	},
 	"storage": {
-		"prompt_custom_path": "Konuşma geçmişi için özel depolama yolunu girin, varsayılan konumu kullanmak için boş bırakın",
-		"path_placeholder": "D:\\RooCodeStorage",
-		"enter_absolute_path": "Lütfen mutlak bir yol girin (örn. D:\\RooCodeStorage veya /home/user/storage)",
-		"enter_valid_path": "Lütfen geçerli bir yol girin"
+		"prompt_custom_path": "KonuÅŸma geÃ§miÅŸi iÃ§in Ã¶zel depolama yolunu girin, varsayÄ±lan konumu kullanmak iÃ§in boÅŸ bÄ±rakÄ±n",
+		"path_placeholder": "D:\\SoftixerStorage",
+		"enter_absolute_path": "LÃ¼tfen mutlak bir yol girin (Ã¶rn. D:\\SoftixerStorage veya /home/user/storage)",
+		"enter_valid_path": "LÃ¼tfen geÃ§erli bir yol girin"
 	},
 	"input": {
-		"task_prompt": "Roo ne yapsın?",
-		"task_placeholder": "Görevini buraya yaz"
+		"task_prompt": "Roo ne yapsÄ±n?",
+		"task_placeholder": "GÃ¶revini buraya yaz"
 	},
 	"settings": {
 		"providers": {}
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": ".roomodes dosyasının {{line}}. satırında geçersiz YAML. Kontrol et:\n• Doğru girinti (tab değil boşluk kullan)\n• Eşleşen tırnak işaretleri ve parantezler\n• Geçerli YAML sözdizimi",
-			"schemaValidationError": ".roomodes'ta geçersiz özel mod formatı:\n{{issues}}",
-			"invalidFormat": "Geçersiz özel mod formatı. Ayarlarının doğru YAML formatını takip ettiğinden emin ol.",
-			"updateFailed": "Özel mod güncellemesi başarısız: {{error}}",
-			"deleteFailed": "Özel mod silme başarısız: {{error}}",
-			"resetFailed": "Özel modları sıfırlama başarısız: {{error}}",
-			"modeNotFound": "Yazma hatası: Mod bulunamadı",
-			"noWorkspaceForProject": "Proje özel modu için çalışma alanı klasörü bulunamadı",
-			"rulesCleanupFailed": "Mod başarıyla silindi, ancak {{rulesFolderPath}} konumundaki kurallar klasörü silinemedi. Manuel olarak silmeniz gerekebilir."
+			"yamlParseError": ".roomodes dosyasÄ±nÄ±n {{line}}. satÄ±rÄ±nda geÃ§ersiz YAML. Kontrol et:\nâ€¢ DoÄŸru girinti (tab deÄŸil boÅŸluk kullan)\nâ€¢ EÅŸleÅŸen tÄ±rnak iÅŸaretleri ve parantezler\nâ€¢ GeÃ§erli YAML sÃ¶zdizimi",
+			"schemaValidationError": ".roomodes'ta geÃ§ersiz Ã¶zel mod formatÄ±:\n{{issues}}",
+			"invalidFormat": "GeÃ§ersiz Ã¶zel mod formatÄ±. AyarlarÄ±nÄ±n doÄŸru YAML formatÄ±nÄ± takip ettiÄŸinden emin ol.",
+			"updateFailed": "Ã–zel mod gÃ¼ncellemesi baÅŸarÄ±sÄ±z: {{error}}",
+			"deleteFailed": "Ã–zel mod silme baÅŸarÄ±sÄ±z: {{error}}",
+			"resetFailed": "Ã–zel modlarÄ± sÄ±fÄ±rlama baÅŸarÄ±sÄ±z: {{error}}",
+			"modeNotFound": "Yazma hatasÄ±: Mod bulunamadÄ±",
+			"noWorkspaceForProject": "Proje Ã¶zel modu iÃ§in Ã§alÄ±ÅŸma alanÄ± klasÃ¶rÃ¼ bulunamadÄ±",
+			"rulesCleanupFailed": "Mod baÅŸarÄ±yla silindi, ancak {{rulesFolderPath}} konumundaki kurallar klasÃ¶rÃ¼ silinemedi. Manuel olarak silmeniz gerekebilir."
 		},
 		"scope": {
 			"project": "proje",
-			"global": "küresel"
+			"global": "kÃ¼resel"
 		}
 	},
 	"prompts": {
 		"deleteMode": {
-			"title": "Özel Modu Sil",
-			"description": "Bu {{scope}} modunu silmek istediğinizden emin misiniz? Bu, {{rulesFolderPath}} adresindeki ilişkili kurallar klasörünü de silecektir",
-			"descriptionNoRules": "Bu özel modu silmek istediğinizden emin misiniz?",
+			"title": "Ã–zel Modu Sil",
+			"description": "Bu {{scope}} modunu silmek istediÄŸinizden emin misiniz? Bu, {{rulesFolderPath}} adresindeki iliÅŸkili kurallar klasÃ¶rÃ¼nÃ¼ de silecektir",
+			"descriptionNoRules": "Bu Ã¶zel modu silmek istediÄŸinizden emin misiniz?",
 			"confirm": "Sil"
 		}
 	},
 	"commands": {
 		"preventCompletionWithOpenTodos": {
-			"description": "Todo listesinde tamamlanmamış todolar olduğunda görev tamamlanmasını engelle"
+			"description": "Todo listesinde tamamlanmamÄ±ÅŸ todolar olduÄŸunda gÃ¶rev tamamlanmasÄ±nÄ± engelle"
 		}
 	},
 	"docsLink": {
 		"label": "Docs",
-		"url": "https://github.com/RooCodeInc/Roo-Code"
+		"url": "https://github.com/SoftixerInc/softixer"
 	}
 }
+

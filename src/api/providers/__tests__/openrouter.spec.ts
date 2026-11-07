@@ -1,4 +1,4 @@
-// pnpm --filter roo-cline test api/providers/__tests__/openrouter.spec.ts
+﻿// pnpm --filter roo-cline test api/providers/__tests__/openrouter.spec.ts
 
 vitest.mock("vscode", () => ({}))
 
@@ -91,8 +91,8 @@ describe("OpenRouterHandler", () => {
 			apiKey: mockOptions.openRouterApiKey,
 			defaultHeaders: {
 				"HTTP-Referer": "https://github.com/RooVetGit/Roo-Cline",
-				"X-Title": "Roo Code",
-				"User-Agent": `RooCode/${Package.version}`,
+				"X-Title": "Softixer",
+				"User-Agent": `Softixer/${Package.version}`,
 			},
 		})
 	})
@@ -567,3 +567,4 @@ describe("OpenRouterHandler", () => {
 		})
 	})
 })
+

@@ -1,4 +1,4 @@
-import type OpenAI from "openai"
+﻿import type OpenAI from "openai"
 
 import type { McpServer, McpTool } from "@roo-code/types"
 
@@ -198,3 +198,5 @@ describe("getMcpServerTools", () => {
 		expect(getFunction(result[0]).parameters).not.toHaveProperty("required")
 	})
 })
+
+

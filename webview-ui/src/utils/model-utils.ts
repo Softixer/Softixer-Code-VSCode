@@ -1,4 +1,4 @@
-import { ANTHROPIC_DEFAULT_MAX_TOKENS } from "@roo-code/types"
+﻿import { ANTHROPIC_DEFAULT_MAX_TOKENS } from "@roo-code/types"
 
 /**
  * Result of token distribution calculation
@@ -79,3 +79,5 @@ export const calculateTokenDistribution = (
 		availableSize,
 	}
 }
+
+

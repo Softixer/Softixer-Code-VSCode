@@ -1,4 +1,4 @@
-import * as fs from "fs/promises"
+﻿import * as fs from "fs/promises"
 import * as path from "path"
 
 import type { HistoryItem } from "@roo-code/types"
@@ -103,3 +103,5 @@ export async function readTaskSessionsFromStoragePath(storageBasePath: string): 
 
 	return Array.from(sessionsById.values()).sort((a, b) => b.ts - a.ts)
 }
+
+

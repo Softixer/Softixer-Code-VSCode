@@ -1,4 +1,4 @@
-// npx vitest run src/api/providers/__tests__/bedrock-inference-profiles.spec.ts
+﻿// npx vitest run src/api/providers/__tests__/bedrock-inference-profiles.spec.ts
 
 import { AWS_INFERENCE_PROFILE_MAPPING } from "@roo-code/types"
 import { AwsBedrockHandler } from "../bedrock"
@@ -297,3 +297,5 @@ describe("Amazon Bedrock Inference Profiles", () => {
 		})
 	})
 })
+
+

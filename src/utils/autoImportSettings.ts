@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import * as path from "path"
 import * as os from "os"
 
@@ -9,7 +9,7 @@ import { t } from "../i18n"
 import { importSettingsFromPath, ImportOptions } from "../core/config/importExport"
 
 /**
- * Automatically imports RooCode settings from a specified path if it exists.
+ * Automatically imports Softixer settings from a specified path if it exists.
  * This function is called during extension activation to allow users to pre-configure
  * their settings by placing a settings file at a predefined location.
  */
@@ -82,3 +82,4 @@ function resolvePath(settingsPath: string): string {
 	// Handle relative paths (relative to home directory for safety)
 	return path.join(os.homedir(), settingsPath)
 }
+

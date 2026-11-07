@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from "react"
+﻿import { useState, useEffect, useCallback, useMemo } from "react"
 import { useEvent } from "react-use"
 import { VSCodeCheckbox } from "@vscode/webview-ui-toolkit/react"
 import { RefreshCw, Loader2, FileCode } from "lucide-react"
@@ -165,7 +165,7 @@ export const CustomToolsSettings = ({ enabled, onChange }: CustomToolsSettingsPr
 													)}
 													{param.description && (
 														<span className="text-vscode-descriptionForeground">
-															— {param.description}
+															â€” {param.description}
 														</span>
 													)}
 												</div>
@@ -181,3 +181,5 @@ export const CustomToolsSettings = ({ enabled, onChange }: CustomToolsSettingsPr
 		</div>
 	)
 }
+
+

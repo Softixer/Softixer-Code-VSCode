@@ -1,4 +1,4 @@
-// npx vitest core/webview/__tests__/ClineProvider.sticky-mode.spec.ts
+﻿// npx vitest core/webview/__tests__/ClineProvider.sticky-mode.spec.ts
 
 import * as vscode from "vscode"
 import { ClineProvider } from "../ClineProvider"
@@ -1216,3 +1216,5 @@ describe("ClineProvider - Sticky Mode", () => {
 		})
 	})
 })
+
+

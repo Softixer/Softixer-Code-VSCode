@@ -1,4 +1,4 @@
-import type { ModeConfig } from "@roo-code/types"
+﻿import type { ModeConfig } from "@roo-code/types"
 
 describe("Native Tools Filtering by Mode", () => {
 	describe("attemptApiRequest native tool filtering", () => {
@@ -120,3 +120,5 @@ describe("Native Tools Filtering by Mode", () => {
 		})
 	})
 })
+
+

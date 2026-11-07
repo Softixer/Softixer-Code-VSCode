@@ -1,4 +1,4 @@
-// npx vitest src/core/config/__tests__/ProviderSettingsManager.spec.ts
+﻿// npx vitest src/core/config/__tests__/ProviderSettingsManager.spec.ts
 
 import { ExtensionContext } from "vscode"
 
@@ -471,7 +471,7 @@ describe("ProviderSettingsManager", () => {
 			)
 
 			// Include a legacy provider-specific field (groqApiKey) that is no
-			// longer in the schema — passthrough() must keep it.
+			// longer in the schema â€” passthrough() must keep it.
 			const retiredConfig = {
 				apiProvider: "groq",
 				apiKey: "legacy-key",
@@ -558,7 +558,7 @@ describe("ProviderSettingsManager", () => {
 	})
 
 	describe("LoadConfig", () => {
-		it("preserves Roo Code Router configs as retired providers", async () => {
+		it("preserves Softixer Router configs as retired providers", async () => {
 			const existingConfig = {
 				currentApiConfigName: "default",
 				apiConfigs: {
@@ -871,3 +871,5 @@ describe("ProviderSettingsManager", () => {
 		})
 	})
 })
+
+

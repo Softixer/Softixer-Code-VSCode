@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, act } from "@/utils/test-utils"
+﻿import { render, screen, fireEvent, act } from "@/utils/test-utils"
 
 import type { Worktree, WorktreeListResponse } from "@roo-code/types"
 
@@ -297,3 +297,5 @@ describe("WorktreeSelector", () => {
 		expect(screen.getByText("worktrees:noBranch")).toBeInTheDocument()
 	})
 })
+
+

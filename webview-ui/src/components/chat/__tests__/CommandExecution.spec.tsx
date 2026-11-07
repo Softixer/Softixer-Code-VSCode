@@ -1,4 +1,4 @@
-// pnpm --filter @roo-code/vscode-webview test src/components/chat/__tests__/CommandExecution.spec.tsx
+﻿// pnpm --filter @roo-code/vscode-webview test src/components/chat/__tests__/CommandExecution.spec.tsx
 
 import React from "react"
 import { render, screen, fireEvent } from "@testing-library/react"
@@ -83,7 +83,7 @@ describe("CommandExecution", () => {
 	})
 
 	it("should render with custom icon and title", () => {
-		const icon = <span data-testid="custom-icon">📦</span>
+		const icon = <span data-testid="custom-icon">ğŸ“¦</span>
 		const title = <span data-testid="custom-title">Installing Dependencies</span>
 
 		render(
@@ -434,8 +434,8 @@ Other output here`
 			const commandWithMixedContent = `npm test
 Output:
 Running tests...
-✓ Test 1 passed
-✓ Test 2 passed`
+âœ“ Test 1 passed
+âœ“ Test 2 passed`
 
 			render(
 				<ExtensionStateWrapper>
@@ -606,3 +606,5 @@ Output:
 		})
 	})
 })
+
+

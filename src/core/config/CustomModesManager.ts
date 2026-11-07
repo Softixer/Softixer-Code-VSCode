@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import * as path from "path"
 import * as fs from "fs/promises"
 import * as os from "os"
@@ -198,7 +198,7 @@ export class CustomModesManager {
 				// Show user-friendly error for .roomodes files
 				if (filePath.endsWith(ROOMODES_FILENAME)) {
 					const issues = result.error.issues
-						.map((issue) => `• ${issue.path.join(".")}: ${issue.message}`)
+						.map((issue) => `â€¢ ${issue.path.join(".")}: ${issue.message}`)
 						.join("\n")
 
 					vscode.window.showErrorMessage(t("common:customModes.errors.schemaValidationError", { issues }))
@@ -1012,3 +1012,5 @@ export class CustomModesManager {
 		this.disposables = []
 	}
 }
+
+

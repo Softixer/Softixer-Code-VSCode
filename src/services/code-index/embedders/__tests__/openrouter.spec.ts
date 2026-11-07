@@ -1,4 +1,4 @@
-import type { MockedClass, MockedFunction } from "vitest"
+﻿import type { MockedClass, MockedFunction } from "vitest"
 import { describe, it, expect, beforeEach, vi } from "vitest"
 import { OpenAI } from "openai"
 import { OpenRouterEmbedder, OPENROUTER_DEFAULT_PROVIDER_NAME } from "../openrouter"
@@ -80,8 +80,8 @@ describe("OpenRouterEmbedder", () => {
 				baseURL: "https://openrouter.ai/api/v1",
 				apiKey: mockApiKey,
 				defaultHeaders: {
-					"HTTP-Referer": "https://github.com/RooCodeInc/Roo-Code",
-					"X-Title": "Roo Code",
+					"HTTP-Referer": "https://github.com/SoftixerInc/softixer",
+					"X-Title": "Softixer",
 				},
 			})
 		})
@@ -397,3 +397,4 @@ describe("OpenRouterEmbedder", () => {
 		})
 	})
 })
+

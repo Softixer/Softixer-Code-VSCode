@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@/utils/test-utils"
+﻿import { render, screen, fireEvent } from "@/utils/test-utils"
 
 import type { ModeConfig } from "@roo-code/types"
 
@@ -278,3 +278,5 @@ describe("ModeSelector", () => {
 		expect(trigger).toHaveTextContent("Code")
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+﻿import { useQuery } from "@tanstack/react-query"
 
 import { type ModelRecord, type ExtensionMessage } from "@roo-code/types"
 
@@ -36,3 +36,5 @@ const getOllamaModels = async () =>
 
 export const useOllamaModels = (modelId?: string) =>
 	useQuery({ queryKey: ["ollamaModels"], queryFn: () => (modelId ? getOllamaModels() : {}) })
+
+

@@ -1,4 +1,4 @@
-import type { McpResource, McpResourceTemplate } from "@roo-code/types"
+﻿import type { McpResource, McpResourceTemplate } from "@roo-code/types"
 
 type McpResourceRowProps = {
 	item: McpResource | McpResourceTemplate
@@ -57,3 +57,5 @@ const McpResourceRow = ({ item }: McpResourceRowProps) => {
 }
 
 export default McpResourceRow
+
+

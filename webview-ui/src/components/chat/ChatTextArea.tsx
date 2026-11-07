@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
+﻿import React, { forwardRef, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { useEvent } from "react-use"
 import DynamicTextArea from "react-textarea-autosize"
 import { VolumeX, Image, WandSparkles, SendHorizontal, X, ListEnd, Square } from "lucide-react"
@@ -265,7 +265,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 			if (enterBehavior === "newline") {
 				// When Enter = newline, Ctrl/Cmd+Enter sends
 				const isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0
-				return isMac ? "⌘+Enter" : "Ctrl+Enter"
+				return isMac ? "âŒ˜+Enter" : "Ctrl+Enter"
 			}
 			// Default: Enter sends
 			return "Enter"
@@ -1348,3 +1348,5 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 		)
 	},
 )
+
+

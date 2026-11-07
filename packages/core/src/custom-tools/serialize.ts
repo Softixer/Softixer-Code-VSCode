@@ -1,4 +1,4 @@
-import { type SerializedCustomToolDefinition, parametersSchema } from "@roo-code/types"
+﻿import { type SerializedCustomToolDefinition, parametersSchema } from "@roo-code/types"
 
 import type { StoredCustomTool } from "./types.js"
 
@@ -19,3 +19,5 @@ export function serializeCustomTool({
 export function serializeCustomTools(tools: StoredCustomTool[]): SerializedCustomToolDefinition[] {
 	return tools.map(serializeCustomTool)
 }
+
+

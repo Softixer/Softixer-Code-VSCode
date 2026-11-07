@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CustomToolRegistry - A reusable class for dynamically loading and managing TypeScript tools.
  *
  * Features:
@@ -430,3 +430,5 @@ export class CustomToolRegistry {
 }
 
 export const customToolRegistry = new CustomToolRegistry()
+
+

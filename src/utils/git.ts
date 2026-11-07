@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import * as path from "path"
 import { promises as fs } from "fs"
 import { exec } from "child_process"
@@ -396,3 +396,5 @@ export async function getGitStatus(cwd: string, maxFiles: number = 20): Promise<
 		return null
 	}
 }
+
+

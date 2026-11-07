@@ -1,4 +1,4 @@
-import { HTMLAttributes, useState, useCallback } from "react"
+﻿import { HTMLAttributes, useState, useCallback } from "react"
 import { useAppTranslation } from "@/i18n/TranslationContext"
 import { vscode } from "@/utils/vscode"
 import { VSCodeCheckbox, VSCodeLink } from "@vscode/webview-ui-toolkit/react"
@@ -408,3 +408,5 @@ export const TerminalSettings = ({
 		</div>
 	)
 }
+
+

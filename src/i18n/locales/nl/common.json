@@ -1,6 +1,6 @@
-{
+﻿{
 	"extension": {
-		"name": "Roo Code",
+		"name": "Softixer",
 		"description": "Een compleet ontwikkelteam van AI-agenten in je editor."
 	},
 	"number_format": {
@@ -11,7 +11,7 @@
 	"welcome": "Welkom, {{name}}! Je hebt {{count}} meldingen.",
 	"items": {
 		"zero": "Geen items",
-		"one": "Eén item",
+		"one": "EÃ©n item",
 		"other": "{{count}} items"
 	},
 	"confirmation": {
@@ -21,7 +21,7 @@
 	},
 	"errors": {
 		"invalid_data_uri": "Ongeldig data-URI-formaat",
-		"error_copying_image": "Fout bij kopiëren van afbeelding: {{errorMessage}}",
+		"error_copying_image": "Fout bij kopiÃ«ren van afbeelding: {{errorMessage}}",
 		"error_saving_image": "Fout bij opslaan van afbeelding: {{errorMessage}}",
 		"error_opening_image": "Fout bij openen van afbeelding: {{error}}",
 		"could_not_open_file": "Kon bestand niet openen: {{errorMessage}}",
@@ -87,9 +87,9 @@
 		"create_command_failed": "Kan opdracht niet aanmaken",
 		"command_template_content": "---\ndescription: \"Korte beschrijving van wat deze opdracht doet\"\n---\n\nDit is een nieuwe slash-opdracht. Bewerk dit bestand om het opdrachtgedrag aan te passen.",
 		"claudeCode": {
-			"processExited": "Claude Code proces beëindigd met code {{exitCode}}.",
+			"processExited": "Claude Code proces beÃ«indigd met code {{exitCode}}.",
 			"errorOutput": "Foutuitvoer: {{output}}",
-			"processExitedWithError": "Claude Code proces beëindigd met code {{exitCode}}. Foutuitvoer: {{output}}",
+			"processExitedWithError": "Claude Code proces beÃ«indigd met code {{exitCode}}. Foutuitvoer: {{output}}",
 			"stoppedWithReason": "Claude Code gestopt om reden: {{reason}}",
 			"apiKeyModelPlanMismatch": "API keys and subscription plans allow different models. Make sure the selected model is included in your plan."
 		},
@@ -142,7 +142,7 @@
 	"warnings": {
 		"no_terminal_content": "Geen terminalinhoud geselecteerd",
 		"missing_task_files": "De bestanden van deze taak ontbreken. Wil je deze uit de takenlijst verwijderen?",
-		"auto_import_failed": "Automatisch importeren van RooCode-instellingen mislukt: {{error}}"
+		"auto_import_failed": "Automatisch importeren van Softixer-instellingen mislukt: {{error}}"
 	},
 	"info": {
 		"no_changes": "Geen wijzigingen gevonden.",
@@ -150,15 +150,15 @@
 		"history_cleanup": "{{count}} taak/taken met ontbrekende bestanden uit geschiedenis verwijderd.",
 		"custom_storage_path_set": "Aangepast opslagpad ingesteld: {{path}}",
 		"default_storage_path": "Terug naar standaard opslagpad",
-		"settings_imported": "Instellingen succesvol geïmporteerd.",
-		"auto_import_success": "RooCode-instellingen automatisch geïmporteerd van {{filename}}",
+		"settings_imported": "Instellingen succesvol geÃ¯mporteerd.",
+		"auto_import_success": "Softixer-instellingen automatisch geÃ¯mporteerd van {{filename}}",
 		"share_link_copied": "Deellink gekopieerd naar klembord",
 		"image_copied_to_clipboard": "Afbeelding data-URI gekopieerd naar klembord",
 		"image_saved": "Afbeelding opgeslagen naar {{path}}",
 		"organization_share_link_copied": "Organisatie deel-link gekopieerd naar klembord!",
 		"public_share_link_copied": "Openbare deel-link gekopieerd naar klembord!",
-		"mode_exported": "Modus '{{mode}}' succesvol geëxporteerd",
-		"mode_imported": "Modus succesvol geïmporteerd"
+		"mode_exported": "Modus '{{mode}}' succesvol geÃ«xporteerd",
+		"mode_imported": "Modus succesvol geÃ¯mporteerd"
 	},
 	"answers": {
 		"yes": "Ja",
@@ -180,12 +180,12 @@
 	"interruption": {
 		"responseInterruptedByUser": "Reactie onderbroken door gebruiker",
 		"responseInterruptedByApiError": "Reactie onderbroken door API-fout",
-		"streamTerminatedByProvider": "Provider heeft het verzoek beëindigd"
+		"streamTerminatedByProvider": "Provider heeft het verzoek beÃ«indigd"
 	},
 	"storage": {
 		"prompt_custom_path": "Voer een aangepast opslagpad voor gespreksgeschiedenis in, laat leeg voor standaardlocatie",
-		"path_placeholder": "D:\\RooCodeStorage",
-		"enter_absolute_path": "Voer een absoluut pad in (bijv. D:\\RooCodeStorage of /home/user/storage)",
+		"path_placeholder": "D:\\SoftixerStorage",
+		"enter_absolute_path": "Voer een absoluut pad in (bijv. D:\\SoftixerStorage of /home/user/storage)",
 		"enter_valid_path": "Voer een geldig pad in"
 	},
 	"input": {
@@ -197,7 +197,7 @@
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": "Ongeldige YAML in .roomodes bestand op regel {{line}}. Controleer:\n• Juiste inspringing (gebruik spaties, geen tabs)\n• Overeenkomende aanhalingstekens en haakjes\n• Geldige YAML syntaxis",
+			"yamlParseError": "Ongeldige YAML in .roomodes bestand op regel {{line}}. Controleer:\nâ€¢ Juiste inspringing (gebruik spaties, geen tabs)\nâ€¢ Overeenkomende aanhalingstekens en haakjes\nâ€¢ Geldige YAML syntaxis",
 			"schemaValidationError": "Ongeldig aangepaste modi formaat in .roomodes:\n{{issues}}",
 			"invalidFormat": "Ongeldig aangepaste modi formaat. Zorg ervoor dat je instellingen het juiste YAML formaat volgen.",
 			"updateFailed": "Aangepaste modus bijwerken mislukt: {{error}}",
@@ -227,6 +227,7 @@
 	},
 	"docsLink": {
 		"label": "Docs",
-		"url": "https://github.com/RooCodeInc/Roo-Code"
+		"url": "https://github.com/SoftixerInc/softixer"
 	}
 }
+

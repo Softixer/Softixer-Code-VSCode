@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Worktree Module
  *
  * VSCode-specific handlers for git worktree management.
@@ -20,3 +20,5 @@ export {
 
 // Re-export types from @roo-code/types for convenience
 export type { WorktreeListResponse, WorktreeDefaultsResponse } from "@roo-code/types"
+
+

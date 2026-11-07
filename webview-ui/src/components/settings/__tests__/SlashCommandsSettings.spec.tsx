@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@/utils/test-utils"
+﻿import { render, screen, fireEvent, waitFor } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 import type { Command } from "@roo-code/types"
@@ -416,3 +416,5 @@ describe("SlashCommandsSettings", () => {
 		expect(screen.getByText("settings:slashCommands.footer")).toBeInTheDocument()
 	})
 })
+
+

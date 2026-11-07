@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
 import { type ModelInfo, type ModelRecord, requestyDefaultModelId, requestyDefaultModelInfo } from "@roo-code/types"
@@ -217,3 +217,5 @@ export class RequestyHandler extends BaseProvider implements SingleCompletionHan
 		return response.choices[0]?.message.content || ""
 	}
 }
+
+

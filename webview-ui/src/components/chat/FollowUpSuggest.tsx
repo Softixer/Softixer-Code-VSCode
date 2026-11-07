@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+﻿import { useCallback, useEffect, useState } from "react"
 import { ClipboardCopy, Timer } from "lucide-react"
 
 import { Button, StandardTooltip } from "@/components/ui"
@@ -160,3 +160,5 @@ export const FollowUpSuggest = ({
 		</div>
 	)
 }
+
+

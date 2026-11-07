@@ -1,4 +1,4 @@
-import { t } from "../../../i18n"
+﻿import { t } from "../../../i18n"
 
 // Image generation types
 interface ImageGenerationResponse {
@@ -70,8 +70,8 @@ export async function generateImageWithProvider(options: ImageGenerationOptions)
 			headers: {
 				Authorization: `Bearer ${authToken}`,
 				"Content-Type": "application/json",
-				"HTTP-Referer": "https://github.com/RooVetGit/Roo-Code",
-				"X-Title": "Roo Code",
+				"HTTP-Referer": "https://github.com/RooVetGit/softixer",
+				"X-Title": "Softixer",
 			},
 			body: JSON.stringify({
 				model,
@@ -216,8 +216,8 @@ export async function generateImageWithImagesApi(options: ImagesApiOptions): Pro
 			headers: {
 				Authorization: `Bearer ${authToken}`,
 				"Content-Type": "application/json",
-				"HTTP-Referer": "https://github.com/RooVetGit/Roo-Code",
-				"X-Title": "Roo Code",
+				"HTTP-Referer": "https://github.com/RooVetGit/softixer",
+				"X-Title": "Softixer",
 			},
 			body: JSON.stringify(requestBody),
 		}
@@ -311,3 +311,4 @@ export async function generateImageWithImagesApi(options: ImagesApiOptions): Pro
 		}
 	}
 }
+

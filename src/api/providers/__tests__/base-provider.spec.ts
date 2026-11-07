@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -281,3 +281,5 @@ describe("BaseProvider", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { safeWriteJson } from "../../utils/safeWriteJson"
+﻿import { safeWriteJson } from "../../utils/safeWriteJson"
 import * as path from "path"
 import * as os from "os"
 import * as fs from "fs/promises"
@@ -14,7 +14,7 @@ import {
 	type Command as SlashCommand,
 	type WebviewMessage,
 	type EditQueuedMessagePayload,
-	RooCodeSettings,
+	SoftixerSettings,
 	ExperimentId,
 	checkoutDiffPayloadSchema,
 	checkoutRestorePayloadSchema,
@@ -62,6 +62,7 @@ import { getWorkspacePath } from "../../utils/path"
 import { isPathOutsideWorkspace } from "../../utils/pathUtils"
 import { Mode, defaultModeSlug } from "../../shared/modes"
 import { getModels, flushModels } from "../../api/providers/fetchers/modelCache"
+import { getSoftixerModels } from "../../api/providers/fetchers/softixer"
 import { GetModelsOptions } from "../../shared/api"
 import { generateSystemPrompt } from "./generateSystemPrompt"
 import { resolveDefaultSaveUri, saveLastExportPath } from "../../utils/export"
@@ -725,7 +726,7 @@ export const webviewMessageHandler = async (provider: ClineProvider, message: We
 						}
 					}
 
-					await provider.contextProxy.setValue(key as keyof RooCodeSettings, newValue)
+					await provider.contextProxy.setValue(key as keyof SoftixerSettings, newValue)
 				}
 
 				await provider.postStateToWebview()
@@ -1031,6 +1032,21 @@ export const webviewMessageHandler = async (provider: ClineProvider, message: We
 			}
 			break
 		}
+		case "requestSoftixerModels": {
+			// Specific handler for Softixer models only.
+			const { apiConfiguration: softixerApiConfig } = await provider.getState()
+			try {
+				const apiKey = softixerApiConfig.softixerApiKey as string | undefined
+				const baseUrl = softixerApiConfig.softixerBaseUrl as string | undefined
+				const softixerModels = await getSoftixerModels(apiKey, baseUrl)
+				provider.postMessageToWebview({ type: "softixerModels", softixerModels })
+			} catch (error) {
+				// Silently fail - user may not have configured Softixer yet
+				console.debug("Softixer models fetch failed:", error)
+				provider.postMessageToWebview({ type: "softixerModels", softixerModels: {} })
+			}
+			break
+		}
 		case "requestLmStudioModels": {
 			// Specific handler for LM Studio models only.
 			const { apiConfiguration: lmStudioApiConfig } = await provider.getState()
@@ -1235,7 +1251,7 @@ export const webviewMessageHandler = async (provider: ClineProvider, message: We
 			break
 		}
 		case "openKeyboardShortcuts": {
-			// Open VSCode keyboard shortcuts settings and optionally filter to show the Roo Code commands
+			// Open VSCode keyboard shortcuts settings and optionally filter to show the Softixer commands
 			const searchQuery = message.text || ""
 			if (searchQuery) {
 				// Open with a search query pre-filled
@@ -3228,3 +3244,5 @@ export const webviewMessageHandler = async (provider: ClineProvider, message: We
 		}
 	}
 }
+
+

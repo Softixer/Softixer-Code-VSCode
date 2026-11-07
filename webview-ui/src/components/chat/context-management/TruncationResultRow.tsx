@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { FoldVertical } from "lucide-react"
 
@@ -38,7 +38,7 @@ export function TruncationResultRow({ data }: TruncationResultRowProps) {
 						{t("chat:contextManagement.truncation.title")}
 					</span>
 					<span className="text-vscode-descriptionForeground text-sm">
-						{prevTokens.toLocaleString()} → {newTokens.toLocaleString()}{" "}
+						{prevTokens.toLocaleString()} â†’ {newTokens.toLocaleString()}{" "}
 						{t("chat:contextManagement.tokens")}
 					</span>
 				</div>
@@ -62,3 +62,5 @@ export function TruncationResultRow({ data }: TruncationResultRowProps) {
 		</div>
 	)
 }
+
+

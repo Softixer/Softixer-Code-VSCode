@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@/utils/test-utils"
+﻿import { render, screen, fireEvent, waitFor } from "@/utils/test-utils"
 import { vscode } from "@/utils/vscode"
 
 import { ApiConfigSelector } from "../ApiConfigSelector"
@@ -538,3 +538,5 @@ describe("ApiConfigSelector", () => {
 		expect(stickyHeader).not.toBeInTheDocument()
 	})
 })
+
+

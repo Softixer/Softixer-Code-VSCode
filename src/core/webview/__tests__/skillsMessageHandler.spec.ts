@@ -1,4 +1,4 @@
-// npx vitest run src/core/webview/__tests__/skillsMessageHandler.spec.ts
+﻿// npx vitest run src/core/webview/__tests__/skillsMessageHandler.spec.ts
 
 import type { SkillMetadata, WebviewMessage } from "@roo-code/types"
 import type { ClineProvider } from "../ClineProvider"
@@ -413,3 +413,5 @@ describe("skillsMessageHandler", () => {
 		})
 	})
 })
+
+

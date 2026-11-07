@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from "react"
+﻿import { useState, useCallback, useMemo } from "react"
 import { useEvent } from "react-use"
 import { LanguageModelChatSelector } from "vscode"
 
@@ -90,3 +90,5 @@ export const VSCodeLM = ({ apiConfiguration, setApiConfigurationField }: VSCodeL
 		</>
 	)
 }
+
+

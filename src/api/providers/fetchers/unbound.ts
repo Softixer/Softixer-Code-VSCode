@@ -1,4 +1,4 @@
-import axios from "axios"
+﻿import axios from "axios"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -38,3 +38,5 @@ export async function getUnboundModels(apiKey?: string | null): Promise<Record<s
 
 	return models
 }
+
+

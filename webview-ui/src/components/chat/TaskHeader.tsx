@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useMemo } from "react"
+﻿import { memo, useRef, useState, useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { ChevronUp, ChevronDown, HardDriveDownload, HardDriveUpload, FoldVertical, ArrowLeft } from "lucide-react"
 import prettyBytes from "pretty-bytes"
@@ -239,7 +239,7 @@ const TaskHeader = ({
 							</StandardTooltip>
 							{!!totalCost && (
 								<>
-									<span>·</span>
+									<span>Â·</span>
 									<StandardTooltip
 										content={
 											hasSubtasks ? (
@@ -330,10 +330,10 @@ const TaskHeader = ({
 										<td className="font-light align-top">
 											<div className="flex items-center gap-1 flex-wrap">
 												{typeof tokensIn === "number" && tokensIn > 0 && (
-													<span>↑ {formatLargeNumber(tokensIn)}</span>
+													<span>â†‘ {formatLargeNumber(tokensIn)}</span>
 												)}
 												{typeof tokensOut === "number" && tokensOut > 0 && (
-													<span>↓ {formatLargeNumber(tokensOut)}</span>
+													<span>â†“ {formatLargeNumber(tokensOut)}</span>
 												)}
 											</div>
 										</td>
@@ -430,3 +430,5 @@ const TaskHeader = ({
 }
 
 export default memo(TaskHeader)
+
+

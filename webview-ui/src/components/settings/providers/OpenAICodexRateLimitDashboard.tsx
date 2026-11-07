@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react"
+﻿import React, { useCallback, useEffect, useState } from "react"
 import type { OpenAiCodexRateLimitInfo } from "@roo-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
@@ -182,7 +182,7 @@ export const OpenAICodexRateLimitDashboard: React.FC<OpenAICodexRateLimitDashboa
 					})
 				: ""
 
-		if (usedLabel && resetLabel) return `${usedLabel} • ${resetLabel}`
+		if (usedLabel && resetLabel) return `${usedLabel} â€¢ ${resetLabel}`
 		return usedLabel || resetLabel
 	}
 
@@ -226,3 +226,5 @@ export const OpenAICodexRateLimitDashboard: React.FC<OpenAICodexRateLimitDashboa
 		</div>
 	)
 }
+
+

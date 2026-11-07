@@ -1,4 +1,4 @@
-import * as path from "path"
+﻿import * as path from "path"
 
 import { type ClineSayTool } from "@roo-code/types"
 
@@ -88,3 +88,5 @@ export class ListFilesTool extends BaseTool<"list_files"> {
 }
 
 export const listFilesTool = new ListFilesTool()
+
+

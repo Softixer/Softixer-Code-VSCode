@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { TerminalActionId, TerminalActionPromptType } from "@roo-code/types"
 
@@ -37,3 +37,5 @@ const registerTerminalAction = (
 		}),
 	)
 }
+
+

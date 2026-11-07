@@ -1,4 +1,4 @@
-// Mock AWS SDK credential providers
+﻿// Mock AWS SDK credential providers
 vi.mock("@aws-sdk/credential-providers", () => {
 	const mockFromIni = vi.fn().mockReturnValue({
 		accessKeyId: "profile-access-key",
@@ -1177,3 +1177,5 @@ describe("AwsBedrockHandler", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import { createPoe, type PoeProvider, type PoeScopedProviderOptions } from "ai-sdk-provider-poe"
 import { extractUsageMetrics, mapToolChoice } from "ai-sdk-provider-poe/code"
 import { streamText, generateText, type ToolSet } from "ai"
@@ -144,3 +144,5 @@ export class PoeHandler extends BaseProvider implements SingleCompletionHandler 
 		}
 	}
 }
+
+

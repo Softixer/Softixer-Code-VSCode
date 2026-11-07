@@ -1,4 +1,4 @@
-// cd src && npx vitest run core/context-management/__tests__/context-management.spec.ts
+﻿// cd src && npx vitest run core/context-management/__tests__/context-management.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 
@@ -1697,3 +1697,5 @@ describe("Context Management", () => {
 		})
 	})
 })
+
+

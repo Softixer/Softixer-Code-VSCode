@@ -1,4 +1,4 @@
-import NodeCache from "node-cache"
+﻿import NodeCache from "node-cache"
 import getFolderSize from "get-folder-size"
 
 import type { ClineMessage, HistoryItem } from "@roo-code/types"
@@ -116,3 +116,5 @@ export async function taskMetadata({
 
 	return { historyItem, tokenUsage }
 }
+
+

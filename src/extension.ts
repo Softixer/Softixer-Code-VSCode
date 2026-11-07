@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import * as dotenvx from "@dotenvx/dotenvx"
 import * as fs from "fs"
 import * as path from "path"
@@ -57,7 +57,7 @@ let outputChannel: vscode.OutputChannel
 let extensionContext: vscode.ExtensionContext
 
 /**
- * Check if we should auto-open the Roo Code sidebar after switching to a worktree.
+ * Check if we should auto-open the Softixer sidebar after switching to a worktree.
  * This is called during extension activation to handle the worktree auto-open flow.
  */
 async function checkWorktreeAutoOpen(
@@ -85,12 +85,12 @@ async function checkWorktreeAutoOpen(
 			// Clear the state first to prevent re-triggering
 			await context.globalState.update("worktreeAutoOpenPath", undefined)
 
-			outputChannel.appendLine(`[Worktree] Auto-opening Roo Code sidebar for worktree: ${worktreeAutoOpenPath}`)
+			outputChannel.appendLine(`[Worktree] Auto-opening Softixer sidebar for worktree: ${worktreeAutoOpenPath}`)
 
-			// Open the Roo Code sidebar with a slight delay to ensure UI is ready
+			// Open the Softixer sidebar with a slight delay to ensure UI is ready
 			setTimeout(async () => {
 				try {
-					await vscode.commands.executeCommand("roo-cline.plusButtonClicked")
+					await vscode.commands.executeCommand("softixer.plusButtonClicked")
 				} catch (error) {
 					outputChannel.appendLine(
 						`[Worktree] Error auto-opening sidebar: ${error instanceof Error ? error.message : String(error)}`,
@@ -233,8 +233,8 @@ export async function activate(context: vscode.ExtensionContext) {
 	// Allows other extensions to activate once Roo is ready.
 	vscode.commands.executeCommand(`${Package.name}.activationCompleted`)
 
-	// Implements the `RooCodeAPI` interface.
-	const socketPath = process.env.ROO_CODE_IPC_SOCKET_PATH
+	// Implements the `SoftixerAPI` interface.
+	const socketPath = process.env.softixer_IPC_SOCKET_PATH
 	const enableLogging = typeof socketPath === "string"
 
 	// Watch the core files and automatically reload the extension host.
@@ -245,7 +245,7 @@ export async function activate(context: vscode.ExtensionContext) {
 		]
 
 		console.log(
-			`♻️♻️♻️ Core auto-reloading: Watching for changes in ${watchPaths.map(({ path }) => path).join(", ")}`,
+			`â™»ï¸â™»ï¸â™»ï¸ Core auto-reloading: Watching for changes in ${watchPaths.map(({ path }) => path).join(", ")}`,
 		)
 
 		// Create a debounced reload function to prevent excessive reloads
@@ -257,10 +257,10 @@ export async function activate(context: vscode.ExtensionContext) {
 				clearTimeout(reloadTimeout)
 			}
 
-			console.log(`♻️ ${uri.fsPath} changed; scheduling reload...`)
+			console.log(`â™»ï¸ ${uri.fsPath} changed; scheduling reload...`)
 
 			reloadTimeout = setTimeout(() => {
-				console.log(`♻️ Reloading host after debounce delay...`)
+				console.log(`â™»ï¸ Reloading host after debounce delay...`)
 				vscode.commands.executeCommand("workbench.action.reloadWindow")
 			}, DEBOUNCE_DELAY)
 		}
@@ -300,3 +300,6 @@ export async function deactivate() {
 	await McpServerManager.cleanup(extensionContext)
 	TerminalRegistry.cleanup()
 }
+
+
+

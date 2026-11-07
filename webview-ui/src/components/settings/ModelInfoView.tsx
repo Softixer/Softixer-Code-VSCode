@@ -1,4 +1,4 @@
-import { VSCodeLink } from "@vscode/webview-ui-toolkit/react"
+﻿import { VSCodeLink } from "@vscode/webview-ui-toolkit/react"
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -31,7 +31,7 @@ export const ModelInfoView = ({
 	const allowedTierNames =
 		modelInfo?.tiers?.filter((t) => t.name === "flex" || t.name === "priority")?.map((t) => t.name) ?? []
 	const shouldShowTierPricingTable = apiProvider === "openai-native" && allowedTierNames.length > 0
-	const fmt = (n?: number) => (typeof n === "number" ? `${formatPrice(n)}` : "—")
+	const fmt = (n?: number) => (typeof n === "number" ? `${formatPrice(n)}` : "â€”")
 
 	const baseInfoItems = [
 		typeof modelInfo?.contextWindow === "number" && modelInfo.contextWindow > 0 && (
@@ -213,3 +213,5 @@ const ModelInfoSupportsItem = ({
 		{isSupported ? supportsLabel : doesNotSupportLabel}
 	</div>
 )
+
+

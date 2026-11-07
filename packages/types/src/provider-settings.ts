@@ -15,6 +15,7 @@ import {
 	openAiNativeModels,
 	qwenCodeModels,
 	sambaNovaModels,
+	softixerModels,
 	vertexModels,
 	vscodeLlmModels,
 	xaiModels,
@@ -116,6 +117,7 @@ export const providerNames = [
 	"openai-native",
 	"qwen-code",
 	"sambanova",
+	"softixer",
 	"vertex",
 	"xai",
 	"zai",
@@ -381,6 +383,12 @@ const basetenSchema = apiModelIdProviderModelSchema.extend({
 	basetenApiKey: z.string().optional(),
 })
 
+const softixerSchema = baseProviderSettingsSchema.extend({
+	softixerApiKey: z.string().optional(),
+	softixerModelId: z.string().optional(),
+	softixerBaseUrl: z.string().optional(),
+})
+
 const defaultSchema = z.object({
 	apiProvider: z.undefined(),
 })
@@ -408,6 +416,7 @@ export const providerSettingsSchemaDiscriminated = z.discriminatedUnion("apiProv
 	fakeAiSchema.merge(z.object({ apiProvider: z.literal("fake-ai") })),
 	xaiSchema.merge(z.object({ apiProvider: z.literal("xai") })),
 	basetenSchema.merge(z.object({ apiProvider: z.literal("baseten") })),
+	softixerSchema.merge(z.object({ apiProvider: z.literal("softixer") })),
 	litellmSchema.merge(z.object({ apiProvider: z.literal("litellm") })),
 	sambaNovaSchema.merge(z.object({ apiProvider: z.literal("sambanova") })),
 	zaiSchema.merge(z.object({ apiProvider: z.literal("zai") })),
@@ -441,6 +450,7 @@ export const providerSettingsSchema = z.object({
 	...fakeAiSchema.shape,
 	...xaiSchema.shape,
 	...basetenSchema.shape,
+	...softixerSchema.shape,
 	...litellmSchema.shape,
 	...sambaNovaSchema.shape,
 	...zaiSchema.shape,
@@ -474,6 +484,7 @@ export const modelIdKeys = [
 	"lmStudioModelId",
 	"lmStudioDraftModelId",
 	"requestyModelId",
+	"softixerModelId",
 	"unboundModelId",
 	"litellmModelId",
 	"vercelAiGatewayModelId",
@@ -518,6 +529,7 @@ export const modelIdKeysByProvider: Record<TypicalProvider, ModelIdKey> = {
 	baseten: "apiModelId",
 	litellm: "litellmModelId",
 	sambanova: "apiModelId",
+	softixer: "softixerModelId",
 	zai: "apiModelId",
 	fireworks: "apiModelId",
 	"vercel-ai-gateway": "vercelAiGatewayModelId",
@@ -624,6 +636,7 @@ export const MODELS_BY_PROVIDER: Record<
 	xai: { id: "xai", label: "xAI (Grok)", models: Object.keys(xaiModels) },
 	zai: { id: "zai", label: "Z.ai", models: Object.keys(internationalZAiModels) },
 	baseten: { id: "baseten", label: "Baseten", models: Object.keys(basetenModels) },
+	softixer: { id: "softixer", label: "Softixer", models: Object.keys(softixerModels) },
 
 	// Dynamic providers; models pulled from remote APIs.
 	poe: { id: "poe", label: "Poe", models: [] },

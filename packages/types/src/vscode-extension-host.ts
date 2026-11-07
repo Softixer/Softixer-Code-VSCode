@@ -36,6 +36,7 @@ export interface ExtensionMessage {
 		| "commitSearchResults"
 		| "listApiConfig"
 		| "routerModels"
+		| "softixerModels"
 		| "openAiModels"
 		| "ollamaModels"
 		| "lmStudioModels"
@@ -123,6 +124,7 @@ export interface ExtensionMessage {
 	}>
 	clineMessage?: ClineMessage
 	routerModels?: RouterModels
+	softixerModels?: ModelRecord
 	openAiModels?: string[]
 	ollamaModels?: ModelRecord
 	lmStudioModels?: ModelRecord
@@ -399,6 +401,7 @@ export interface WebviewMessage {
 		| "resetState"
 		| "flushRouterModels"
 		| "requestRouterModels"
+		| "requestSoftixerModels"
 		| "requestOpenAiModels"
 		| "requestOllamaModels"
 		| "requestLmStudioModels"

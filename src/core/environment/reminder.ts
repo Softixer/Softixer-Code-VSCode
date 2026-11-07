@@ -1,4 +1,4 @@
-import { TodoItem, TodoStatus } from "@roo-code/types"
+﻿import { TodoItem, TodoStatus } from "@roo-code/types"
 
 /**
  * Format the reminders section as a markdown block in English, with basic instructions.
@@ -36,3 +36,5 @@ export function formatReminderSection(todoList?: TodoItem[]): string {
 	)
 	return lines.join("\n")
 }
+
+

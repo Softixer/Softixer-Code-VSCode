@@ -1,4 +1,4 @@
-// npx vitest src/components/settings/__tests__/ModelPicker.spec.tsx
+﻿// npx vitest src/components/settings/__tests__/ModelPicker.spec.tsx
 
 import { screen, fireEvent, render } from "@/utils/test-utils"
 import { act } from "react"
@@ -252,3 +252,5 @@ describe("ModelPicker", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-// npx vitest run api/providers/__tests__/openai.spec.ts
+﻿// npx vitest run api/providers/__tests__/openai.spec.ts
 
 import { OpenAiHandler, getOpenAiModels } from "../openai"
 import { ApiHandlerOptions } from "../../../shared/api"
@@ -112,8 +112,8 @@ describe("OpenAiHandler", () => {
 				apiKey: expect.any(String),
 				defaultHeaders: {
 					"HTTP-Referer": "https://github.com/RooVetGit/Roo-Cline",
-					"X-Title": "Roo Code",
-					"User-Agent": `RooCode/${Package.version}`,
+					"X-Title": "Softixer",
+					"User-Agent": `Softixer/${Package.version}`,
 				},
 				timeout: expect.any(Number),
 			})
@@ -1280,3 +1280,5 @@ describe("getOpenAiModels", () => {
 		expect(result).toEqual(["gpt-4", "gpt-3.5-turbo"])
 	})
 })
+
+

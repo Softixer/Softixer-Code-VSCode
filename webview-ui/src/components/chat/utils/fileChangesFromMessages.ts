@@ -1,4 +1,4 @@
-import type { ClineMessage, ClineSayTool } from "@roo-code/types"
+﻿import type { ClineMessage, ClineSayTool } from "@roo-code/types"
 import { safeJsonParse } from "@roo/core"
 
 /** File-edit tool names from ClineSayTool["tool"] (packages/types). */
@@ -65,3 +65,5 @@ export function fileChangesFromMessages(messages: ClineMessage[] | undefined): F
 
 	return entries
 }
+
+

@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
 import { QueuedMessage } from "@roo-code/types"
@@ -112,3 +112,5 @@ export const QueuedMessages = ({ queue, onRemove, onUpdate }: QueuedMessagesProp
 		</div>
 	)
 }
+
+

@@ -1,4 +1,4 @@
-// npx vitest src/integrations/terminal/__tests__/TerminalProcessExec.pwsh.spec.ts
+﻿// npx vitest src/integrations/terminal/__tests__/TerminalProcessExec.pwsh.spec.ts
 
 import * as vscode from "vscode"
 
@@ -84,7 +84,7 @@ async function testPowerShellCommand(
 			executeCommand: vi.fn(),
 			cwd: vscode.Uri.file("/test/path"),
 		},
-		name: "Roo Code",
+		name: "Softixer",
 		processId: Promise.resolve(123),
 		creationOptions: {},
 		exitStatus: undefined,
@@ -353,3 +353,4 @@ describePlatform("TerminalProcess with PowerShell Command Output", () => {
 		})
 	})
 })
+

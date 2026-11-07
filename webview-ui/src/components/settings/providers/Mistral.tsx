@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+﻿import { useCallback } from "react"
 import { VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
 import { type ProviderSettings, type RouterModels, mistralDefaultModelId } from "@roo-code/types"
@@ -66,3 +66,5 @@ export const Mistral = ({ apiConfiguration, setApiConfigurationField }: MistralP
 		</>
 	)
 }
+
+

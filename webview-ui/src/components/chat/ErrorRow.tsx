@@ -1,4 +1,4 @@
-import React, { useState, useCallback, memo, useMemo } from "react"
+﻿import React, { useState, useCallback, memo, useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { VSCodeButton } from "@vscode/webview-ui-toolkit/react"
 import { BookOpenText, MessageCircleWarning, Copy, Check, Microscope, Info } from "lucide-react"
@@ -145,7 +145,7 @@ export const ErrorRow = memo(
 				case "api_failure":
 					return t("chat:apiRequest.failed")
 				case "api_req_retry_delayed":
-					return t("chat:apiRequest.errorTitle", { code: code ? ` · ${code}` : "" })
+					return t("chat:apiRequest.errorTitle", { code: code ? ` Â· ${code}` : "" })
 				case "streaming_failed":
 					return t("chat:apiRequest.streamingFailed")
 				case "cancelled":
@@ -245,7 +245,7 @@ export const ErrorRow = memo(
 										onClick={(e) => {
 											e.preventDefault()
 											// Handle internal navigation to settings
-											if (docsURL.startsWith("roocode://settings")) {
+											if (docsURL.startsWith("Softixer://settings")) {
 												vscode.postMessage({
 													type: "switchTab",
 													tab: "settings",
@@ -256,7 +256,7 @@ export const ErrorRow = memo(
 											}
 										}}>
 										<BookOpenText className="size-3 mt-[3px]" />
-										{docsURL.startsWith("roocode://settings")
+										{docsURL.startsWith("Softixer://settings")
 											? t("chat:apiRequest.errorMessage.goToSettings", {
 													defaultValue: "Settings",
 												})
@@ -334,3 +334,4 @@ export const ErrorRow = memo(
 )
 
 export default ErrorRow
+

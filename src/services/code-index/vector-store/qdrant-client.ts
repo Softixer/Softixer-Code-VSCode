@@ -1,4 +1,4 @@
-import { QdrantClient, Schemas } from "@qdrant/js-client-rest"
+﻿import { QdrantClient, Schemas } from "@qdrant/js-client-rest"
 import { createHash } from "crypto"
 import * as path from "path"
 import { v5 as uuidv5 } from "uuid"
@@ -62,7 +62,7 @@ export class QdrantVectorStore implements IVectorStore {
 				prefix: urlObj.pathname === "/" ? undefined : urlObj.pathname.replace(/\/+$/, ""),
 				apiKey,
 				headers: {
-					"User-Agent": "Roo-Code",
+					"User-Agent": "softixer",
 				},
 			})
 		} catch (urlError) {
@@ -72,7 +72,7 @@ export class QdrantVectorStore implements IVectorStore {
 				url: parsedUrl,
 				apiKey,
 				headers: {
-					"User-Agent": "Roo-Code",
+					"User-Agent": "softixer",
 				},
 			})
 		}
@@ -682,3 +682,4 @@ export class QdrantVectorStore implements IVectorStore {
 		}
 	}
 }
+

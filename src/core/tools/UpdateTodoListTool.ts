@@ -1,4 +1,4 @@
-import { Task } from "../task/Task"
+﻿import { Task } from "../task/Task"
 import { formatResponse } from "../prompts/responses"
 import { BaseTool, ToolCallbacks } from "./BaseTool"
 import type { ToolUse } from "../../shared/tools"
@@ -219,3 +219,5 @@ function validateTodos(todos: any[]): { valid: boolean; error?: string } {
 }
 
 export const updateTodoListTool = new UpdateTodoListTool()
+
+

@@ -1,4 +1,4 @@
-import { distance } from "fastest-levenshtein"
+﻿import { distance } from "fastest-levenshtein"
 
 import { ToolProgressStatus } from "@roo-code/types"
 
@@ -263,7 +263,7 @@ export class MultiSearchReplaceDiffStrategy implements DiffStrategy {
 			  Ensures the first marker starts at the beginning of the file or right after a newline.
 
 			2. (?<!\\)<<<<<<< SEARCH\s*\n  
-			  Matches the line "<<<<<<< SEARCH" (ignoring any trailing spaces) – the negative lookbehind makes sure it isn't escaped.
+			  Matches the line "<<<<<<< SEARCH" (ignoring any trailing spaces) â€“ the negative lookbehind makes sure it isn't escaped.
 
 			3. ((?:\:start_line:\s*(\d+)\s*\n))?  
 			  Optionally matches a ":start_line:" line. The outer capturing group is group 1 and the inner (\d+) is group 2.
@@ -275,13 +275,13 @@ export class MultiSearchReplaceDiffStrategy implements DiffStrategy {
 			  Optionally matches the "-------" marker line (group 5).
 
 			6. ([\s\S]*?)(?:\n)?  
-			  Non‐greedy match for the "search content" (group 6) up to the next marker.
+			  Nonâ€greedy match for the "search content" (group 6) up to the next marker.
 
 			7. (?:(?<=\n)(?<!\\)=======\s*\n)  
 			  Matches the "=======" marker on its own line.
 
 			8. ([\s\S]*?)(?:\n)?  
-			  Non‐greedy match for the "replace content" (group 7).
+			  Nonâ€greedy match for the "replace content" (group 7).
 
 			9. (?:(?<=\n)(?<!\\)>>>>>>> REPLACE)(?=\n|$)  
 			  Matches the final ">>>>>>> REPLACE" marker on its own line (and requires a following newline or the end of file).
@@ -544,3 +544,5 @@ export class MultiSearchReplaceDiffStrategy implements DiffStrategy {
 		return {}
 	}
 }
+
+

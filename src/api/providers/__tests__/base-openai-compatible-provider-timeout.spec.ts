@@ -1,4 +1,4 @@
-// npx vitest run api/providers/__tests__/base-openai-compatible-provider-timeout.spec.ts
+﻿// npx vitest run api/providers/__tests__/base-openai-compatible-provider-timeout.spec.ts
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -117,3 +117,5 @@ describe("BaseOpenAiCompatibleProvider Timeout Configuration", () => {
 		)
 	})
 })
+
+

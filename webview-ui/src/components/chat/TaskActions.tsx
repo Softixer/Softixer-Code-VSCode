@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
 import type { HistoryItem } from "@roo-code/types"
@@ -80,3 +80,5 @@ export const TaskActions = ({ item, buttonsDisabled }: TaskActionsProps) => {
 		</div>
 	)
 }
+
+

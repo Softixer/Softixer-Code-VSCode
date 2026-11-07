@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @roo-code/vscode-shim
  *
  * A production-ready VSCode API mock for running VSCode extensions in Node.js CLI applications.
@@ -113,3 +113,5 @@ export { createVSCodeAPIMock as createVSCodeAPI } from "./vscode.js"
  * const api = await extension.activate(vscode.context)
  * ```
  */
+
+

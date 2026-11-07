@@ -1,4 +1,4 @@
-// npx vitest utils/__tests__/cost.spec.ts
+﻿// npx vitest utils/__tests__/cost.spec.ts
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -304,3 +304,5 @@ describe("Cost Utility", () => {
 		})
 	})
 })
+
+

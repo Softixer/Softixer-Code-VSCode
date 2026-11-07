@@ -1,4 +1,4 @@
-import { render, screen, act } from "@/utils/test-utils"
+﻿import { render, screen, act } from "@/utils/test-utils"
 
 import {
 	type ProviderSettings,
@@ -387,3 +387,5 @@ describe("mergeExtensionState", () => {
 		})
 	})
 })
+
+

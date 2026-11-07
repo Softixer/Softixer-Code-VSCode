@@ -1,4 +1,4 @@
-import { safeWriteJson } from "../../utils/safeWriteJson"
+﻿import { safeWriteJson } from "../../utils/safeWriteJson"
 import os from "os"
 import * as path from "path"
 import fs from "fs/promises"
@@ -202,7 +202,7 @@ export async function importSettingsFromPath(
  */
 export const importSettings = async ({ providerSettingsManager, contextProxy, customModesManager }: ImportOptions) => {
 	// Use the last export path as a sensible default, falling back to Downloads
-	const defaultUri = resolveDefaultSaveUri(contextProxy, "lastSettingsExportPath", "roo-code-settings.json", {
+	const defaultUri = resolveDefaultSaveUri(contextProxy, "lastSettingsExportPath", "softixer-settings.json", {
 		useWorkspace: false,
 		fallbackDir: path.join(os.homedir(), "Downloads"),
 	})
@@ -242,7 +242,7 @@ export const importSettingsFromFile = async (
 }
 
 export const exportSettings = async ({ providerSettingsManager, contextProxy }: ExportOptions) => {
-	const defaultUri = await resolveDefaultSaveUri(contextProxy, "lastSettingsExportPath", "roo-code-settings.json", {
+	const defaultUri = await resolveDefaultSaveUri(contextProxy, "lastSettingsExportPath", "softixer-settings.json", {
 		useWorkspace: false,
 		fallbackDir: path.join(os.homedir(), "Downloads"),
 	})
@@ -337,3 +337,5 @@ export const importSettingsWithFeedback = async (
 		await vscode.window.showErrorMessage(t("common:errors.settings_import_failed", { error: result.error }))
 	}
 }
+
+

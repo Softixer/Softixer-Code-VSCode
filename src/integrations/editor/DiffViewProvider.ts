@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 import * as path from "path"
 import * as fs from "fs/promises"
 import * as diff from "diff"
@@ -16,7 +16,7 @@ import { Task } from "../../core/task/Task"
 import { DecorationController } from "./DecorationController"
 
 export const DIFF_VIEW_URI_SCHEME = "cline-diff"
-export const DIFF_VIEW_LABEL_CHANGES = "Original ↔ Roo's Changes"
+export const DIFF_VIEW_LABEL_CHANGES = "Original â†” Roo's Changes"
 
 // TODO: https://github.com/cline/cline/pull/3354
 export class DiffViewProvider {
@@ -725,3 +725,5 @@ export class DiffViewProvider {
 		}
 	}
 }
+
+

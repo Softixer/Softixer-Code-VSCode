@@ -1,4 +1,4 @@
-import type { ClineMessage } from "@roo-code/types"
+﻿import type { ClineMessage } from "@roo-code/types"
 
 import { safeJsonParse } from "./safeJsonParse.js"
 
@@ -158,3 +158,5 @@ export function consolidateCommands(messages: ClineMessage[]): ClineMessage[] {
 
 	return result
 }
+
+

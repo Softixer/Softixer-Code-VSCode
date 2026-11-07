@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { VSCodeBadge } from "@vscode/webview-ui-toolkit/react"
 import { FoldVertical } from "lucide-react"
@@ -37,7 +37,7 @@ export function CondensationResultRow({ data }: CondensationResultRowProps) {
 						{t("chat:contextManagement.condensation.title")}
 					</span>
 					<span className="text-vscode-descriptionForeground text-sm">
-						{prevTokens.toLocaleString()} → {newTokens.toLocaleString()}{" "}
+						{prevTokens.toLocaleString()} â†’ {newTokens.toLocaleString()}{" "}
 						{t("chat:contextManagement.tokens")}
 					</span>
 					<VSCodeBadge className={displayCost > 0 ? "opacity-100" : "opacity-0"}>
@@ -55,3 +55,5 @@ export function CondensationResultRow({ data }: CondensationResultRowProps) {
 		</div>
 	)
 }
+
+

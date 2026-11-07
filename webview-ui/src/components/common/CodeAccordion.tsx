@@ -1,4 +1,4 @@
-import { memo, useMemo } from "react"
+﻿import { memo, useMemo } from "react"
 import { VSCodeProgressRing } from "@vscode/webview-ui-toolkit/react"
 import { type ToolProgressStatus } from "@roo-code/types"
 import { getLanguageFromPath } from "@src/utils/getLanguageFromPath"
@@ -129,3 +129,5 @@ const CodeAccordion = ({
 }
 
 export default memo(CodeAccordion)
+
+

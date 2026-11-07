@@ -1,4 +1,4 @@
-import type { HistoryItem } from "@roo-code/types"
+﻿import type { HistoryItem } from "@roo-code/types"
 
 /**
  * Extended HistoryItem with display-related fields for search highlighting and subtask indication
@@ -58,3 +58,5 @@ export interface GroupedTasksResult {
 	/** Whether search mode is active */
 	isSearchMode: boolean
 }
+
+

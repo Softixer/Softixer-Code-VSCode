@@ -1,5 +1,6 @@
-import type { ProviderName, ModelInfo, ProviderSettings } from "@roo-code/types"
+﻿import type { ProviderName, ModelInfo, ProviderSettings } from "@roo-code/types"
 import {
+	softixerDefaultModelId,
 	anthropicDefaultModelId,
 	bedrockDefaultModelId,
 	deepSeekDefaultModelId,
@@ -26,6 +27,7 @@ export interface ProviderServiceConfig {
 }
 
 export const PROVIDER_SERVICE_CONFIG: Partial<Record<ProviderName, ProviderServiceConfig>> = {
+	softixer: { serviceName: "Softixer", serviceUrl: "https://softixer.com/pricing" },
 	anthropic: { serviceName: "Anthropic", serviceUrl: "https://console.anthropic.com" },
 	bedrock: { serviceName: "Amazon Bedrock", serviceUrl: "https://aws.amazon.com/bedrock" },
 	deepseek: { serviceName: "DeepSeek", serviceUrl: "https://platform.deepseek.com" },
@@ -50,6 +52,7 @@ export const PROVIDER_SERVICE_CONFIG: Partial<Record<ProviderName, ProviderServi
 }
 
 export const PROVIDER_DEFAULT_MODEL_IDS: Partial<Record<ProviderName, string>> = {
+	softixer: softixerDefaultModelId,
 	anthropic: anthropicDefaultModelId,
 	bedrock: bedrockDefaultModelId,
 	deepseek: deepSeekDefaultModelId,
@@ -116,6 +119,7 @@ export const isStaticModelProvider = (provider: ProviderName): boolean => {
  * and should not use the generic ModelPicker in ApiOptions
  */
 export const PROVIDERS_WITH_CUSTOM_MODEL_UI: ProviderName[] = [
+	"softixer", // Softixer fetches models dynamically from api.softixer.com/v1/models
 	"openrouter",
 	"requesty",
 	"unbound",
@@ -156,3 +160,5 @@ export const handleModelChangeSideEffects = <K extends keyof ProviderSettings>(
 	setApiConfigurationField("modelMaxTokens" as K, undefined as ProviderSettings[K])
 	setApiConfigurationField("modelMaxThinkingTokens" as K, undefined as ProviderSettings[K])
 }
+
+

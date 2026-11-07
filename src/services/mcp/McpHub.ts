@@ -1,4 +1,4 @@
-import * as fs from "fs/promises"
+﻿import * as fs from "fs/promises"
 import * as path from "path"
 
 import * as vscode from "vscode"
@@ -687,7 +687,7 @@ export class McpHub {
 		try {
 			const client = new Client(
 				{
-					name: "Roo Code",
+					name: "Softixer",
 					version: this.providerRef.deref()?.context.extension?.packageJSON?.version ?? "1.0.0",
 				},
 				{
@@ -1993,3 +1993,5 @@ export class McpHub {
 		this.disposables.forEach((d) => d.dispose())
 	}
 }
+
+

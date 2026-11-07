@@ -1,4 +1,4 @@
-import OpenAI from "openai"
+﻿import OpenAI from "openai"
 import { Anthropic } from "@anthropic-ai/sdk" // Keep for type usage only
 
 import { litellmDefaultModelId, litellmDefaultModelInfo } from "@roo-code/types"
@@ -329,3 +329,5 @@ export class LiteLLMHandler extends RouterProvider implements SingleCompletionHa
 interface LiteLLMUsage extends OpenAI.CompletionUsage {
 	cache_creation_input_tokens?: number
 }
+
+

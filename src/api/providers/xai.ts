@@ -1,4 +1,4 @@
-import { Anthropic } from "@anthropic-ai/sdk"
+﻿import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
 import { type XAIModelId, xaiDefaultModelId, xaiModels } from "@roo-code/types"
@@ -156,3 +156,5 @@ export class XAIHandler extends BaseProvider implements SingleCompletionHandler 
 		}
 	}
 }
+
+

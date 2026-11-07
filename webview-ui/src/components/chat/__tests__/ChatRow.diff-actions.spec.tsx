@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { fireEvent, render, screen } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import type { ClineMessage } from "@roo-code/types"
@@ -208,3 +208,5 @@ describe("ChatRow - inline diff stats and actions", () => {
 		expect(screen.getByText((text) => text.includes("src/a.ts"))).toBeInTheDocument()
 	})
 })
+
+

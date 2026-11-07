@@ -1,4 +1,4 @@
-import type { ProviderSettings } from "@roo-code/types"
+﻿import type { ProviderSettings } from "@roo-code/types"
 
 import { buildApiHandler, SingleCompletionHandler } from "../api"
 
@@ -23,3 +23,5 @@ export async function singleCompletionHandler(apiConfiguration: ProviderSettings
 
 	return (handler as SingleCompletionHandler).completePrompt(promptText)
 }
+
+

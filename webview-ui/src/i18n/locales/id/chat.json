@@ -1,5 +1,5 @@
 {
-	"greeting": "Selamat datang di Roo Code",
+	"greeting": "Selamat datang di Softixer",
 	"task": {
 		"title": "Tugas",
 		"expand": "Perluas tugas",
@@ -120,7 +120,7 @@
 	"enqueueMessage": "Tambahkan pesan ke antrean (akan dikirim setelah tugas saat ini selesai)",
 	"scrollToBottom": "Gulir ke bawah chat",
 	"scrollToLatestCheckpoint": "Gulir ke checkpoint sebelumnya",
-	"about": "Roo Code adalah seluruh tim pengembang AI di editor Anda.",
+	"about": "Softixer adalah seluruh tim pengembang AI di editor Anda.",
 	"docs": "Lihat <DocsLink>dokumentasi</DocsLink> kami untuk mempelajari lebih lanjut.",
 	"onboarding": "Daftar tugas Anda di ruang kerja ini kosong.",
 	"rooTips": {
@@ -218,51 +218,51 @@
 		}
 	},
 	"skill": {
-		"wantsToLoad": "Roo ingin memuat keterampilan",
-		"didLoad": "Roo telah memuat keterampilan"
+		"wantsToLoad": "Softixer ingin memuat keterampilan",
+		"didLoad": "Softixer telah memuat keterampilan"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo ingin mengambil instruksi detail untuk membantu tugas saat ini"
+		"wantsToFetch": "Softixer ingin mengambil instruksi detail untuk membantu tugas saat ini"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo ingin membaca file ini",
-		"wantsToReadMultiple": "Roo ingin membaca beberapa file",
-		"wantsToReadAndXMore": "Roo ingin membaca file ini dan {{count}} lainnya",
-		"wantsToReadOutsideWorkspace": "Roo ingin membaca file ini di luar workspace",
-		"didRead": "Roo membaca file ini",
-		"wantsToEdit": "Roo ingin mengedit file ini",
-		"wantsToEditOutsideWorkspace": "Roo ingin mengedit file ini di luar workspace",
-		"wantsToEditProtected": "Roo ingin mengedit file konfigurasi yang dilindungi",
-		"wantsToApplyBatchChanges": "Roo ingin menerapkan perubahan ke beberapa file",
-		"wantsToGenerateImage": "Roo ingin menghasilkan gambar",
-		"wantsToGenerateImageOutsideWorkspace": "Roo ingin menghasilkan gambar di luar workspace",
-		"wantsToGenerateImageProtected": "Roo ingin menghasilkan gambar di lokasi yang dilindungi",
-		"didGenerateImage": "Roo telah menghasilkan gambar",
-		"wantsToCreate": "Roo ingin membuat file baru",
-		"wantsToSearchReplace": "Roo ingin mencari dan mengganti di file ini",
-		"didSearchReplace": "Roo melakukan pencarian dan penggantian pada file ini",
-		"wantsToInsert": "Roo ingin menyisipkan konten ke file ini",
-		"wantsToInsertWithLineNumber": "Roo ingin menyisipkan konten ke file ini di baris {{lineNumber}}",
-		"wantsToInsertAtEnd": "Roo ingin menambahkan konten ke akhir file ini"
+		"wantsToRead": "Softixer ingin membaca file ini",
+		"wantsToReadMultiple": "Softixer ingin membaca beberapa file",
+		"wantsToReadAndXMore": "Softixer ingin membaca file ini dan {{count}} lainnya",
+		"wantsToReadOutsideWorkspace": "Softixer ingin membaca file ini di luar workspace",
+		"didRead": "Softixer membaca file ini",
+		"wantsToEdit": "Softixer ingin mengedit file ini",
+		"wantsToEditOutsideWorkspace": "Softixer ingin mengedit file ini di luar workspace",
+		"wantsToEditProtected": "Softixer ingin mengedit file konfigurasi yang dilindungi",
+		"wantsToApplyBatchChanges": "Softixer ingin menerapkan perubahan ke beberapa file",
+		"wantsToGenerateImage": "Softixer ingin menghasilkan gambar",
+		"wantsToGenerateImageOutsideWorkspace": "Softixer ingin menghasilkan gambar di luar workspace",
+		"wantsToGenerateImageProtected": "Softixer ingin menghasilkan gambar di lokasi yang dilindungi",
+		"didGenerateImage": "Softixer telah menghasilkan gambar",
+		"wantsToCreate": "Softixer ingin membuat file baru",
+		"wantsToSearchReplace": "Softixer ingin mencari dan mengganti di file ini",
+		"didSearchReplace": "Softixer melakukan pencarian dan penggantian pada file ini",
+		"wantsToInsert": "Softixer ingin menyisipkan konten ke file ini",
+		"wantsToInsertWithLineNumber": "Softixer ingin menyisipkan konten ke file ini di baris {{lineNumber}}",
+		"wantsToInsertAtEnd": "Softixer ingin menambahkan konten ke akhir file ini"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo ingin melihat file tingkat atas di direktori ini",
-		"didViewTopLevel": "Roo melihat file tingkat atas di direktori ini",
-		"wantsToViewRecursive": "Roo ingin melihat semua file secara rekursif di direktori ini",
-		"didViewRecursive": "Roo melihat semua file secara rekursif di direktori ini",
-		"wantsToSearch": "Roo ingin mencari direktori ini untuk <code>{{regex}}</code>",
-		"didSearch": "Roo mencari direktori ini untuk <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo ingin mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo ingin melihat file tingkat atas di direktori ini (di luar workspace)",
-		"didViewTopLevelOutsideWorkspace": "Roo melihat file tingkat atas di direktori ini (di luar workspace)",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo ingin melihat semua file secara rekursif di direktori ini (di luar workspace)",
-		"didViewRecursiveOutsideWorkspace": "Roo melihat semua file secara rekursif di direktori ini (di luar workspace)",
-		"wantsToViewMultipleDirectories": "Roo ingin melihat beberapa direktori"
+		"wantsToViewTopLevel": "Softixer ingin melihat file tingkat atas di direktori ini",
+		"didViewTopLevel": "Softixer melihat file tingkat atas di direktori ini",
+		"wantsToViewRecursive": "Softixer ingin melihat semua file secara rekursif di direktori ini",
+		"didViewRecursive": "Softixer melihat semua file secara rekursif di direktori ini",
+		"wantsToSearch": "Softixer ingin mencari direktori ini untuk <code>{{regex}}</code>",
+		"didSearch": "Softixer mencari direktori ini untuk <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "Softixer ingin mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "Softixer mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "Softixer ingin melihat file tingkat atas di direktori ini (di luar workspace)",
+		"didViewTopLevelOutsideWorkspace": "Softixer melihat file tingkat atas di direktori ini (di luar workspace)",
+		"wantsToViewRecursiveOutsideWorkspace": "Softixer ingin melihat semua file secara rekursif di direktori ini (di luar workspace)",
+		"didViewRecursiveOutsideWorkspace": "Softixer melihat semua file secara rekursif di direktori ini (di luar workspace)",
+		"wantsToViewMultipleDirectories": "Softixer ingin melihat beberapa direktori"
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo ingin mencari codebase untuk <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo ingin mencari codebase untuk <code>{{query}}</code> di <code>{{path}}</code>",
+		"wantsToSearch": "Softixer ingin mencari codebase untuk <code>{{query}}</code>",
+		"wantsToSearchWithPath": "Softixer ingin mencari codebase untuk <code>{{query}}</code> di <code>{{path}}</code>",
 		"didSearch_one": "Ditemukan 1 hasil",
 		"didSearch_other": "Ditemukan {{count}} hasil",
 		"resultTooltip": "Skor kemiripan: {{score}} (klik untuk membuka file)"
@@ -287,24 +287,24 @@
 	"response": "Respons",
 	"arguments": "Argumen",
 	"text": {
-		"rooSaid": "Roo berkata"
+		"rooSaid": "Softixer berkata"
 	},
 	"feedback": {
 		"youSaid": "Anda bilang"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo ingin menggunakan tool di server MCP {{serverName}}",
-		"wantsToAccessResource": "Roo ingin mengakses resource di server MCP {{serverName}}"
+		"wantsToUseTool": "Softixer ingin menggunakan tool di server MCP {{serverName}}",
+		"wantsToAccessResource": "Softixer ingin mengakses resource di server MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo ingin beralih ke mode {{mode}}",
-		"wantsToSwitchWithReason": "Roo ingin beralih ke mode {{mode}} karena: {{reason}}",
-		"didSwitch": "Roo beralih ke mode {{mode}}",
-		"didSwitchWithReason": "Roo beralih ke mode {{mode}} karena: {{reason}}"
+		"wantsToSwitch": "Softixer ingin beralih ke mode {{mode}}",
+		"wantsToSwitchWithReason": "Softixer ingin beralih ke mode {{mode}} karena: {{reason}}",
+		"didSwitch": "Softixer beralih ke mode {{mode}}",
+		"didSwitchWithReason": "Softixer beralih ke mode {{mode}} karena: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo ingin membuat subtugas baru dalam mode {{mode}}",
-		"wantsToFinish": "Roo ingin menyelesaikan subtugas ini",
+		"wantsToCreate": "Softixer ingin membuat subtugas baru dalam mode {{mode}}",
+		"wantsToFinish": "Softixer ingin menyelesaikan subtugas ini",
 		"newTaskContent": "Instruksi Subtugas",
 		"completionContent": "Subtugas Selesai",
 		"resultContent": "Hasil Subtugas",
@@ -313,7 +313,7 @@
 		"goToSubtask": "Lihat tugas"
 	},
 	"questions": {
-		"hasQuestion": "Roo punya pertanyaan"
+		"hasQuestion": "Softixer punya pertanyaan"
 	},
 	"taskCompleted": "Tugas Selesai",
 	"error": "Error",
@@ -327,7 +327,7 @@
 	"diffError": {
 		"title": "Edit Tidak Berhasil"
 	},
-	"troubleMessage": "Roo mengalami masalah...",
+	"troubleMessage": "Softixer mengalami masalah...",
 	"errorDetails": {
 		"link": "Details",
 		"title": "Detail Kesalahan",
@@ -358,18 +358,18 @@
 		"triggerLabelAll": "BRRR"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Dirilis",
-		"support": "Dukung Roo Code dengan memberi kami bintang di <githubLink>GitHub</githubLink>.",
+		"title": "Softixer {{version}} Dirilis",
+		"support": "Dukung Softixer dengan memberi kami bintang di <githubLink>GitHub</githubLink>.",
 		"finalRelease": {
-			"title": "Rilis Roo Code terakhir",
-			"intro": "Ini adalah rilis Roo Code terakhir. <announcementLink>Seperti yang kami umumkan beberapa minggu lalu</announcementLink>, kami memutuskan untuk mengalihkan fokus ke <roomoteLink>Roomote</roomoteLink>, platform agen cloud kami, yang kami yakini sebagai masa depan pengembangan perangkat lunak. Terima kasih banyak atas dukunganmu selama kira-kira setahun terakhir.",
+			"title": "Rilis Softixer terakhir",
+			"intro": "Ini adalah rilis Softixer terakhir. <announcementLink>Seperti yang kami umumkan beberapa minggu lalu</announcementLink>, kami memutuskan untuk mengalihkan fokus ke <roomoteLink>Roomote</roomoteLink>, platform agen cloud kami, yang kami yakini sebagai masa depan pengembangan perangkat lunak. Terima kasih banyak atas dukunganmu selama kira-kira setahun terakhir.",
 			"continuity": "Ekstensi ini seharusnya tetap berfungsi tanpa batas waktu, tetapi tidak akan menerima perbaikan bug, fitur baru, atau pembaruan model.",
-			"alternatives": "Jika kamu ingin menggunakan ekstensi, kami merekomendasikan <zooCodeLink>ZooCode</zooCodeLink> (fork Roo Code oleh komunitas) dan <clineLink>Cline</clineLink> (tempat Roo Code awalnya bermula).",
+			"alternatives": "Jika kamu ingin menggunakan ekstensi, kami merekomendasikan <zooCodeLink>ZooCode</zooCodeLink> (fork Softixer oleh komunitas) dan <clineLink>Cline</clineLink> (tempat Softixer awalnya bermula).",
 			"signoff": "Selamat coding!"
 		},
 		"release": {
 			"heading": "Yang Baru:",
-			"gpt55": "GPT-5.5 via OpenAI Codex: Dukungan GPT-5.5 ditambahkan di provider OpenAI Codex agar kamu bisa menggunakan model terbaru langsung dari Roo Code.",
+			"gpt55": "GPT-5.5 via OpenAI Codex: Dukungan GPT-5.5 ditambahkan di provider OpenAI Codex agar kamu bisa menggunakan model terbaru langsung dari Softixer.",
 			"claudeOpus47": "Claude Opus 4.7 di Vertex AI: Claude Opus 4.7 ditambahkan ke provider Vertex AI untuk model reasoning andalan terbaru dari Anthropic.",
 			"checkpointNav": "Navigasi Checkpoint Sebelumnya: Menambahkan kontrol di chat untuk melompat kembali ke checkpoint sebelumnya, dengan dukungan i18n penuh."
 		},
@@ -403,18 +403,18 @@
 	"profileViolationWarning": "Profil saat ini tidak kompatibel dengan pengaturan organisasi kamu",
 	"shellIntegration": {
 		"title": "Peringatan Eksekusi Perintah",
-		"description": "Perintah kamu dijalankan tanpa integrasi shell terminal VSCode. Untuk menekan peringatan ini kamu bisa menonaktifkan integrasi shell di bagian <strong>Terminal</strong> dari <settingsLink>pengaturan Roo Code</settingsLink> atau troubleshoot integrasi terminal VSCode menggunakan link di bawah.",
+		"description": "Perintah kamu dijalankan tanpa integrasi shell terminal VSCode. Untuk menekan peringatan ini kamu bisa menonaktifkan integrasi shell di bagian <strong>Terminal</strong> dari <settingsLink>pengaturan Softixer</settingsLink> atau troubleshoot integrasi terminal VSCode menggunakan link di bawah.",
 		"troubleshooting": "Klik di sini untuk dokumentasi integrasi shell."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Batas Permintaan yang Disetujui Otomatis Tercapai",
-			"description": "Roo telah mencapai batas {{count}} permintaan API yang disetujui otomatis. Apakah Anda ingin mengatur ulang hitungan dan melanjutkan tugas?",
+			"description": "Softixer telah mencapai batas {{count}} permintaan API yang disetujui otomatis. Apakah Anda ingin mengatur ulang hitungan dan melanjutkan tugas?",
 			"button": "Setel Ulang dan Lanjutkan"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Batas Biaya yang Disetujui Otomatis Tercapai",
-			"description": "Roo telah mencapai batas biaya yang disetujui otomatis sebesar ${{count}}. Apakah Anda ingin mengatur ulang biaya dan melanjutkan tugas?",
+			"description": "Softixer telah mencapai batas biaya yang disetujui otomatis sebesar ${{count}}. Apakah Anda ingin mengatur ulang biaya dan melanjutkan tugas?",
 			"button": "Setel Ulang dan Lanjutkan"
 		}
 	},
@@ -466,8 +466,8 @@
 		"clickToEdit": "Klik untuk mengedit pesan"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo ingin menjalankan perintah slash",
-		"didRun": "Roo telah menjalankan perintah slash"
+		"wantsToRun": "Softixer ingin menjalankan perintah slash",
+		"didRun": "Softixer telah menjalankan perintah slash"
 	},
 	"todo": {
 		"partial": "{{completed}} dari {{total}} to-do selesai",
@@ -486,12 +486,12 @@
 		"openMcpSettings": "Buka Pengaturan MCP"
 	},
 	"readCommandOutput": {
-		"title": "Roo read command output"
+		"title": "Softixer read command output"
 	},
 	"retiredProvider": {
 		"title": "Penyedia tidak lagi didukung",
 		"message": "This provider is no longer supported. Please select a different provider in your API profile settings.",
 		"openSettings": "Buka Pengaturan",
-		"rooMessage": "As part of our decision to sunset the Roo Code extension, we also ended the Roo Code Router, which only existed to support the extension. Sorry about the hassle."
+		"rooMessage": "As part of our decision to sunset the Softixer extension, we also ended the Softixer Router, which only existed to support the extension. Sorry about the hassle."
 	}
 }

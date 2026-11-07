@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+﻿import { useCallback } from "react"
 import { Checkbox } from "vscrui"
 import { VSCodeLink, VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
@@ -118,3 +118,5 @@ export const Vertex = ({ apiConfiguration, setApiConfigurationField }: VertexPro
 		</>
 	)
 }
+
+

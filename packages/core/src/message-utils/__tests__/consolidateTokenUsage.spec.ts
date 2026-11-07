@@ -1,4 +1,4 @@
-// npx vitest run packages/core/src/message-utils/__tests__/consolidateTokenUsage.spec.ts
+﻿// npx vitest run packages/core/src/message-utils/__tests__/consolidateTokenUsage.spec.ts
 
 import type { ClineMessage } from "@roo-code/types"
 
@@ -244,3 +244,5 @@ describe("hasToolUsageChanged", () => {
 		expect(hasToolUsageChanged(current, snapshot)).toBe(true)
 	})
 })
+
+

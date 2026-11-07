@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+﻿import { useMemo } from "react"
 import { formatRelative } from "date-fns"
 
 import type { McpErrorEntry } from "@roo-code/types"
@@ -30,3 +30,5 @@ export const McpErrorRow = ({ error }: McpErrorRowProps) => {
 		</div>
 	)
 }
+
+

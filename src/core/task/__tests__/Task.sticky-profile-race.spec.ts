@@ -1,4 +1,4 @@
-// npx vitest run core/task/__tests__/Task.sticky-profile-race.spec.ts
+﻿// npx vitest run core/task/__tests__/Task.sticky-profile-race.spec.ts
 
 import * as vscode from "vscode"
 
@@ -122,3 +122,5 @@ describe("Task - sticky provider profile init race", () => {
 		expect(task.taskApiConfigName).toBe("new-profile")
 	})
 })
+
+

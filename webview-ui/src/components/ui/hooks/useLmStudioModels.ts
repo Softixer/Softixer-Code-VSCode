@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+﻿import { useQuery } from "@tanstack/react-query"
 
 import { type ModelRecord, type ExtensionMessage } from "@roo-code/types"
 
@@ -36,3 +36,5 @@ const getLmStudioModels = async () =>
 
 export const useLmStudioModels = (modelId?: string) =>
 	useQuery({ queryKey: ["lmStudioModels"], queryFn: () => (modelId ? getLmStudioModels() : {}) })
+
+

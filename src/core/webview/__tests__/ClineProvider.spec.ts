@@ -1,4 +1,4 @@
-// pnpm --filter roo-cline test core/webview/__tests__/ClineProvider.spec.ts
+﻿// pnpm --filter roo-cline test core/webview/__tests__/ClineProvider.spec.ts
 
 import Anthropic from "@anthropic-ai/sdk"
 import * as vscode from "vscode"
@@ -564,7 +564,7 @@ describe("ClineProvider", () => {
 		expect(mockPostMessage).not.toHaveBeenCalled()
 	})
 
-	test("dispose is idempotent — second call is a no-op", async () => {
+	test("dispose is idempotent â€” second call is a no-op", async () => {
 		await provider.resolveWebviewView(mockWebviewView)
 
 		await provider.dispose()
@@ -3467,3 +3467,5 @@ describe("ClineProvider - Comprehensive Edit/Delete Edge Cases", () => {
 		})
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import type { ClineAskUseMcpServer } from "@roo-code/types"
+﻿import type { ClineAskUseMcpServer } from "@roo-code/types"
 
 import type { ToolUse } from "../../shared/tools"
 import { Task } from "../task/Task"
@@ -98,3 +98,5 @@ export class AccessMcpResourceTool extends BaseTool<"access_mcp_resource"> {
 }
 
 export const accessMcpResourceTool = new AccessMcpResourceTool()
+
+

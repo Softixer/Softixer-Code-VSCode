@@ -1,4 +1,4 @@
-// npx vitest run api/transform/__tests__/image-cleaning.spec.ts
+﻿// npx vitest run api/transform/__tests__/image-cleaning.spec.ts
 
 import type { ModelInfo } from "@roo-code/types"
 
@@ -337,3 +337,5 @@ describe("maybeRemoveImageBlocks", () => {
 		expect(apiHandler.getModel).toHaveBeenCalled()
 	})
 })
+
+

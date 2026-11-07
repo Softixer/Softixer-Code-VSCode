@@ -1,4 +1,4 @@
-// npx vitest run src/core/tools/__tests__/ToolRepetitionDetector.spec.ts
+﻿// npx vitest run src/core/tools/__tests__/ToolRepetitionDetector.spec.ts
 
 import type { ToolName } from "@roo-code/types"
 
@@ -542,3 +542,5 @@ describe("ToolRepetitionDetector", () => {
 		})
 	})
 })
+
+

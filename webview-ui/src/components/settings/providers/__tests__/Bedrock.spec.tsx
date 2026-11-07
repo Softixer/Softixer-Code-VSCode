@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { Bedrock } from "../Bedrock"
 import { ProviderSettings } from "@roo-code/types"
@@ -281,8 +281,8 @@ describe("Bedrock Component", () => {
 			// Since we don't have a specific testid for the examples section,
 			// we'll check for the text content
 			expect(screen.getByText("settings:providers.awsBedrockVpc.examples")).toBeInTheDocument()
-			expect(screen.getByText("• https://vpce-xxx.bedrock.region.vpce.amazonaws.com/")).toBeInTheDocument()
-			expect(screen.getByText("• https://gateway.my-company.com/route/app/bedrock")).toBeInTheDocument()
+			expect(screen.getByText("â€¢ https://vpce-xxx.bedrock.region.vpce.amazonaws.com/")).toBeInTheDocument()
+			expect(screen.getByText("â€¢ https://gateway.my-company.com/route/app/bedrock")).toBeInTheDocument()
 		})
 
 		it("should hide example URLs when VPC endpoint checkbox is unchecked", () => {
@@ -307,8 +307,8 @@ describe("Bedrock Component", () => {
 
 			// Now the examples should be hidden
 			expect(screen.queryByText("settings:providers.awsBedrockVpc.examples")).not.toBeInTheDocument()
-			expect(screen.queryByText("• https://vpce-xxx.bedrock.region.vpce.amazonaws.com/")).not.toBeInTheDocument()
-			expect(screen.queryByText("• https://gateway.my-company.com/route/app/bedrock")).not.toBeInTheDocument()
+			expect(screen.queryByText("â€¢ https://vpce-xxx.bedrock.region.vpce.amazonaws.com/")).not.toBeInTheDocument()
+			expect(screen.queryByText("â€¢ https://gateway.my-company.com/route/app/bedrock")).not.toBeInTheDocument()
 		})
 	})
 
@@ -552,3 +552,5 @@ describe("Bedrock Component", () => {
 		})
 	})
 })
+
+

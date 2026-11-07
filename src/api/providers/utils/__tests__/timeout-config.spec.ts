@@ -1,4 +1,4 @@
-// npx vitest run api/providers/utils/__tests__/timeout-config.spec.ts
+﻿// npx vitest run api/providers/utils/__tests__/timeout-config.spec.ts
 
 import { getApiRequestTimeout } from "../timeout-config"
 import * as vscode from "vscode"
@@ -28,7 +28,7 @@ describe("getApiRequestTimeout", () => {
 
 		const timeout = getApiRequestTimeout()
 
-		expect(vscode.workspace.getConfiguration).toHaveBeenCalledWith("roo-cline")
+		expect(vscode.workspace.getConfiguration).toHaveBeenCalledWith("softixer")
 		expect(mockGetConfig).toHaveBeenCalledWith("apiRequestTimeout", 600)
 		expect(timeout).toBe(600000) // 600 seconds in milliseconds
 	})
@@ -100,3 +100,4 @@ describe("getApiRequestTimeout", () => {
 		expect(timeout).toBe(600000) // Should fall back to default since it's not a number
 	})
 })
+

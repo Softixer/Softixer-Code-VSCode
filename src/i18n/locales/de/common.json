@@ -1,6 +1,6 @@
-{
+﻿{
 	"extension": {
-		"name": "Roo Code",
+		"name": "Softixer",
 		"description": "Ein komplettes Entwicklerteam mit KI in deinem Editor."
 	},
 	"number_format": {
@@ -15,30 +15,30 @@
 		"other": "{{count}} Elemente"
 	},
 	"confirmation": {
-		"reset_state": "Möchtest du wirklich alle Zustände und geheimen Speicher in der Erweiterung zurücksetzen? Dies kann nicht rückgängig gemacht werden.",
-		"delete_config_profile": "Möchtest du dieses Konfigurationsprofil wirklich löschen?",
-		"delete_custom_mode_with_rules": "Bist du sicher, dass du diesen {scope}-Modus löschen möchtest?\n\nDadurch wird auch der zugehörige Regelordner unter folgender Adresse gelöscht:\n{rulesFolderPath}"
+		"reset_state": "MÃ¶chtest du wirklich alle ZustÃ¤nde und geheimen Speicher in der Erweiterung zurÃ¼cksetzen? Dies kann nicht rÃ¼ckgÃ¤ngig gemacht werden.",
+		"delete_config_profile": "MÃ¶chtest du dieses Konfigurationsprofil wirklich lÃ¶schen?",
+		"delete_custom_mode_with_rules": "Bist du sicher, dass du diesen {scope}-Modus lÃ¶schen mÃ¶chtest?\n\nDadurch wird auch der zugehÃ¶rige Regelordner unter folgender Adresse gelÃ¶scht:\n{rulesFolderPath}"
 	},
 	"errors": {
-		"invalid_data_uri": "Ungültiges Daten-URI-Format",
+		"invalid_data_uri": "UngÃ¼ltiges Daten-URI-Format",
 		"error_copying_image": "Fehler beim Kopieren des Bildes: {{errorMessage}}",
 		"error_saving_image": "Fehler beim Speichern des Bildes: {{errorMessage}}",
-		"error_opening_image": "Fehler beim Öffnen des Bildes: {{error}}",
-		"could_not_open_file": "Datei konnte nicht geöffnet werden: {{errorMessage}}",
-		"could_not_open_file_generic": "Datei konnte nicht geöffnet werden!",
-		"checkpoint_timeout": "Zeitüberschreitung beim Versuch, den Checkpoint wiederherzustellen.",
+		"error_opening_image": "Fehler beim Ã–ffnen des Bildes: {{error}}",
+		"could_not_open_file": "Datei konnte nicht geÃ¶ffnet werden: {{errorMessage}}",
+		"could_not_open_file_generic": "Datei konnte nicht geÃ¶ffnet werden!",
+		"checkpoint_timeout": "ZeitÃ¼berschreitung beim Versuch, den Checkpoint wiederherzustellen.",
 		"checkpoint_failed": "Fehler beim Wiederherstellen des Checkpoints.",
-		"git_not_installed": "Git ist für die Checkpoint-Funktion erforderlich. Bitte installiere Git, um Checkpoints zu aktivieren.",
+		"git_not_installed": "Git ist fÃ¼r die Checkpoint-Funktion erforderlich. Bitte installiere Git, um Checkpoints zu aktivieren.",
 		"checkpoint_no_first": "Kein erster Checkpoint zum Vergleich vorhanden.",
 		"checkpoint_no_previous": "Kein vorheriger Checkpoint zum Vergleich vorhanden.",
-		"checkpoint_no_changes": "Keine Änderungen gefunden.",
-		"checkpoint_diff_with_next": "Änderungen im Vergleich zum nächsten Checkpoint",
-		"checkpoint_diff_since_first": "Änderungen seit dem ersten Checkpoint",
-		"checkpoint_diff_to_current": "Änderungen am aktuellen Arbeitsbereich",
+		"checkpoint_no_changes": "Keine Ã„nderungen gefunden.",
+		"checkpoint_diff_with_next": "Ã„nderungen im Vergleich zum nÃ¤chsten Checkpoint",
+		"checkpoint_diff_since_first": "Ã„nderungen seit dem ersten Checkpoint",
+		"checkpoint_diff_to_current": "Ã„nderungen am aktuellen Arbeitsbereich",
 		"nested_git_repos_warning": "Checkpoints sind deaktiviert, da ein verschachteltes Git-Repository erkannt wurde unter: {{path}}. Um Checkpoints zu verwenden, entferne oder verschiebe bitte dieses verschachtelte Git-Repository.",
-		"no_workspace": "Bitte öffne zuerst einen Projektordner",
+		"no_workspace": "Bitte Ã¶ffne zuerst einen Projektordner",
 		"update_support_prompt": "Fehler beim Aktualisieren der Support-Nachricht",
-		"reset_support_prompt": "Fehler beim Zurücksetzen der Support-Nachricht",
+		"reset_support_prompt": "Fehler beim ZurÃ¼cksetzen der Support-Nachricht",
 		"enhance_prompt": "Fehler beim Verbessern der Nachricht",
 		"get_system_prompt": "Fehler beim Abrufen der Systemnachricht",
 		"search_commits": "Fehler beim Suchen von Commits",
@@ -46,43 +46,43 @@
 		"create_api_config": "Fehler beim Erstellen der API-Konfiguration",
 		"rename_api_config": "Fehler beim Umbenennen der API-Konfiguration",
 		"load_api_config": "Fehler beim Laden der API-Konfiguration",
-		"delete_api_config": "Fehler beim Löschen der API-Konfiguration",
+		"delete_api_config": "Fehler beim LÃ¶schen der API-Konfiguration",
 		"list_api_config": "Fehler beim Abrufen der API-Konfigurationsliste",
 		"update_server_timeout": "Fehler beim Aktualisieren des Server-Timeouts",
-		"hmr_not_running": "Der lokale Entwicklungsserver läuft nicht, HMR wird nicht funktionieren. Bitte führen Sie 'npm run dev' vor dem Start der Erweiterung aus, um HMR zu aktivieren.",
+		"hmr_not_running": "Der lokale Entwicklungsserver lÃ¤uft nicht, HMR wird nicht funktionieren. Bitte fÃ¼hren Sie 'npm run dev' vor dem Start der Erweiterung aus, um HMR zu aktivieren.",
 		"retrieve_current_mode": "Fehler beim Abrufen des aktuellen Modus aus dem Zustand.",
-		"failed_delete_repo": "Fehler beim Löschen des zugehörigen Shadow-Repositorys oder -Zweigs: {{error}}",
+		"failed_delete_repo": "Fehler beim LÃ¶schen des zugehÃ¶rigen Shadow-Repositorys oder -Zweigs: {{error}}",
 		"failed_remove_directory": "Fehler beim Entfernen des Aufgabenverzeichnisses: {{error}}",
 		"custom_storage_path_unusable": "Benutzerdefinierter Speicherpfad \"{{path}}\" ist nicht verwendbar, Standardpfad wird verwendet",
-		"cannot_access_path": "Zugriff auf Pfad {{path}} nicht möglich: {{error}}",
+		"cannot_access_path": "Zugriff auf Pfad {{path}} nicht mÃ¶glich: {{error}}",
 		"settings_import_failed": "Fehler beim Importieren der Einstellungen: {{error}}.",
-		"mistake_limit_guidance": "Dies kann auf einen Fehler im Denkprozess des Modells oder die Unfähigkeit hinweisen, ein Tool richtig zu verwenden, was durch Benutzerführung behoben werden kann (z.B. \"Versuche, die Aufgabe in kleinere Schritte zu unterteilen\").",
-		"violated_organization_allowlist": "Aufgabe konnte nicht ausgeführt werden: Das aktuelle Profil ist nicht kompatibel mit den Einstellungen deiner Organisation",
+		"mistake_limit_guidance": "Dies kann auf einen Fehler im Denkprozess des Modells oder die UnfÃ¤higkeit hinweisen, ein Tool richtig zu verwenden, was durch BenutzerfÃ¼hrung behoben werden kann (z.B. \"Versuche, die Aufgabe in kleinere Schritte zu unterteilen\").",
+		"violated_organization_allowlist": "Aufgabe konnte nicht ausgefÃ¼hrt werden: Das aktuelle Profil ist nicht kompatibel mit den Einstellungen deiner Organisation",
 		"condense_failed": "Fehler beim Verdichten des Kontexts",
-		"condense_not_enough_messages": "Nicht genügend Nachrichten zum Verdichten des Kontexts",
-		"condensed_recently": "Kontext wurde kürzlich verdichtet; dieser Versuch wird übersprungen",
-		"condense_handler_invalid": "API-Handler zum Verdichten des Kontexts ist ungültig",
+		"condense_not_enough_messages": "Nicht genÃ¼gend Nachrichten zum Verdichten des Kontexts",
+		"condensed_recently": "Kontext wurde kÃ¼rzlich verdichtet; dieser Versuch wird Ã¼bersprungen",
+		"condense_handler_invalid": "API-Handler zum Verdichten des Kontexts ist ungÃ¼ltig",
 		"condense_api_failed": "Verdichtungs-API-Aufruf fehlgeschlagen: {{message}}",
-		"url_timeout": "Die Website hat zu lange zum Laden gebraucht (Timeout). Das könnte an einer langsamen Verbindung, einer schweren Website oder vorübergehender Nichtverfügbarkeit liegen. Du kannst es später nochmal versuchen oder prüfen, ob die URL korrekt ist.",
-		"url_not_found": "Die Website-Adresse konnte nicht gefunden werden. Bitte prüfe, ob die URL korrekt ist und versuche es erneut.",
-		"no_internet": "Keine Internetverbindung. Bitte prüfe deine Netzwerkverbindung und versuche es erneut.",
-		"url_forbidden": "Zugriff auf diese Website ist verboten. Die Seite könnte automatisierten Zugriff blockieren oder eine Authentifizierung erfordern.",
-		"url_page_not_found": "Die Seite wurde nicht gefunden. Bitte prüfe, ob die URL korrekt ist.",
-		"url_request_aborted": "Die Anfrage zum Abrufen der URL wurde abgebrochen. Dies kann passieren, wenn die Seite automatisierten Zugriff blockiert, eine Authentifizierung erfordert oder wenn es ein Netzwerkproblem gibt. Bitte versuche es erneut oder prüfe, ob die URL in einem normalen Browser zugänglich ist.",
+		"url_timeout": "Die Website hat zu lange zum Laden gebraucht (Timeout). Das kÃ¶nnte an einer langsamen Verbindung, einer schweren Website oder vorÃ¼bergehender NichtverfÃ¼gbarkeit liegen. Du kannst es spÃ¤ter nochmal versuchen oder prÃ¼fen, ob die URL korrekt ist.",
+		"url_not_found": "Die Website-Adresse konnte nicht gefunden werden. Bitte prÃ¼fe, ob die URL korrekt ist und versuche es erneut.",
+		"no_internet": "Keine Internetverbindung. Bitte prÃ¼fe deine Netzwerkverbindung und versuche es erneut.",
+		"url_forbidden": "Zugriff auf diese Website ist verboten. Die Seite kÃ¶nnte automatisierten Zugriff blockieren oder eine Authentifizierung erfordern.",
+		"url_page_not_found": "Die Seite wurde nicht gefunden. Bitte prÃ¼fe, ob die URL korrekt ist.",
+		"url_request_aborted": "Die Anfrage zum Abrufen der URL wurde abgebrochen. Dies kann passieren, wenn die Seite automatisierten Zugriff blockiert, eine Authentifizierung erfordert oder wenn es ein Netzwerkproblem gibt. Bitte versuche es erneut oder prÃ¼fe, ob die URL in einem normalen Browser zugÃ¤nglich ist.",
 		"url_fetch_failed": "Fehler beim Abrufen des URL-Inhalts: {{error}}",
-		"url_fetch_error_with_url": "Fehler beim Abrufen des Inhalts für {{url}}: {{error}}",
-		"command_timeout": "Zeitüberschreitung bei der Befehlsausführung nach {{seconds}} Sekunden",
+		"url_fetch_error_with_url": "Fehler beim Abrufen des Inhalts fÃ¼r {{url}}: {{error}}",
+		"command_timeout": "ZeitÃ¼berschreitung bei der BefehlsausfÃ¼hrung nach {{seconds}} Sekunden",
 		"share_task_failed": "Teilen der Aufgabe fehlgeschlagen. Bitte versuche es erneut.",
 		"share_no_active_task": "Keine aktive Aufgabe zum Teilen",
 		"share_auth_required": "Authentifizierung erforderlich. Bitte melde dich an, um Aufgaben zu teilen.",
-		"share_not_enabled": "Aufgabenfreigabe ist für diese Organisation nicht aktiviert.",
+		"share_not_enabled": "Aufgabenfreigabe ist fÃ¼r diese Organisation nicht aktiviert.",
 		"share_task_not_found": "Aufgabe nicht gefunden oder Zugriff verweigert.",
 		"mode_import_failed": "Fehler beim Importieren des Modus: {{error}}",
-		"delete_rules_folder_failed": "Fehler beim Löschen des Regelordners: {{rulesFolderPath}}. Fehler: {{error}}",
+		"delete_rules_folder_failed": "Fehler beim LÃ¶schen des Regelordners: {{rulesFolderPath}}. Fehler: {{error}}",
 		"command_not_found": "Befehl '{{name}}' nicht gefunden",
-		"open_command_file": "Fehler beim Öffnen der Befehlsdatei",
-		"delete_command": "Fehler beim Löschen des Befehls",
-		"no_workspace_for_project_command": "Kein Arbeitsbereich-Ordner für Projektbefehl gefunden",
+		"open_command_file": "Fehler beim Ã–ffnen der Befehlsdatei",
+		"delete_command": "Fehler beim LÃ¶schen des Befehls",
+		"no_workspace_for_project_command": "Kein Arbeitsbereich-Ordner fÃ¼r Projektbefehl gefunden",
 		"command_already_exists": "Befehl \"{{commandName}}\" existiert bereits",
 		"create_command_failed": "Fehler beim Erstellen des Befehls",
 		"command_template_content": "---\ndescription: \"Kurze Beschreibung dessen, was dieser Befehl macht\"\n---\n\nDies ist ein neuer Slash-Befehl. Bearbeite diese Datei, um das Befehlsverhalten anzupassen.",
@@ -91,34 +91,34 @@
 			"errorOutput": "Fehlerausgabe: {{output}}",
 			"processExitedWithError": "Claude Code Prozess wurde mit Code {{exitCode}} beendet. Fehlerausgabe: {{output}}",
 			"stoppedWithReason": "Claude Code wurde mit Grund gestoppt: {{reason}}",
-			"apiKeyModelPlanMismatch": "API-Schlüssel und Abonnement-Pläne erlauben verschiedene Modelle. Stelle sicher, dass das ausgewählte Modell in deinem Plan enthalten ist."
+			"apiKeyModelPlanMismatch": "API-SchlÃ¼ssel und Abonnement-PlÃ¤ne erlauben verschiedene Modelle. Stelle sicher, dass das ausgewÃ¤hlte Modell in deinem Plan enthalten ist."
 		},
 		"message": {
-			"no_active_task_to_delete": "Keine aktive Aufgabe, aus der Nachrichten gelöscht werden können",
-			"invalid_timestamp_for_deletion": "Ungültiger Nachrichten-Zeitstempel zum Löschen",
-			"cannot_delete_missing_timestamp": "Nachricht kann nicht gelöscht werden: fehlender Zeitstempel",
-			"cannot_delete_invalid_timestamp": "Nachricht kann nicht gelöscht werden: ungültiger Zeitstempel",
+			"no_active_task_to_delete": "Keine aktive Aufgabe, aus der Nachrichten gelÃ¶scht werden kÃ¶nnen",
+			"invalid_timestamp_for_deletion": "UngÃ¼ltiger Nachrichten-Zeitstempel zum LÃ¶schen",
+			"cannot_delete_missing_timestamp": "Nachricht kann nicht gelÃ¶scht werden: fehlender Zeitstempel",
+			"cannot_delete_invalid_timestamp": "Nachricht kann nicht gelÃ¶scht werden: ungÃ¼ltiger Zeitstempel",
 			"message_not_found": "Nachricht mit Zeitstempel {{messageTs}} nicht gefunden",
-			"error_deleting_message": "Fehler beim Löschen der Nachricht: {{error}}",
+			"error_deleting_message": "Fehler beim LÃ¶schen der Nachricht: {{error}}",
 			"error_editing_message": "Fehler beim Bearbeiten der Nachricht: {{error}}"
 		},
 		"gemini": {
 			"generate_stream": "Fehler beim Generieren des Kontext-Streams von Gemini: {{error}}",
-			"generate_complete_prompt": "Fehler bei der Vervollständigung durch Gemini: {{error}}",
+			"generate_complete_prompt": "Fehler bei der VervollstÃ¤ndigung durch Gemini: {{error}}",
 			"sources": "Quellen:",
 			"thinking_complete_no_output": "(Denken abgeschlossen, aber es wurde keine Ausgabe generiert.)",
-			"thinking_complete_truncated": "(Denken abgeschlossen, aber die Ausgabe wurde aufgrund des Token-Limits gekürzt.)",
+			"thinking_complete_truncated": "(Denken abgeschlossen, aber die Ausgabe wurde aufgrund des Token-Limits gekÃ¼rzt.)",
 			"thinking_complete_safety": "(Denken abgeschlossen, aber die Ausgabe wurde aufgrund von Sicherheitseinstellungen blockiert.)",
-			"thinking_complete_recitation": "(Denken abgeschlossen, aber die Ausgabe wurde aufgrund der Rezitationsprüfung blockiert.)"
+			"thinking_complete_recitation": "(Denken abgeschlossen, aber die Ausgabe wurde aufgrund der RezitationsprÃ¼fung blockiert.)"
 		},
 		"openAiCodex": {
-			"notAuthenticated": "Nicht bei OpenAI Codex authentifiziert. Bitte melde dich über den OpenAI Codex OAuth-Flow an.",
-			"invalidRequest": "Ungültige Anfrage an die Codex-API. Bitte überprüfe deine Eingabeparameter.",
+			"notAuthenticated": "Nicht bei OpenAI Codex authentifiziert. Bitte melde dich Ã¼ber den OpenAI Codex OAuth-Flow an.",
+			"invalidRequest": "UngÃ¼ltige Anfrage an die Codex-API. Bitte Ã¼berprÃ¼fe deine Eingabeparameter.",
 			"authenticationFailed": "Authentifizierung fehlgeschlagen. Bitte authentifiziere dich erneut bei OpenAI Codex.",
-			"accessDenied": "Zugriff verweigert. Dein ChatGPT-Abonnement enthält möglicherweise keinen Codex-Zugang.",
+			"accessDenied": "Zugriff verweigert. Dein ChatGPT-Abonnement enthÃ¤lt mÃ¶glicherweise keinen Codex-Zugang.",
 			"endpointNotFound": "Codex-API-Endpunkt nicht gefunden.",
-			"rateLimitExceeded": "Ratenlimit überschritten. Bitte versuche es später erneut.",
-			"serviceError": "OpenAI Codex Dienstfehler. Bitte versuche es später erneut.",
+			"rateLimitExceeded": "Ratenlimit Ã¼berschritten. Bitte versuche es spÃ¤ter erneut.",
+			"serviceError": "OpenAI Codex Dienstfehler. Bitte versuche es spÃ¤ter erneut.",
 			"genericError": "Codex-API-Fehler ({{status}})",
 			"noResponseBody": "Codex-API-Fehler: Kein Antworttext",
 			"connectionFailed": "Verbindung zur Codex-API fehlgeschlagen: {{message}}",
@@ -127,36 +127,36 @@
 			"responseFailed": "Antwort fehlgeschlagen: {{message}}",
 			"streamProcessingError": "Fehler beim Verarbeiten des Antwort-Streams: {{message}}",
 			"unexpectedStreamError": "Unerwarteter Fehler beim Verarbeiten des Antwort-Streams",
-			"completionError": "OpenAI Codex Vervollständigungsfehler: {{message}}"
+			"completionError": "OpenAI Codex VervollstÃ¤ndigungsfehler: {{message}}"
 		},
 		"api": {
-			"invalidKeyInvalidChars": "API-Schlüssel enthält ungültige Zeichen.",
+			"invalidKeyInvalidChars": "API-SchlÃ¼ssel enthÃ¤lt ungÃ¼ltige Zeichen.",
 			"apiRequestFailed": "API-Anfrage fehlgeschlagen ({{status}})"
 		},
-		"manual_url_empty": "Bitte gib eine gültige Callback-URL ein",
-		"manual_url_no_query": "Ungültige Callback-URL: Query-Parameter fehlen",
-		"manual_url_missing_params": "Ungültige Callback-URL: erforderliche Parameter (code und state) fehlen",
+		"manual_url_empty": "Bitte gib eine gÃ¼ltige Callback-URL ein",
+		"manual_url_no_query": "UngÃ¼ltige Callback-URL: Query-Parameter fehlen",
+		"manual_url_missing_params": "UngÃ¼ltige Callback-URL: erforderliche Parameter (code und state) fehlen",
 		"manual_url_auth_failed": "Manuelle URL-Authentifizierung fehlgeschlagen",
 		"manual_url_auth_error": "Authentifizierung fehlgeschlagen"
 	},
 	"warnings": {
-		"no_terminal_content": "Kein Terminal-Inhalt ausgewählt",
-		"missing_task_files": "Die Dateien dieser Aufgabe fehlen. Möchtest du sie aus der Aufgabenliste entfernen?",
-		"auto_import_failed": "Fehler beim automatischen Import der RooCode-Einstellungen: {{error}}"
+		"no_terminal_content": "Kein Terminal-Inhalt ausgewÃ¤hlt",
+		"missing_task_files": "Die Dateien dieser Aufgabe fehlen. MÃ¶chtest du sie aus der Aufgabenliste entfernen?",
+		"auto_import_failed": "Fehler beim automatischen Import der Softixer-Einstellungen: {{error}}"
 	},
 	"info": {
-		"no_changes": "Keine Änderungen gefunden.",
+		"no_changes": "Keine Ã„nderungen gefunden.",
 		"clipboard_copy": "Systemnachricht erfolgreich in die Zwischenablage kopiert",
 		"history_cleanup": "{{count}} Aufgabe(n) mit fehlenden Dateien aus dem Verlauf bereinigt.",
 		"custom_storage_path_set": "Benutzerdefinierter Speicherpfad festgelegt: {{path}}",
-		"default_storage_path": "Auf Standardspeicherpfad zurückgesetzt",
+		"default_storage_path": "Auf Standardspeicherpfad zurÃ¼ckgesetzt",
 		"settings_imported": "Einstellungen erfolgreich importiert.",
-		"auto_import_success": "RooCode-Einstellungen automatisch importiert aus {{filename}}",
+		"auto_import_success": "Softixer-Einstellungen automatisch importiert aus {{filename}}",
 		"share_link_copied": "Share-Link in die Zwischenablage kopiert",
 		"image_copied_to_clipboard": "Bild-Daten-URI in die Zwischenablage kopiert",
 		"image_saved": "Bild gespeichert unter {{path}}",
 		"organization_share_link_copied": "Organisations-Freigabelink in die Zwischenablage kopiert!",
-		"public_share_link_copied": "Öffentlicher Freigabelink in die Zwischenablage kopiert!",
+		"public_share_link_copied": "Ã–ffentlicher Freigabelink in die Zwischenablage kopiert!",
 		"mode_exported": "Modus '{{mode}}' erfolgreich exportiert",
 		"mode_imported": "Modus erfolgreich importiert"
 	},
@@ -173,8 +173,8 @@
 	},
 	"tasks": {
 		"canceled": "Aufgabenfehler: Die Aufgabe wurde vom Benutzer gestoppt und abgebrochen.",
-		"deleted": "Aufgabenfehler: Die Aufgabe wurde vom Benutzer gestoppt und gelöscht.",
-		"incomplete": "Aufgabe #{{taskNumber}} (Unvollständig)",
+		"deleted": "Aufgabenfehler: Die Aufgabe wurde vom Benutzer gestoppt und gelÃ¶scht.",
+		"incomplete": "Aufgabe #{{taskNumber}} (UnvollstÃ¤ndig)",
 		"no_messages": "Aufgabe #{{taskNumber}} (Keine Nachrichten)"
 	},
 	"interruption": {
@@ -183,10 +183,10 @@
 		"streamTerminatedByProvider": "Der Anbieter hat die Anfrage beendet"
 	},
 	"storage": {
-		"prompt_custom_path": "Gib den benutzerdefinierten Speicherpfad für den Gesprächsverlauf ein, leer lassen für Standardspeicherort",
-		"path_placeholder": "D:\\RooCodeStorage",
-		"enter_absolute_path": "Bitte gib einen absoluten Pfad ein (z.B. D:\\RooCodeStorage oder /home/user/storage)",
-		"enter_valid_path": "Bitte gib einen gültigen Pfad ein"
+		"prompt_custom_path": "Gib den benutzerdefinierten Speicherpfad fÃ¼r den GesprÃ¤chsverlauf ein, leer lassen fÃ¼r Standardspeicherort",
+		"path_placeholder": "D:\\SoftixerStorage",
+		"enter_absolute_path": "Bitte gib einen absoluten Pfad ein (z.B. D:\\SoftixerStorage oder /home/user/storage)",
+		"enter_valid_path": "Bitte gib einen gÃ¼ltigen Pfad ein"
 	},
 	"input": {
 		"task_prompt": "Was soll Roo tun?",
@@ -197,15 +197,15 @@
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": "Ungültiges YAML in .roomodes-Datei in Zeile {{line}}. Bitte überprüfe:\n• Korrekte Einrückung (verwende Leerzeichen, keine Tabs)\n• Passende Anführungszeichen und Klammern\n• Gültige YAML-Syntax",
-			"schemaValidationError": "Ungültiges Format für benutzerdefinierte Modi in .roomodes:\n{{issues}}",
-			"invalidFormat": "Ungültiges Format für benutzerdefinierte Modi. Bitte stelle sicher, dass deine Einstellungen dem korrekten YAML-Format folgen.",
+			"yamlParseError": "UngÃ¼ltiges YAML in .roomodes-Datei in Zeile {{line}}. Bitte Ã¼berprÃ¼fe:\nâ€¢ Korrekte EinrÃ¼ckung (verwende Leerzeichen, keine Tabs)\nâ€¢ Passende AnfÃ¼hrungszeichen und Klammern\nâ€¢ GÃ¼ltige YAML-Syntax",
+			"schemaValidationError": "UngÃ¼ltiges Format fÃ¼r benutzerdefinierte Modi in .roomodes:\n{{issues}}",
+			"invalidFormat": "UngÃ¼ltiges Format fÃ¼r benutzerdefinierte Modi. Bitte stelle sicher, dass deine Einstellungen dem korrekten YAML-Format folgen.",
 			"updateFailed": "Fehler beim Aktualisieren des benutzerdefinierten Modus: {{error}}",
-			"deleteFailed": "Fehler beim Löschen des benutzerdefinierten Modus: {{error}}",
-			"resetFailed": "Fehler beim Zurücksetzen der benutzerdefinierten Modi: {{error}}",
+			"deleteFailed": "Fehler beim LÃ¶schen des benutzerdefinierten Modus: {{error}}",
+			"resetFailed": "Fehler beim ZurÃ¼cksetzen der benutzerdefinierten Modi: {{error}}",
 			"modeNotFound": "Schreibfehler: Modus nicht gefunden",
-			"noWorkspaceForProject": "Kein Arbeitsbereich-Ordner für projektspezifischen Modus gefunden",
-			"rulesCleanupFailed": "Der Modus wurde erfolgreich gelöscht, aber der Regelordner unter {{rulesFolderPath}} konnte nicht gelöscht werden. Möglicherweise musst du ihn manuell löschen."
+			"noWorkspaceForProject": "Kein Arbeitsbereich-Ordner fÃ¼r projektspezifischen Modus gefunden",
+			"rulesCleanupFailed": "Der Modus wurde erfolgreich gelÃ¶scht, aber der Regelordner unter {{rulesFolderPath}} konnte nicht gelÃ¶scht werden. MÃ¶glicherweise musst du ihn manuell lÃ¶schen."
 		},
 		"scope": {
 			"project": "projekt",
@@ -214,19 +214,20 @@
 	},
 	"prompts": {
 		"deleteMode": {
-			"title": "Benutzerdefinierten Modus löschen",
-			"description": "Bist du sicher, dass du diesen {{scope}}-Modus löschen möchtest? Dadurch wird auch der zugehörige Regelordner unter {{rulesFolderPath}} gelöscht",
-			"descriptionNoRules": "Bist du sicher, dass du diesen benutzerdefinierten Modus löschen möchtest?",
-			"confirm": "Löschen"
+			"title": "Benutzerdefinierten Modus lÃ¶schen",
+			"description": "Bist du sicher, dass du diesen {{scope}}-Modus lÃ¶schen mÃ¶chtest? Dadurch wird auch der zugehÃ¶rige Regelordner unter {{rulesFolderPath}} gelÃ¶scht",
+			"descriptionNoRules": "Bist du sicher, dass du diesen benutzerdefinierten Modus lÃ¶schen mÃ¶chtest?",
+			"confirm": "LÃ¶schen"
 		}
 	},
 	"commands": {
 		"preventCompletionWithOpenTodos": {
-			"description": "Aufgabenabschluss verhindern, wenn unvollständige Todos in der Todo-Liste vorhanden sind"
+			"description": "Aufgabenabschluss verhindern, wenn unvollstÃ¤ndige Todos in der Todo-Liste vorhanden sind"
 		}
 	},
 	"docsLink": {
 		"label": "Docs",
-		"url": "https://github.com/RooCodeInc/Roo-Code"
+		"url": "https://github.com/SoftixerInc/softixer"
 	}
 }
+

@@ -1,4 +1,4 @@
-// npx vitest core/task/__tests__/Task.spec.ts
+﻿// npx vitest core/task/__tests__/Task.spec.ts
 
 import * as os from "os"
 import * as path from "path"
@@ -2183,3 +2183,5 @@ describe("pushToolResultToUserContent", () => {
 		expect(task.userMessageContent[2]).toEqual(toolResult)
 	})
 })
+
+

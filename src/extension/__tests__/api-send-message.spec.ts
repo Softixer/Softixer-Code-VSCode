@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest"
+﻿import { describe, it, expect, vi, beforeEach } from "vitest"
 import * as vscode from "vscode"
 
 import { API } from "../api"
@@ -154,3 +154,5 @@ describe("API - SendMessage Command", () => {
 		expect(mockPostMessageToWebview).toHaveBeenCalledTimes(1)
 	})
 })
+
+

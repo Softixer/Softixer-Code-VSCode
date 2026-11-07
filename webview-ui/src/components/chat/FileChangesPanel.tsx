@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useState, useCallback, useRef } from "react"
+﻿import { memo, useEffect, useMemo, useState, useCallback, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import { ChevronDown, ChevronRight, FileDiff } from "lucide-react"
 import { createTwoFilesPatch } from "diff"
@@ -182,3 +182,5 @@ const FileChangesPanel = memo(({ clineMessages, className }: FileChangesPanelPro
 FileChangesPanel.displayName = "FileChangesPanel"
 
 export default FileChangesPanel
+
+

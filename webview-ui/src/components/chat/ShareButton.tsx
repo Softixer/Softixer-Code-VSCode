@@ -1,4 +1,4 @@
-import { type HistoryItem } from "@roo-code/types"
+﻿import { type HistoryItem } from "@roo-code/types"
 
 interface ShareButtonProps {
 	item?: HistoryItem
@@ -10,3 +10,5 @@ export const ShareButton = ({ item, disabled = false }: ShareButtonProps) => {
 	void disabled
 	return null
 }
+
+

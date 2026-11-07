@@ -1,4 +1,4 @@
-import { serializeError } from "serialize-error"
+﻿import { serializeError } from "serialize-error"
 import { Anthropic } from "@anthropic-ai/sdk"
 
 import type { ToolName, ClineAsk, ToolProgressStatus } from "@roo-code/types"
@@ -965,3 +965,5 @@ async function checkpointSaveAndMark(task: Task) {
 		console.error(`[Task#presentAssistantMessage] Error saving checkpoint: ${error.message}`, error)
 	}
 }
+
+

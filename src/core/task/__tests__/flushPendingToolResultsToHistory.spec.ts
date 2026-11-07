@@ -1,4 +1,4 @@
-// npx vitest run core/task/__tests__/flushPendingToolResultsToHistory.spec.ts
+﻿// npx vitest run core/task/__tests__/flushPendingToolResultsToHistory.spec.ts
 
 import * as os from "os"
 import * as path from "path"
@@ -443,3 +443,5 @@ describe("flushPendingToolResultsToHistory", () => {
 		expect(task.apiConversationHistory.length).toBe(0)
 	})
 })
+
+

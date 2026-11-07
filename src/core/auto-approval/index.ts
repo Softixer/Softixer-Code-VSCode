@@ -1,4 +1,4 @@
-import {
+﻿import {
 	type ClineAsk,
 	type ClineSayTool,
 	type McpServerUse,
@@ -183,3 +183,5 @@ export async function checkAutoApproval({
 }
 
 export { AutoApprovalHandler } from "./AutoApprovalHandler"
+
+

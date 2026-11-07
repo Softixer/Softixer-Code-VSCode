@@ -1,5 +1,5 @@
 {
-	"greeting": "Roo Code'a Hoş Geldiniz",
+	"greeting": "Softixer'a Hoş Geldiniz",
 	"task": {
 		"title": "Görev",
 		"expand": "Görevi genişlet",
@@ -90,7 +90,7 @@
 	"enqueueMessage": "Mesajı kuyruğa ekle (mevcut görev tamamlandıktan sonra gönderilecek)",
 	"scrollToBottom": "Sohbetin altına kaydır",
 	"scrollToLatestCheckpoint": "Önceki checkpoint'e kaydır",
-	"about": "Roo Code, düzenleyicinizdeki bütün bir yapay zeka geliştirme ekibidir.",
+	"about": "Softixer, düzenleyicinizdeki bütün bir yapay zeka geliştirme ekibidir.",
 	"docs": "Daha fazla bilgi için <DocsLink>belgelerimize</DocsLink> göz atın.",
 	"onboarding": "Bu çalışma alanındaki görev listeniz boş.",
 	"rooTips": {
@@ -121,7 +121,7 @@
 	"modeSelector": {
 		"title": "Modlar",
 		"settings": "Mod Ayarları",
-		"description": "Roo'nun davranışını özelleştiren uzmanlaşmış kişilikler.",
+		"description": "Softixer'nun davranışını özelleştiren uzmanlaşmış kişilikler.",
 		"searchPlaceholder": "Modları ara...",
 		"noResults": "Sonuç bulunamadı"
 	},
@@ -135,7 +135,7 @@
 	"diffError": {
 		"title": "Düzenleme Başarısız"
 	},
-	"troubleMessage": "Roo sorun yaşıyor...",
+	"troubleMessage": "Softixer sorun yaşıyor...",
 	"apiRequest": {
 		"title": "API İsteği",
 		"failed": "API İsteği Başarısız",
@@ -178,43 +178,43 @@
 		"current": "Mevcut"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo mevcut göreve yardımcı olmak için ayrıntılı talimatlar almak istiyor"
+		"wantsToFetch": "Softixer mevcut göreve yardımcı olmak için ayrıntılı talimatlar almak istiyor"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo bu dosyayı okumak istiyor",
-		"wantsToReadOutsideWorkspace": "Roo çalışma alanı dışındaki bu dosyayı okumak istiyor",
-		"didRead": "Roo bu dosyayı okudu",
-		"wantsToEdit": "Roo bu dosyayı düzenlemek istiyor",
-		"wantsToEditOutsideWorkspace": "Roo çalışma alanı dışındaki bu dosyayı düzenlemek istiyor",
-		"wantsToEditProtected": "Roo korumalı bir yapılandırma dosyasını düzenlemek istiyor",
-		"wantsToCreate": "Roo yeni bir dosya oluşturmak istiyor",
-		"wantsToSearchReplace": "Roo bu dosyada arama ve değiştirme yapmak istiyor",
-		"didSearchReplace": "Roo bu dosyada arama ve değiştirme yaptı",
-		"wantsToInsert": "Roo bu dosyaya içerik eklemek istiyor",
-		"wantsToInsertWithLineNumber": "Roo bu dosyanın {{lineNumber}}. satırına içerik eklemek istiyor",
-		"wantsToInsertAtEnd": "Roo bu dosyanın sonuna içerik eklemek istiyor",
-		"wantsToReadAndXMore": "Roo bu dosyayı ve {{count}} tane daha okumak istiyor",
-		"wantsToReadMultiple": "Roo birden fazla dosya okumak istiyor",
-		"wantsToApplyBatchChanges": "Roo birden fazla dosyaya değişiklik uygulamak istiyor",
-		"wantsToGenerateImage": "Roo bir görsel oluşturmak istiyor",
-		"wantsToGenerateImageOutsideWorkspace": "Roo çalışma alanının dışında bir görsel oluşturmak istiyor",
-		"wantsToGenerateImageProtected": "Roo korumalı bir konumda görsel oluşturmak istiyor",
-		"didGenerateImage": "Roo bir görsel oluşturdu"
+		"wantsToRead": "Softixer bu dosyayı okumak istiyor",
+		"wantsToReadOutsideWorkspace": "Softixer çalışma alanı dışındaki bu dosyayı okumak istiyor",
+		"didRead": "Softixer bu dosyayı okudu",
+		"wantsToEdit": "Softixer bu dosyayı düzenlemek istiyor",
+		"wantsToEditOutsideWorkspace": "Softixer çalışma alanı dışındaki bu dosyayı düzenlemek istiyor",
+		"wantsToEditProtected": "Softixer korumalı bir yapılandırma dosyasını düzenlemek istiyor",
+		"wantsToCreate": "Softixer yeni bir dosya oluşturmak istiyor",
+		"wantsToSearchReplace": "Softixer bu dosyada arama ve değiştirme yapmak istiyor",
+		"didSearchReplace": "Softixer bu dosyada arama ve değiştirme yaptı",
+		"wantsToInsert": "Softixer bu dosyaya içerik eklemek istiyor",
+		"wantsToInsertWithLineNumber": "Softixer bu dosyanın {{lineNumber}}. satırına içerik eklemek istiyor",
+		"wantsToInsertAtEnd": "Softixer bu dosyanın sonuna içerik eklemek istiyor",
+		"wantsToReadAndXMore": "Softixer bu dosyayı ve {{count}} tane daha okumak istiyor",
+		"wantsToReadMultiple": "Softixer birden fazla dosya okumak istiyor",
+		"wantsToApplyBatchChanges": "Softixer birden fazla dosyaya değişiklik uygulamak istiyor",
+		"wantsToGenerateImage": "Softixer bir görsel oluşturmak istiyor",
+		"wantsToGenerateImageOutsideWorkspace": "Softixer çalışma alanının dışında bir görsel oluşturmak istiyor",
+		"wantsToGenerateImageProtected": "Softixer korumalı bir konumda görsel oluşturmak istiyor",
+		"didGenerateImage": "Softixer bir görsel oluşturdu"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo bu dizindeki üst düzey dosyaları görüntülemek istiyor",
-		"didViewTopLevel": "Roo bu dizindeki üst düzey dosyaları görüntüledi",
-		"wantsToViewRecursive": "Roo bu dizindeki tüm dosyaları özyinelemeli olarak görüntülemek istiyor",
-		"didViewRecursive": "Roo bu dizindeki tüm dosyaları özyinelemeli olarak görüntüledi",
-		"wantsToSearch": "Roo bu dizinde <code>{{regex}}</code> için arama yapmak istiyor",
-		"didSearch": "Roo bu dizinde <code>{{regex}}</code> için arama yaptı",
-		"wantsToSearchOutsideWorkspace": "Roo bu dizinde (çalışma alanı dışında) <code>{{regex}}</code> için arama yapmak istiyor",
-		"didSearchOutsideWorkspace": "Roo bu dizinde (çalışma alanı dışında) <code>{{regex}}</code> için arama yaptı",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo bu dizindeki (çalışma alanı dışında) üst düzey dosyaları görüntülemek istiyor",
-		"didViewTopLevelOutsideWorkspace": "Roo bu dizindeki (çalışma alanı dışında) üst düzey dosyaları görüntüledi",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo bu dizindeki (çalışma alanı dışında) tüm dosyaları özyinelemeli olarak görüntülemek istiyor",
-		"didViewRecursiveOutsideWorkspace": "Roo bu dizindeki (çalışma alanı dışında) tüm dosyaları özyinelemeli olarak görüntüledi",
-		"wantsToViewMultipleDirectories": "Roo birden fazla dizini görüntülemek istiyor"
+		"wantsToViewTopLevel": "Softixer bu dizindeki üst düzey dosyaları görüntülemek istiyor",
+		"didViewTopLevel": "Softixer bu dizindeki üst düzey dosyaları görüntüledi",
+		"wantsToViewRecursive": "Softixer bu dizindeki tüm dosyaları özyinelemeli olarak görüntülemek istiyor",
+		"didViewRecursive": "Softixer bu dizindeki tüm dosyaları özyinelemeli olarak görüntüledi",
+		"wantsToSearch": "Softixer bu dizinde <code>{{regex}}</code> için arama yapmak istiyor",
+		"didSearch": "Softixer bu dizinde <code>{{regex}}</code> için arama yaptı",
+		"wantsToSearchOutsideWorkspace": "Softixer bu dizinde (çalışma alanı dışında) <code>{{regex}}</code> için arama yapmak istiyor",
+		"didSearchOutsideWorkspace": "Softixer bu dizinde (çalışma alanı dışında) <code>{{regex}}</code> için arama yaptı",
+		"wantsToViewTopLevelOutsideWorkspace": "Softixer bu dizindeki (çalışma alanı dışında) üst düzey dosyaları görüntülemek istiyor",
+		"didViewTopLevelOutsideWorkspace": "Softixer bu dizindeki (çalışma alanı dışında) üst düzey dosyaları görüntüledi",
+		"wantsToViewRecursiveOutsideWorkspace": "Softixer bu dizindeki (çalışma alanı dışında) tüm dosyaları özyinelemeli olarak görüntülemek istiyor",
+		"didViewRecursiveOutsideWorkspace": "Softixer bu dizindeki (çalışma alanı dışında) tüm dosyaları özyinelemeli olarak görüntüledi",
+		"wantsToViewMultipleDirectories": "Softixer birden fazla dizini görüntülemek istiyor"
 	},
 	"commandOutput": "Komut Çıktısı",
 	"commandExecution": {
@@ -237,24 +237,24 @@
 	"response": "Yanıt",
 	"arguments": "Argümanlar",
 	"text": {
-		"rooSaid": "Roo dedi"
+		"rooSaid": "Softixer dedi"
 	},
 	"feedback": {
 		"youSaid": "Dediniz ki"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo {{serverName}} MCP sunucusunda bir araç kullanmak istiyor",
-		"wantsToAccessResource": "Roo {{serverName}} MCP sunucusundaki bir kaynağa erişmek istiyor"
+		"wantsToUseTool": "Softixer {{serverName}} MCP sunucusunda bir araç kullanmak istiyor",
+		"wantsToAccessResource": "Softixer {{serverName}} MCP sunucusundaki bir kaynağa erişmek istiyor"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo <code>{{mode}}</code> moduna geçmek istiyor",
-		"wantsToSwitchWithReason": "Roo <code>{{mode}}</code> moduna geçmek istiyor çünkü: {{reason}}",
-		"didSwitch": "Roo <code>{{mode}}</code> moduna geçti",
-		"didSwitchWithReason": "Roo <code>{{mode}}</code> moduna geçti çünkü: {{reason}}"
+		"wantsToSwitch": "Softixer <code>{{mode}}</code> moduna geçmek istiyor",
+		"wantsToSwitchWithReason": "Softixer <code>{{mode}}</code> moduna geçmek istiyor çünkü: {{reason}}",
+		"didSwitch": "Softixer <code>{{mode}}</code> moduna geçti",
+		"didSwitchWithReason": "Softixer <code>{{mode}}</code> moduna geçti çünkü: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo <code>{{mode}}</code> modunda yeni bir alt görev oluşturmak istiyor",
-		"wantsToFinish": "Roo bu alt görevi bitirmek istiyor",
+		"wantsToCreate": "Softixer <code>{{mode}}</code> modunda yeni bir alt görev oluşturmak istiyor",
+		"wantsToFinish": "Softixer bu alt görevi bitirmek istiyor",
 		"newTaskContent": "Alt Görev Talimatları",
 		"completionContent": "Alt Görev Tamamlandı",
 		"resultContent": "Alt Görev Sonuçları",
@@ -263,7 +263,7 @@
 		"goToSubtask": "Görevi görüntüle"
 	},
 	"questions": {
-		"hasQuestion": "Roo'nun bir sorusu var"
+		"hasQuestion": "Softixer'nun bir sorusu var"
 	},
 	"taskCompleted": "Görev Tamamlandı",
 	"modelResponseIncomplete": "Model yanıtı eksik",
@@ -279,7 +279,7 @@
 		"copyToClipboard": "Panoya Kopyala",
 		"copied": "Kopyalandı!",
 		"diagnostics": "Ayrıntılı hata bilgisi al",
-		"proxyProvider": "Proxy tabanlı bir sağlayıcı kullanıyor gibi görünüyorsun. Günlüklerini kontrol ettiğinden ve Roo'nun isteklerini yeniden yazmadığından emin ol."
+		"proxyProvider": "Proxy tabanlı bir sağlayıcı kullanıyor gibi görünüyorsun. Günlüklerini kontrol ettiğinden ve Softixer'nun isteklerini yeniden yazmadığından emin ol."
 	},
 	"powershell": {
 		"issues": "Windows PowerShell ile ilgili sorunlar yaşıyor gibi görünüyorsunuz, lütfen şu konuya bakın"
@@ -322,26 +322,26 @@
 		}
 	},
 	"skill": {
-		"wantsToLoad": "Roo bir beceri yüklemek istiyor",
-		"didLoad": "Roo bir beceri yükledi"
+		"wantsToLoad": "Softixer bir beceri yüklemek istiyor",
+		"didLoad": "Softixer bir beceri yükledi"
 	},
 	"followUpSuggest": {
 		"copyToInput": "Giriş alanına kopyala (veya Shift + tıklama)",
 		"timerPrefix": "Otomatik onay etkinleştirildi. {{seconds}}s içinde seçim yapılıyor…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Yayınlandı",
-		"support": "<githubLink>GitHub</githubLink>'da yıldız vererek Roo Code'u destekle.",
+		"title": "Softixer {{version}} Yayınlandı",
+		"support": "<githubLink>GitHub</githubLink>'da yıldız vererek Softixer'u destekle.",
 		"finalRelease": {
-			"title": "Son Roo Code sürümü",
-			"intro": "Bu, Roo Code'un son sürümüdür. <announcementLink>Birkaç hafta önce duyurduğumuz gibi</announcementLink>, odağımızı yazılım geliştirmenin geleceği olduğuna inandığımız bulut ajan platformumuz <roomoteLink>Roomote</roomoteLink>'a kaydırmaya karar verdik. Geçtiğimiz yaklaşık bir yıl boyunca verdiğiniz destek için çok teşekkür ederiz.",
+			"title": "Son Softixer sürümü",
+			"intro": "Bu, Softixer'un son sürümüdür. <announcementLink>Birkaç hafta önce duyurduğumuz gibi</announcementLink>, odağımızı yazılım geliştirmenin geleceği olduğuna inandığımız bulut ajan platformumuz <roomoteLink>Roomote</roomoteLink>'a kaydırmaya karar verdik. Geçtiğimiz yaklaşık bir yıl boyunca verdiğiniz destek için çok teşekkür ederiz.",
 			"continuity": "Bu eklenti süresiz olarak çalışmaya devam etmelidir, ancak hata düzeltmeleri, yeni özellikler veya model güncellemeleri almayacaktır.",
-			"alternatives": "Bir eklenti kullanmak istiyorsanız, topluluk tarafından geliştirilen bir Roo Code fork'u olan <zooCodeLink>ZooCode</zooCodeLink>'a ve Roo Code'un başlangıç noktası olan <clineLink>Cline</clineLink>'a göz atmanızı öneririz.",
+			"alternatives": "Bir eklenti kullanmak istiyorsanız, topluluk tarafından geliştirilen bir Softixer fork'u olan <zooCodeLink>ZooCode</zooCodeLink>'a ve Softixer'un başlangıç noktası olan <clineLink>Cline</clineLink>'a göz atmanızı öneririz.",
 			"signoff": "Mutlu kodlamalar!"
 		},
 		"release": {
 			"heading": "Yenilikler:",
-			"gpt55": "OpenAI Codex üzerinden GPT-5.5: En son modeli doğrudan Roo Code'dan kullanabilmen için OpenAI Codex sağlayıcısına GPT-5.5 desteği eklendi.",
+			"gpt55": "OpenAI Codex üzerinden GPT-5.5: En son modeli doğrudan Softixer'dan kullanabilmen için OpenAI Codex sağlayıcısına GPT-5.5 desteği eklendi.",
 			"claudeOpus47": "Vertex AI'da Claude Opus 4.7: Anthropic'in en yeni amiral gemisi akıl yürütme modeli olan Claude Opus 4.7 Vertex AI sağlayıcısına eklendi.",
 			"checkpointNav": "Önceki Checkpoint Navigasyonu: Sohbetten önceki checkpoint'lere geri atlayabilmen için kontroller eklendi ve tam i18n desteği sunuluyor."
 		},
@@ -367,7 +367,7 @@
 	"profileViolationWarning": "Geçerli profil kuruluşunuzun ayarlarıyla uyumlu değil",
 	"shellIntegration": {
 		"title": "Komut Çalıştırma Uyarısı",
-		"description": "Komutunuz VSCode terminal kabuk entegrasyonu olmadan çalıştırılıyor. Bu uyarıyı gizlemek için <settingsLink>Roo Code ayarları</settingsLink>'nın <strong>Terminal</strong> bölümünden kabuk entegrasyonunu devre dışı bırakabilir veya aşağıdaki bağlantıyı kullanarak VSCode terminal entegrasyonu sorunlarını giderebilirsiniz.",
+		"description": "Komutunuz VSCode terminal kabuk entegrasyonu olmadan çalıştırılıyor. Bu uyarıyı gizlemek için <settingsLink>Softixer ayarları</settingsLink>'nın <strong>Terminal</strong> bölümünden kabuk entegrasyonunu devre dışı bırakabilir veya aşağıdaki bağlantıyı kullanarak VSCode terminal entegrasyonu sorunlarını giderebilirsiniz.",
 		"troubleshooting": "Kabuk entegrasyonu belgelerini görmek için buraya tıklayın."
 	},
 	"ask": {
@@ -378,13 +378,13 @@
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Otomatik Onaylanan Maliyet Sınırına Ulaşıldı",
-			"description": "Roo otomatik olarak onaylanmış ${{count}} maliyet sınırına ulaştı. Maliyeti sıfırlamak ve göreve devam etmek ister misiniz?",
+			"description": "Softixer otomatik olarak onaylanmış ${{count}} maliyet sınırına ulaştı. Maliyeti sıfırlamak ve göreve devam etmek ister misiniz?",
 			"button": "Sıfırla ve Devam Et"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo kod tabanında <code>{{query}}</code> aramak istiyor",
-		"wantsToSearchWithPath": "Roo <code>{{path}}</code> içinde kod tabanında <code>{{query}}</code> aramak istiyor",
+		"wantsToSearch": "Softixer kod tabanında <code>{{query}}</code> aramak istiyor",
+		"wantsToSearchWithPath": "Softixer <code>{{path}}</code> içinde kod tabanında <code>{{query}}</code> aramak istiyor",
 		"didSearch_one": "1 sonuç bulundu",
 		"didSearch_other": "{{count}} sonuç bulundu",
 		"resultTooltip": "Benzerlik puanı: {{score}} (dosyayı açmak için tıklayın)"
@@ -461,8 +461,8 @@
 		"clickToEdit": "Mesajı düzenlemek için tıkla"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo bir slash komutu çalıştırmak istiyor",
-		"didRun": "Roo bir slash komutu çalıştırdı"
+		"wantsToRun": "Softixer bir slash komutu çalıştırmak istiyor",
+		"didRun": "Softixer bir slash komutu çalıştırdı"
 	},
 	"todo": {
 		"partial": "{{total}} yapılacaklar listesinden {{completed}} tanesi tamamlandı",
@@ -481,12 +481,12 @@
 		"openMcpSettings": "MCP Ayarlarını Aç"
 	},
 	"readCommandOutput": {
-		"title": "Roo read command output"
+		"title": "Softixer read command output"
 	},
 	"retiredProvider": {
 		"title": "Sağlayıcı artık desteklenmiyor",
 		"message": "This provider is no longer supported. Please select a different provider in your API profile settings.",
 		"openSettings": "Ayarları aç",
-		"rooMessage": "As part of our decision to sunset the Roo Code extension, we also ended the Roo Code Router, which only existed to support the extension. Sorry about the hassle."
+		"rooMessage": "As part of our decision to sunset the Softixer extension, we also ended the Softixer Router, which only existed to support the extension. Sorry about the hassle."
 	}
 }

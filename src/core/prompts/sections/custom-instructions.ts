@@ -1,4 +1,4 @@
-import fs from "fs/promises"
+﻿import fs from "fs/promises"
 import path from "path"
 import * as os from "os"
 import { Dirent } from "fs"
@@ -546,3 +546,5 @@ function shouldIncludeRuleFile(filename: string): boolean {
 		}
 	})
 }
+
+

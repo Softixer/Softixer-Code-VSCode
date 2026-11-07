@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { openFile } from "../open-file"
 
@@ -43,7 +43,7 @@ vi.mock("../../utils/path", () => {
 		arePathsEqual: vi.fn((a: string, b: string) => a === b),
 		getWorkspacePath: vi.fn(() => {
 			// In tests, we need to return a consistent workspace path
-			// The actual workspace is /Users/roocode/rc2 in local, but varies in CI
+			// The actual workspace is /Users/Softixer/rc2 in local, but varies in CI
 			const cwd = process.cwd()
 			// If we're in the src directory, go up one level to get workspace root
 			if (cwd.endsWith("/src")) {
@@ -236,3 +236,4 @@ describe("openFile", () => {
 		})
 	})
 })
+

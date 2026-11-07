@@ -1,7 +1,7 @@
-// npx vitest run __tests__/history-resume-delegation.spec.ts
+﻿// npx vitest run __tests__/history-resume-delegation.spec.ts
 
 import { describe, it, expect, vi, beforeEach } from "vitest"
-import { RooCodeEventName } from "@roo-code/types"
+import { SoftixerEventName } from "@roo-code/types"
 
 /* vscode mock for Task/Provider imports */
 vi.mock("vscode", () => {
@@ -44,7 +44,7 @@ describe("History resume delegation - parent metadata transitions", () => {
 		vi.clearAllMocks()
 	})
 
-	it("reopenParentFromDelegation persists parent metadata (delegated → active) before reopen", async () => {
+	it("reopenParentFromDelegation persists parent metadata (delegated â†’ active) before reopen", async () => {
 		const providerEmit = vi.fn()
 		const getTaskWithId = vi.fn().mockResolvedValue({
 			historyItem: {
@@ -385,7 +385,7 @@ describe("History resume delegation - parent metadata transitions", () => {
 		expect(parentInstance.resumeAfterDelegation).toHaveBeenCalledTimes(1)
 	})
 
-	it("reopenParentFromDelegation emits events in correct order: TaskDelegationCompleted → TaskDelegationResumed", async () => {
+	it("reopenParentFromDelegation emits events in correct order: TaskDelegationCompleted â†’ TaskDelegationResumed", async () => {
 		const emitSpy = vi.fn()
 		const updateTaskHistory = vi.fn().mockResolvedValue([])
 
@@ -426,12 +426,12 @@ describe("History resume delegation - parent metadata transitions", () => {
 
 		// Verify both events emitted
 		const eventNames = emitSpy.mock.calls.map((c) => c[0])
-		expect(eventNames).toContain(RooCodeEventName.TaskDelegationCompleted)
-		expect(eventNames).toContain(RooCodeEventName.TaskDelegationResumed)
+		expect(eventNames).toContain(SoftixerEventName.TaskDelegationCompleted)
+		expect(eventNames).toContain(SoftixerEventName.TaskDelegationResumed)
 
 		// CRITICAL: verify ordering (TaskDelegationCompleted before TaskDelegationResumed)
-		const completedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === RooCodeEventName.TaskDelegationCompleted)
-		const resumedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === RooCodeEventName.TaskDelegationResumed)
+		const completedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === SoftixerEventName.TaskDelegationCompleted)
+		const resumedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === SoftixerEventName.TaskDelegationResumed)
 		expect(completedIdx).toBeGreaterThanOrEqual(0)
 		expect(resumedIdx).toBeGreaterThan(completedIdx)
 
@@ -509,15 +509,15 @@ describe("History resume delegation - parent metadata transitions", () => {
 		expect(parentInstance.resumeAfterDelegation).toHaveBeenCalledTimes(1)
 
 		expect(emitSpy).toHaveBeenCalledWith(
-			RooCodeEventName.TaskDelegationCompleted,
+			SoftixerEventName.TaskDelegationCompleted,
 			"parent-rpd06",
 			"child-rpd06",
 			"Subtask finished despite overwrite failures",
 		)
-		expect(emitSpy).toHaveBeenCalledWith(RooCodeEventName.TaskDelegationResumed, "parent-rpd06", "child-rpd06")
+		expect(emitSpy).toHaveBeenCalledWith(SoftixerEventName.TaskDelegationResumed, "parent-rpd06", "child-rpd06")
 
-		const completedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === RooCodeEventName.TaskDelegationCompleted)
-		const resumedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === RooCodeEventName.TaskDelegationResumed)
+		const completedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === SoftixerEventName.TaskDelegationCompleted)
+		const resumedIdx = emitSpy.mock.calls.findIndex((c) => c[0] === SoftixerEventName.TaskDelegationResumed)
 		expect(completedIdx).toBeGreaterThanOrEqual(0)
 		expect(resumedIdx).toBeGreaterThan(completedIdx)
 	})
@@ -562,9 +562,9 @@ describe("History resume delegation - parent metadata transitions", () => {
 
 		// CRITICAL: verify legacy pause/unpause events NOT emitted
 		const eventNames = emitSpy.mock.calls.map((c) => c[0])
-		expect(eventNames).not.toContain(RooCodeEventName.TaskPaused)
-		expect(eventNames).not.toContain(RooCodeEventName.TaskUnpaused)
-		expect(eventNames).not.toContain(RooCodeEventName.TaskSpawned)
+		expect(eventNames).not.toContain(SoftixerEventName.TaskPaused)
+		expect(eventNames).not.toContain(SoftixerEventName.TaskUnpaused)
+		expect(eventNames).not.toContain(SoftixerEventName.TaskSpawned)
 	})
 
 	it("reopenParentFromDelegation skips child close when current task differs and still reopens parent (RPD-02)", async () => {
@@ -720,7 +720,7 @@ describe("History resume delegation - parent metadata transitions", () => {
 			}),
 		)
 		expect(parentInstance.resumeAfterDelegation).toHaveBeenCalledTimes(1)
-		expect(emitSpy).toHaveBeenCalledWith(RooCodeEventName.TaskDelegationResumed, "parent-rpd04", "child-rpd04")
+		expect(emitSpy).toHaveBeenCalledWith(SoftixerEventName.TaskDelegationResumed, "parent-rpd04", "child-rpd04")
 	})
 
 	it("handles empty history gracefully when injecting synthetic messages", async () => {
@@ -785,3 +785,5 @@ describe("History resume delegation - parent metadata transitions", () => {
 		)
 	})
 })
+
+

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react"
+﻿import React, { useMemo } from "react"
 import { VSCodeCheckbox, VSCodeTextField, VSCodeDropdown, VSCodeOption } from "@vscode/webview-ui-toolkit/react"
 import { IMAGE_GENERATION_MODELS, type ImageGenerationProvider, getImageGenerationProvider } from "@roo-code/types"
 import { useAppTranslation } from "@/i18n/TranslationContext"
@@ -186,3 +186,5 @@ export const ImageGenerationSettings = ({
 		</div>
 	)
 }
+
+

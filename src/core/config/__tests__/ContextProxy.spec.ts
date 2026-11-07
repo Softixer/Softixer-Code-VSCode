@@ -1,4 +1,4 @@
-// npx vitest core/config/__tests__/ContextProxy.spec.ts
+﻿// npx vitest core/config/__tests__/ContextProxy.spec.ts
 
 import * as vscode from "vscode"
 
@@ -674,3 +674,5 @@ Output only the summary of the conversation so far, without any additional comme
 		})
 	})
 })
+
+

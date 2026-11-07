@@ -1,4 +1,4 @@
-// npx vitest core/webview/__tests__/webviewMessageHandler.spec.ts
+﻿// npx vitest core/webview/__tests__/webviewMessageHandler.spec.ts
 
 import type { Mock } from "vitest"
 
@@ -1043,3 +1043,5 @@ describe("webviewMessageHandler - downloadErrorDiagnostics", () => {
 		expect(generateErrorDiagnostics).not.toHaveBeenCalled()
 	})
 })
+
+

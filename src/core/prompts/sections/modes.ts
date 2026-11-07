@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import type { ModeConfig } from "@roo-code/types"
 
@@ -33,3 +33,5 @@ ${allModes
 
 	return modesContent
 }
+
+

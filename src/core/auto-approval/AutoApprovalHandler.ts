@@ -1,4 +1,4 @@
-import { GlobalState, ClineMessage, ClineAsk } from "@roo-code/types"
+﻿import { GlobalState, ClineMessage, ClineAsk } from "@roo-code/types"
 
 import { getApiMetrics } from "../../shared/getApiMetrics"
 import { ClineAskResponse } from "../../shared/WebviewMessage"
@@ -153,3 +153,5 @@ export class AutoApprovalHandler {
 		}
 	}
 }
+
+

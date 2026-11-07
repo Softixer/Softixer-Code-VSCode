@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from "react"
+﻿import React, { useState, useEffect, useMemo, useCallback } from "react"
 import { Plus, Globe, Folder, Edit, Trash2 } from "lucide-react"
 import { Trans } from "react-i18next"
 
@@ -243,3 +243,5 @@ export const SlashCommandsSettings: React.FC = () => {
 		</div>
 	)
 }
+
+

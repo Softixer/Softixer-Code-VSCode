@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react"
+﻿import { render, screen } from "@testing-library/react"
 import { Vertex } from "../Vertex"
 import type { ProviderSettings } from "@roo-code/types"
 import { VERTEX_REGIONS } from "@roo-code/types"
@@ -123,3 +123,5 @@ describe("Vertex", () => {
 		expect(screen.queryByTestId("checkbox-grounding-search")).not.toBeInTheDocument()
 	})
 })
+
+

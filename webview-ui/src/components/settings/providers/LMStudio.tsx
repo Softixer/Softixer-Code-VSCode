@@ -1,4 +1,4 @@
-import { useCallback, useState, useMemo, useEffect } from "react"
+﻿import { useCallback, useState, useMemo, useEffect } from "react"
 import { useEvent } from "react-use"
 import { Trans } from "react-i18next"
 import { Checkbox } from "vscrui"
@@ -166,3 +166,5 @@ export const LMStudio = ({ apiConfiguration, setApiConfigurationField }: LMStudi
 		</>
 	)
 }
+
+

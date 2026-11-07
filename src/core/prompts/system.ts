@@ -1,4 +1,4 @@
-import * as vscode from "vscode"
+﻿import * as vscode from "vscode"
 
 import { type ModeConfig, type PromptComponent, type CustomModePrompts, type TodoItem } from "@roo-code/types"
 
@@ -156,3 +156,5 @@ export const SYSTEM_PROMPT = async (
 		skillsManager,
 	)
 }
+
+

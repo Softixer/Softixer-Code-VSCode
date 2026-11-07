@@ -150,7 +150,10 @@ export function SearchableSelect({
 						className,
 					)}
 					data-testid={dataTestId}>
-					<span className="truncate">{selectedOption ? selectedOption.label : placeholder}</span>
+					<span className="flex items-center gap-1.5 truncate">
+							{selectedOption?.icon}
+							{selectedOption ? selectedOption.label : placeholder}
+						</span>
 					<ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
 				</Button>
 			</PopoverTrigger>

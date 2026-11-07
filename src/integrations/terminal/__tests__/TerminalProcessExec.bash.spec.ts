@@ -1,4 +1,4 @@
-// npx vitest src/integrations/terminal/__tests__/TerminalProcessExec.bash.spec.ts
+﻿// npx vitest src/integrations/terminal/__tests__/TerminalProcessExec.bash.spec.ts
 
 import * as vscode from "vscode"
 import { execSync } from "child_process"
@@ -149,7 +149,7 @@ async function testTerminalCommand(
 			executeCommand: vi.fn(),
 			cwd: vscode.Uri.file("/test/path"),
 		},
-		name: "Roo Code",
+		name: "Softixer",
 		processId: Promise.resolve(123),
 		creationOptions: {},
 		exitStatus: undefined,
@@ -471,3 +471,4 @@ describe("TerminalProcess with Bash Command Output", () => {
 		}
 	})
 })
+

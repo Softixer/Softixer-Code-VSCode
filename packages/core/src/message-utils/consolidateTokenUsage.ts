@@ -1,4 +1,4 @@
-import type { TokenUsage, ToolUsage, ToolName, ClineMessage } from "@roo-code/types"
+﻿import type { TokenUsage, ToolUsage, ToolName, ClineMessage } from "@roo-code/types"
 
 export type ParsedApiReqStartedTextType = {
 	tokensIn: number
@@ -155,3 +155,5 @@ export function hasToolUsageChanged(current: ToolUsage, snapshot?: ToolUsage): b
 		return currentTool.attempts !== snapshotTool.attempts || currentTool.failures !== snapshotTool.failures
 	})
 }
+
+

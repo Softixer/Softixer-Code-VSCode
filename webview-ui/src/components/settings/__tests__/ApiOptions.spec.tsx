@@ -1,4 +1,4 @@
-// npx vitest src/components/settings/__tests__/ApiOptions.spec.tsx
+﻿// npx vitest src/components/settings/__tests__/ApiOptions.spec.tsx
 
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
@@ -582,7 +582,7 @@ describe("ApiOptions", () => {
 		expect(screen.queryByTestId("litellm-provider")).not.toBeInTheDocument()
 	})
 
-	it("renders Roo-specific retired provider message for Roo Code Router", () => {
+	it("renders Roo-specific retired provider message for Softixer Router", () => {
 		renderApiOptions({
 			apiConfiguration: {
 				apiProvider: "roo" as any,
@@ -608,3 +608,5 @@ describe("ApiOptions", () => {
 		expect(providerOptions).not.toContain("groq")
 	})
 })
+
+

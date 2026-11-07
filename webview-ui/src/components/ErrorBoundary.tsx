@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+﻿import React, { Component } from "react"
 import { withTranslation, WithTranslation } from "react-i18next"
 import { enhanceErrorWithSourceMaps } from "@src/utils/sourceMapUtils"
 
@@ -62,7 +62,7 @@ class ErrorBoundary extends Component<ErrorProps, ErrorState> {
 				</h2>
 				<p className="mb-4">
 					{t("errorBoundary.reportText")}{" "}
-					<a href="https://github.com/RooCodeInc/Roo-Code/issues" target="_blank" rel="noreferrer">
+					<a href="https://github.com/SoftixerInc/softixer/issues" target="_blank" rel="noreferrer">
 						{t("errorBoundary.githubText")}
 					</a>
 				</p>
@@ -85,3 +85,4 @@ class ErrorBoundary extends Component<ErrorProps, ErrorState> {
 }
 
 export default withTranslation("common")(ErrorBoundary)
+

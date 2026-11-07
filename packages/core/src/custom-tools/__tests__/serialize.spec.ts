@@ -1,4 +1,4 @@
-// pnpm --filter @roo-code/core test src/custom-tools/__tests__/serialize.spec.ts
+﻿// pnpm --filter @roo-code/core test src/custom-tools/__tests__/serialize.spec.ts
 
 import { parametersSchema as z, defineCustomTool } from "@roo-code/types"
 
@@ -223,3 +223,5 @@ describe("Serialization snapshots", () => {
 		expect(result).toMatchSnapshot()
 	})
 })
+
+

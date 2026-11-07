@@ -1,4 +1,4 @@
-import { ExtensionContext } from "vscode"
+﻿import { ExtensionContext } from "vscode"
 import { z, ZodError } from "zod"
 
 import {
@@ -9,6 +9,7 @@ import {
 	DEFAULT_CONSECUTIVE_MISTAKE_LIMIT,
 	getModelId,
 	openRouterDefaultModelId,
+	softixerDefaultModelId,
 	type ProviderName,
 	isProviderName,
 	isRetiredProvider,
@@ -35,6 +36,7 @@ export const providerProfilesSchema = z.object({
 			consecutiveMistakeLimitMigrated: z.boolean().optional(),
 			todoListEnabledMigrated: z.boolean().optional(),
 			claudeCodeLegacySettingsMigrated: z.boolean().optional(),
+			softixerDefaultProviderMigrated: z.boolean().optional(),
 		})
 		.optional(),
 })
@@ -53,10 +55,10 @@ export class ProviderSettingsManager {
 		currentApiConfigName: "default",
 		apiConfigs: {
 			default: {
-				id: this.defaultConfigId,
-				apiProvider: "openrouter",
-				openRouterModelId: openRouterDefaultModelId,
-			},
+					id: this.defaultConfigId,
+					apiProvider: "softixer",
+					softixerModelId: softixerDefaultModelId,
+				},
 		},
 		modeApiConfigs: this.defaultModeApiConfigs,
 		migrations: {
@@ -65,6 +67,7 @@ export class ProviderSettingsManager {
 			consecutiveMistakeLimitMigrated: true, // Mark as migrated on fresh installs
 			todoListEnabledMigrated: true, // Mark as migrated on fresh installs
 			claudeCodeLegacySettingsMigrated: true, // Mark as migrated on fresh installs
+			softixerDefaultProviderMigrated: true, // Mark as migrated on fresh installs
 		},
 	}
 
@@ -183,10 +186,23 @@ export class ProviderSettingsManager {
 					}
 
 					providerProfiles.migrations.claudeCodeLegacySettingsMigrated = true
-					isDirty = true
-				}
-
-				if (isDirty) {
+						isDirty = true
+					}
+	
+					// Migrate default config from openrouter to softixer
+					if (!providerProfiles.migrations.softixerDefaultProviderMigrated) {
+						const defaultConfig = providerProfiles.apiConfigs["default"]
+						if (defaultConfig && defaultConfig.apiProvider === "openrouter") {
+							defaultConfig.apiProvider = "softixer"
+							;(defaultConfig as any).softixerModelId = softixerDefaultModelId
+							delete (defaultConfig as any).openRouterModelId
+							delete (defaultConfig as any).openRouterApiKey
+						}
+						providerProfiles.migrations.softixerDefaultProviderMigrated = true
+						isDirty = true
+					}
+	
+					if (isDirty) {
 					await this.store(providerProfiles)
 				}
 			})
@@ -355,7 +371,7 @@ export class ProviderSettingsManager {
 
 				// For active providers, filter out settings from other providers.
 				// For retired providers, preserve full profile fields (including legacy
-				// provider-specific keys) to avoid data loss — passthrough() keeps
+				// provider-specific keys) to avoid data loss â€” passthrough() keeps
 				// unknown keys that strict parse() would strip.
 				const filteredConfig =
 					typeof config.apiProvider === "string" && isRetiredProvider(config.apiProvider)
@@ -660,3 +676,5 @@ export class ProviderSettingsManager {
 		}
 	}
 }
+
+
