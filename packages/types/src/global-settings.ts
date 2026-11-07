@@ -308,3 +308,9 @@ export const GLOBAL_STATE_KEYS = [...GLOBAL_SETTINGS_KEYS, ...PROVIDER_SETTINGS_
 
 export const isGlobalStateKey = (key: string): key is Keys<GlobalState> =>
 	GLOBAL_STATE_KEYS.includes(key as Keys<GlobalState>)
+
+/**
+ * Softixer aliases for Softixer branding.
+ */
+export type SoftixerSettings = RooCodeSettings
+export type SoftixerSettingsKey = keyof RooCodeSettings

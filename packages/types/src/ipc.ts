@@ -148,3 +148,14 @@ export type IpcServerEvents = {
 	[IpcMessageType.TaskCommand]: [clientId: string, data: TaskCommand]
 	[IpcMessageType.TaskEvent]: [relayClientId: string | undefined, data: TaskEvent]
 }
+
+/**
+ * SoftixerIpcServer — interface for the Softixer IPC server.
+ */
+export interface SoftixerIpcServer {
+	listen(): void
+	close(): void
+	readonly socketPath: string
+	readonly isListening: boolean
+	broadcast(data: TaskEvent): void
+}
