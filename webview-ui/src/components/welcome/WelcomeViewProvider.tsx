@@ -77,7 +77,7 @@ const WelcomeViewProvider = () => {
 		setErrorMessage(undefined)
 		vscode.postMessage({
 			type: "upsertApiConfiguration",
-			text: currentApiConfigName,
+			text: currentApiConfigName || "default",
 			apiConfiguration: effectiveApiConfiguration,
 		})
 	}, [showProviderSetup, apiConfiguration, setApiConfiguration, effectiveApiConfiguration, currentApiConfigName])
@@ -140,9 +140,9 @@ const WelcomeViewProvider = () => {
 						{t("welcome:providerSignup.goBack")}
 					</Button>
 					<Button onClick={handleGetStarted} variant="primary">
-							{t("welcome:providerSignup.finish")}
-							<ArrowRight className="size-4" />
-						</Button>
+						{t("welcome:providerSignup.finish")}
+						<ArrowRight className="size-4" />
+					</Button>
 				</div>
 			</TabContent>
 		</Tab>
@@ -150,5 +150,3 @@ const WelcomeViewProvider = () => {
 }
 
 export default WelcomeViewProvider
-
-
