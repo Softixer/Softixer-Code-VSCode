@@ -79,4 +79,19 @@ describe("checkExistKey", () => {
 		}
 		expect(checkExistKey(config)).toBe(true)
 	})
+
+	it("should return true for softixer provider with API key", () => {
+		const config: ProviderSettings = {
+			apiProvider: "softixer",
+			softixerApiKey: "sfx-test-key",
+		} as ProviderSettings
+		expect(checkExistKey(config)).toBe(true)
+	})
+
+	it("should return false for softixer provider without API key", () => {
+		const config: ProviderSettings = {
+			apiProvider: "softixer",
+		}
+		expect(checkExistKey(config)).toBe(false)
+	})
 })
